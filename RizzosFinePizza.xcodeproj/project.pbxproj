@@ -13,6 +13,7 @@
 		22FBA2EF1CAFDE30009B2DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */; };
 		22FBA2F21CAFDE30009B2DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2F01CAFDE30009B2DE8 /* LaunchScreen.storyboard */; };
 		22FBA2FD1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA2FC1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift */; };
+		22FBA31F1CB9C6FC009B2DE8 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		22FBA2F81CAFDE30009B2DE8 /* RizzosFinePizzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RizzosFinePizzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FBA2FC1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RizzosFinePizzaTests.swift; sourceTree = "<group>"; };
 		22FBA2FE1CAFDE30009B2DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */ = {
 			isa = PBXGroup;
 			children = (
+				22FBA3091CAFE5A7009B2DE8 /* Model */,
 				22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */,
 				22FBA2E91CAFDE30009B2DE8 /* ViewController.swift */,
 				22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				22FBA2FE1CAFDE30009B2DE8 /* Info.plist */,
 			);
 			path = RizzosFinePizzaTests;
+			sourceTree = "<group>";
+		};
+		22FBA3091CAFE5A7009B2DE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FBA2EA1CAFDE30009B2DE8 /* ViewController.swift in Sources */,
+				22FBA31F1CB9C6FC009B2DE8 /* FoodItem.swift in Sources */,
 				22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
