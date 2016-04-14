@@ -7,21 +7,32 @@
 //
 
 import Foundation
-//struct GlobalConstants {
-//    let Toppings = 2.00
-//    
-//}
 
-struct FoodItem {
+
+
+
+
+
+struct FoodItem : Equatable {
     let title:String
-   let itemDescription : String
+    let itemDescription : String
     let originalPrice : Double
-  //  Refractor 1 a short initializer
-    init(title:String, itemDescription : String, originalPrice : Double ){
+    
+    
+    //  Refractor 1 a short initializer
+    init(title:String, itemDescription : String, originalPrice: Double  ){
         self.title = title
-       self.itemDescription = itemDescription
+        self.itemDescription = itemDescription
         self.originalPrice = originalPrice
-           }
-    
-    
+        
     }
+}
+
+
+   
+
+
+func ==(lhs: FoodItem, rhs: FoodItem) -> Bool {
+    return lhs.title == rhs.title && rhs.itemDescription == lhs.itemDescription && rhs.originalPrice == lhs.originalPrice
+}
+
