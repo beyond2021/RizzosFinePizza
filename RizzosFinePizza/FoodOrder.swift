@@ -14,6 +14,7 @@ struct FoodOrder : Equatable {
     let deliveryLocation: Location?
     let deliveryType : DeliveryType
     static var order = [FoodItem]()
+    
     //
     let timeStamp : Double
     
@@ -34,9 +35,25 @@ struct FoodOrder : Equatable {
     }
     
 }
+/*
 func ==(lhs: FoodOrder, rhs: FoodOrder) -> Bool {
     return lhs.item == rhs.item
     
+}
+ 
+func ==(lhs: FoodOrder, rhs: FoodOrder) -> Bool {
+    if lhs.deliveryLocation != rhs.deliveryLocation {
+        return false
+    }
+    return true
+}
+ */
+
+func ==(lhs: FoodOrder, rhs: FoodOrder) -> Bool {
+    if lhs.deliveryLocation?.name != rhs.deliveryLocation?.name {
+        return false
+    }
+    return true
 }
 
 

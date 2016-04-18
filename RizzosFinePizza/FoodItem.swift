@@ -8,8 +8,12 @@
 
 import Foundation
 
-
-
+/*
+public protocol Equatable {
+    @warn_unused_result
+    public func ==(lhs: Self, rhs: Self) -> Bool
+}
+ */
 
 
 
@@ -28,11 +32,15 @@ struct FoodItem : Equatable {
     }
 }
 
-
-   
-
-
+// MARK : EQUATABLE CONFORMANCE
 func ==(lhs: FoodItem, rhs: FoodItem) -> Bool {
-    return lhs.title == rhs.title && rhs.itemDescription == lhs.itemDescription && rhs.originalPrice == lhs.originalPrice
+    return true
 }
 
+/*
+ OR
+func ==(lhs: FoodItem, rhs: FoodItem) -> Bool {
+    return lhs.title == rhs.title && rhs.itemDescription == lhs.itemDescription && rhs.originalPrice == lhs.originalPrice
+ 
+}
+*/

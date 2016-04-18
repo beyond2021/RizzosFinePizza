@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156331CC06243009A08C5 /* FoodItemTests.swift */; };
+		222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156351CC0634D009A08C5 /* FoodOrderTests.swift */; };
 		2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0431CBC720200218DE3 /* LocationTests.swift */; };
 		2233E0461CBC729E00218DE3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0451CBC729E00218DE3 /* Location.swift */; };
 		2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		222156331CC06243009A08C5 /* FoodItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemTests.swift; sourceTree = "<group>"; };
+		222156351CC0634D009A08C5 /* FoodOrderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOrderTests.swift; sourceTree = "<group>"; };
 		2233E0431CBC720200218DE3 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		2233E0451CBC729E00218DE3 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				2233E0431CBC720200218DE3 /* LocationTests.swift */,
 				2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */,
 				2233E04D1CBD214000218DE3 /* MenuTests.swift */,
+				222156331CC06243009A08C5 /* FoodItemTests.swift */,
+				222156351CC0634D009A08C5 /* FoodOrderTests.swift */,
 			);
 			path = RizzosFinePizzaTests;
 			sourceTree = "<group>";
@@ -255,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */,
 				2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */,
 				2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */,
+				222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */,
 				2233E04E1CBD214000218DE3 /* MenuTests.swift in Sources */,
 				22FBA2FD1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift in Sources */,
 			);

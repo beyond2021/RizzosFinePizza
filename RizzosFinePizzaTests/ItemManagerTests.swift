@@ -100,8 +100,11 @@ class ItemManagerTests: XCTestCase {
         sut.checkItemAtIndex(0)
         
         let returnedItem = sut.itemAddedToCartAtIndex(0)
-        XCTAssertEqual(item.title, returnedItem.title,
+       XCTAssertEqual(item.title, returnedItem.title,
                        "should be the same item")
+     //   XCTAssertEqual(item, returnedItem, "should be the same item")
+        
+        
         XCTAssertEqual(item.itemDescription, returnedItem.itemDescription,
                        "should be the same itemDescription")
         XCTAssertEqual(item.originalPrice, returnedItem.originalPrice,
@@ -112,6 +115,52 @@ class ItemManagerTests: XCTestCase {
                        "Initially toDo count should be 0")
         
     }
+    
+    func testGetPrices_GetAllPrices(){
+        
+        let firstItem = FoodItem(title: "item 1",itemDescription: "Description 2", originalPrice: 10.50)
+        sut.addItemPriceToList(firstItem.originalPrice)
+        let secondItem = FoodItem(title:"item 2",itemDescription: "Description 2", originalPrice: 20.50)
+        sut.addItemPriceToList(secondItem.originalPrice)
+        let thirdItem = FoodItem(title:"item 3",itemDescription: "Description 2", originalPrice: 30.50)
+        sut.addItemPriceToList(thirdItem.originalPrice)
+        let fourthItem = FoodItem(title:"item 4",itemDescription: "Description 4", originalPrice: 40.50)
+        sut.addItemPriceToList(fourthItem.originalPrice)
+        let fifthItem = FoodItem(title:"item 5",itemDescription: "Description 5", originalPrice: 50.50)
+        sut.addItemPriceToList(fifthItem.originalPrice)
+        let sixthItem = FoodItem(title:"item 6",itemDescription: "Description 6", originalPrice: 60.50)
+        sut.addItemPriceToList(sixthItem.originalPrice)
+        
+        XCTAssertEqual(sut.priceValue, 0.00,
+                       "Initially toDo count should be 0")
+        XCTAssertEqual(sut.pricelistItemCount, 6,
+                       "Initially toDo count should be six")
+        
+        
+    }
+
+    func testPriceTotal_AddAllPrices(){
+        let firstItem = FoodItem(title: "item 1",itemDescription: "Description 2", originalPrice: 10.50)
+        sut.addItemPriceToList(firstItem.originalPrice)
+        let secondItem = FoodItem(title:"item 2",itemDescription: "Description 2", originalPrice: 20.50)
+        sut.addItemPriceToList(secondItem.originalPrice)
+        let thirdItem = FoodItem(title:"item 3",itemDescription: "Description 2", originalPrice: 30.50)
+        sut.addItemPriceToList(thirdItem.originalPrice)
+        let fourthItem = FoodItem(title:"item 4",itemDescription: "Description 4", originalPrice: 40.50)
+        sut.addItemPriceToList(fourthItem.originalPrice)
+        let fifthItem = FoodItem(title:"item 5",itemDescription: "Description 5", originalPrice: 50.50)
+        sut.addItemPriceToList(fifthItem.originalPrice)
+        let sixthItem = FoodItem(title:"item 6",itemDescription: "Description 6", originalPrice: 60.50)
+        sut.addItemPriceToList(sixthItem.originalPrice)
+
+        
+    }
+    /*
+    func testAddress_ShouldReturnStreetAddress() {
+        FoodOrder(item: FoodItem(title: "item 1",itemDescription: "Description 2", originalPrice: 10.50), timeStamp: 8.08, deliveryLocation: Location.streetAddress, deliveryType: DeliveryType.Delivery)
+    }
+ */
+    
     
     
    
