@@ -17,6 +17,8 @@
 		2233E05A1CBD472E00218DE3 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0591CBD472E00218DE3 /* Delivery.swift */; };
 		22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE71CC5C7AF002841D5 /* Topping.swift */; };
 		22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */; };
+		22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */; };
+		22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */; };
 		22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */; };
 		22FBA2EA1CAFDE30009B2DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA2E91CAFDE30009B2DE8 /* ViewController.swift */; };
 		22FBA2ED1CAFDE30009B2DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		2233E0591CBD472E00218DE3 /* Delivery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
 		22CCFEE71CC5C7AF002841D5 /* Topping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topping.swift; sourceTree = "<group>"; };
 		22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToppingsTest.swift; sourceTree = "<group>"; };
+		22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsListViewControllerTest.swift; sourceTree = "<group>"; };
+		22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsListViewController.swift; sourceTree = "<group>"; };
 		22FBA2E41CAFDE30009B2DE8 /* RizzosFinePizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzosFinePizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22FBA2E91CAFDE30009B2DE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 				22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */,
 				22FBA2F01CAFDE30009B2DE8 /* LaunchScreen.storyboard */,
 				22FBA2F31CAFDE30009B2DE8 /* Info.plist */,
+				22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */,
 			);
 			path = RizzosFinePizza;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			children = (
 				22CCFEEB1CC5DE95002841D5 /* Model Tests */,
 				22FBA2FE1CAFDE30009B2DE8 /* Info.plist */,
+				22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */,
 			);
 			path = RizzosFinePizzaTests;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */,
 				22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */,
 				22FBA2EA1CAFDE30009B2DE8 /* ViewController.swift in Sources */,
 				22FBA31F1CB9C6FC009B2DE8 /* FoodItem.swift in Sources */,
@@ -269,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */,
 				222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */,
 				2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */,
 				22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */,

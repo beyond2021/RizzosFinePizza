@@ -19,9 +19,10 @@ struct FoodOrder : Equatable {
     
     //
     let timeStamp : Double
-    let customerPhoneNumber : UInt
+    let customerPhoneNumber : String
+    let customerEmail : String?
     
-    init(item : FoodItem, timeStamp : Double, deliveryLocation: Location? = nil, deliveryType : DeliveryType, customerFirstName : String, let customerPhoneNumber : UInt, orderNumber : Int ){
+    init(item : FoodItem, timeStamp : Double, deliveryLocation: Location? = nil, deliveryType : DeliveryType, customerFirstName : String, let customerPhoneNumber : String, orderNumber : Int, customerEmail : String? = nil ){
         self.item = item
         self.timeStamp = timeStamp
         self.deliveryLocation = deliveryLocation
@@ -29,6 +30,7 @@ struct FoodOrder : Equatable {
         self.customerFirstName = customerFirstName
         self.customerPhoneNumber = customerPhoneNumber
         self.orderNumber = orderNumber
+        self.customerEmail = customerEmail
     }
     
     
@@ -64,5 +66,9 @@ func ==(lhs: FoodOrder, rhs: FoodOrder) -> Bool {
     if lhs.item != rhs.item {
         return false
     }
+    if lhs.customerEmail != rhs.customerEmail {
+        return false
+    }
+    
     return true
 }
