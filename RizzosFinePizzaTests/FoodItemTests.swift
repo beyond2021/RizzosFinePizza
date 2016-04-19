@@ -45,7 +45,33 @@ class FoodItemTests: XCTestCase {
         let secondItem = FoodItem(title: "Test title", itemDescription : "Test description", originalPrice : 12.00)
         XCTAssertEqual(firstItem, secondItem)
     }
+    
+    func testWhenDescriptionDifferes_ShouldBeNotEqual() {
+        let firstItem = FoodItem(title: "Test title", itemDescription : "First description", originalPrice : 12.00)
+        let secondItem = FoodItem(title: "Test title", itemDescription : "Second description", originalPrice : 12.00)
+        XCTAssertNotEqual(firstItem, secondItem)
+    }
+    
+    func testWhenTitleDifferes_ShouldBeNotEqual() {
+        let firstItem = FoodItem(title: "Test title", itemDescription : "Test description", originalPrice : 12.00)
+        let secondItem = FoodItem(title: "Second title", itemDescription : "Test description", originalPrice : 12.00)
+        XCTAssertNotEqual(firstItem, secondItem)
+    }
+    
+    func testWhenOriginalPriceDifferes_ShouldBeNotEqual() {
+        let firstItem = FoodItem(title: "Test title", itemDescription : "Test description", originalPrice : 0.00)
+        let secondItem = FoodItem(title: "Test title", itemDescription : "Test description", originalPrice : 12.00)
+        XCTAssertNotEqual(firstItem, secondItem)
         
+    }
+    func testWhenToppingDifferes_ShouldBeNotEqual() {
+        let topping1 = Topping(name: "First Topping", toppingDescription: "First Topping Description", toppingPrice: 2.00)
+        
+        let topping2 = Topping(name: "Second Topping", toppingDescription: "First Topping Description", toppingPrice: 2.00)
+         XCTAssertNotEqual(topping1, topping2)
+    }
+    
+    
     
 
    }

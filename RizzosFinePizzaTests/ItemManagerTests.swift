@@ -155,11 +155,23 @@ class ItemManagerTests: XCTestCase {
 
         
     }
-    /*
-    func testAddress_ShouldReturnStreetAddress() {
-        FoodOrder(item: FoodItem(title: "item 1",itemDescription: "Description 2", originalPrice: 10.50), timeStamp: 8.08, deliveryLocation: Location.streetAddress, deliveryType: DeliveryType.Delivery)
+    func testRemoveAllItems_ShouldResultInCountsBeZero() {
+        
+        let topping = Topping(name: "Extra Cheese", toppingDescription: "Extra Cheese", toppingPrice: 2.0)
+        sut.addItem(FoodItem(title: "Large Round Pizza", itemDescription: "Large Round Pizza", originalPrice: 12.00))
+        sut.addItem(FoodItem(title: "Calzone", itemDescription: "Spicy", originalPrice: 19.00, topping: topping))
+            
+            sut.checkItemAtIndex(0)
+            XCTAssertEqual(sut.itemsAddedToCartCount, 2,
+                "itemsAddedToCartCount should be 2")
+            XCTAssertEqual(sut.itemsAddedToCartCount, 2,
+                "itemsAddedToCartCount should be 2")
+       
+        
+        
+            sut.removeAllItemsFromCart()
+         XCTAssertEqual(sut.itemsAddedToCartCount, 0, "toDoCount should be 0")        
     }
- */
     
     
     

@@ -8,7 +8,9 @@
 
 import Foundation
 struct FoodOrder : Equatable {
+    let orderNumber : Int
     
+    let customerFirstName : String
     
     let  item : FoodItem
     let deliveryLocation: Location?
@@ -17,12 +19,16 @@ struct FoodOrder : Equatable {
     
     //
     let timeStamp : Double
+    let customerPhoneNumber : UInt
     
-    init(item : FoodItem, timeStamp : Double, deliveryLocation: Location? = nil, deliveryType : DeliveryType ){
+    init(item : FoodItem, timeStamp : Double, deliveryLocation: Location? = nil, deliveryType : DeliveryType, customerFirstName : String, let customerPhoneNumber : UInt, orderNumber : Int ){
         self.item = item
         self.timeStamp = timeStamp
         self.deliveryLocation = deliveryLocation
         self.deliveryType = deliveryType
+        self.customerFirstName = customerFirstName
+        self.customerPhoneNumber = customerPhoneNumber
+        self.orderNumber = orderNumber
     }
     
     
@@ -34,26 +40,29 @@ struct FoodOrder : Equatable {
         
     }
     
-}
-/*
-func ==(lhs: FoodOrder, rhs: FoodOrder) -> Bool {
-    return lhs.item == rhs.item
+    
     
 }
- 
+
+
 func ==(lhs: FoodOrder, rhs: FoodOrder) -> Bool {
     if lhs.deliveryLocation != rhs.deliveryLocation {
         return false
     }
-    return true
-}
- */
-
-func ==(lhs: FoodOrder, rhs: FoodOrder) -> Bool {
-    if lhs.deliveryLocation?.name != rhs.deliveryLocation?.name {
+    if lhs.timeStamp != rhs.timeStamp {
+        return false
+    }
+    if lhs.customerFirstName != rhs.customerFirstName {
+        return false
+    }
+    if lhs.customerPhoneNumber != rhs.customerPhoneNumber {
+        return false
+    }
+    if lhs.orderNumber != rhs.orderNumber {
+        return false
+    }
+    if lhs.item != rhs.item {
         return false
     }
     return true
 }
-
-

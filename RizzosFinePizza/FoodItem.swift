@@ -21,26 +21,33 @@ struct FoodItem : Equatable {
     let title:String
     let itemDescription : String
     let originalPrice : Double
+    let topping : Topping?
     
     
     //  Refractor 1 a short initializer
-    init(title:String, itemDescription : String, originalPrice: Double  ){
+    init(title:String, itemDescription : String, originalPrice: Double, let topping : Topping? = nil  ){
         self.title = title
         self.itemDescription = itemDescription
         self.originalPrice = originalPrice
+        self.topping = topping
         
     }
 }
 
 // MARK : EQUATABLE CONFORMANCE
 func ==(lhs: FoodItem, rhs: FoodItem) -> Bool {
+    if lhs.itemDescription != rhs.itemDescription {
+        return false
+    }
+    if lhs.title != rhs.title {
+        return false
+    }
+    if lhs.originalPrice != rhs.originalPrice {
+        return false
+    }
+    
     return true
 }
 
-/*
- OR
-func ==(lhs: FoodItem, rhs: FoodItem) -> Bool {
-    return lhs.title == rhs.title && rhs.itemDescription == lhs.itemDescription && rhs.originalPrice == lhs.originalPrice
- 
-}
-*/
+
+

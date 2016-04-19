@@ -12,11 +12,11 @@
 		2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0431CBC720200218DE3 /* LocationTests.swift */; };
 		2233E0461CBC729E00218DE3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0451CBC729E00218DE3 /* Location.swift */; };
 		2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */; };
-		2233E04E1CBD214000218DE3 /* MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E04D1CBD214000218DE3 /* MenuTests.swift */; };
-		2233E0501CBD233500218DE3 /* FullMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E04F1CBD233500218DE3 /* FullMenu.swift */; };
 		2233E0561CBD3EF300218DE3 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0551CBD3EF300218DE3 /* ItemManager.swift */; };
 		2233E0581CBD449E00218DE3 /* FoodOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0571CBD449E00218DE3 /* FoodOrder.swift */; };
 		2233E05A1CBD472E00218DE3 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0591CBD472E00218DE3 /* Delivery.swift */; };
+		22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE71CC5C7AF002841D5 /* Topping.swift */; };
+		22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */; };
 		22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */; };
 		22FBA2EA1CAFDE30009B2DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA2E91CAFDE30009B2DE8 /* ViewController.swift */; };
 		22FBA2ED1CAFDE30009B2DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */; };
@@ -42,11 +42,11 @@
 		2233E0431CBC720200218DE3 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		2233E0451CBC729E00218DE3 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
-		2233E04D1CBD214000218DE3 /* MenuTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTests.swift; sourceTree = "<group>"; };
-		2233E04F1CBD233500218DE3 /* FullMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullMenu.swift; sourceTree = "<group>"; };
 		2233E0551CBD3EF300218DE3 /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		2233E0571CBD449E00218DE3 /* FoodOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOrder.swift; sourceTree = "<group>"; };
 		2233E0591CBD472E00218DE3 /* Delivery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
+		22CCFEE71CC5C7AF002841D5 /* Topping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topping.swift; sourceTree = "<group>"; };
+		22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToppingsTest.swift; sourceTree = "<group>"; };
 		22FBA2E41CAFDE30009B2DE8 /* RizzosFinePizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzosFinePizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22FBA2E91CAFDE30009B2DE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +86,19 @@
 			name = "Item Manager";
 			sourceTree = "<group>";
 		};
+		22CCFEEB1CC5DE95002841D5 /* Model Tests */ = {
+			isa = PBXGroup;
+			children = (
+				222156351CC0634D009A08C5 /* FoodOrderTests.swift */,
+				22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */,
+				222156331CC06243009A08C5 /* FoodItemTests.swift */,
+				2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */,
+				2233E0431CBC720200218DE3 /* LocationTests.swift */,
+				22FBA2FC1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift */,
+			);
+			name = "Model Tests";
+			sourceTree = "<group>";
+		};
 		22FBA2DB1CAFDE30009B2DE8 = {
 			isa = PBXGroup;
 			children = (
@@ -121,13 +134,8 @@
 		22FBA2FB1CAFDE30009B2DE8 /* RizzosFinePizzaTests */ = {
 			isa = PBXGroup;
 			children = (
-				22FBA2FC1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift */,
+				22CCFEEB1CC5DE95002841D5 /* Model Tests */,
 				22FBA2FE1CAFDE30009B2DE8 /* Info.plist */,
-				2233E0431CBC720200218DE3 /* LocationTests.swift */,
-				2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */,
-				2233E04D1CBD214000218DE3 /* MenuTests.swift */,
-				222156331CC06243009A08C5 /* FoodItemTests.swift */,
-				222156351CC0634D009A08C5 /* FoodOrderTests.swift */,
 			);
 			path = RizzosFinePizzaTests;
 			sourceTree = "<group>";
@@ -135,12 +143,12 @@
 		22FBA3091CAFE5A7009B2DE8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2233E0541CBD3ECA00218DE3 /* Item Manager */,
 				22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */,
 				2233E0451CBC729E00218DE3 /* Location.swift */,
-				2233E04F1CBD233500218DE3 /* FullMenu.swift */,
 				2233E0571CBD449E00218DE3 /* FoodOrder.swift */,
 				2233E0591CBD472E00218DE3 /* Delivery.swift */,
+				22CCFEE71CC5C7AF002841D5 /* Topping.swift */,
+				2233E0541CBD3ECA00218DE3 /* Item Manager */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -246,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2233E0501CBD233500218DE3 /* FullMenu.swift in Sources */,
+				22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */,
 				22FBA2EA1CAFDE30009B2DE8 /* ViewController.swift in Sources */,
 				22FBA31F1CB9C6FC009B2DE8 /* FoodItem.swift in Sources */,
 				2233E0461CBC729E00218DE3 /* Location.swift in Sources */,
@@ -263,9 +271,9 @@
 			files = (
 				222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */,
 				2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */,
+				22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */,
 				2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */,
 				222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */,
-				2233E04E1CBD214000218DE3 /* MenuTests.swift in Sources */,
 				22FBA2FD1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
