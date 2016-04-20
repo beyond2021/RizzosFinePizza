@@ -1,10 +1,215 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZLb-xo-YWu">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="88L-Ya-YOw">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="ZLb-xo-YWu" customClass="MainViewController" customModule="RizzosFinePizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MGU-lI-IUj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xar-RA-fcW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hCP-UK-oLd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizzaCutter" translatesAutoresizingMaskIntoConstraints="NO" id="hld-Jo-c5z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-NE-WVi">
+                                <rect key="frame" x="132" y="57" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="sm7-yh-flY"/>
+                                    <constraint firstAttribute="height" constant="150" id="yrh-O8-zPO"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="UESButton"/>
+                                <connections>
+                                    <action selector="uesAction:" destination="ZLb-xo-YWu" eventType="touchUpInside" id="KUo-Cd-eoO"/>
+                                    <segue destination="THF-bo-XSf" kind="show" id="qqO-X1-cPj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVg-iQ-FJl">
+                                <rect key="frame" x="138" y="293" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3rX-57-MD1"/>
+                                    <constraint firstAttribute="width" constant="150" id="E1F-sk-zLf"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="AstoriaButton"/>
+                                <connections>
+                                    <action selector="steinwayAction:" destination="ZLb-xo-YWu" eventType="touchUpInside" id="9y8-1w-opa"/>
+                                    <segue destination="kp9-Dg-dsi" kind="show" id="L8a-7O-sPm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6d-fN-wGt">
+                                <rect key="frame" x="138" y="519" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="6MZ-zk-Zur"/>
+                                    <constraint firstAttribute="width" constant="150" id="S9F-u1-sEr"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ClintonButton"/>
+                                <connections>
+                                    <action selector="lesButton:" destination="ZLb-xo-YWu" eventType="touchUpInside" id="xOT-UZ-d2a"/>
+                                    <segue destination="y57-8n-C6W" kind="show" id="z64-X0-kEE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bVg-iQ-FJl" firstAttribute="top" secondItem="Pba-NE-WVi" secondAttribute="bottom" constant="33" id="03o-IX-akh"/>
+                            <constraint firstItem="bVg-iQ-FJl" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="3AL-f0-eh0"/>
+                            <constraint firstItem="g6d-fN-wGt" firstAttribute="top" secondItem="bVg-iQ-FJl" secondAttribute="bottom" constant="39" id="AWR-FO-L2O"/>
+                            <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="hld-Jo-c5z" secondAttribute="bottom" id="IaN-V8-3yj"/>
+                            <constraint firstItem="hld-Jo-c5z" firstAttribute="leading" secondItem="hCP-UK-oLd" secondAttribute="leading" id="R4o-ro-UhX"/>
+                            <constraint firstItem="Pba-NE-WVi" firstAttribute="top" secondItem="MGU-lI-IUj" secondAttribute="bottom" constant="37" id="Ums-Sj-hwo"/>
+                            <constraint firstItem="g6d-fN-wGt" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="aFf-g5-VAl"/>
+                            <constraint firstItem="Pba-NE-WVi" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="e7N-PV-j2U"/>
+                            <constraint firstItem="hld-Jo-c5z" firstAttribute="top" secondItem="hCP-UK-oLd" secondAttribute="top" id="edS-jS-esq"/>
+                            <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="g6d-fN-wGt" secondAttribute="bottom" constant="67" id="j1r-FN-ocr"/>
+                            <constraint firstAttribute="trailing" secondItem="hld-Jo-c5z" secondAttribute="trailing" id="u23-8S-t26"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ums-Sj-hwo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="bgImageView" destination="hld-Jo-c5z" id="Crg-Q3-Ul2"/>
+                        <outlet property="lesButton" destination="g6d-fN-wGt" id="ohu-03-vSR"/>
+                        <outlet property="steinwayButton" destination="bVg-iQ-FJl" id="43o-zm-tm0"/>
+                        <outlet property="uesButton" destination="Pba-NE-WVi" id="AxT-d9-9ue"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmq-05-7NE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1427" y="19"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iBZ-at-bJt">
+            <objects>
+                <viewController id="THF-bo-XSf" customClass="UESViewController" customModule="RizzosFinePizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Js9-wt-bQf"/>
+                        <viewControllerLayoutGuide type="bottom" id="I1F-Af-fsU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zho-c7-wvz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainScreenImageWithWelcomeUES" translatesAutoresizingMaskIntoConstraints="NO" id="KJD-6O-hI2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KJD-6O-hI2" secondAttribute="trailing" id="6dP-37-1vU"/>
+                            <constraint firstItem="KJD-6O-hI2" firstAttribute="leading" secondItem="zho-c7-wvz" secondAttribute="leading" id="WNQ-od-DuS"/>
+                            <constraint firstItem="KJD-6O-hI2" firstAttribute="top" secondItem="zho-c7-wvz" secondAttribute="top" id="oaC-0F-us4"/>
+                            <constraint firstItem="I1F-Af-fsU" firstAttribute="top" secondItem="KJD-6O-hI2" secondAttribute="bottom" id="vsP-CE-8gy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUz-ac-CxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-814" y="-410"/>
+        </scene>
+        <!--Astoria View Controller-->
+        <scene sceneID="q65-ep-X7D">
+            <objects>
+                <viewController id="kp9-Dg-dsi" customClass="AstoriaViewController" customModule="RizzosFinePizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1VA-Vh-n6p"/>
+                        <viewControllerLayoutGuide type="bottom" id="zsE-Nt-vmU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pET-au-asq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainScreenImageWithWelcomeAS" translatesAutoresizingMaskIntoConstraints="NO" id="Ekb-A8-CUm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXr-7f-msH">
+                                <rect key="frame" x="20" y="28" width="46" height="34"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIr-wl-8Ep">
+                                <rect key="frame" x="28" y="549" width="157" height="59"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gu9-Nd-2MD">
+                                <rect key="frame" x="298" y="628" width="96" height="80"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCd-Gw-Vys">
+                                <rect key="frame" x="259" y="549" width="135" height="60"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zsE-Nt-vmU" firstAttribute="top" secondItem="Ekb-A8-CUm" secondAttribute="bottom" id="byA-fR-NHo"/>
+                            <constraint firstItem="Ekb-A8-CUm" firstAttribute="top" secondItem="pET-au-asq" secondAttribute="top" id="d53-aF-OQy"/>
+                            <constraint firstAttribute="trailing" secondItem="Ekb-A8-CUm" secondAttribute="trailing" id="p4r-dK-MBd"/>
+                            <constraint firstItem="Ekb-A8-CUm" firstAttribute="leading" secondItem="pET-au-asq" secondAttribute="leading" id="tkz-Wz-Mtq"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEU-Rz-Ywi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="389"/>
+        </scene>
+        <!--Les View Controller-->
+        <scene sceneID="gR9-Bu-Guo">
+            <objects>
+                <viewController id="y57-8n-C6W" customClass="LesViewController" customModule="RizzosFinePizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="omY-n0-gHJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ibE-8o-lTL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cMs-ac-Dao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainScreenImageWithWelcomeCL" translatesAutoresizingMaskIntoConstraints="NO" id="7p0-eI-kFO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5c-GL-bdC">
+                                <rect key="frame" x="26" y="28" width="47" height="30"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXa-JR-ims">
+                                <rect key="frame" x="257" y="546" width="113" height="67"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Laz-Kq-8Yu">
+                                <rect key="frame" x="39" y="546" width="144" height="67"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msd-Nh-Bq6">
+                                <rect key="frame" x="295" y="636" width="99" height="72"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7p0-eI-kFO" secondAttribute="trailing" id="5E3-d6-GGh"/>
+                            <constraint firstItem="7p0-eI-kFO" firstAttribute="top" secondItem="cMs-ac-Dao" secondAttribute="top" id="ScU-wL-sGQ"/>
+                            <constraint firstItem="7p0-eI-kFO" firstAttribute="leading" secondItem="cMs-ac-Dao" secondAttribute="leading" id="Vhl-Bu-ujh"/>
+                            <constraint firstItem="ibE-8o-lTL" firstAttribute="top" secondItem="7p0-eI-kFO" secondAttribute="bottom" id="hT0-t6-XdU"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJQ-in-Dvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-814" y="1368"/>
+        </scene>
         <!--Menu Items List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -22,7 +227,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.43137254899999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="iay-Xd-Iqt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="247" id="RZ6-uF-brh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iay-Xd-Iqt" secondAttribute="bottom" id="XPR-Tp-l8X"/>
@@ -41,4 +246,13 @@
             <point key="canvasLocation" x="208" y="52"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AstoriaButton" width="256" height="256"/>
+        <image name="ClintonButton" width="393" height="392"/>
+        <image name="UESButton" width="264" height="263"/>
+        <image name="mainScreenImageWithWelcomeAS" width="414" height="736"/>
+        <image name="mainScreenImageWithWelcomeCL" width="414" height="736"/>
+        <image name="mainScreenImageWithWelcomeUES" width="414" height="736"/>
+        <image name="pizzaCutter" width="912" height="1216"/>
+    </resources>
 </document>
