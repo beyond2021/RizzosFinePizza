@@ -9,12 +9,16 @@
 import UIKit
 
 class MenuItemsListViewController: UIViewController {
-    var tableView: UITableView?
-
+    @IBOutlet var tableView: UITableView!
+    // Data Source
+    @IBOutlet var dataProvider:protocol<UITableViewDataSource,
+    UITableViewDelegate>!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      tableView = UITableView()
+        tableView.dataSource = dataProvider
+        tableView.delegate = dataProvider
+      
     }
 
     override func didReceiveMemoryWarning() {

@@ -19,8 +19,9 @@
 		22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */; };
 		22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */; };
 		22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */; };
+		22CCFEF31CC69276002841D5 /* MenuListDataSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */; };
+		22CCFEF51CC69A34002841D5 /* MenuListDataSupplierTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */; };
 		22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */; };
-		22FBA2EA1CAFDE30009B2DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA2E91CAFDE30009B2DE8 /* ViewController.swift */; };
 		22FBA2ED1CAFDE30009B2DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */; };
 		22FBA2EF1CAFDE30009B2DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */; };
 		22FBA2F21CAFDE30009B2DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2F01CAFDE30009B2DE8 /* LaunchScreen.storyboard */; };
@@ -49,11 +50,12 @@
 		2233E0591CBD472E00218DE3 /* Delivery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
 		22CCFEE71CC5C7AF002841D5 /* Topping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topping.swift; sourceTree = "<group>"; };
 		22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToppingsTest.swift; sourceTree = "<group>"; };
-		22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsListViewControllerTest.swift; sourceTree = "<group>"; };
+		22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemsListViewControllerTest.swift; path = RizzosFinePizzaTests/MenuItemsListViewControllerTest.swift; sourceTree = SOURCE_ROOT; };
 		22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsListViewController.swift; sourceTree = "<group>"; };
+		22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListDataSupplier.swift; sourceTree = "<group>"; };
+		22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListDataSupplierTest.swift; sourceTree = "<group>"; };
 		22FBA2E41CAFDE30009B2DE8 /* RizzosFinePizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzosFinePizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22FBA2E91CAFDE30009B2DE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22FBA2EC1CAFDE30009B2DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22FBA2F11CAFDE30009B2DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,22 @@
 			name = "Model Tests";
 			sourceTree = "<group>";
 		};
+		22CCFEF01CC68BC4002841D5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		22CCFEF11CC691FF002841D5 /* Data Supplier */ = {
+			isa = PBXGroup;
+			children = (
+				22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */,
+			);
+			name = "Data Supplier";
+			sourceTree = "<group>";
+		};
 		22FBA2DB1CAFDE30009B2DE8 = {
 			isa = PBXGroup;
 			children = (
@@ -124,14 +142,14 @@
 		22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */ = {
 			isa = PBXGroup;
 			children = (
+				22CCFEF11CC691FF002841D5 /* Data Supplier */,
+				22CCFEF01CC68BC4002841D5 /* ViewController */,
 				22FBA3091CAFE5A7009B2DE8 /* Model */,
 				22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */,
-				22FBA2E91CAFDE30009B2DE8 /* ViewController.swift */,
 				22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */,
 				22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */,
 				22FBA2F01CAFDE30009B2DE8 /* LaunchScreen.storyboard */,
 				22FBA2F31CAFDE30009B2DE8 /* Info.plist */,
-				22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */,
 			);
 			path = RizzosFinePizza;
 			sourceTree = "<group>";
@@ -139,9 +157,10 @@
 		22FBA2FB1CAFDE30009B2DE8 /* RizzosFinePizzaTests */ = {
 			isa = PBXGroup;
 			children = (
+				22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */,
 				22CCFEEB1CC5DE95002841D5 /* Model Tests */,
 				22FBA2FE1CAFDE30009B2DE8 /* Info.plist */,
-				22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */,
+				22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */,
 			);
 			path = RizzosFinePizzaTests;
 			sourceTree = "<group>";
@@ -262,8 +281,8 @@
 			files = (
 				22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */,
 				22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */,
-				22FBA2EA1CAFDE30009B2DE8 /* ViewController.swift in Sources */,
 				22FBA31F1CB9C6FC009B2DE8 /* FoodItem.swift in Sources */,
+				22CCFEF31CC69276002841D5 /* MenuListDataSupplier.swift in Sources */,
 				2233E0461CBC729E00218DE3 /* Location.swift in Sources */,
 				2233E0561CBD3EF300218DE3 /* ItemManager.swift in Sources */,
 				2233E05A1CBD472E00218DE3 /* Delivery.swift in Sources */,
@@ -276,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CCFEF51CC69A34002841D5 /* MenuListDataSupplierTest.swift in Sources */,
 				22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */,
 				222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */,
 				2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */,
