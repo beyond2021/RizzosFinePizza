@@ -21,6 +21,9 @@
 		22A1EB951CC817FB00C51FE5 /* UESViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB941CC817FB00C51FE5 /* UESViewController.swift */; };
 		22A1EB971CC8183C00C51FE5 /* AstoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */; };
 		22A1EB991CC8187600C51FE5 /* LesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB981CC8187600C51FE5 /* LesViewController.swift */; };
+		22A1EB9E1CC8B06C00C51FE5 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */; };
+		22A1EBA01CC9729500C51FE5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB9F1CC9729500C51FE5 /* MenuViewController.swift */; };
+		22A1EBA21CC980C700C51FE5 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */; };
 		22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE71CC5C7AF002841D5 /* Topping.swift */; };
 		22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */; };
 		22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */; };
@@ -64,6 +67,9 @@
 		22A1EB941CC817FB00C51FE5 /* UESViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UESViewController.swift; sourceTree = "<group>"; };
 		22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstoriaViewController.swift; sourceTree = "<group>"; };
 		22A1EB981CC8187600C51FE5 /* LesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LesViewController.swift; sourceTree = "<group>"; };
+		22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		22A1EB9F1CC9729500C51FE5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		22CCFEE71CC5C7AF002841D5 /* Topping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topping.swift; sourceTree = "<group>"; };
 		22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToppingsTest.swift; sourceTree = "<group>"; };
 		22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemsListViewControllerTest.swift; path = RizzosFinePizzaTests/MenuItemsListViewControllerTest.swift; sourceTree = SOURCE_ROOT; };
@@ -135,6 +141,14 @@
 			name = Transitions;
 			sourceTree = "<group>";
 		};
+		22A1EB9C1CC8B02900C51FE5 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
 		22CCFEEB1CC5DE95002841D5 /* Model Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,8 +165,11 @@
 		22CCFEF01CC68BC4002841D5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */,
 				22A1EB8D1CC7504500C51FE5 /* MainViewController.swift */,
+				22A1EB941CC817FB00C51FE5 /* UESViewController.swift */,
+				22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */,
+				22A1EB981CC8187600C51FE5 /* LesViewController.swift */,
+				22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -188,15 +205,15 @@
 		22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */ = {
 			isa = PBXGroup;
 			children = (
+				22A1EB9C1CC8B02900C51FE5 /* CustomCell */,
 				22A1EB8F1CC816EE00C51FE5 /* Transitions */,
 				22CCFEF11CC691FF002841D5 /* Data Supplier */,
 				22CCFEF01CC68BC4002841D5 /* ViewController */,
 				22FBA3091CAFE5A7009B2DE8 /* Model */,
 				22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */,
 				22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */,
-				22A1EB981CC8187600C51FE5 /* LesViewController.swift */,
-				22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */,
-				22A1EB941CC817FB00C51FE5 /* UESViewController.swift */,
+				22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */,
+				22A1EB9F1CC9729500C51FE5 /* MenuViewController.swift */,
 				22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */,
 				22FBA2F01CAFDE30009B2DE8 /* LaunchScreen.storyboard */,
 				22FBA2F31CAFDE30009B2DE8 /* Info.plist */,
@@ -443,12 +460,15 @@
 				22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */,
 				22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */,
 				22A1EB971CC8183C00C51FE5 /* AstoriaViewController.swift in Sources */,
+				22A1EB9E1CC8B06C00C51FE5 /* MenuItemCell.swift in Sources */,
 				22FBA31F1CB9C6FC009B2DE8 /* FoodItem.swift in Sources */,
 				22CCFEF31CC69276002841D5 /* MenuListDataSupplier.swift in Sources */,
 				2233E0461CBC729E00218DE3 /* Location.swift in Sources */,
+				22A1EBA01CC9729500C51FE5 /* MenuViewController.swift in Sources */,
 				2233E0561CBD3EF300218DE3 /* ItemManager.swift in Sources */,
 				22A1EB991CC8187600C51FE5 /* LesViewController.swift in Sources */,
 				2233E05A1CBD472E00218DE3 /* Delivery.swift in Sources */,
+				22A1EBA21CC980C700C51FE5 /* MenuTableViewController.swift in Sources */,
 				22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */,
 				2233E0581CBD449E00218DE3 /* FoodOrder.swift in Sources */,
 				22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaViewControllerDelegate, LesViewControllerDelegate {
       
     @IBOutlet weak var bgImageView: UIImageView!
     
@@ -19,6 +19,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          setUpInterface()
+        
+        
         /*
         // for normal state
         uesButton.setImage(UIImage(named: "UESButton"), forState: UIControlState.Normal)
@@ -106,6 +108,67 @@ class MainViewController: UIViewController {
         
     }
     
+    //MARK: - NAVIGATION
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //TI GET CALLED IF U CAUSE A SEGUE TO TRIGGER
+        // CHECK THE ID OF THE SEGUE. THIS IS A PROPERTY OF THE SEGUE
+        // GET THE DESTINATION VC
+        if segue.identifier == "UES" {
+            // We are on the right one so lets now get the destinationVC
+            if let destVC = segue.destinationViewController as? UESViewController {
+                // if this was possible then we want to ourself its delegate
+                destVC.delegate = self
+                
+            }
+        }else
+            if segue.identifier == "Astoria" {
+                // We are on the right one so lets now get the destinationVC
+                if let destVC = segue.destinationViewController as? AstoriaViewController {
+                    // if this was possible then we want to ourself its delegate
+                    destVC.delegate = self
+                    
+                }
+            }else
+                if segue.identifier == "Clinton" {
+                    // We are on the right one so lets now get the destinationVC
+                    if let destVC = segue.destinationViewController as? LesViewController {
+                        // if this was possible then we want to ourself its delegate
+                        destVC.delegate = self
+                        
+                    }
+                }
+
+                
+           }
+            
+      
+        
+
+    
+    
+    
+    //MARK : Delegate Actions
+    func dismissUES(){
+       self.dismissViewControllerAnimated(true) { 
+        print("UES is dismissed")
+        }
+        
+    }
+    
+        func dismissAstoria(){
+            self.dismissViewControllerAnimated(true) {
+                print("Astoria is dismissed")
+            }
+            
+            
+        }
+    func dismissClinton(){
+        self.dismissViewControllerAnimated(true) {
+            print("Clinton is dismissed")
+        }
+        
+        
+    }
 
 
    

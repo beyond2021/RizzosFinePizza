@@ -62,6 +62,8 @@ class ItemManagerTests: XCTestCase {
     }
     
     
+    /*
+    
     func testCheckingItem_RemovesItFromTheOrderList() {
         let firstItem = FoodItem(title:"First item",itemDescription: "First Description", originalPrice: 0.50)
         let secondItem = FoodItem(title:"Second item",itemDescription: "Second Description", originalPrice: 0.75)
@@ -75,6 +77,7 @@ class ItemManagerTests: XCTestCase {
         
         
     }
+ */
 
     
     // Test for items added to cart
@@ -92,6 +95,8 @@ class ItemManagerTests: XCTestCase {
         
         
     }
+    
+    /*
     
     func testDoneEmptyCart_ShoulRemoveAllItems(){
         
@@ -115,6 +120,7 @@ class ItemManagerTests: XCTestCase {
                        "Initially toDo count should be 0")
         
     }
+ */
     
     func testGetPrices_GetAllPrices(){
         

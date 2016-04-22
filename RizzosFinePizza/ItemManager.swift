@@ -32,6 +32,8 @@ class ItemManager {
     func addItem(item: FoodItem) {
        
         itemsInTheCart.append(item)
+        print("Items in cart count: \(itemsAddedToCartCount)")
+        
     }
     
     

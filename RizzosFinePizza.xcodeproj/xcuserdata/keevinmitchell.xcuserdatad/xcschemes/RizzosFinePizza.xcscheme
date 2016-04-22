@@ -37,6 +37,32 @@
                BlueprintName = "RizzosFinePizzaTests"
                ReferencedContainer = "container:RizzosFinePizza.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "FoodItemTests">
+               </Test>
+               <Test
+                  Identifier = "FoodOrderTests">
+               </Test>
+               <Test
+                  Identifier = "ItemManagerTests">
+               </Test>
+               <Test
+                  Identifier = "LocationTests">
+               </Test>
+               <Test
+                  Identifier = "MainViewControllerTest">
+               </Test>
+               <Test
+                  Identifier = "MenuItemsListViewControllerTest">
+               </Test>
+               <Test
+                  Identifier = "RizzosFinePizzaTests">
+               </Test>
+               <Test
+                  Identifier = "ToppingsTest">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

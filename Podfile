@@ -5,10 +5,12 @@
 
 target 'RizzosFinePizza' do
 pod 'TAPageControl'
+pod 'MBTwitterScroll'
 
 end
 
 target 'RizzosFinePizzaTests' do
 pod 'TAPageControl'
+pod 'MBTwitterScroll'
 end
 

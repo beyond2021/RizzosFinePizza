@@ -7,8 +7,16 @@
 //
 
 import UIKit
+protocol UESViewControllerDelegate : class{
+    // ALL CLASS THAT CONFORM TO THIS PROTOCOL MUST IMPLEMENT
+    func dismissUES()
+}
+
+
 
 class UESViewController: UIViewController {
+    
+    weak var delegate : UESViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +25,7 @@ class UESViewController: UIViewController {
        
     }
     override func viewDidAppear(animated: Bool) {
-        showMenu()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,7 +66,7 @@ class UESViewController: UIViewController {
     
     func pizzaAction(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-       let vc =  storyboard.instantiateViewControllerWithIdentifier("MenuItemsListViewController") as! MenuItemsListViewController
+       let vc =  storyboard.instantiateViewControllerWithIdentifier("MenuTableViewController") as! MenuTableViewController
         self.presentViewController(vc, animated: true, completion: nil)
         
         
@@ -68,7 +76,24 @@ class UESViewController: UIViewController {
         
     }
     
+    @IBAction func backToMain(sender: UIButton) {
+        self.delegate?.dismissUES()
+    }
 
     
+    @IBAction func pickupAction(sender: UIButton) {
+        showMenu()
+    }
 
+    @IBAction func deliveryAction(sender: UIButton) {
+        showMenu()
+    }
+    
+    
+    @IBAction func callUpperEastSide(sender: UIButton) {
+        if let url = NSURL(string: "tel://\(2122890500)") {
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
+    
 }

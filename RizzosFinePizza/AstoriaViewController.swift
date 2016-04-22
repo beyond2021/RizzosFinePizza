@@ -7,8 +7,15 @@
 //
 
 import UIKit
+protocol AstoriaViewControllerDelegate : class{
+    // ALL CLASS THAT CONFORM TO THIS PROTOCOL MUST IMPLEMENT
+    func dismissAstoria()
+}
+
 
 class AstoriaViewController: UIViewController {
+    weak var delegate : AstoriaViewControllerDelegate?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +23,7 @@ class AstoriaViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(animated: Bool) {
-        showMenu()
+        
     }
     
 
@@ -59,11 +66,39 @@ class AstoriaViewController: UIViewController {
     
     func pizzaAction(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc =  storyboard.instantiateViewControllerWithIdentifier("MenuItemsListViewController") as! MenuItemsListViewController
+        let vc =  storyboard.instantiateViewControllerWithIdentifier("MenuTableViewController") as! MenuTableViewController
         self.presentViewController(vc, animated: true, completion: nil)
         
-        
-        
     }
+    
+    //MARK : Actions
+    @IBAction func backToMain(sender: UIButton) {
+        self.delegate?.dismissAstoria()
+    }
+    
+    @IBAction func deliveryAction(sender: UIButton) {
+        showMenu()
+    }
+    
+    @IBAction func pickupAction(sender: UIButton) {
+        showMenu()
+    }
+    
+    @IBAction func callAstoriaAction(sender: UIButton) {
+//        if let url = NSURL(string: "tel:\(7187219862)") {
+//            UIApplication.sharedApplication().openURL(url)
+//        }
+    }
+    
+    
+    /*
+     /Users/keevinmitchell/Desktop/RFP/RizzosFinePizza/RizzosFinePizza/AstoriaViewController.swift:88:45: Integer literal '7187219862' overflows when stored into 'Int'
+ 
+ */
+
+    
+    
+    
+    
 
 }

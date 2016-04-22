@@ -7,8 +7,14 @@
 //
 
 import UIKit
+protocol LesViewControllerDelegate : class {
+    func dismissClinton()
+}
 
 class LesViewController: UIViewController {
+    
+    weak var delegate : LesViewControllerDelegate?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +22,7 @@ class LesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(animated: Bool) {
-        showMenu()
+        
     }
 
 
@@ -58,11 +64,30 @@ class LesViewController: UIViewController {
     
     func pizzaAction(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc =  storyboard.instantiateViewControllerWithIdentifier("MenuItemsListViewController") as! MenuItemsListViewController
+        let vc =  storyboard.instantiateViewControllerWithIdentifier("MenuTableViewController") as! MenuTableViewController
         self.presentViewController(vc, animated: true, completion: nil)
-        
-        
+            }
+    
+    @IBAction func backToMain(sender: UIButton) {
+        self.delegate?.dismissClinton()
+    }
+    
+    @IBAction func deliveryAction(sender: UIButton) {
+        showMenu()
+    }
+    
+    @IBAction func pickupAction(sender: UIButton) {
+        showMenu()
+    }
+    
+    @IBAction func callClinton(sender: UIButton) {
+//        if let url = NSURL(string: "tel://\(6464541262)") {
+//            UIApplication.sharedApplication().openURL(url)
+//        }
+
         
     }
+    
+    
 
 }
