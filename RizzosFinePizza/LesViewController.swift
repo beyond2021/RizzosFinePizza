@@ -64,8 +64,10 @@ class LesViewController: UIViewController {
     
     func pizzaAction(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc =  storyboard.instantiateViewControllerWithIdentifier("MenuTableViewController") as! MenuTableViewController
-        self.presentViewController(vc, animated: true, completion: nil)
+        let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
+        let nav = UINavigationController(rootViewController: menuVC)
+        self.presentViewController(nav, animated: true, completion: nil)
+
             }
     
     @IBAction func backToMain(sender: UIButton) {

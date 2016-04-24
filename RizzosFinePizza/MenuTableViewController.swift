@@ -8,82 +8,49 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController {
+
+class MenuTableViewController:  UITableViewController {
+    
+    var floatingSiriButton = UIButton(type: UIButtonType.Custom)
+    
     var sectionHeaderTitleArray = ["What's Good","Salads","Garlic Knots", "Calzoni","Classic Rounds","Personal Rizzo's Specialty Pizzas","Large Rizzo's Specialty Pizzas","Desserts","Beverages"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        setUpSiri()
+        
     }
+    
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
-    /*
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    func setUpSiri(){
+        floatingSiriButton.contentMode = UIViewContentMode.Center
+        
+        floatingSiriButton.layer.cornerRadius = floatingSiriButton.bounds.size.width / 2
+        floatingSiriButton.layer.masksToBounds = true
+        
+        
+        // floatingSiriButton = UIButton(type: UIButtonType.Custom)
+        
+        
+        //set image for button
+        floatingSiriButton.setImage(UIImage(named: "siriMike"), forState: UIControlState.Normal)
+        //add function for button
+        floatingSiriButton.addTarget(self, action:#selector(MenuTableViewController.siriPressed), forControlEvents: UIControlEvents.TouchUpInside)
+        //set frame
+        floatingSiriButton.frame = CGRectMake(0, 0, 80, 80)
+        
+        view.addSubview(floatingSiriButton)
+        
+        
+        
+        
     }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
- */
-
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     /*
     // MARK: - Navigation
 
@@ -114,20 +81,66 @@ class MenuTableViewController: UITableViewController {
    // MARK: - Delegate Methods 
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let returnedView = UIView(frame: CGRectMake(0.0, 0.0, 220.0, 50.0)) //set these values as necessary
-        returnedView.backgroundColor = UIColor.lightGrayColor()
+        returnedView.backgroundColor = UIColor.redColor()
         
         let label = UILabel(frame: CGRectMake(20, 20, 200, 30))
-        let fontSize = CGFloat(20)
+        let fontSize = CGFloat(17)
         label.font = UIFont(name: "Arial-BoldItalicMT", size: fontSize)
-        label.textColor = UIColor.redColor()
-        label.text = self.sectionHeaderTitleArray[section]
+        label.textColor = UIColor.whiteColor()
+        label.text = sectionHeaderTitleArray[section]
         returnedView.addSubview(label)
         
         return returnedView
         
     }
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 75.0
+        return 60.0
+    }
+    
+    func ShoppingCartButtonPressed()  {
+        
     }
 
+}
+
+extension MenuTableViewController{
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        let myRect = tableView.rectForRowAtIndexPath(indexPath)
+        
+        //
+        cell.frame = CGRectMake(cell.frame.origin.x,
+                                cell.frame.origin.y + 568,
+                                cell.frame.size.width,
+                                cell.frame.size.height)
+        
+        
+        UIView.animateWithDuration(0.5, delay: 0.1*Double(indexPath.row), usingSpringWithDamping: 0.7, initialSpringVelocity: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+            
+            cell.frame = CGRectMake(myRect.origin.x,
+                myRect.origin.y - 30,
+                myRect.size.width,
+                myRect.size.height)
+            
+        }) { (finished) -> Void in
+            UIView.animateWithDuration(0.5, animations: { () -> Void in
+                cell.frame = myRect
+            })
+        }
+    }
+    
+    //MARK : ScrollView Delegate 
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        if scrollView .isEqual(self.tableView){
+            self.floatingSiriButton.transform = CGAffineTransformMakeTranslation(0, scrollView.contentOffset.y + self.view.bounds.height - 100)
+                
+            
+        }
+    }
+    func siriPressed(){
+        
+        
+    }
 }

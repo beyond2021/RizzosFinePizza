@@ -16,6 +16,12 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
     @IBOutlet weak var steinwayButton: UIButton!
     
     @IBOutlet weak var lesButton: UIButton!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
          setUpInterface()
@@ -170,6 +176,10 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
         
     }
 
+    @IBAction func loginButtonActgion(sender: UIButton) {
+    }
 
-   
+    @IBAction func signUpButtonAction(sender: UIButton) {
+    }
+      
 }

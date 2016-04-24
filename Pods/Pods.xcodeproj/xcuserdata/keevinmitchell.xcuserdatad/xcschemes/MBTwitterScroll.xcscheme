@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '39C0F4D5BFA3523A132D31230E8E6054'
+               BlueprintIdentifier = '66E2EC5FBD568B605BB802A5A9FC1CED'
                BlueprintName = 'MBTwitterScroll'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMBTwitterScroll.a'>
+               BuildableName = 'MBTwitterScroll.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

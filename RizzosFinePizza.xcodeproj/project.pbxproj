@@ -24,6 +24,17 @@
 		22A1EB9E1CC8B06C00C51FE5 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */; };
 		22A1EBA01CC9729500C51FE5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB9F1CC9729500C51FE5 /* MenuViewController.swift */; };
 		22A1EBA21CC980C700C51FE5 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */; };
+		22A1EBA41CCA845A00C51FE5 /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBA31CCA845A00C51FE5 /* SlideMenuControllerSwift.framework */; };
+		22A1EBA61CCA890D00C51FE5 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBA51CCA890D00C51FE5 /* ContainerViewController.swift */; };
+		22A1EBA81CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBA71CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift */; };
+		22A1EBAA1CCC87D000C51FE5 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBA91CCC87D000C51FE5 /* ShareViewController.swift */; };
+		22A1EBAC1CCC8D6100C51FE5 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBAB1CCC8D6100C51FE5 /* TrackViewController.swift */; };
+		22A1EBB11CCCB53B00C51FE5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBAE1CCCB53B00C51FE5 /* FBSDKCoreKit.framework */; };
+		22A1EBB21CCCB53B00C51FE5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBAF1CCCB53B00C51FE5 /* FBSDKLoginKit.framework */; };
+		22A1EBB31CCCB53B00C51FE5 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBB01CCCB53B00C51FE5 /* FBSDKShareKit.framework */; };
+		22A1EBB61CCCB90100C51FE5 /* FBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBB51CCCB90100C51FE5 /* FBLoginViewController.swift */; };
+		22A1EBB81CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBB71CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework */; };
+		22A1EBBA1CCCC28200C51FE5 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBB91CCCC28200C51FE5 /* ShoppingCartViewController.swift */; };
 		22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE71CC5C7AF002841D5 /* Topping.swift */; };
 		22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */; };
 		22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */; };
@@ -36,8 +47,8 @@
 		22FBA2F21CAFDE30009B2DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2F01CAFDE30009B2DE8 /* LaunchScreen.storyboard */; };
 		22FBA2FD1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA2FC1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift */; };
 		22FBA31F1CB9C6FC009B2DE8 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */; };
-		3C1C7E40D8E3624D3CBE30C2 /* libPods-RizzosFinePizzaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC57F151E5FAC76FE2EF8A6 /* libPods-RizzosFinePizzaTests.a */; };
-		9BF940A92BBB8E6A70A8FE81 /* libPods-RizzosFinePizza.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B88F504AB200A92C54634A /* libPods-RizzosFinePizza.a */; };
+		46E0E73AE39A57D97DF9A344 /* Pods_RizzosFinePizzaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169A08068CCBE670FF8865AA /* Pods_RizzosFinePizzaTests.framework */; };
+		ED55E953B48578B7BF0EE513 /* Pods_RizzosFinePizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8885F59DE913B7EABD8749C9 /* Pods_RizzosFinePizza.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		169A08068CCBE670FF8865AA /* Pods_RizzosFinePizzaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RizzosFinePizzaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		222156331CC06243009A08C5 /* FoodItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemTests.swift; sourceTree = "<group>"; };
 		222156351CC0634D009A08C5 /* FoodOrderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOrderTests.swift; sourceTree = "<group>"; };
 		2233E0431CBC720200218DE3 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
@@ -70,6 +82,17 @@
 		22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		22A1EB9F1CC9729500C51FE5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		22A1EBA31CCA845A00C51FE5 /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Debug-iphoneos/SlideMenuControllerSwift.framework"; sourceTree = "<group>"; };
+		22A1EBA51CCA890D00C51FE5 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		22A1EBA71CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
+		22A1EBA91CCC87D000C51FE5 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		22A1EBAB1CCC8D6100C51FE5 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		22A1EBAE1CCCB53B00C51FE5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		22A1EBAF1CCCB53B00C51FE5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		22A1EBB01CCCB53B00C51FE5 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		22A1EBB51CCCB90100C51FE5 /* FBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
+		22A1EBB71CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		22A1EBB91CCCC28200C51FE5 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		22CCFEE71CC5C7AF002841D5 /* Topping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topping.swift; sourceTree = "<group>"; };
 		22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToppingsTest.swift; sourceTree = "<group>"; };
 		22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemsListViewControllerTest.swift; path = RizzosFinePizzaTests/MenuItemsListViewControllerTest.swift; sourceTree = SOURCE_ROOT; };
@@ -88,10 +111,9 @@
 		22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		353F9FFEE559F47D8FAAE7CF /* Pods-RizzosFinePizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RizzosFinePizza.release.xcconfig"; path = "Pods/Target Support Files/Pods-RizzosFinePizza/Pods-RizzosFinePizza.release.xcconfig"; sourceTree = "<group>"; };
 		6352E89B3757D44BA3935A3F /* Pods-RizzosFinePizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RizzosFinePizza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RizzosFinePizza/Pods-RizzosFinePizza.debug.xcconfig"; sourceTree = "<group>"; };
-		72B88F504AB200A92C54634A /* libPods-RizzosFinePizza.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RizzosFinePizza.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8885F59DE913B7EABD8749C9 /* Pods_RizzosFinePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RizzosFinePizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716119CC08AFC3AF31D6841 /* Pods-RizzosFinePizzaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RizzosFinePizzaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RizzosFinePizzaTests/Pods-RizzosFinePizzaTests.release.xcconfig"; sourceTree = "<group>"; };
 		D172E6F1810B86B9BF5F293F /* Pods-RizzosFinePizzaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RizzosFinePizzaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RizzosFinePizzaTests/Pods-RizzosFinePizzaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DEC57F151E5FAC76FE2EF8A6 /* libPods-RizzosFinePizzaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RizzosFinePizzaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +121,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BF940A92BBB8E6A70A8FE81 /* libPods-RizzosFinePizza.a in Frameworks */,
+				22A1EBA41CCA845A00C51FE5 /* SlideMenuControllerSwift.framework in Frameworks */,
+				22A1EBB11CCCB53B00C51FE5 /* FBSDKCoreKit.framework in Frameworks */,
+				22A1EBB31CCCB53B00C51FE5 /* FBSDKShareKit.framework in Frameworks */,
+				22A1EBB21CCCB53B00C51FE5 /* FBSDKLoginKit.framework in Frameworks */,
+				22A1EBB81CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				ED55E953B48578B7BF0EE513 /* Pods_RizzosFinePizza.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C1C7E40D8E3624D3CBE30C2 /* libPods-RizzosFinePizzaTests.a in Frameworks */,
+				46E0E73AE39A57D97DF9A344 /* Pods_RizzosFinePizzaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +144,9 @@
 		12AEFC6420FF5200B6AAAD1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				72B88F504AB200A92C54634A /* libPods-RizzosFinePizza.a */,
-				DEC57F151E5FAC76FE2EF8A6 /* libPods-RizzosFinePizzaTests.a */,
+				22A1EBA31CCA845A00C51FE5 /* SlideMenuControllerSwift.framework */,
+				8885F59DE913B7EABD8749C9 /* Pods_RizzosFinePizza.framework */,
+				169A08068CCBE670FF8865AA /* Pods_RizzosFinePizzaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +177,26 @@
 			name = CustomCell;
 			sourceTree = "<group>";
 		};
+		22A1EBAD1CCCB4E300C51FE5 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				22A1EBB71CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework */,
+				22A1EBB41CCCB8D900C51FE5 /* Login */,
+				22A1EBAE1CCCB53B00C51FE5 /* FBSDKCoreKit.framework */,
+				22A1EBAF1CCCB53B00C51FE5 /* FBSDKLoginKit.framework */,
+				22A1EBB01CCCB53B00C51FE5 /* FBSDKShareKit.framework */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
+		22A1EBB41CCCB8D900C51FE5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				22A1EBB51CCCB90100C51FE5 /* FBLoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		22CCFEEB1CC5DE95002841D5 /* Model Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +218,7 @@
 				22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */,
 				22A1EB981CC8187600C51FE5 /* LesViewController.swift */,
 				22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */,
+				22A1EBA51CCA890D00C51FE5 /* ContainerViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -205,6 +254,7 @@
 		22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */ = {
 			isa = PBXGroup;
 			children = (
+				22A1EBAD1CCCB4E300C51FE5 /* Facebook */,
 				22A1EB9C1CC8B02900C51FE5 /* CustomCell */,
 				22A1EB8F1CC816EE00C51FE5 /* Transitions */,
 				22CCFEF11CC691FF002841D5 /* Data Supplier */,
@@ -212,11 +262,15 @@
 				22FBA3091CAFE5A7009B2DE8 /* Model */,
 				22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */,
 				22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */,
+				22A1EBA71CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift */,
 				22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */,
 				22A1EB9F1CC9729500C51FE5 /* MenuViewController.swift */,
 				22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */,
 				22FBA2F01CAFDE30009B2DE8 /* LaunchScreen.storyboard */,
 				22FBA2F31CAFDE30009B2DE8 /* Info.plist */,
+				22A1EBA91CCC87D000C51FE5 /* ShareViewController.swift */,
+				22A1EBAB1CCC8D6100C51FE5 /* TrackViewController.swift */,
+				22A1EBB91CCCC28200C51FE5 /* ShoppingCartViewController.swift */,
 			);
 			path = RizzosFinePizza;
 			sourceTree = "<group>";
@@ -457,7 +511,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A1EBBA1CCCC28200C51FE5 /* ShoppingCartViewController.swift in Sources */,
 				22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */,
+				22A1EBA81CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift in Sources */,
+				22A1EBAA1CCC87D000C51FE5 /* ShareViewController.swift in Sources */,
 				22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */,
 				22A1EB971CC8183C00C51FE5 /* AstoriaViewController.swift in Sources */,
 				22A1EB9E1CC8B06C00C51FE5 /* MenuItemCell.swift in Sources */,
@@ -469,10 +526,13 @@
 				22A1EB991CC8187600C51FE5 /* LesViewController.swift in Sources */,
 				2233E05A1CBD472E00218DE3 /* Delivery.swift in Sources */,
 				22A1EBA21CC980C700C51FE5 /* MenuTableViewController.swift in Sources */,
+				22A1EBB61CCCB90100C51FE5 /* FBLoginViewController.swift in Sources */,
 				22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */,
 				2233E0581CBD449E00218DE3 /* FoodOrder.swift in Sources */,
+				22A1EBAC1CCC8D6100C51FE5 /* TrackViewController.swift in Sources */,
 				22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */,
 				22A1EB951CC817FB00C51FE5 /* UESViewController.swift in Sources */,
+				22A1EBA61CCA890D00C51FE5 /* ContainerViewController.swift in Sources */,
 				22A1EB931CC8174700C51FE5 /* CHTumblrMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +672,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RizzosFinePizza",
+				);
 				INFOPLIST_FILE = RizzosFinePizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.RizzosFinePizza;
@@ -627,6 +691,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RizzosFinePizza",
+				);
 				INFOPLIST_FILE = RizzosFinePizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.RizzosFinePizza;

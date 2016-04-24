@@ -82,3 +82,14 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-RizzosFinePizzaTests/MBTwitterScroll.framework"
+  install_framework "Pods-RizzosFinePizzaTests/SlideMenuControllerSwift.framework"
+  install_framework "Pods-RizzosFinePizzaTests/TAPageControl.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-RizzosFinePizzaTests/MBTwitterScroll.framework"
+  install_framework "Pods-RizzosFinePizzaTests/SlideMenuControllerSwift.framework"
+  install_framework "Pods-RizzosFinePizzaTests/TAPageControl.framework"
+fi
