@@ -7,14 +7,20 @@
 //
 
 import UIKit
+protocol FBLoginViewControllerDelegate : class {
+    func dismissfb()
+}
 
 class FBLoginViewController: UIViewController {
+    weak var delegate : FBLoginViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let loginButton = FBSDKLoginButton()
         loginButton.center = self.view.center
+//        loginButton.readPermissions =
+//        ["name","public_profile", "email", "user_friends","location"];
         view.addSubview(loginButton)
 
            
@@ -25,15 +31,32 @@ class FBLoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backToMain(sender: UIButton) {
+        self.delegate?.dismissfb()
+    }
 
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    -(void)loginButtonClicked
+    {
+    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+    [login
+    logInWithReadPermissions: @[@"public_profile"]
+    fromViewController:self
+    handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+    if (error) {
+    NSLog(@"Process error");
+    } else if (result.isCancelled) {
+    NSLog(@"Cancelled");
+    } else {
+    NSLog(@"Logged in");
     }
-    */
-
+    }];
+    }
+ */
+    
+    func loginButtonClicked(){
+        
+        
+    }
+    
 }

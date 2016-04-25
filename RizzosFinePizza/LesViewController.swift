@@ -83,6 +83,7 @@ class LesViewController: UIViewController {
     }
     
     @IBAction func callClinton(sender: UIButton) {
+      UIApplication.sharedApplication().openURL(NSURL(string: "tel://6464541262")!)
 //        if let url = NSURL(string: "tel://\(6464541262)") {
 //            UIApplication.sharedApplication().openURL(url)
 //        }

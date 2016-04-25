@@ -17,7 +17,7 @@ class MenuTableViewController:  UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpSiri()
-        
+               
     }
     
     
@@ -45,7 +45,9 @@ class MenuTableViewController:  UITableViewController {
         //set frame
         floatingSiriButton.frame = CGRectMake(0, 0, 80, 80)
         
-        view.addSubview(floatingSiriButton)
+        tableView.addSubview(floatingSiriButton)
+     //   self.view insertSubview:self.oButton aboveSubview:self.view
+        self.view.insertSubview(floatingSiriButton, aboveSubview: tableView)
         
         
         
@@ -135,12 +137,16 @@ extension MenuTableViewController{
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         if scrollView .isEqual(self.tableView){
             self.floatingSiriButton.transform = CGAffineTransformMakeTranslation(0, scrollView.contentOffset.y + self.view.bounds.height - 100)
+            self.view.bringSubviewToFront(floatingSiriButton)
                 
             
         }
     }
     func siriPressed(){
-        
+        print("\(#function)")
         
     }
+    
+       
+    
 }

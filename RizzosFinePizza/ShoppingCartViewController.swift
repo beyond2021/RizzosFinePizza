@@ -7,9 +7,12 @@
 //
 
 import UIKit
+protocol ShoppingCartViewControllerDelegate : class{
+    func dismissShoppingCart()
+}
 
 class ShoppingCartViewController: UIViewController {
-    
+    weak var delegate : ShoppingCartViewControllerDelegate?
     @IBOutlet weak var nameLabel: UILabel!
 
     @IBOutlet weak var emailLabel: UILabel!
@@ -66,4 +69,16 @@ class ShoppingCartViewController: UIViewController {
         
         
     }
+    
+    @IBAction func dismissAction(sender: UIButton) {
+        self.delegate?.dismissShoppingCart()
+//        let presentingViewController: UIViewController! = self.presentingViewController
+//        
+//        self.dismissViewControllerAnimated(false) {
+//            // go back to MainMenuView as the eyes of the user
+//            presentingViewController.dismissViewControllerAnimated(false, completion: nil)
+//        }
+    }
+    
+    
 }

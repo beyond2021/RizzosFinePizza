@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaViewControllerDelegate, LesViewControllerDelegate {
+class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaViewControllerDelegate, LesViewControllerDelegate,FBLoginViewControllerDelegate {
       
     @IBOutlet weak var bgImageView: UIImageView!
     
@@ -24,20 +24,31 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         setUpInterface()
+        setUpInterface()
+                
+        if (FBSDKAccessToken.currentAccessToken() != nil){
+            lesButton.enabled = true
+            uesButton.enabled = true
+            steinwayButton.enabled = true
+            
+        } else {
+           
+            loginAlert()
+
+            
+            
+            
+        }
         
-        
-        /*
-        // for normal state
-        uesButton.setImage(UIImage(named: "UESButton"), forState: UIControlState.Normal)
-        // for Highlighted state
-        uesButton.setImage(UIImage(named: "yyy.png"), forState: UIControlState.Highlighted)
-        
-        // for Selected state
-        uesButton.setImage(UIImage(named: "UESButton"), forState: UIControlState.Selected)
-        // Do any additional setup after loading the view.
- */
- 
+//        if ([FBSDKAccessToken currentAccessToken]) {
+//            // User is logged in
+//            [self performSelector:@selector(accessGrantedNavigation)
+//            withObject:nil afterDelay:0.0];
+//        }
+//        
+//        -(void)accessGrantedNavigation{
+//            [self performSegueWithIdentifier: @"segueLoginFB" sender: self];
+//        }
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -45,6 +56,11 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
         //
         animate()
         
+    }
+    override func viewDidAppear(animated: Bool) {
+        lesButton.enabled = true
+        uesButton.enabled = true
+        steinwayButton.enabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -143,19 +159,28 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
                         
                     }
                 }
+    else
+    if segue.identifier == "login" {
+    // We are on the right one so lets now get the destinationVC
+    if let destVC = segue.destinationViewController as? FBLoginViewController {
+    // if this was possible then we want to ourself its delegate
+    destVC.delegate = self
+    
+    }
+    }
 
-                
+    
            }
-            
-      
-        
 
-    
-    
-    
+
+
+
+
+
+
     //MARK : Delegate Actions
     func dismissUES(){
-       self.dismissViewControllerAnimated(true) { 
+       self.dismissViewControllerAnimated(true) {
         print("UES is dismissed")
         }
         
@@ -175,6 +200,22 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
         
         
     }
+    func dismissfb(){
+      self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    func getLoginStatus(){
+           }
+    
+    func loginAlert(){
+        let alert = UIAlertController(title: "Please Log In Or Sign-Up", message: "We can serve you quicker if you are logged in.", preferredStyle: .Alert)
+        let dismiss = UIAlertAction(title: "Thank You!", style: UIAlertActionStyle.Default, handler: nil)
+        alert.addAction(dismiss)
+       presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
 
     @IBAction func loginButtonActgion(sender: UIButton) {
     }

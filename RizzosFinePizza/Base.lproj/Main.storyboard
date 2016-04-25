@@ -234,7 +234,24 @@
                     <view key="view" contentMode="scaleToFill" id="9HA-fr-nkf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="om8-dn-6iB">
+                                <rect key="frame" x="20" y="656" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="T7T-kF-1jc"/>
+                                    <constraint firstAttribute="width" constant="60" id="oKg-08-KlW"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="back"/>
+                                <connections>
+                                    <action selector="backToMain:" destination="yUF-6m-uQc" eventType="touchUpInside" id="yCa-79-AhG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cG5-37-AyT" firstAttribute="top" secondItem="om8-dn-6iB" secondAttribute="bottom" constant="20" id="9Fb-eB-uHp"/>
+                            <constraint firstItem="om8-dn-6iB" firstAttribute="leading" secondItem="9HA-fr-nkf" secondAttribute="leading" constant="20" id="zfc-5N-QO3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSl-Sp-w4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1653,44 +1670,41 @@ Please note any personal pie can be made with gluten free crust for no extra cha
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEA-RV-NZa">
-                                <rect key="frame" x="79" y="59" width="75" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEA-RV-NZa">
+                                <rect key="frame" x="52" y="59" width="75" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="4sb-VS-sEP"/>
-                                    <constraint firstAttribute="height" constant="21" id="jPg-zO-QXi"/>
+                                    <constraint firstAttribute="height" constant="21" id="5uT-KO-1Qo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-s9-k4Q">
-                                <rect key="frame" x="79" y="93" width="75" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-s9-k4Q">
+                                <rect key="frame" x="52" y="93" width="75" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="ila-ep-WeV"/>
-                                    <constraint firstAttribute="height" constant="21" id="qRZ-E6-8Ks"/>
+                                    <constraint firstAttribute="height" constant="21" id="Qr5-mL-npd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-Zy-nbH">
-                                <rect key="frame" x="79" y="128" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-Zy-nbH">
+                                <rect key="frame" x="52" y="128" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="CM0-bD-6An"/>
-                                    <constraint firstAttribute="height" constant="21" id="vIS-KM-8rs"/>
+                                    <constraint firstAttribute="height" constant="21" id="z92-BE-eug"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quZ-qk-b8K">
-                                <rect key="frame" x="271" y="59" width="309" height="21"/>
+                                <rect key="frame" x="244" y="59" width="309" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Ymv-cs-0dl"/>
+                                    <constraint firstAttribute="height" constant="21" id="TAe-aC-chN"/>
                                     <constraint firstAttribute="width" constant="309" id="bJZ-ha-qyz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <color key="textColor" red="0.3411764706" green="0.85490196080000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1699,13 +1713,13 @@ Please note any personal pie can be made with gluten free crust for no extra cha
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ey-NC-Wgs">
-                                <rect key="frame" x="271" y="93" width="309" height="21"/>
+                                <rect key="frame" x="244" y="93" width="309" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Mb4-Xo-evq"/>
                                     <constraint firstAttribute="width" constant="309" id="e4r-qT-Jrh"/>
+                                    <constraint firstAttribute="height" constant="21" id="hxp-fh-VPK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <color key="textColor" red="0.3411764706" green="0.85490196080000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1714,13 +1728,13 @@ Please note any personal pie can be made with gluten free crust for no extra cha
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVp-Ba-cBa">
-                                <rect key="frame" x="271" y="128" width="309" height="21"/>
+                                <rect key="frame" x="244" y="128" width="309" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="309" id="Qb2-Eh-gII"/>
-                                    <constraint firstAttribute="height" constant="21" id="qxl-lg-ZGW"/>
+                                    <constraint firstAttribute="height" constant="21" id="W90-eC-GAN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <color key="textColor" red="0.3411764706" green="0.85490196080000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1728,26 +1742,45 @@ Please note any personal pie can be made with gluten free crust for no extra cha
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlk-oa-UGq">
+                                <rect key="frame" x="20" y="540" width="40" height="40"/>
+                                <state key="normal" backgroundImage="back"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="qFM-tJ-HIs" eventType="touchUpInside" id="ZSh-Pi-1xQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information For Rizzos Server" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiu-QH-ree">
+                                <rect key="frame" x="184" y="15" width="232" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="ehm-0w-jSQ"/>
+                                    <constraint firstAttribute="height" constant="21" id="hA3-iC-6VC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.085793060530000007" blue="0.091722151279999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="vVp-Ba-cBa" firstAttribute="trailing" secondItem="rQd-gm-SYQ" secondAttribute="trailingMargin" id="02Y-bo-C1T"/>
-                            <constraint firstItem="0ey-NC-Wgs" firstAttribute="trailing" secondItem="rQd-gm-SYQ" secondAttribute="trailingMargin" id="0DJ-3o-zfH"/>
-                            <constraint firstItem="6bq-Zy-nbH" firstAttribute="top" secondItem="2Si-s9-k4Q" secondAttribute="bottom" constant="14" id="1SL-Ov-4q2"/>
-                            <constraint firstItem="6bq-Zy-nbH" firstAttribute="leading" secondItem="UEA-RV-NZa" secondAttribute="leading" id="1yN-3T-jt9"/>
-                            <constraint firstItem="vVp-Ba-cBa" firstAttribute="bottom" secondItem="6bq-Zy-nbH" secondAttribute="bottom" id="7ZG-qw-gcy"/>
-                            <constraint firstItem="UEA-RV-NZa" firstAttribute="leading" secondItem="rQd-gm-SYQ" secondAttribute="leading" constant="79" id="9yE-ed-Fvm"/>
-                            <constraint firstItem="0ey-NC-Wgs" firstAttribute="top" secondItem="quZ-qk-b8K" secondAttribute="bottom" constant="13" id="DEx-K8-tmk"/>
-                            <constraint firstItem="quZ-qk-b8K" firstAttribute="bottom" secondItem="UEA-RV-NZa" secondAttribute="bottom" id="GbV-5w-JJM"/>
-                            <constraint firstItem="quZ-qk-b8K" firstAttribute="trailing" secondItem="rQd-gm-SYQ" secondAttribute="trailingMargin" id="Gxa-yl-Kx3"/>
-                            <constraint firstItem="vVp-Ba-cBa" firstAttribute="top" secondItem="0ey-NC-Wgs" secondAttribute="bottom" constant="14" id="Kr7-Mj-aWr"/>
-                            <constraint firstItem="6bq-Zy-nbH" firstAttribute="leading" secondItem="rQd-gm-SYQ" secondAttribute="leading" constant="79" id="KxI-68-XnF"/>
-                            <constraint firstItem="2Si-s9-k4Q" firstAttribute="leading" secondItem="UEA-RV-NZa" secondAttribute="leading" id="SIJ-U7-9jo"/>
-                            <constraint firstItem="quZ-qk-b8K" firstAttribute="top" secondItem="3jH-YE-ECM" secondAttribute="bottom" constant="39" id="byB-jE-PJc"/>
-                            <constraint firstItem="2Si-s9-k4Q" firstAttribute="leading" secondItem="rQd-gm-SYQ" secondAttribute="leading" constant="79" id="c7Y-ib-cG4"/>
-                            <constraint firstItem="0ey-NC-Wgs" firstAttribute="bottom" secondItem="2Si-s9-k4Q" secondAttribute="bottom" id="j4c-dQ-jFV"/>
-                            <constraint firstItem="UEA-RV-NZa" firstAttribute="top" secondItem="3jH-YE-ECM" secondAttribute="bottom" constant="39" id="pQI-Gn-NDt"/>
-                            <constraint firstItem="2Si-s9-k4Q" firstAttribute="top" secondItem="UEA-RV-NZa" secondAttribute="bottom" constant="13" id="rns-Td-gc2"/>
+                            <constraint firstItem="vVp-Ba-cBa" firstAttribute="bottom" secondItem="6bq-Zy-nbH" secondAttribute="bottom" id="3cT-Zt-EoR"/>
+                            <constraint firstItem="0ey-NC-Wgs" firstAttribute="bottom" secondItem="2Si-s9-k4Q" secondAttribute="bottom" id="3zG-b8-bgV"/>
+                            <constraint firstItem="6bq-Zy-nbH" firstAttribute="trailing" secondItem="UEA-RV-NZa" secondAttribute="trailing" id="5Bo-ON-C5z"/>
+                            <constraint firstItem="vVp-Ba-cBa" firstAttribute="top" secondItem="0ey-NC-Wgs" secondAttribute="bottom" constant="14" id="7Lc-i1-cfB"/>
+                            <constraint firstAttribute="trailing" secondItem="0ey-NC-Wgs" secondAttribute="trailing" constant="47" id="9TQ-TD-QfE"/>
+                            <constraint firstAttribute="trailing" secondItem="quZ-qk-b8K" secondAttribute="trailing" constant="47" id="CKb-HM-ttu"/>
+                            <constraint firstItem="quZ-qk-b8K" firstAttribute="top" secondItem="3jH-YE-ECM" secondAttribute="bottom" constant="39" id="DRC-lx-Lme"/>
+                            <constraint firstItem="UEA-RV-NZa" firstAttribute="leading" secondItem="rQd-gm-SYQ" secondAttribute="leadingMargin" constant="32" id="GcC-E5-MAF"/>
+                            <constraint firstItem="2Si-s9-k4Q" firstAttribute="top" secondItem="UEA-RV-NZa" secondAttribute="bottom" constant="13" id="Iv8-2N-GlC"/>
+                            <constraint firstItem="hiu-QH-ree" firstAttribute="top" secondItem="rQd-gm-SYQ" secondAttribute="topMargin" constant="15" id="KyO-kR-jTT"/>
+                            <constraint firstItem="UEA-RV-NZa" firstAttribute="top" secondItem="3jH-YE-ECM" secondAttribute="bottom" constant="39" id="Nf3-Ww-T0W"/>
+                            <constraint firstAttribute="trailing" secondItem="vVp-Ba-cBa" secondAttribute="trailing" constant="47" id="RTb-rE-mkg"/>
+                            <constraint firstItem="6bq-Zy-nbH" firstAttribute="top" secondItem="2Si-s9-k4Q" secondAttribute="bottom" constant="14" id="W5D-qp-lN9"/>
+                            <constraint firstItem="6bq-Zy-nbH" firstAttribute="leading" secondItem="rQd-gm-SYQ" secondAttribute="leading" constant="52" id="WTR-2E-7tA"/>
+                            <constraint firstItem="2Si-s9-k4Q" firstAttribute="leading" secondItem="rQd-gm-SYQ" secondAttribute="leading" constant="52" id="X1r-oF-cMR"/>
+                            <constraint firstItem="quZ-qk-b8K" firstAttribute="bottom" secondItem="UEA-RV-NZa" secondAttribute="bottom" id="axd-jR-oSb"/>
+                            <constraint firstItem="hiu-QH-ree" firstAttribute="centerX" secondItem="rQd-gm-SYQ" secondAttribute="centerX" id="i7h-sy-FOt"/>
+                            <constraint firstItem="2Si-s9-k4Q" firstAttribute="trailing" secondItem="UEA-RV-NZa" secondAttribute="trailing" id="jv3-0V-EgN"/>
+                            <constraint firstItem="bW1-q0-LD0" firstAttribute="top" secondItem="vVp-Ba-cBa" secondAttribute="bottom" constant="451" id="tkg-1R-1KO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1758,7 +1791,7 @@ Please note any personal pie can be made with gluten free crust for no extra cha
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ac-5L-6I6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592" y="-3103"/>
+            <point key="canvasLocation" x="2380" y="-1452"/>
         </scene>
         <!--Left Menu Table View Controller-->
         <scene sceneID="8jZ-i3-qLf">
@@ -1866,17 +1899,20 @@ Please note any personal pie can be made with gluten free crust for no extra cha
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="track" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-ia-8tD">
-                                                    <rect key="frame" x="8" y="2" width="60" height="60"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG OUT" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orl-b5-In6">
+                                                    <rect key="frame" x="8" y="8" width="60" height="48"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="dmd-ks-IQz"/>
-                                                        <constraint firstAttribute="width" constant="60" id="n7l-PJ-rIT"/>
+                                                        <constraint firstAttribute="width" constant="60" id="9r7-Ew-RDq"/>
+                                                        <constraint firstAttribute="height" constant="48" id="b9k-qA-vjB"/>
                                                     </constraints>
-                                                </imageView>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9Pq-ia-8tD" firstAttribute="leading" secondItem="d9U-NM-Xka" secondAttribute="leading" constant="8" id="q8b-ST-g63"/>
-                                                <constraint firstItem="9Pq-ia-8tD" firstAttribute="centerY" secondItem="d9U-NM-Xka" secondAttribute="centerY" id="rh2-91-5u1"/>
+                                                <constraint firstItem="Orl-b5-In6" firstAttribute="leading" secondItem="d9U-NM-Xka" secondAttribute="leading" constant="8" id="H3b-qs-AHZ"/>
+                                                <constraint firstItem="Orl-b5-In6" firstAttribute="centerY" secondItem="d9U-NM-Xka" secondAttribute="centerY" id="RUb-fd-uVd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1996,7 +2032,9 @@ Please note any personal pie can be made with gluten free crust for no extra cha
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2l0-a3-mKW"/>
+                    <navigationItem key="navigationItem" id="2l0-a3-mKW">
+                        <barButtonItem key="rightBarButtonItem" image="shoppingCart" id="60z-lb-3H7"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAW-Dk-aVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2034,6 +2072,7 @@ Please note any personal pie can be made with gluten free crust for no extra cha
         <image name="logIn" width="42" height="42"/>
         <image name="phone" width="42" height="42"/>
         <image name="pizzaCutter" width="912" height="1216"/>
+        <image name="shoppingCart" width="33" height="27"/>
         <image name="signUP" width="42" height="42"/>
         <image name="track" width="42" height="42"/>
         <image name="twitterR" width="42" height="42"/>

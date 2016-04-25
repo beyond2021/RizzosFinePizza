@@ -9,7 +9,7 @@
 import UIKit
 import SlideMenuControllerSwift
 
-class ContainerViewController: SlideMenuController {
+class ContainerViewController: SlideMenuController, ShoppingCartViewControllerDelegate {
     
     override func awakeFromNib() {
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MenuTableViewController") {
@@ -23,30 +23,44 @@ class ContainerViewController: SlideMenuController {
         super.awakeFromNib()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //TI GET CALLED IF U CAUSE A SEGUE TO TRIGGER
+        // CHECK THE ID OF THE SEGUE. THIS IS A PROPERTY OF THE SEGUE
+        // GET THE DESTINATION VC
+        if segue.identifier == "cart" {
+            // We are on the right one so lets now get the destinationVC
+            if let destVC = segue.destinationViewController as? ShoppingCartViewController {
+                // if this was possible then we want to ourself its delegate
+                destVC.delegate = self
+                
+            }
+        }
+    }
+    
 
     override func viewDidLoad() {
         navView()
         super.viewDidLoad()
-        title = "Simply Delicious"
+       // title = "Simply Delicious"
         
         self.addLeftBarButtonWithImage(UIImage(named: "menuIconSmall")!)
-//        if self.slideMenuController() != nil {
-//            self.slideMenuController()?.openLeft()
-//        }
-        //create a new button
-        let button: UIButton = UIButton(type: UIButtonType.Custom)
-        //set image for button
-        button.setImage(UIImage(named: "shoppingCart"), forState: UIControlState.Normal)
-        //add function for button
-        button.addTarget(self, action:#selector(ContainerViewController.shoppingCartButtonPressed), forControlEvents: UIControlEvents.TouchUpInside)
-        //set frame
-        button.frame = CGRectMake(0, 0, 53, 53)
-        
-        let barButton = UIBarButtonItem(customView: button)
-        //assign button to navigationbar
-        self.navigationItem.rightBarButtonItem = barButton
-        
-        
+        self.navigationItem.title = "Simply Delicious"
+        if let navigationBar = navigationController?.navigationBar {
+            navigationBar.setBackgroundImage(UIImage(named: "codepath-logo"), forBarMetrics: .Default)
+            navigationBar.tintColor = UIColor(red: 1.0, green: 0.25, blue: 0.25, alpha: 0.8)
+            
+            let shadow = NSShadow()
+            shadow.shadowColor = UIColor.grayColor().colorWithAlphaComponent(0.5)
+            shadow.shadowOffset = CGSizeMake(2, 2);
+            shadow.shadowBlurRadius = 4;
+            navigationBar.titleTextAttributes = [
+                NSFontAttributeName : UIFont.boldSystemFontOfSize(22),
+                NSForegroundColorAttributeName : UIColor(red: 0.5, green: 0.15, blue: 0.15, alpha: 0.8),
+                NSShadowAttributeName : shadow
+            ]
+        }
+//        let loginManager = FBSDKLoginManager()
+//        loginManager.logOut()
     
     }
 
@@ -56,7 +70,7 @@ class ContainerViewController: SlideMenuController {
     }
     func navView(){
         
-        let titleView = UIView(frame: CGRectMake(0.0, 0.0, 80.0, 40.0))
+        let titleView = UIView(frame: CGRectMake(0.0, 0.0, 100.0, 100.0))
         
         titleView.backgroundColor = UIColor.clearColor()
         
@@ -79,23 +93,29 @@ class ContainerViewController: SlideMenuController {
         titleView.addSubview(imageView)
      //   titleView.addSubview(titleLabel)
         
-        self.navigationItem.titleView = titleView;
+      //  self.navigationItem.titleView = titleView;
         
         
         
     }
     
-    func shoppingCartButtonPressed(){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC =  storyboard.instantiateViewControllerWithIdentifier("ShoppingCartViewController") as! ShoppingCartViewController
-        self.presentViewController(mainVC, animated: true, completion: nil)
- 
-        
-        
-        
-    }
+//    func shoppingCartButtonPressed(){
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let mainVC =  storyboard.instantiateViewControllerWithIdentifier("ShoppingCartViewController") as! ShoppingCartViewController
+//        self.presentViewController(mainVC, animated: true, completion: nil)
+// 
+//        
+//        
+//        
+//    }
     
-   
+    func dismissShoppingCart(){
+        print("\(#function)")
+        self.dismissViewControllerAnimated(true) {
+            print("Shopping cart is dismissed")
+        }
+    }
+
 
     
 }

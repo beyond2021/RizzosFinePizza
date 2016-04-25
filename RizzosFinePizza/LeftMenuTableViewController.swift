@@ -112,6 +112,8 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
             twitter()
         case 3:
             performSegueWithIdentifier("track", sender: self)
+        case 4:
+            logOut()
         
             
         default : break
@@ -156,5 +158,12 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
         self.dismissViewControllerAnimated(true) {
             print("Clinton is dismissed")
         }
+    }
+    func logOut(){
+        let loginManager = FBSDKLoginManager()
+        loginManager.logOut()
+        goBackToMain()
+        
+        
     }
 }

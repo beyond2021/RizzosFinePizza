@@ -86,7 +86,8 @@ class AstoriaViewController: UIViewController {
     }
     
     @IBAction func callAstoriaAction(sender: UIButton) {
-//        if let url = NSURL(string: "tel:\(7187219862)") {
+       UIApplication.sharedApplication().openURL(NSURL(string: "tel://7187219862")!)
+//        if let url = NSURL(string: "tel://\(7187219862)") {
 //            UIApplication.sharedApplication().openURL(url)
 //        }
     }
