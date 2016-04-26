@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import pop
 
 
 class MenuTableViewController:  UITableViewController {
@@ -16,9 +17,18 @@ class MenuTableViewController:  UITableViewController {
     var sectionHeaderTitleArray = ["What's Good","Salads","Garlic Knots", "Calzoni","Classic Rounds","Personal Rizzo's Specialty Pizzas","Large Rizzo's Specialty Pizzas","Desserts","Beverages"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        let basicAnimation = POPSpringAnimation(propertyNamed: kPOPViewFrame)
+        basicAnimation.toValue = NSValue(CGRect: CGRectMake(0, 0, view.bounds.width, view.bounds.height))
+        basicAnimation.name = "BigButtonPopAnimation"
+        basicAnimation.delegate = self
+        self.tableView.pop_addAnimation(basicAnimation, forKey: "TableViewPopAnimation")
+       
+        
         setUpSiri()
                
     }
+    
+    
     
     
 
@@ -39,11 +49,11 @@ class MenuTableViewController:  UITableViewController {
         
         
         //set image for button
-        floatingSiriButton.setImage(UIImage(named: "siriMike"), forState: UIControlState.Normal)
+        floatingSiriButton.setImage(UIImage(named: "mike"), forState: UIControlState.Normal)
         //add function for button
         floatingSiriButton.addTarget(self, action:#selector(MenuTableViewController.siriPressed), forControlEvents: UIControlEvents.TouchUpInside)
         //set frame
-        floatingSiriButton.frame = CGRectMake(0, 0, 80, 80)
+        floatingSiriButton.frame = CGRectMake(0, -60, 80, 80)
         
         tableView.addSubview(floatingSiriButton)
      //   self.view insertSubview:self.oButton aboveSubview:self.view
@@ -110,6 +120,8 @@ extension MenuTableViewController{
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
         
+        
+        
         let myRect = tableView.rectForRowAtIndexPath(indexPath)
         
         //
@@ -131,6 +143,7 @@ extension MenuTableViewController{
                 cell.frame = myRect
             })
         }
+ 
     }
     
     //MARK : ScrollView Delegate 

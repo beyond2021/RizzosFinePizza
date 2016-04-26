@@ -10,65 +10,93 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>00B89BEC7E3AA95E602F9F21353F22CF</key>
+		<key>004FB3E7B1C987955F33E070188706C7</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>978360B17D0B6EE948FE32EA054F792B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/TAPageControl/TAPageControl-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/TAPageControl/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/TAPageControl/TAPageControl.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>TAPageControl</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
+			<key>children</key>
+			<array>
+				<string>D699D0098CD2A3A6AA626F62147BEC24</string>
+				<string>0C68448F230C7E8735E809B2286E27F7</string>
+				<string>195D22DD4E862798ECBF79533C3594F5</string>
+				<string>6708273E133892CD4D8CA53C66EF8581</string>
+				<string>D0906EEA411FD4A44D3FA1E5AE845D0F</string>
+				<string>DDE93C7764A44AC669408F9E7D239CC9</string>
+				<string>9EAF1D72476B9043F2DFBCFB87C85765</string>
+				<string>7A6B81CF0372DCECDA55B20B3B199B7A</string>
+				<string>829177C2C7027715DC0EB7087FC555E2</string>
+				<string>C4FD1B3C856EA43EAB705DDA06AC644C</string>
+				<string>BAB85947FE603A2913277F081183415D</string>
+				<string>3ED9A7F9AE29DA5FEEB8D561A4C92D67</string>
+				<string>542C996FBB9D0E1305B55DF9CB81E7F2</string>
+				<string>3938C19DEA656EC1ADA086655B7772A0</string>
+				<string>D6680B2A89B69276A71707B43AC3DDE4</string>
+				<string>D200C1E5824495769F89DEEA1BF3E5FB</string>
+				<string>D2D5985C79A838B5F716A760A92BF130</string>
+				<string>5CC4D931C5BAA58EF4BF2841585F8511</string>
+				<string>822C8A89E2D86FC195EF4979485E5090</string>
+				<string>B1810E5DE8B239E686277D17505E55A7</string>
+				<string>5D6B41DD6AEC29666A004BFAD5CA24BD</string>
+				<string>079E915DD094AB4A8909E8F2A7420D9F</string>
+				<string>178132A6A6994CBAF3E838066C53952F</string>
+				<string>78E5126A9E06479B472FB8E35DE2E7E2</string>
+				<string>C7D69F1E97B3B4B8ACCCAF46DE3601FF</string>
+				<string>D51912782FE80B291163A01C110CD769</string>
+				<string>CD6E18B2B88B18C38CFEE584F2E88A72</string>
+				<string>03BCBD7AEF39B5C172B8BDD5D85E5C8E</string>
+				<string>663FBEAE505DC31C79D275B51AE08629</string>
+				<string>A693264C0CD964B435F008D20ABA5121</string>
+				<string>597B7CDFCE7808CA7B0B245082864518</string>
+				<string>96E94AC70DE025EB8106473ACFCC67BA</string>
+				<string>FF2D2B1A3946FFBF61A8CF53A1241157</string>
+				<string>E5865137E6F784BD80E2BFB331EF4A09</string>
+				<string>249C76599303EEDF7801614A4180F372</string>
+				<string>81097E32F037FAAE7BEB3A6024FDDCBE</string>
+				<string>AAD13512ED7C45635AD8B6F3E1AA4D03</string>
+				<string>A12BB116E0BD7DECEFED16632DE8A517</string>
+				<string>F6A44B6C26ACEEB32EBC4DBD681E252C</string>
+				<string>E02E70B7C430303D82D5CF7899C54286</string>
+				<string>E50EF0E4B3BBA49941CB38C7586B7C7E</string>
+				<string>7DFFE082F406F88BF17D2B02F58BE903</string>
+				<string>74C786BB679A4E4378E34100C6859FD4</string>
+				<string>03297A0E6439E7996E08B79EA3A2C0B1</string>
+				<string>270BF1DEA8A430D21F11509B36625A1B</string>
+				<string>81659C3C85BCA408D0B308BF7D937D74</string>
+				<string>7757451FFA61980DE56F1BDFF9F41938</string>
+				<string>DC49BEF59CCBC1E2E63C9F6109AF4B09</string>
+				<string>6131F681CF8A3684D5795BC21ACFC10C</string>
+				<string>D3E76D5F469453FFCCA184C4E564E6BB</string>
+				<string>F49BE370BCB4B3A4699006CEEF85B282</string>
+				<string>0482E98514DF43A7AAE365FBFAE917B8</string>
+			</array>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Debug</string>
+			<string>pop</string>
+			<key>path</key>
+			<string>pop</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>007A45C983F49F2283F2E609F333103B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5CC4D931C5BAA58EF4BF2841585F8511</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>00E6DAAB9052816D1183E39057AB5200</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TAPageControl.h</string>
+			<key>path</key>
+			<string>TAPageControl/TAPageControl.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>00FBBACE49400CFE434F5F9B60E7E852</key>
 		<dict>
@@ -83,14 +111,277 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>01D9C5185E3183A63B4361167F18DA61</key>
+		<key>03232E81949A5F033F7E817E09C409A3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3997E5D2953ECDF377B85B234FDF550D</string>
+			<string>3ED9A7F9AE29DA5FEEB8D561A4C92D67</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>027EFDD57CD1C2E4DE8BC94906C73574</key>
+		<key>03297A0E6439E7996E08B79EA3A2C0B1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPSpringAnimation.mm</string>
+			<key>path</key>
+			<string>pop/POPSpringAnimation.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>03BCBD7AEF39B5C172B8BDD5D85E5C8E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPCustomAnimation.h</string>
+			<key>path</key>
+			<string>pop/POPCustomAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0482E98514DF43A7AAE365FBFAE917B8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>86EA5B33565F771D4B5ED9D7EA1B2B30</string>
+				<string>EA558FC217CEBFED1FD42A82ECE85138</string>
+				<string>F1B79859B58C00BC4AE01E8EC745E8DA</string>
+				<string>8BC14C7FF0938739D56FFB7132D668CD</string>
+				<string>41A0021AEE6D92A41F06FBBFF6C1C35A</string>
+				<string>ED9D8FABF74E8B5977CCBADA95BEB765</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/pop</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>068FD4FFCE9EA300F2809B28087B95DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>06D8D584C103105847CC7F74F9DB235F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SlideMenuControllerSwift.h</string>
+			<key>path</key>
+			<string>Source/SlideMenuControllerSwift.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>06FEFC9EFC113A52DCCDE91252C3759B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MBTwitterScroll.m</string>
+			<key>path</key>
+			<string>MBTwitterScroll/MBTwitterScroll.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>079E915DD094AB4A8909E8F2A7420D9F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAnimatorPrivate.h</string>
+			<key>path</key>
+			<string>pop/POPAnimatorPrivate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07C9F9DDEFA54EBB4928FF3BF4EA8A00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EAF1D72476B9043F2DFBCFB87C85765</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>08383991BB3C4A3282CC058A285D0EAF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2680109B63220C49F976419D8D77553D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0884C91C172AD4C4BDE4DA08FFBB6311</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizzaTests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09D1AFE36A3F8AE539199BA6BC68FAF3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E55848C1F7552D038E5F3160012575BF</string>
+				<string>331D8E2AF9229C1796BD18BDC240D81D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>0B5505DA71249ACBF52CCC84C69FBBF5</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>95D51A3514420EDC396D7DA1E329A0DC</string>
+				<string>8E332117BAE0F19098ECB5A2B4714C55</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>0B93401C4FC74F8120BDBCA0C1B8A58E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D699D0098CD2A3A6AA626F62147BEC24</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0C68448F230C7E8735E809B2286E27F7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POP.h</string>
+			<key>path</key>
+			<string>pop/POP.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D1DC2621A6465E9EB7A7A3A8EF68B3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75D3D4E06C9566FDC216DF9B6D7CA25A</string>
+				<string>E6B2EEDF42742C04DB5182584A6540B1</string>
+				<string>9E4E0D88887F5F4A3D0E80AF73D0A5A3</string>
+				<string>9E186991F5AF2D262DBBE44774F49E6E</string>
+				<string>484C66DB9350BE3351F19EA01CDB87CC</string>
+				<string>3A90B34DB0BEEE8BA0B168C40DECAA0C</string>
+				<string>00E6DAAB9052816D1183E39057AB5200</string>
+				<string>E8C40078BA65B0947FFD5F59FEA89FF7</string>
+				<string>F72DA659187001FA983A6F798EA0B96E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TAPageControl</string>
+			<key>path</key>
+			<string>TAPageControl</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0E5299CAAB492F4F60AB9A9F4AF8ECE8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SlideMenuControllerSwift.framework</string>
+			<key>path</key>
+			<string>SlideMenuControllerSwift.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1117B09C082468C445595FA6FD0B8570</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4A32D104647A844136A84E78F18F1E33</string>
+				<string>9846DC1809E4A7921D70EE1F822707B0</string>
+				<string>B8ABF38FE9A2D2BCE568973FB061AE95</string>
+				<string>3898835A8F268D922C5E327A61F94292</string>
+				<string>0E5299CAAB492F4F60AB9A9F4AF8ECE8</string>
+				<string>88B9F0E37644A9D90C918F3F38059D57</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>112C7921E3A497328D11F4930CBBC9CA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3997E5D2953ECDF377B85B234FDF550D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14BC21B41BD4A0EE6A7E55DA47AB1B1A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -99,43 +390,368 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>SlideMenuControllerSwift-dummy.m</string>
+			<string>MBTwitterScroll-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0323E99EC05F0C548941D22CB08BD380</key>
+		<key>16D665887C90AE331C3E4BBF302FC313</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>7BCF929A76F1292ED189A7619E906735</string>
-			<key>buildPhases</key>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizzaTests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>178132A6A6994CBAF3E838066C53952F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPBasicAnimation.h</string>
+			<key>path</key>
+			<string>pop/POPBasicAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>17A757F6CF2DA20BF77C619F005C7B1D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C7D69F1E97B3B4B8ACCCAF46DE3601FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>18814F7BCA95D5452F63EF48E8AFE55F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SlideMenuControllerSwift-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18C1F0D49A6F2E74833E6B2CD2220356</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E4E0D88887F5F4A3D0E80AF73D0A5A3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>195D22DD4E862798ECBF79533C3594F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAction.h</string>
+			<key>path</key>
+			<string>pop/POPAction.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>19613BB22CCF0C8AE10143C43D39F9CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E50EF0E4B3BBA49941CB38C7586B7C7E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1BEDD1E42C147452B912DD3EEAF60683</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TAPageControl-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1EF16DF40B8CB9A4FB6FA4B0010CDEA6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>81659C3C85BCA408D0B308BF7D937D74</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>20E09D04767B69F00B2305AB80165384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D6680B2A89B69276A71707B43AC3DDE4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>20EE7B725FEF9C71CA21E6075833A2EC</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>4E49CC95DAA76B52A381F908AD168B4D</string>
+			<key>remoteInfo</key>
+			<string>TAPageControl</string>
+		</dict>
+		<key>2180005CF2D48F8F3D817EEE535E0DF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>TAPageControl.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>21FFBCC11B2080C0BA9B7B3F8A0D39B6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MBTwitterScroll.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>223831D98B580C90125A856536DF2F49</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SlideMenuControllerSwift-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>22C6DBDCC767ED1E03195D32B1D5023E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizzaTests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2375C2DE3576CDADF42E995F5CA11CEA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>5D95F1BB31829F12D38B38B1F8B2258A</string>
-				<string>383A5A60891D4AAF5BB68C0B1AE24DE2</string>
-				<string>EE971DA91E9DEBF90130F14B6A2011BB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>64977C3D93D7AB8900B29C45352736A9</string>
-				<string>85CDBD182E63606C8C7150CAE7D64F1E</string>
-				<string>AFE98A8FEF4EE88E77757D40A4A24798</string>
+				<string>45EAB37608A9DD2A58D1A489903AB458</string>
+				<string>3C7BA74D9DB1774F68DDFDD3CBD98A77</string>
+				<string>37AFDE9425116C39DF5DF4B3A769472B</string>
 			</array>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-RizzosFinePizza</string>
-			<key>productName</key>
-			<string>Pods-RizzosFinePizza</string>
-			<key>productReference</key>
-			<string>2D74C937AE14B3946E711F1DF7B90B81</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>06F3A7549319788131B08730289A425E</key>
+		<key>249C76599303EEDF7801614A4180F372</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPGeometry.mm</string>
+			<key>path</key>
+			<string>pop/POPGeometry.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>253C78652F46AEF19EA1E43D20D411F8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>178132A6A6994CBAF3E838066C53952F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2680109B63220C49F976419D8D77553D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9C7EDD3A4AD8681A35AF598A0DC87D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>270BF1DEA8A430D21F11509B36625A1B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPSpringAnimationInternal.h</string>
+			<key>path</key>
+			<string>pop/POPSpringAnimationInternal.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27F49617117615ECC0A28E7B218AE988</key>
+		<dict>
+			<key>fileRef</key>
+			<string>16D665887C90AE331C3E4BBF302FC313</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>282626F24B5C5A613C2C31E7EAADCEB5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MBTwitterScroll-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>292DD18BBCB72DFB794CBC43724970FE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5FB43C9DC46E8E5ABECFC33F233107F6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>882EB4391EC2E701934974DA86F7343F</string>
+				<string>811519CB8F683AC06F9C98B55AC40F11</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2D935209FDB8D3A7679C6092BCA3C554</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B1D79E0E2B8A260B82941539E9FEA159</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>32D03CB6A84004F4649F4442B8BC9955</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D51912782FE80B291163A01C110CD769</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>330B5C21BCE37765E833946EA1CA4B90</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizzaTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>331D8E2AF9229C1796BD18BDC240D81D</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>590B6DDEFAEEC807E6C92CD0154C5016</string>
+			<string>35523506A180981116FFF7F68144E64A</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -143,7 +759,7 @@
 				<key>CURRENT_PROJECT_VERSION</key>
 				<string>1</string>
 				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
+				<string>dwarf-with-dsym</string>
 				<key>DEFINES_MODULE</key>
 				<string>YES</string>
 				<key>DYLIB_COMPATIBILITY_VERSION</key>
@@ -173,7 +789,7 @@
 				<key>MODULEMAP_FILE</key>
 				<string>Target Support Files/Pods-RizzosFinePizza/Pods-RizzosFinePizza.modulemap</string>
 				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
+				<string>NO</string>
 				<key>OTHER_LDFLAGS</key>
 				<string></string>
 				<key>OTHER_LIBTOOLFLAGS</key>
@@ -188,8 +804,6 @@
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
 				<key>TARGETED_DEVICE_FAMILY</key>
 				<string>1,2</string>
 				<key>VERSIONING_SYSTEM</key>
@@ -200,46 +814,12 @@
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Debug</string>
+			<string>Release</string>
 		</dict>
-		<key>073A05BE0326BA279CAE253407737510</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3FF6B9D9466CC5A7A1C733D998D750F5</string>
-				<string>D567C132B4C192AFDFA2FE1FCBB32913</string>
-				<string>DC114F555F76E384AC610707C95D3A8D</string>
-				<string>242FB48AB0C3F2FD4F7ED994293EF8DD</string>
-				<string>6F4429634CA9A8A375FAD868F77AC1B7</string>
-				<string>306AAA0A41D5CA0F21631A50E476DD5D</string>
-				<string>150260495B49A1CCD449BD87A7B30A52</string>
-				<string>E3CC45C692CBA8D1B3CB04010A13EAD7</string>
-				<string>D1FEA79222E5DE0F7C76903AF326107D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TAPageControl</string>
-			<key>path</key>
-			<string>TAPageControl</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0884C91C172AD4C4BDE4DA08FFBB6311</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizzaTests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>10CFED2784C52EAB3861D67183E2EA88</key>
+		<key>3377BD82FAF77A5085329884839BE7EB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>AB5D31499CF066B7E7B7BCB908A8ECED</string>
+			<string>06D8D584C103105847CC7F74F9DB235F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -249,269 +829,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>112C7921E3A497328D11F4930CBBC9CA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3997E5D2953ECDF377B85B234FDF550D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>150260495B49A1CCD449BD87A7B30A52</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>TAPageControl.h</string>
-			<key>path</key>
-			<string>TAPageControl/TAPageControl.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>16D665887C90AE331C3E4BBF302FC313</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizzaTests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>17D16BFF7E51BD33473245F697763344</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DC114F555F76E384AC610707C95D3A8D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1E00387951E6A3B02C1CE22983CAFFF9</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>66E2EC5FBD568B605BB802A5A9FC1CED</string>
-			<key>remoteInfo</key>
-			<string>MBTwitterScroll</string>
-		</dict>
-		<key>2061BA82D1A854362F02BF3000704FFA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>20D36A147D0EB6A01A86A5DD42968FCC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TAPageControl.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>22C6DBDCC767ED1E03195D32B1D5023E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizzaTests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>23CB14B8F7F05A92D10E1103D663AAB8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3997E5D2953ECDF377B85B234FDF550D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>242FB48AB0C3F2FD4F7ED994293EF8DD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>TAAnimatedDotView.m</string>
-			<key>path</key>
-			<string>TAPageControl/TAAnimatedDotView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>25192ACBDA80506682716D14ECDE0908</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SlideMenuControllerSwift.framework</string>
-			<key>path</key>
-			<string>SlideMenuControllerSwift.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>292DD18BBCB72DFB794CBC43724970FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>50ACB3A8756F27D924658275C222BC94</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>29EF0E0976EE41A9319ADC6BC12E0300</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>00B89BEC7E3AA95E602F9F21353F22CF</string>
-				<string>7B6AC54ADE70CD328E8D75C666149BA4</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2D74C937AE14B3946E711F1DF7B90B81</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_RizzosFinePizza.framework</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizza.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>882EB4391EC2E701934974DA86F7343F</string>
-				<string>811519CB8F683AC06F9C98B55AC40F11</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2E9F48A5D1171CC6F4F873E8EB47A8AB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FFC0BD98B03131E559CE96D4B5F27268</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2EC8F1FDFA5C0A7EB02B3BC8B4EFD2A7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_RizzosFinePizzaTests.framework</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizzaTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>306AAA0A41D5CA0F21631A50E476DD5D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>TADotView.m</string>
-			<key>path</key>
-			<string>TAPageControl/TADotView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>330B5C21BCE37765E833946EA1CA4B90</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizzaTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3360C3BE776D2008E06CD77A1EC0F7BA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F8088942AF6A7C14E401136766714922</string>
-				<string>F5B0CEA4A0739ECAFE7C31788799CA06</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
 		</dict>
 		<key>35523506A180981116FFF7F68144E64A</key>
 		<dict>
@@ -526,38 +843,56 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>37CCC7A859AA539DEB10B989CFDB0ADA</key>
+		<key>370CEC7E4662ED59330D477ADF08A691</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>2061BA82D1A854362F02BF3000704FFA</string>
-				<string>557E378A9AC4498488F6560AF5A395BF</string>
-				<string>529856C7FA9711301DB64B3A85C6FC07</string>
-				<string>027EFDD57CD1C2E4DE8BC94906C73574</string>
-				<string>FCC3ADC01FB3940ED44E7053673242D9</string>
-				<string>ADB000A0D8A4C5CA6B7F8314255FC378</string>
-			</array>
+			<key>fileRef</key>
+			<string>A693264C0CD964B435F008D20ABA5121</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>37AFDE9425116C39DF5DF4B3A769472B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62C79942739C42D0F2D0A0A65B6532BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3898835A8F268D922C5E327A61F94292</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>Support Files</string>
+			<string>pop.framework</string>
 			<key>path</key>
-			<string>../Target Support Files/SlideMenuControllerSwift</string>
+			<string>pop.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3938C19DEA656EC1ADA086655B7772A0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAnimationPrivate.h</string>
+			<key>path</key>
+			<string>pop/POPAnimationPrivate.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>383A5A60891D4AAF5BB68C0B1AE24DE2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>23CB14B8F7F05A92D10E1103D663AAB8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>3997E5D2953ECDF377B85B234FDF550D</key>
 		<dict>
@@ -572,29 +907,99 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>39EAA63573E394D9DE5E6A741F416548</key>
+		<key>3A90B34DB0BEEE8BA0B168C40DECAA0C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>TADotView.m</string>
+			<key>path</key>
+			<string>TAPageControl/TADotView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C7BA74D9DB1774F68DDFDD3CBD98A77</key>
 		<dict>
 			<key>fileRef</key>
-			<string>027EFDD57CD1C2E4DE8BC94906C73574</string>
+			<string>BB5C452EB02340162E4B1700155BA429</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>3FF6B9D9466CC5A7A1C733D998D750F5</key>
+		<key>3D7FD777C77528FC2EE53D418F6C116E</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>C05AB8D16EBC94255A671B63DAF8AD61</string>
+				<string>004FB3E7B1C987955F33E070188706C7</string>
+				<string>88BFE7C1671424168E082A8209EF8160</string>
+				<string>0D1DC2621A6465E9EB7A7A3A8EF68B3C</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>TAAbstractDotView.h</string>
-			<key>path</key>
-			<string>TAPageControl/TAAbstractDotView.h</string>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>420E32596F52D41953DEA169C7E20980</key>
+		<key>3D8223B5DA0231400668A9F1B5D4A63A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>249C76599303EEDF7801614A4180F372</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3DD2C4D10B43FC6396081B91341316F6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED9D8FABF74E8B5977CCBADA95BEB765</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3E2B1727F6FA3F88C696936ED53BB0A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>03297A0E6439E7996E08B79EA3A2C0B1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3ED9A7F9AE29DA5FEEB8D561A4C92D67</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPAnimationExtras.mm</string>
+			<key>path</key>
+			<string>pop/POPAnimationExtras.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>40B68920077F2586030148D8C9027667</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>66E2EC5FBD568B605BB802A5A9FC1CED</string>
+			<key>remoteInfo</key>
+			<string>MBTwitterScroll</string>
+		</dict>
+		<key>41A0021AEE6D92A41F06FBBFF6C1C35A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -603,25 +1008,38 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>MBTwitterScroll-prefix.pch</string>
+			<string>pop-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4285198FB1ACD719F4A0CE2A67CD4358</key>
+		<key>422035B7A3AF047A245D52FC77A049ED</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MBTwitterScroll.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SlideMenuControllerSwift</string>
+			<key>target</key>
+			<string>E8E4D74FEACF4EECFCB7649DE36C9A1D</string>
+			<key>targetProxy</key>
+			<string>F0D672EEAC7314243132AD0BBE346179</string>
+		</dict>
+		<key>4376174134165989892F77188C5BBF7F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>4E49CC95DAA76B52A381F908AD168B4D</string>
+			<key>remoteInfo</key>
+			<string>TAPageControl</string>
 		</dict>
 		<key>4460675421EF41552858DBE87A0D7167</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>F3D8A881D7809B64D51789795F2A8429</string>
+			<string>D25DCCD63C17E7F92CAF3E07C403F200</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -678,20 +1096,67 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>45280D282BD02AC5E6D6CACCCEE0D37C</key>
+		<key>45EAB37608A9DD2A58D1A489903AB458</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>fileRef</key>
+			<string>8A493F979A55548894356DDA45BB5DFA</string>
 			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>AD84A0DEED219C96E211B049AD9AE8CC</string>
-			<key>remoteInfo</key>
-			<string>TAPageControl</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>46270324DA57A88724558FE7147A48E9</key>
+		<key>479AD4F25C46131E9B1FD4CD2932A562</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0B93401C4FC74F8120BDBCA0C1B8A58E</string>
+				<string>3DD2C4D10B43FC6396081B91341316F6</string>
+				<string>494F967DF1C1536965FA8F89B89A7374</string>
+				<string>ED529E550F33CBB8D3150F38EC40123A</string>
+				<string>58731F66141178F42FF47013EE35FA64</string>
+				<string>97CF439E2CD17E21DBFDEC5FF9AEF32B</string>
+				<string>5FABBCC0D6AEC1B16A4B7ABA1D36EC0C</string>
+				<string>FC73B3DEBF52648453DDAEF4D439D26B</string>
+				<string>9A08F88F4C426BA22BAACF462BC1C531</string>
+				<string>5E8B781C4317F89945802051435488B4</string>
+				<string>709EA94602561E1F1178ABD56834B7BF</string>
+				<string>20E09D04767B69F00B2305AB80165384</string>
+				<string>F6B4BF646A63032FC3DA78E07770C3D7</string>
+				<string>64D20D42A14CBB9F9DD5E831349CE4B3</string>
+				<string>D3C7BCEB4D51F5AA6CB6E53763A303E2</string>
+				<string>FD9EEF59751D5EA4456B88B069D609BF</string>
+				<string>253C78652F46AEF19EA1E43D20D411F8</string>
+				<string>17A757F6CF2DA20BF77C619F005C7B1D</string>
+				<string>32D03CB6A84004F4649F4442B8BC9955</string>
+				<string>DC92770FC2ADF7726330D27812AA4C72</string>
+				<string>370CEC7E4662ED59330D477ADF08A691</string>
+				<string>A71CCA376310FA0F021A6BC721599D05</string>
+				<string>5DBECF6B1D5130AE7EEBB736DCB8681C</string>
+				<string>A617C4D4D123B79A7115012C2AA513F6</string>
+				<string>F21211B2E15D0D55C60A1E1FEC932AF5</string>
+				<string>8C0EC1A118327D389731B1E390D7A54E</string>
+				<string>70E1C655B44A712EF5B708B31244B396</string>
+				<string>57CAA9881D5FFF46898A3941E25CE3F8</string>
+				<string>6FD8607126EDB99F05AB4FDFBE016211</string>
+				<string>4C53D2CEE6FD0A92FB8B0E1DF6873679</string>
+				<string>1EF16DF40B8CB9A4FB6FA4B0010CDEA6</string>
+				<string>4EB39F90D57B91929855D2687B963568</string>
+				<string>622D292A67D58C4F09DDD7BFC84156F8</string>
+				<string>819C83110F566F161F8E8140E2ABCF8F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>47BEC21EED4BA45B892155A9B153CF79</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6131F681CF8A3684D5795BC21ACFC10C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>484C66DB9350BE3351F19EA01CDB87CC</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -699,10 +1164,122 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TADotView.h</string>
 			<key>path</key>
-			<string>MBTwitterScroll-umbrella.h</string>
+			<string>TAPageControl/TADotView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>48833CB955676B9EAF1672CA44920FA4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>74BCB11405A35A67F087F930475506BD</string>
+				<string>D8577BCC17C06337238A64CC3142E805</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>494F967DF1C1536965FA8F89B89A7374</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0C68448F230C7E8735E809B2286E27F7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4A32D104647A844136A84E78F18F1E33</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>MBTwitterScroll.framework</string>
+			<key>path</key>
+			<string>MBTwitterScroll.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4BC250396379D3ACB0B9921E12D8E207</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7DFD82C8853A0DA28D5046A8E61FBA8F</string>
+				<string>3377BD82FAF77A5085329884839BE7EB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4C53D2CEE6FD0A92FB8B0E1DF6873679</key>
+		<dict>
+			<key>fileRef</key>
+			<string>270BF1DEA8A430D21F11509B36625A1B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4E49CC95DAA76B52A381F908AD168B4D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F467803571A02FC37669D84C38D62ED7</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D540C80CE3BE2C040BA6301024AFA171</string>
+				<string>EB8212A0DCF9D7834BB267EEF31D51BC</string>
+				<string>5E0086C71B744E70AC7CCD04E38CE473</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TAPageControl</string>
+			<key>productName</key>
+			<string>TAPageControl</string>
+			<key>productReference</key>
+			<string>88B9F0E37644A9D90C918F3F38059D57</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>4EB39F90D57B91929855D2687B963568</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7757451FFA61980DE56F1BDFF9F41938</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
 		</dict>
 		<key>4ED04EB1C161A715625DC142C1149200</key>
 		<dict>
@@ -714,7 +1291,7 @@
 		<key>4F91BB79B64F860B0A04717F85773807</key>
 		<dict>
 			<key>fileRef</key>
-			<string>597FA707389CEE1D968CE19268775808</string>
+			<string>D1055463B146DFAEC6A2F04BA432BF9C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -725,7 +1302,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>50ACB3A8756F27D924658275C222BC94</key>
+		<key>542C996FBB9D0E1305B55DF9CB81E7F2</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -734,87 +1311,29 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>UIScrollView+TwitterCover.h</string>
+			<string>POPAnimationInternal.h</string>
 			<key>path</key>
-			<string>MBTwitterScroll/UIScrollView+TwitterCover.h</string>
+			<string>pop/POPAnimationInternal.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5225AC0E140234FAAC697641BF4306E4</key>
+		<key>550EF8F69D6E4786C24A3327E5D939B0</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>A185B3C796236E53AD3B0047D24D8FBA</string>
-				<string>FFC0BD98B03131E559CE96D4B5F27268</string>
-				<string>B14D2FF0949F4E500098E56EDBF260F9</string>
-				<string>37CCC7A859AA539DEB10B989CFDB0ADA</string>
-			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXTargetDependency</string>
 			<key>name</key>
-			<string>SlideMenuControllerSwift</string>
-			<key>path</key>
-			<string>SlideMenuControllerSwift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>529856C7FA9711301DB64B3A85C6FC07</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>SlideMenuControllerSwift.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5463ABD7D43E750C74CFD896E94341DD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5D08D4B21C7B636D198AF6FBA5B3601A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>TAPageControl</string>
+			<key>target</key>
+			<string>4E49CC95DAA76B52A381F908AD168B4D</string>
+			<key>targetProxy</key>
+			<string>20EE7B725FEF9C71CA21E6075833A2EC</string>
 		</dict>
 		<key>5548B62AD6469338B80AFEC663A8722F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>961A5ABA02737330AB67157DD735B278</string>
+			<string>A5D9E9823598ECE3C8DDCA737B6592DF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>557E378A9AC4498488F6560AF5A395BF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>SlideMenuControllerSwift.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>55A7719D05D5291A5FCFCBCA915C88C5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FF6B9D9466CC5A7A1C733D998D750F5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>55C537F270E64038F2503178B0BEF29D</key>
 		<dict>
@@ -829,22 +1348,69 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>56A3897FF7C66CEC1F8455A1E119CDCC</key>
+		<key>569D185A9AFC8CCF6EC75E9CBAB25B60</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E81A936ADD46E9F931ECBD38080E37AE</string>
-				<string>608D7F524FF795B80CE2106FA7A4B727</string>
-				<string>D4C5E7D3CBB8E872B429EF4BAF78D213</string>
-				<string>907DC6A8CCD27CB8E44DBFB55182BCD1</string>
-				<string>F47A488DA70363132DFE75A510331A84</string>
-			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>pop</string>
+			<key>target</key>
+			<string>58B5A533514477A076DA3DCA2DDA0C60</string>
+			<key>targetProxy</key>
+			<string>7E7EFFB09B056D1FA61C20E1C37B0204</string>
+		</dict>
+		<key>57CAA9881D5FFF46898A3941E25CE3F8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7DFFE082F406F88BF17D2B02F58BE903</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>58731F66141178F42FF47013EE35FA64</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6708273E133892CD4D8CA53C66EF8581</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>58B5A533514477A076DA3DCA2DDA0C60</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>48833CB955676B9EAF1672CA44920FA4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B3EC9D588B12EB01E73049F64C376559</string>
+				<string>59EC341AA8117862E9F7C67AF3B3E8CB</string>
+				<string>479AD4F25C46131E9B1FD4CD2932A562</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>pop</string>
+			<key>productName</key>
+			<string>pop</string>
+			<key>productReference</key>
+			<string>3898835A8F268D922C5E327A61F94292</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
 		</dict>
 		<key>590B6DDEFAEEC807E6C92CD0154C5016</key>
 		<dict>
@@ -859,33 +1425,38 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>597FA707389CEE1D968CE19268775808</key>
+		<key>5939A051AA90A600B16720D4F200C90B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3997E5D2953ECDF377B85B234FDF550D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>597B7CDFCE7808CA7B0B245082864518</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MBTwitterScroll.h</string>
+			<string>POPDecayAnimation.mm</string>
 			<key>path</key>
-			<string>MBTwitterScroll/MBTwitterScroll.h</string>
+			<string>pop/POPDecayAnimation.mm</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>59F31C79997136EF65B2AEB60D51A93D</key>
+		<key>59EC341AA8117862E9F7C67AF3B3E8CB</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7D82A61C33DB8B1B3C87C0E5B27BCA08</string>
+			</array>
 			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>66E2EC5FBD568B605BB802A5A9FC1CED</string>
-			<key>remoteInfo</key>
-			<string>MBTwitterScroll</string>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>5A94C4D29E6503E33090F30C8333EB06</key>
 		<dict>
@@ -900,6 +1471,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>5AC55F047267926F768F8A8FF3AD15AC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>00E6DAAB9052816D1183E39057AB5200</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>5BA2E9B64E89E41592EB41962B30AAFF</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -913,74 +1498,116 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5C927CD4191F96BD51ED07A0FAA74D54</key>
+		<key>5CC4D931C5BAA58EF4BF2841585F8511</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>3360C3BE776D2008E06CD77A1EC0F7BA</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9D6C07494BB6F58403B92C6B9F184746</string>
-				<string>E0507073D63975BB7EEB4E9C9C8FE0F1</string>
-				<string>E70FFE8B7CAB45B4B5AE627CEE1AAC82</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>SlideMenuControllerSwift</string>
-			<key>productName</key>
-			<string>SlideMenuControllerSwift</string>
-			<key>productReference</key>
-			<string>25192ACBDA80506682716D14ECDE0908</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
+			<string>POPAnimationTracer.mm</string>
+			<key>path</key>
+			<string>pop/POPAnimationTracer.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5D08D4B21C7B636D198AF6FBA5B3601A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3997E5D2953ECDF377B85B234FDF550D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5D95F1BB31829F12D38B38B1F8B2258A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6CBDC01CCF19860632226ACAD5B1AC90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>608D7F524FF795B80CE2106FA7A4B727</key>
-		<dict>
-			<key>fileRef</key>
-			<string>242FB48AB0C3F2FD4F7ED994293EF8DD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>609AFED7CE3AF25ADFE27D6598CCCE59</key>
+		<key>5D2246BFFD70A65D44E517B029A25E8B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MBTwitterScroll.m</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>MBTwitterScroll/MBTwitterScroll.m</string>
+			<string>SlideMenuControllerSwift.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>619CC65D2388DDEFCBCF32EF95CFB6DD</key>
+		<key>5D6B41DD6AEC29666A004BFAD5CA24BD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPAnimator.mm</string>
+			<key>path</key>
+			<string>pop/POPAnimator.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5DBECF6B1D5130AE7EEBB736DCB8681C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF2D2B1A3946FFBF61A8CF53A1241157</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5E0086C71B744E70AC7CCD04E38CE473</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AECBD2966176E82851278A55AE0AC8D8</string>
+				<string>18C1F0D49A6F2E74833E6B2CD2220356</string>
+				<string>D02148CD90FFD7F13AD4EBFDF41BA676</string>
+				<string>CDE5E8E9F5CC5A2B08F35769260DA6D7</string>
+				<string>5AC55F047267926F768F8A8FF3AD15AC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5E8B781C4317F89945802051435488B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>542C996FBB9D0E1305B55DF9CB81E7F2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5F1DFFB38750B68C587BE3D72B2B5C7A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TAPageControl.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5FABBCC0D6AEC1B16A4B7ABA1D36EC0C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7A6B81CF0372DCECDA55B20B3B199B7A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5FB43C9DC46E8E5ABECFC33F233107F6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -988,34 +1615,92 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIScrollView+TwitterCover.h</string>
 			<key>path</key>
-			<string>TAPageControl-umbrella.h</string>
+			<string>MBTwitterScroll/UIScrollView+TwitterCover.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>64977C3D93D7AB8900B29C45352736A9</key>
+		<key>60E905657FB55DB841EA1704A20BF7B0</key>
 		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5939A051AA90A600B16720D4F200C90B</string>
+			</array>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>MBTwitterScroll</string>
-			<key>target</key>
-			<string>66E2EC5FBD568B605BB802A5A9FC1CED</string>
-			<key>targetProxy</key>
-			<string>1E00387951E6A3B02C1CE22983CAFFF9</string>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>6533D5E608ED67B706D6FAB69DCB0940</key>
+		<key>6131F681CF8A3684D5795BC21ACFC10C</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
+			<key>includeInIndex</key>
 			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>5C927CD4191F96BD51ED07A0FAA74D54</string>
-			<key>remoteInfo</key>
-			<string>SlideMenuControllerSwift</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>TransformationMatrix.cpp</string>
+			<key>path</key>
+			<string>pop/WebCore/TransformationMatrix.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>622D292A67D58C4F09DDD7BFC84156F8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D3E76D5F469453FFCCA184C4E564E6BB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>62C79942739C42D0F2D0A0A65B6532BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SlideMenuControllerSwift-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>64D20D42A14CBB9F9DD5E831349CE4B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>822C8A89E2D86FC195EF4979485E5090</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>663FBEAE505DC31C79D275B51AE08629</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPCustomAnimation.mm</string>
+			<key>path</key>
+			<string>pop/POPCustomAnimation.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>66E2EC5FBD568B605BB802A5A9FC1CED</key>
 		<dict>
@@ -1038,22 +1723,51 @@
 			<key>productName</key>
 			<string>MBTwitterScroll</string>
 			<key>productReference</key>
-			<string>9FE5563636C6F3EFCCF277F77708292E</string>
+			<string>4A32D104647A844136A84E78F18F1E33</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>6779EED8F10BB073247ABD71529ED13D</key>
+		<key>6708273E133892CD4D8CA53C66EF8581</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
+			<key>includeInIndex</key>
 			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>AD84A0DEED219C96E211B049AD9AE8CC</string>
-			<key>remoteInfo</key>
-			<string>TAPageControl</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAnimatableProperty.h</string>
+			<key>path</key>
+			<string>pop/POPAnimatableProperty.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>67348712EA89D4976B1DE895C21D2721</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>674AC11EB57C81B364EA8B7231AF5BA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E6B2EEDF42742C04DB5182584A6540B1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>676CCDD459A25A2D621EDF9B04D4073D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E186991F5AF2D262DBBE44774F49E6E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>67D8C0C02ED2BA468313B4DAE3EE23F3</key>
 		<dict>
@@ -1068,79 +1782,37 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>68BB6C6207F2B247197350323B57D9FB</key>
+		<key>6D28CB616474303696BE2A55BA00F7FA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>150260495B49A1CCD449BD87A7B30A52</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>68D08D1635E882FA4B5C3B533CD59FC4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TAPageControl-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6CBDC01CCF19860632226ACAD5B1AC90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A0AECB5D1DC317126BA98887E89459AC</string>
+			<string>D0906EEA411FD4A44D3FA1E5AE845D0F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>6D7B20EA9AEA9E98C7A19CC413DBE211</key>
+		<key>6DA80C8AA0DA84947107CC8C4007909C</key>
 		<dict>
-			<key>fileRef</key>
-			<string>3997E5D2953ECDF377B85B234FDF550D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6F4429634CA9A8A375FAD868F77AC1B7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>TADotView.h</string>
-			<key>path</key>
-			<string>TAPageControl/TADotView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7092E24FAC0E8AE635379270CCC8BDDD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>children</key>
 			<array>
-				<string>01D9C5185E3183A63B4361167F18DA61</string>
+				<string>67348712EA89D4976B1DE895C21D2721</string>
+				<string>9FC34EAF77422F861798BF6AC314408F</string>
+				<string>5D2246BFFD70A65D44E517B029A25E8B</string>
+				<string>62C79942739C42D0F2D0A0A65B6532BF</string>
+				<string>223831D98B580C90125A856536DF2F49</string>
+				<string>18814F7BCA95D5452F63EF48E8AFE55F</string>
 			</array>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SlideMenuControllerSwift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7505AABAD8E3ED4B4C08A49ADD4EC010</key>
+		<key>6FD8607126EDB99F05AB4FDFBE016211</key>
 		<dict>
 			<key>fileRef</key>
-			<string>46270324DA57A88724558FE7147A48E9</string>
+			<string>74C786BB679A4E4378E34100C6859FD4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1151,10 +1823,24 @@
 				</array>
 			</dict>
 		</dict>
-		<key>7B1085487994ED597FEC0B9634C43005</key>
+		<key>709EA94602561E1F1178ABD56834B7BF</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6F4429634CA9A8A375FAD868F77AC1B7</string>
+			<string>3938C19DEA656EC1ADA086655B7772A0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>70E1C655B44A712EF5B708B31244B396</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E02E70B7C430303D82D5CF7899C54286</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1165,10 +1851,28 @@
 				</array>
 			</dict>
 		</dict>
-		<key>7B6AC54ADE70CD328E8D75C666149BA4</key>
+		<key>71992D8C22354D76ED57ABE7A2EA9D9B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5D6B41DD6AEC29666A004BFAD5CA24BD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>72CB3C63952C08EA001CED59D13F6DD9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>MBTwitterScroll</string>
+			<key>target</key>
+			<string>66E2EC5FBD568B605BB802A5A9FC1CED</string>
+			<key>targetProxy</key>
+			<string>E41D7E3B1DB296B4866D238B3E4A0882</string>
+		</dict>
+		<key>74BCB11405A35A67F087F930475506BD</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>978360B17D0B6EE948FE32EA054F792B</string>
+			<string>F1B79859B58C00BC4AE01E8EC745E8DA</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1176,7 +1880,7 @@
 				<key>CURRENT_PROJECT_VERSION</key>
 				<string>1</string>
 				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
+				<string>dwarf</string>
 				<key>DEFINES_MODULE</key>
 				<string>YES</string>
 				<key>DYLIB_COMPATIBILITY_VERSION</key>
@@ -1190,9 +1894,9 @@
 				<key>GCC_NO_COMMON_BLOCKS</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/TAPageControl/TAPageControl-prefix.pch</string>
+				<string>Target Support Files/pop/pop-prefix.pch</string>
 				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/TAPageControl/Info.plist</string>
+				<string>Target Support Files/pop/Info.plist</string>
 				<key>INSTALL_PATH</key>
 				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
@@ -1204,11 +1908,11 @@
 					<string>@loader_path/Frameworks</string>
 				</array>
 				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/TAPageControl/TAPageControl.modulemap</string>
+				<string>Target Support Files/pop/pop.modulemap</string>
 				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
+				<string>YES</string>
 				<key>PRODUCT_NAME</key>
-				<string>TAPageControl</string>
+				<string>pop</string>
 				<key>SDKROOT</key>
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
@@ -1223,21 +1927,115 @@
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Release</string>
+			<string>Debug</string>
 		</dict>
-		<key>7BCF929A76F1292ED189A7619E906735</key>
+		<key>74C786BB679A4E4378E34100C6859FD4</key>
 		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>06F3A7549319788131B08730289A425E</string>
-				<string>EF9921C93A7F00D6879496B4EDCF070F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPSpringAnimation.h</string>
+			<key>path</key>
+			<string>pop/POPSpringAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7505AABAD8E3ED4B4C08A49ADD4EC010</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DBC1AFAF19E6E3D8452433F814DC9281</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>75D3D4E06C9566FDC216DF9B6D7CA25A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TAAbstractDotView.h</string>
+			<key>path</key>
+			<string>TAPageControl/TAAbstractDotView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7757451FFA61980DE56F1BDFF9F41938</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPVector.h</string>
+			<key>path</key>
+			<string>pop/POPVector.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>77FC4D719DDAA8BFF9ECD5B6E0474606</key>
+		<dict>
+			<key>fileRef</key>
+			<string>663FBEAE505DC31C79D275B51AE08629</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>78E5126A9E06479B472FB8E35DE2E7E2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPBasicAnimation.mm</string>
+			<key>path</key>
+			<string>pop/POPBasicAnimation.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A18E4ED1E249A5E93BDEF01848B7155</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E8C40078BA65B0947FFD5F59FEA89FF7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7A6B81CF0372DCECDA55B20B3B199B7A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAnimationEvent.h</string>
+			<key>path</key>
+			<string>pop/POPAnimationEvent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D82A61C33DB8B1B3C87C0E5B27BCA08</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3997E5D2953ECDF377B85B234FDF550D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
@@ -1245,12 +2043,82 @@
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>89A06EF2B7DEF705C48FDC82E559B4D2</string>
-				<string>A98BC0C71FC4FF9BCC2929A1012ABA6B</string>
+				<string>3D7FD777C77528FC2EE53D418F6C116E</string>
+				<string>1117B09C082468C445595FA6FD0B8570</string>
 				<string>C52D9A9B0C53C1F07CB718D61455E1DC</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DBC9ECD91D30EB28D0DBCB7C7F58935</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8AC2C05C0CB19A7A5F243EAC10D6FEE9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7DFD82C8853A0DA28D5046A8E61FBA8F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>18814F7BCA95D5452F63EF48E8AFE55F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7DFFE082F406F88BF17D2B02F58BE903</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPPropertyAnimationInternal.h</string>
+			<key>path</key>
+			<string>pop/POPPropertyAnimationInternal.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E7EFFB09B056D1FA61C20E1C37B0204</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>58B5A533514477A076DA3DCA2DDA0C60</string>
+			<key>remoteInfo</key>
+			<string>pop</string>
+		</dict>
+		<key>81097E32F037FAAE7BEB3A6024FDDCBE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPLayerExtras.h</string>
+			<key>path</key>
+			<string>pop/POPLayerExtras.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1323,16 +2191,137 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>85CDBD182E63606C8C7150CAE7D64F1E</key>
+		<key>81659C3C85BCA408D0B308BF7D937D74</key>
 		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SlideMenuControllerSwift</string>
-			<key>target</key>
-			<string>5C927CD4191F96BD51ED07A0FAA74D54</string>
-			<key>targetProxy</key>
-			<string>895D6D8F62398E67516DF4A8944A5963</string>
+			<string>POPSpringSolver.h</string>
+			<key>path</key>
+			<string>pop/POPSpringSolver.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>819C83110F566F161F8E8140E2ABCF8F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F49BE370BCB4B3A4699006CEEF85B282</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>822C8A89E2D86FC195EF4979485E5090</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAnimationTracerInternal.h</string>
+			<key>path</key>
+			<string>pop/POPAnimationTracerInternal.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>829177C2C7027715DC0EB7087FC555E2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPAnimationEvent.mm</string>
+			<key>path</key>
+			<string>pop/POPAnimationEvent.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84B41266B7D72554B08D4C595E2770BC</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5D2246BFFD70A65D44E517B029A25E8B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SlideMenuControllerSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SlideMenuControllerSwift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>86EA5B33565F771D4B5ED9D7EA1B2B30</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>882EB4391EC2E701934974DA86F7343F</key>
 		<dict>
@@ -1410,164 +2399,40 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>895D6D8F62398E67516DF4A8944A5963</key>
+		<key>88B9F0E37644A9D90C918F3F38059D57</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
 			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>5C927CD4191F96BD51ED07A0FAA74D54</string>
-			<key>remoteInfo</key>
-			<string>SlideMenuControllerSwift</string>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>TAPageControl.framework</string>
+			<key>path</key>
+			<string>TAPageControl.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>89A06EF2B7DEF705C48FDC82E559B4D2</key>
+		<key>88BFE7C1671424168E082A8209EF8160</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>FD0C475147381674FD72D17669257A1E</string>
-				<string>5225AC0E140234FAAC697641BF4306E4</string>
-				<string>073A05BE0326BA279CAE253407737510</string>
+				<string>8A493F979A55548894356DDA45BB5DFA</string>
+				<string>BB5C452EB02340162E4B1700155BA429</string>
+				<string>06D8D584C103105847CC7F74F9DB235F</string>
+				<string>6DA80C8AA0DA84947107CC8C4007909C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Pods</string>
+			<string>SlideMenuControllerSwift</string>
+			<key>path</key>
+			<string>SlideMenuControllerSwift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8B73ECD6A994FB4318CC57F09CD3B679</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>MBTwitterScroll</string>
-			<key>target</key>
-			<string>66E2EC5FBD568B605BB802A5A9FC1CED</string>
-			<key>targetProxy</key>
-			<string>59F31C79997136EF65B2AEB60D51A93D</string>
-		</dict>
-		<key>8EA889693BE6999A36608CADFB126332</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizza.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>907DC6A8CCD27CB8E44DBFB55182BCD1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>68D08D1635E882FA4B5C3B533CD59FC4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>961A5ABA02737330AB67157DD735B278</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIScrollView+TwitterCover.m</string>
-			<key>path</key>
-			<string>MBTwitterScroll/UIScrollView+TwitterCover.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>978360B17D0B6EE948FE32EA054F792B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>TAPageControl.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>990B84B6CAF7C49413D7F80B132C5939</key>
-		<dict>
-			<key>fileRef</key>
-			<string>609AFED7CE3AF25ADFE27D6598CCCE59</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9C91ADC0301981A4219531E829192D23</key>
-		<dict>
-			<key>fileRef</key>
-			<string>16D665887C90AE331C3E4BBF302FC313</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9D6C07494BB6F58403B92C6B9F184746</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B750E21D7FBF1E3181D5F8CBACD8F4F4</string>
-				<string>2E9F48A5D1171CC6F4F873E8EB47A8AB</string>
-				<string>39EAA63573E394D9DE5E6A741F416548</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9E4E39760D2C0B2A0F3C27C506C179EC</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>TAPageControl.framework</string>
-			<key>path</key>
-			<string>TAPageControl.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9FE5563636C6F3EFCCF277F77708292E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>MBTwitterScroll.framework</string>
-			<key>path</key>
-			<string>MBTwitterScroll.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A0AECB5D1DC317126BA98887E89459AC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizza-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A185B3C796236E53AD3B0047D24D8FBA</key>
+		<key>8A493F979A55548894356DDA45BB5DFA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1582,159 +2447,134 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A4D2C14239F34519068FEC0C03C8F39A</key>
+		<key>8AC2C05C0CB19A7A5F243EAC10D6FEE9</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EB8E24CB3857B93BB93BA7E3C1AE1445</string>
-				<string>990B84B6CAF7C49413D7F80B132C5939</string>
-				<string>5548B62AD6469338B80AFEC663A8722F</string>
-			</array>
+			<key>fileRef</key>
+			<string>3997E5D2953ECDF377B85B234FDF550D</string>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>A6B8691621C570E043A7AF60EA165452</key>
+		<key>8BC14C7FF0938739D56FFB7132D668CD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Pods-RizzosFinePizzaTests-acknowledgements.markdown</string>
+			<string>pop-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A7C25B6C4279D3984B14736CEB56293D</key>
+		<key>8C0EC1A118327D389731B1E390D7A54E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>619CC65D2388DDEFCBCF32EF95CFB6DD</string>
+			<string>A12BB116E0BD7DECEFED16632DE8A517</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
 			<dict>
 				<key>ATTRIBUTES</key>
 				<array>
-					<string>Public</string>
+					<string>Project</string>
 				</array>
 			</dict>
 		</dict>
-		<key>A88ADFE66A3D74D43E733285D975E8F2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7505AABAD8E3ED4B4C08A49ADD4EC010</string>
-				<string>4F91BB79B64F860B0A04717F85773807</string>
-				<string>292DD18BBCB72DFB794CBC43724970FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A98BC0C71FC4FF9BCC2929A1012ABA6B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9FE5563636C6F3EFCCF277F77708292E</string>
-				<string>2D74C937AE14B3946E711F1DF7B90B81</string>
-				<string>2EC8F1FDFA5C0A7EB02B3BC8B4EFD2A7</string>
-				<string>25192ACBDA80506682716D14ECDE0908</string>
-				<string>9E4E39760D2C0B2A0F3C27C506C179EC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB5D31499CF066B7E7B7BCB908A8ECED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizzaTests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABB1367ECE883F8965CE128C2E7DBF2D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AD258FC71F8DD388A6A46D0EEC81D70B</key>
+		<key>8C642D9DE138B4D73DA2633E007B897D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>ADB000A0D8A4C5CA6B7F8314255FC378</string>
+			<string>3997E5D2953ECDF377B85B234FDF550D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
-		<key>AD84A0DEED219C96E211B049AD9AE8CC</key>
+		<key>8E332117BAE0F19098ECB5A2B4714C55</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>29EF0E0976EE41A9319ADC6BC12E0300</string>
-			<key>buildPhases</key>
-			<array>
-				<string>56A3897FF7C66CEC1F8455A1E119CDCC</string>
-				<string>5463ABD7D43E750C74CFD896E94341DD</string>
-				<string>C0D05E76868608293928271672C81460</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
+			<key>baseConfigurationReference</key>
+			<string>330B5C21BCE37765E833946EA1CA4B90</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-RizzosFinePizzaTests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-RizzosFinePizzaTests/Pods-RizzosFinePizzaTests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_RizzosFinePizzaTests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>TAPageControl</string>
-			<key>productName</key>
-			<string>TAPageControl</string>
-			<key>productReference</key>
-			<string>9E4E39760D2C0B2A0F3C27C506C179EC</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
+			<string>Release</string>
 		</dict>
-		<key>ADB000A0D8A4C5CA6B7F8314255FC378</key>
+		<key>8EA889693BE6999A36608CADFB126332</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>SlideMenuControllerSwift-umbrella.h</string>
+			<string>Pods-RizzosFinePizza.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>AE45545A503A60D9CB60FD88774CC931</key>
+		<key>95B3ED22775AC0478D6122151A9C1EC0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1BEDD1E42C147452B912DD3EEAF60683</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>95D51A3514420EDC396D7DA1E329A0DC</key>
 		<dict>
 			<key>baseConfigurationReference</key>
 			<string>B44AEB52B4FA98E6BA25A8E772701C37</string>
@@ -1804,18 +2644,7 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>AFE98A8FEF4EE88E77757D40A4A24798</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>TAPageControl</string>
-			<key>target</key>
-			<string>AD84A0DEED219C96E211B049AD9AE8CC</string>
-			<key>targetProxy</key>
-			<string>45280D282BD02AC5E6D6CACCCEE0D37C</string>
-		</dict>
-		<key>B14D2FF0949F4E500098E56EDBF260F9</key>
+		<key>96E94AC70DE025EB8106473ACFCC67BA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1824,11 +2653,415 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SlideMenuControllerSwift.h</string>
+			<string>POPDecayAnimationInternal.h</string>
 			<key>path</key>
-			<string>Source/SlideMenuControllerSwift.h</string>
+			<string>pop/POPDecayAnimationInternal.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>977C62EF8AD866F5A052D35AA6C175A3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DC49BEF59CCBC1E2E63C9F6109AF4B09</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97CF439E2CD17E21DBFDEC5FF9AEF32B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DDE93C7764A44AC669408F9E7D239CC9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9846DC1809E4A7921D70EE1F822707B0</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_RizzosFinePizza.framework</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizza.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>990B84B6CAF7C49413D7F80B132C5939</key>
+		<dict>
+			<key>fileRef</key>
+			<string>06FEFC9EFC113A52DCCDE91252C3759B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9A08F88F4C426BA22BAACF462BC1C531</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BAB85947FE603A2913277F081183415D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9A9F722F1BB9B1E31D9143F89D7179B9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9AC32A54350DD2C6B3C9569031EEBEC4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D200C1E5824495769F89DEEA1BF3E5FB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E186991F5AF2D262DBBE44774F49E6E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>TAAnimatedDotView.m</string>
+			<key>path</key>
+			<string>TAPageControl/TAAnimatedDotView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E4E0D88887F5F4A3D0E80AF73D0A5A3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TAAnimatedDotView.h</string>
+			<key>path</key>
+			<string>TAPageControl/TAAnimatedDotView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EAF1D72476B9043F2DFBCFB87C85765</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPAnimation.mm</string>
+			<key>path</key>
+			<string>pop/POPAnimation.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9FC34EAF77422F861798BF6AC314408F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SlideMenuControllerSwift.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A0A260852F254C25A1A8FC8F5B8C6BF4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>27F49617117615ECC0A28E7B218AE988</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A0AECB5D1DC317126BA98887E89459AC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizza-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A12BB116E0BD7DECEFED16632DE8A517</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPMath.h</string>
+			<key>path</key>
+			<string>pop/POPMath.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A4D2C14239F34519068FEC0C03C8F39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EB8E24CB3857B93BB93BA7E3C1AE1445</string>
+				<string>990B84B6CAF7C49413D7F80B132C5939</string>
+				<string>5548B62AD6469338B80AFEC663A8722F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A5D9E9823598ECE3C8DDCA737B6592DF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIScrollView+TwitterCover.m</string>
+			<key>path</key>
+			<string>MBTwitterScroll/UIScrollView+TwitterCover.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A617C4D4D123B79A7115012C2AA513F6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5865137E6F784BD80E2BFB331EF4A09</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A64021CF4EBEC203B2D9DF9815537A24</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8C642D9DE138B4D73DA2633E007B897D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A693264C0CD964B435F008D20ABA5121</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPDecayAnimation.h</string>
+			<key>path</key>
+			<string>pop/POPDecayAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A6B8691621C570E043A7AF60EA165452</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizzaTests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A71CCA376310FA0F021A6BC721599D05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>96E94AC70DE025EB8106473ACFCC67BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A88ADFE66A3D74D43E733285D975E8F2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7505AABAD8E3ED4B4C08A49ADD4EC010</string>
+				<string>4F91BB79B64F860B0A04717F85773807</string>
+				<string>292DD18BBCB72DFB794CBC43724970FE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AAD13512ED7C45635AD8B6F3E1AA4D03</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPLayerExtras.mm</string>
+			<key>path</key>
+			<string>pop/POPLayerExtras.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB5D31499CF066B7E7B7BCB908A8ECED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizzaTests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ACE807735765728FC046953F62C53FEF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>MBTwitterScroll</string>
+			<key>target</key>
+			<string>66E2EC5FBD568B605BB802A5A9FC1CED</string>
+			<key>targetProxy</key>
+			<string>40B68920077F2586030148D8C9027667</string>
+		</dict>
+		<key>AECBD2966176E82851278A55AE0AC8D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D3D4E06C9566FDC216DF9B6D7CA25A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B1810E5DE8B239E686277D17505E55A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAnimator.h</string>
+			<key>path</key>
+			<string>pop/POPAnimator.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B1D79E0E2B8A260B82941539E9FEA159</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AB5D31499CF066B7E7B7BCB908A8ECED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B2173A8F9E92407147EA1DC66C0895E6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CD6E18B2B88B18C38CFEE584F2E88A72</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3EC9D588B12EB01E73049F64C376559</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D3BCAC64213B6AD34AC36F9D82C52BF5</string>
+				<string>6D28CB616474303696BE2A55BA00F7FA</string>
+				<string>07C9F9DDEFA54EBB4928FF3BF4EA8A00</string>
+				<string>C47BDF45C3935BC07E0D99DD6E6FC1C5</string>
+				<string>03232E81949A5F033F7E817E09C409A3</string>
+				<string>9AC32A54350DD2C6B3C9569031EEBEC4</string>
+				<string>007A45C983F49F2283F2E609F333103B</string>
+				<string>71992D8C22354D76ED57ABE7A2EA9D9B</string>
+				<string>D3CA354C3C6C272A71082E70356A37C3</string>
+				<string>B2173A8F9E92407147EA1DC66C0895E6</string>
+				<string>77FC4D719DDAA8BFF9ECD5B6E0474606</string>
+				<string>CFE45EB801B6F5C0597D573541869058</string>
+				<string>3D8223B5DA0231400668A9F1B5D4A63A</string>
+				<string>D3862E63A3BC0E77968E1E795D44C11C</string>
+				<string>D8489884CF1D300BE363E0B26426139A</string>
+				<string>19613BB22CCF0C8AE10143C43D39F9CD</string>
+				<string>3E2B1727F6FA3F88C696936ED53BB0A4</string>
+				<string>977C62EF8AD866F5A052D35AA6C175A3</string>
+				<string>47BEC21EED4BA45B892155A9B153CF79</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>B44AEB52B4FA98E6BA25A8E772701C37</key>
 		<dict>
@@ -1857,12 +3090,40 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>B750E21D7FBF1E3181D5F8CBACD8F4F4</key>
+		<key>B6DB340873C18CABED01B720A14F2EBC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A185B3C796236E53AD3B0047D24D8FBA</string>
+			<string>A0AECB5D1DC317126BA98887E89459AC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>B7855777926D6C48F619BE6D564E75B4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TAPageControl-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8ABF38FE9A2D2BCE568973FB061AE95</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_RizzosFinePizzaTests.framework</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizzaTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
 		<dict>
@@ -1881,19 +3142,35 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>BBA8873CC70D785F51208E8295E7DA8C</key>
+		<key>BAB85947FE603A2913277F081183415D</key>
 		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AE45545A503A60D9CB60FD88774CC931</string>
-				<string>ED051D456FEC94A8C649BAAB17CF51D8</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAnimationExtras.h</string>
+			<key>path</key>
+			<string>pop/POPAnimationExtras.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BB5C452EB02340162E4B1700155BA429</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SlideMenuController.swift</string>
+			<key>path</key>
+			<string>Source/SlideMenuController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
@@ -1908,22 +3185,79 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C0D05E76868608293928271672C81460</key>
+		<key>BD50451CC766FF42185566D9F1DBED38</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>55A7719D05D5291A5FCFCBCA915C88C5</string>
-				<string>17D16BFF7E51BD33473245F697763344</string>
-				<string>7B1085487994ED597FEC0B9634C43005</string>
-				<string>A7C25B6C4279D3984B14736CEB56293D</string>
-				<string>68BB6C6207F2B247197350323B57D9FB</string>
+				<string>B6DB340873C18CABED01B720A14F2EBC</string>
 			</array>
 			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
+			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>BDDD4328465141CF702945405A67BCC5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9A9F722F1BB9B1E31D9143F89D7179B9</string>
+				<string>21FFBCC11B2080C0BA9B7B3F8A0D39B6</string>
+				<string>D25DCCD63C17E7F92CAF3E07C403F200</string>
+				<string>14BC21B41BD4A0EE6A7E55DA47AB1B1A</string>
+				<string>282626F24B5C5A613C2C31E7EAADCEB5</string>
+				<string>DBC1AFAF19E6E3D8452433F814DC9281</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/MBTwitterScroll</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05AB8D16EBC94255A671B63DAF8AD61</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D1055463B146DFAEC6A2F04BA432BF9C</string>
+				<string>06FEFC9EFC113A52DCCDE91252C3759B</string>
+				<string>5FB43C9DC46E8E5ABECFC33F233107F6</string>
+				<string>A5D9E9823598ECE3C8DDCA737B6592DF</string>
+				<string>BDDD4328465141CF702945405A67BCC5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MBTwitterScroll</string>
+			<key>path</key>
+			<string>MBTwitterScroll</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C47BDF45C3935BC07E0D99DD6E6FC1C5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>829177C2C7027715DC0EB7087FC555E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C4FD1B3C856EA43EAB705DDA06AC644C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAnimationEventInternal.h</string>
+			<key>path</key>
+			<string>pop/POPAnimationEventInternal.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C52D9A9B0C53C1F07CB718D61455E1DC</key>
 		<dict>
@@ -1939,6 +3273,48 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C7D69F1E97B3B4B8ACCCAF46DE3601FF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPBasicAnimationInternal.h</string>
+			<key>path</key>
+			<string>pop/POPBasicAnimationInternal.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CD6E18B2B88B18C38CFEE584F2E88A72</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPCGUtils.mm</string>
+			<key>path</key>
+			<string>pop/POPCGUtils.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CDE5E8E9F5CC5A2B08F35769260DA6D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B7855777926D6C48F619BE6D564E75B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>CE9C7EDD3A4AD8681A35AF598A0DC87D</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1952,16 +3328,37 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CF0479EC74020A730E01F0B01943E145</key>
+		<key>CFE45EB801B6F5C0597D573541869058</key>
+		<dict>
+			<key>fileRef</key>
+			<string>597B7CDFCE7808CA7B0B245082864518</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D02148CD90FFD7F13AD4EBFDF41BA676</key>
+		<dict>
+			<key>fileRef</key>
+			<string>484C66DB9350BE3351F19EA01CDB87CC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D0906EEA411FD4A44D3FA1E5AE845D0F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<key>name</key>
+			<string>POPAnimatableProperty.mm</string>
 			<key>path</key>
-			<string>Info.plist</string>
+			<string>pop/POPAnimatableProperty.mm</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1981,7 +3378,7 @@
 		<key>D0EAD3E9E4D0A3526925C62BD98EB185</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>F3D8A881D7809B64D51789795F2A8429</string>
+			<string>D25DCCD63C17E7F92CAF3E07C403F200</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -2038,54 +3435,109 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>D1FEA79222E5DE0F7C76903AF326107D</key>
+		<key>D1055463B146DFAEC6A2F04BA432BF9C</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>CF0479EC74020A730E01F0B01943E145</string>
-				<string>20D36A147D0EB6A01A86A5DD42968FCC</string>
-				<string>978360B17D0B6EE948FE32EA054F792B</string>
-				<string>68D08D1635E882FA4B5C3B533CD59FC4</string>
-				<string>FAEB994E7F73288718ECC73645DDCAC2</string>
-				<string>619CC65D2388DDEFCBCF32EF95CFB6DD</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Support Files</string>
+			<string>MBTwitterScroll.h</string>
 			<key>path</key>
-			<string>../Target Support Files/TAPageControl</string>
+			<string>MBTwitterScroll/MBTwitterScroll.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D2A6AB8833E8AE214C887FA5C9015AD3</key>
+		<key>D200C1E5824495769F89DEEA1BF3E5FB</key>
 		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
+			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>SlideMenuControllerSwift</string>
-			<key>target</key>
-			<string>5C927CD4191F96BD51ED07A0FAA74D54</string>
-			<key>targetProxy</key>
-			<string>6533D5E608ED67B706D6FAB69DCB0940</string>
-		</dict>
-		<key>D32D59AE095E104A455714F2F2E95BBB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ABB1367ECE883F8965CE128C2E7DBF2D</string>
-				<string>4285198FB1ACD719F4A0CE2A67CD4358</string>
-				<string>F3D8A881D7809B64D51789795F2A8429</string>
-				<string>F7E6E5A86F083A333A5E8399ABEAD9E3</string>
-				<string>420E32596F52D41953DEA169C7E20980</string>
-				<string>46270324DA57A88724558FE7147A48E9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
+			<string>POPAnimationRuntime.mm</string>
 			<key>path</key>
-			<string>../Target Support Files/MBTwitterScroll</string>
+			<string>pop/POPAnimationRuntime.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D25DCCD63C17E7F92CAF3E07C403F200</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>MBTwitterScroll.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D2D5985C79A838B5F716A760A92BF130</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAnimationTracer.h</string>
+			<key>path</key>
+			<string>pop/POPAnimationTracer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D3862E63A3BC0E77968E1E795D44C11C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AAD13512ED7C45635AD8B6F3E1AA4D03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D3BCAC64213B6AD34AC36F9D82C52BF5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8BC14C7FF0938739D56FFB7132D668CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D3C7BCEB4D51F5AA6CB6E53763A303E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B1810E5DE8B239E686277D17505E55A7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D3CA354C3C6C272A71082E70356A37C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>78E5126A9E06479B472FB8E35DE2E7E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D3E76D5F469453FFCCA184C4E564E6BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TransformationMatrix.h</string>
+			<key>path</key>
+			<string>pop/WebCore/TransformationMatrix.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2115,7 +3567,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>A98BC0C71FC4FF9BCC2929A1012ABA6B</string>
+			<string>1117B09C082468C445595FA6FD0B8570</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -2125,38 +3577,185 @@
 			<key>targets</key>
 			<array>
 				<string>66E2EC5FBD568B605BB802A5A9FC1CED</string>
-				<string>0323E99EC05F0C548941D22CB08BD380</string>
-				<string>FC63F519FC581F11354309094CF27AB3</string>
-				<string>5C927CD4191F96BD51ED07A0FAA74D54</string>
-				<string>AD84A0DEED219C96E211B049AD9AE8CC</string>
+				<string>DE0539BAFAFEA03C1226F451F2530021</string>
+				<string>DCAE5647CBB1E17CEEED4C88391B05DC</string>
+				<string>58B5A533514477A076DA3DCA2DDA0C60</string>
+				<string>E8E4D74FEACF4EECFCB7649DE36C9A1D</string>
+				<string>4E49CC95DAA76B52A381F908AD168B4D</string>
 			</array>
 		</dict>
-		<key>D4C5E7D3CBB8E872B429EF4BAF78D213</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306AAA0A41D5CA0F21631A50E476DD5D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D567C132B4C192AFDFA2FE1FCBB32913</key>
+		<key>D51912782FE80B291163A01C110CD769</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>TAAbstractDotView.m</string>
+			<string>POPCGUtils.h</string>
 			<key>path</key>
-			<string>TAPageControl/TAAbstractDotView.m</string>
+			<string>pop/POPCGUtils.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>DBFA54F0FD8B7413C33AD30F1A8F6C7A</key>
+		<key>D540C80CE3BE2C040BA6301024AFA171</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>674AC11EB57C81B364EA8B7231AF5BA4</string>
+				<string>676CCDD459A25A2D621EDF9B04D4073D</string>
+				<string>E8B82C595AD0A9B8507831429433B6BC</string>
+				<string>95B3ED22775AC0478D6122151A9C1EC0</string>
+				<string>7A18E4ED1E249A5E93BDEF01848B7155</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D6249D32E2A3335DBCF1D4C5416235EC</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>58B5A533514477A076DA3DCA2DDA0C60</string>
+			<key>remoteInfo</key>
+			<string>pop</string>
+		</dict>
+		<key>D6680B2A89B69276A71707B43AC3DDE4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPAnimationRuntime.h</string>
+			<key>path</key>
+			<string>pop/POPAnimationRuntime.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D699D0098CD2A3A6AA626F62147BEC24</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FloatConversion.h</string>
+			<key>path</key>
+			<string>pop/WebCore/FloatConversion.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D8489884CF1D300BE363E0B26426139A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B14D2FF0949F4E500098E56EDBF260F9</string>
+			<string>F6A44B6C26ACEEB32EBC4DBD681E252C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D8577BCC17C06337238A64CC3142E805</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F1B79859B58C00BC4AE01E8EC745E8DA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/pop/pop-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/pop/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/pop/pop.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>pop</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DBC1AFAF19E6E3D8452433F814DC9281</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MBTwitterScroll-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DC49BEF59CCBC1E2E63C9F6109AF4B09</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPVector.mm</string>
+			<key>path</key>
+			<string>pop/POPVector.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DC92770FC2ADF7726330D27812AA4C72</key>
+		<dict>
+			<key>fileRef</key>
+			<string>03BCBD7AEF39B5C172B8BDD5D85E5C8E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2167,7 +3766,50 @@
 				</array>
 			</dict>
 		</dict>
-		<key>DC114F555F76E384AC610707C95D3A8D</key>
+		<key>DCAE5647CBB1E17CEEED4C88391B05DC</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>0B5505DA71249ACBF52CCC84C69FBBF5</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A0A260852F254C25A1A8FC8F5B8C6BF4</string>
+				<string>60E905657FB55DB841EA1704A20BF7B0</string>
+				<string>2D935209FDB8D3A7679C6092BCA3C554</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>ACE807735765728FC046953F62C53FEF</string>
+				<string>422035B7A3AF047A245D52FC77A049ED</string>
+				<string>FA188511654E8323D0631E2C05828682</string>
+				<string>569D185A9AFC8CCF6EC75E9CBAB25B60</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-RizzosFinePizzaTests</string>
+			<key>productName</key>
+			<string>Pods-RizzosFinePizzaTests</string>
+			<key>productReference</key>
+			<string>B8ABF38FE9A2D2BCE568973FB061AE95</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>DD11B4E2F8D1FCD12C2E0C7C186B54AD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TAPageControl-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DDE93C7764A44AC669408F9E7D239CC9</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2176,24 +3818,130 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>TAAnimatedDotView.h</string>
+			<string>POPAnimation.h</string>
 			<key>path</key>
-			<string>TAPageControl/TAAnimatedDotView.h</string>
+			<string>pop/POPAnimation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E0507073D63975BB7EEB4E9C9C8FE0F1</key>
+		<key>DE0539BAFAFEA03C1226F451F2530021</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>buildConfigurationList</key>
+			<string>09D1AFE36A3F8AE539199BA6BC68FAF3</string>
+			<key>buildPhases</key>
 			<array>
-				<string>6D7B20EA9AEA9E98C7A19CC413DBE211</string>
+				<string>BD50451CC766FF42185566D9F1DBED38</string>
+				<string>A64021CF4EBEC203B2D9DF9815537A24</string>
+				<string>08383991BB3C4A3282CC058A285D0EAF</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>72CB3C63952C08EA001CED59D13F6DD9</string>
+				<string>E7B77EFB0C3D7518C6632F365B620270</string>
+				<string>550EF8F69D6E4786C24A3327E5D939B0</string>
+				<string>E7E267CE41964C5E3B573A91072B65D0</string>
 			</array>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-RizzosFinePizza</string>
+			<key>productName</key>
+			<string>Pods-RizzosFinePizza</string>
+			<key>productReference</key>
+			<string>9846DC1809E4A7921D70EE1F822707B0</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>DF55AE6FF09C8087986CCADE9B7B848F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2180005CF2D48F8F3D817EEE535E0DF1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/TAPageControl/TAPageControl-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/TAPageControl/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/TAPageControl/TAPageControl.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>TAPageControl</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DFF41A656C6E75E6564F32950AD10481</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>84B41266B7D72554B08D4C595E2770BC</string>
+				<string>F0FACBECD1A1799E16E0AC43FE9695F5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E02E70B7C430303D82D5CF7899C54286</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPPropertyAnimation.h</string>
+			<key>path</key>
+			<string>pop/POPPropertyAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E2E93E72989B518BC6CD3BA1D115513B</key>
 		<dict>
@@ -2219,90 +3967,36 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E3CC45C692CBA8D1B3CB04010A13EAD7</key>
+		<key>E41D7E3B1DB296B4866D238B3E4A0882</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>66E2EC5FBD568B605BB802A5A9FC1CED</string>
+			<key>remoteInfo</key>
+			<string>MBTwitterScroll</string>
+		</dict>
+		<key>E50EF0E4B3BBA49941CB38C7586B7C7E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>TAPageControl.m</string>
+			<string>POPPropertyAnimation.mm</string>
 			<key>path</key>
-			<string>TAPageControl/TAPageControl.m</string>
+			<string>pop/POPPropertyAnimation.mm</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E70FFE8B7CAB45B4B5AE627CEE1AAC82</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AD258FC71F8DD388A6A46D0EEC81D70B</string>
-				<string>DBFA54F0FD8B7413C33AD30F1A8F6C7A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E81A936ADD46E9F931ECBD38080E37AE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D567C132B4C192AFDFA2FE1FCBB32913</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E96FE9474C92B1B18ACCEE179A5817E9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizza-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB8E24CB3857B93BB93BA7E3C1AE1445</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F7E6E5A86F083A333A5E8399ABEAD9E3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EC7BD86F5AEF3AE66D8DD968B9EA9BC1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D0C82165A45AC6B896172945246607E8</string>
-				<string>0884C91C172AD4C4BDE4DA08FFBB6311</string>
-				<string>A6B8691621C570E043A7AF60EA165452</string>
-				<string>55C537F270E64038F2503178B0BEF29D</string>
-				<string>16D665887C90AE331C3E4BBF302FC313</string>
-				<string>22C6DBDCC767ED1E03195D32B1D5023E</string>
-				<string>F4F2558F3F8663D3A7FAF5A6F939BF55</string>
-				<string>AB5D31499CF066B7E7B7BCB908A8ECED</string>
-				<string>B44AEB52B4FA98E6BA25A8E772701C37</string>
-				<string>330B5C21BCE37765E833946EA1CA4B90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-RizzosFinePizzaTests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-RizzosFinePizzaTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED051D456FEC94A8C649BAAB17CF51D8</key>
+		<key>E55848C1F7552D038E5F3160012575BF</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>330B5C21BCE37765E833946EA1CA4B90</string>
+			<string>590B6DDEFAEEC807E6C92CD0154C5016</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -2310,88 +4004,7 @@
 				<key>CURRENT_PROJECT_VERSION</key>
 				<string>1</string>
 				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-RizzosFinePizzaTests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-RizzosFinePizzaTests/Pods-RizzosFinePizzaTests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_RizzosFinePizzaTests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EE971DA91E9DEBF90130F14B6A2011BB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F3A45664139F09ED4ECAE69B701C57A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EF9921C93A7F00D6879496B4EDCF070F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>35523506A180981116FFF7F68144E64A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
+				<string>dwarf</string>
 				<key>DEFINES_MODULE</key>
 				<string>YES</string>
 				<key>DYLIB_COMPATIBILITY_VERSION</key>
@@ -2421,7 +4034,7 @@
 				<key>MODULEMAP_FILE</key>
 				<string>Target Support Files/Pods-RizzosFinePizza/Pods-RizzosFinePizza.modulemap</string>
 				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
+				<string>YES</string>
 				<key>OTHER_LDFLAGS</key>
 				<string></string>
 				<key>OTHER_LIBTOOLFLAGS</key>
@@ -2436,6 +4049,8 @@
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
 				<key>TARGETED_DEVICE_FAMILY</key>
 				<string>1,2</string>
 				<key>VERSIONING_SYSTEM</key>
@@ -2446,96 +4061,299 @@
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Release</string>
+			<string>Debug</string>
 		</dict>
-		<key>F1BDC2A89E2B991AB9748D53ADA9DC28</key>
+		<key>E5865137E6F784BD80E2BFB331EF4A09</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>POPGeometry.h</string>
+			<key>path</key>
+			<string>pop/POPGeometry.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E6B2EEDF42742C04DB5182584A6540B1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>TAAbstractDotView.m</string>
+			<key>path</key>
+			<string>TAPageControl/TAAbstractDotView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E7B77EFB0C3D7518C6632F365B620270</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SlideMenuControllerSwift</string>
+			<key>target</key>
+			<string>E8E4D74FEACF4EECFCB7649DE36C9A1D</string>
+			<key>targetProxy</key>
+			<string>EEF4D4974053E81469CD16B521EEC7D0</string>
+		</dict>
+		<key>E7E267CE41964C5E3B573A91072B65D0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>pop</string>
+			<key>target</key>
+			<string>58B5A533514477A076DA3DCA2DDA0C60</string>
+			<key>targetProxy</key>
+			<string>D6249D32E2A3335DBCF1D4C5416235EC</string>
+		</dict>
+		<key>E8B82C595AD0A9B8507831429433B6BC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3A90B34DB0BEEE8BA0B168C40DECAA0C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E8C40078BA65B0947FFD5F59FEA89FF7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>TAPageControl.m</string>
+			<key>path</key>
+			<string>TAPageControl/TAPageControl.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8E4D74FEACF4EECFCB7649DE36C9A1D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DFF41A656C6E75E6564F32950AD10481</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2375C2DE3576CDADF42E995F5CA11CEA</string>
+				<string>7DBC9ECD91D30EB28D0DBCB7C7F58935</string>
+				<string>4BC250396379D3ACB0B9921E12D8E207</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SlideMenuControllerSwift</string>
+			<key>productName</key>
+			<string>SlideMenuControllerSwift</string>
+			<key>productReference</key>
+			<string>0E5299CAAB492F4F60AB9A9F4AF8ECE8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>E96FE9474C92B1B18ACCEE179A5817E9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizza-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EA558FC217CEBFED1FD42A82ECE85138</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>pop.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EAF76DE020B1C85B3FAC1C4A79374448</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3997E5D2953ECDF377B85B234FDF550D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EB0538550EAFF806BB61BEBD3D431AE6</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2180005CF2D48F8F3D817EEE535E0DF1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/TAPageControl/TAPageControl-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/TAPageControl/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/TAPageControl/TAPageControl.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>TAPageControl</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>EB8212A0DCF9D7834BB267EEF31D51BC</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>10CFED2784C52EAB3861D67183E2EA88</string>
+				<string>EAF76DE020B1C85B3FAC1C4A79374448</string>
 			</array>
 			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
+			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>F1C40CBEF1143ACE889C94D4E173BFE5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>TAPageControl</string>
-			<key>target</key>
-			<string>AD84A0DEED219C96E211B049AD9AE8CC</string>
-			<key>targetProxy</key>
-			<string>6779EED8F10BB073247ABD71529ED13D</string>
-		</dict>
-		<key>F3A45664139F09ED4ECAE69B701C57A6</key>
+		<key>EB8E24CB3857B93BB93BA7E3C1AE1445</key>
 		<dict>
 			<key>fileRef</key>
-			<string>CE9C7EDD3A4AD8681A35AF598A0DC87D</string>
+			<string>14BC21B41BD4A0EE6A7E55DA47AB1B1A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC7BD86F5AEF3AE66D8DD968B9EA9BC1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D0C82165A45AC6B896172945246607E8</string>
+				<string>0884C91C172AD4C4BDE4DA08FFBB6311</string>
+				<string>A6B8691621C570E043A7AF60EA165452</string>
+				<string>55C537F270E64038F2503178B0BEF29D</string>
+				<string>16D665887C90AE331C3E4BBF302FC313</string>
+				<string>22C6DBDCC767ED1E03195D32B1D5023E</string>
+				<string>F4F2558F3F8663D3A7FAF5A6F939BF55</string>
+				<string>AB5D31499CF066B7E7B7BCB908A8ECED</string>
+				<string>B44AEB52B4FA98E6BA25A8E772701C37</string>
+				<string>330B5C21BCE37765E833946EA1CA4B90</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-RizzosFinePizzaTests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-RizzosFinePizzaTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED529E550F33CBB8D3150F38EC40123A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>195D22DD4E862798ECBF79533C3594F5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
 			<dict>
 				<key>ATTRIBUTES</key>
 				<array>
-					<string>Public</string>
+					<string>Project</string>
 				</array>
 			</dict>
 		</dict>
-		<key>F3D8A881D7809B64D51789795F2A8429</key>
+		<key>ED9D8FABF74E8B5977CCBADA95BEB765</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>MBTwitterScroll.xcconfig</string>
+			<string>pop-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F47A488DA70363132DFE75A510331A84</key>
+		<key>EEF4D4974053E81469CD16B521EEC7D0</key>
 		<dict>
-			<key>fileRef</key>
-			<string>E3CC45C692CBA8D1B3CB04010A13EAD7</string>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F4F2558F3F8663D3A7FAF5A6F939BF55</key>
-		<dict>
-			<key>includeInIndex</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
 			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizzaTests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<key>remoteGlobalIDString</key>
+			<string>E8E4D74FEACF4EECFCB7649DE36C9A1D</string>
+			<key>remoteInfo</key>
+			<string>SlideMenuControllerSwift</string>
 		</dict>
-		<key>F5ACE191B6C9227907A3AB25A98DD03B</key>
+		<key>F0D672EEAC7314243132AD0BBE346179</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-RizzosFinePizza-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E8E4D74FEACF4EECFCB7649DE36C9A1D</string>
+			<key>remoteInfo</key>
+			<string>SlideMenuControllerSwift</string>
 		</dict>
-		<key>F5B0CEA4A0739ECAFE7C31788799CA06</key>
+		<key>F0FACBECD1A1799E16E0AC43FE9695F5</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>529856C7FA9711301DB64B3A85C6FC07</string>
+			<string>5D2246BFFD70A65D44E517B029A25E8B</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -2592,137 +4410,48 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>F7E6E5A86F083A333A5E8399ABEAD9E3</key>
+		<key>F1B79859B58C00BC4AE01E8EC745E8DA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>MBTwitterScroll-dummy.m</string>
+			<string>pop.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F8088942AF6A7C14E401136766714922</key>
+		<key>F21211B2E15D0D55C60A1E1FEC932AF5</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>529856C7FA9711301DB64B3A85C6FC07</string>
-			<key>buildSettings</key>
+			<key>fileRef</key>
+			<string>81097E32F037FAAE7BEB3A6024FDDCBE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
 			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/SlideMenuControllerSwift/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<key>ATTRIBUTES</key>
 				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
+					<string>Public</string>
 				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>SlideMenuControllerSwift</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
 			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
 		</dict>
-		<key>FAEB994E7F73288718ECC73645DDCAC2</key>
+		<key>F467803571A02FC37669D84C38D62ED7</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TAPageControl-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FB3931000DFBAF175C6E2D8486F9BAFD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>buildConfigurations</key>
 			<array>
-				<string>9C91ADC0301981A4219531E829192D23</string>
+				<string>EB0538550EAFF806BB61BEBD3D431AE6</string>
+				<string>DF55AE6FF09C8087986CCADE9B7B848F</string>
 			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
+			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
-		</dict>
-		<key>FC63F519FC581F11354309094CF27AB3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BBA8873CC70D785F51208E8295E7DA8C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>FB3931000DFBAF175C6E2D8486F9BAFD</string>
-				<string>7092E24FAC0E8AE635379270CCC8BDDD</string>
-				<string>F1BDC2A89E2B991AB9748D53ADA9DC28</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>8B73ECD6A994FB4318CC57F09CD3B679</string>
-				<string>D2A6AB8833E8AE214C887FA5C9015AD3</string>
-				<string>F1C40CBEF1143ACE889C94D4E173BFE5</string>
-			</array>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-RizzosFinePizzaTests</string>
-			<key>productName</key>
-			<string>Pods-RizzosFinePizzaTests</string>
-			<key>productReference</key>
-			<string>2EC8F1FDFA5C0A7EB02B3BC8B4EFD2A7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>FCC3ADC01FB3940ED44E7053673242D9</key>
+		<key>F49BE370BCB4B3A4699006CEEF85B282</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2730,42 +4459,137 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UnitBezier.h</string>
 			<key>path</key>
-			<string>SlideMenuControllerSwift-prefix.pch</string>
+			<string>pop/WebCore/UnitBezier.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FD0C475147381674FD72D17669257A1E</key>
+		<key>F4F2558F3F8663D3A7FAF5A6F939BF55</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizzaTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F5ACE191B6C9227907A3AB25A98DD03B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-RizzosFinePizza-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6A44B6C26ACEEB32EBC4DBD681E252C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>POPMath.mm</string>
+			<key>path</key>
+			<string>pop/POPMath.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6B4BF646A63032FC3DA78E07770C3D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D2D5985C79A838B5F716A760A92BF130</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F72DA659187001FA983A6F798EA0B96E</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>597FA707389CEE1D968CE19268775808</string>
-				<string>609AFED7CE3AF25ADFE27D6598CCCE59</string>
-				<string>50ACB3A8756F27D924658275C222BC94</string>
-				<string>961A5ABA02737330AB67157DD735B278</string>
-				<string>D32D59AE095E104A455714F2F2E95BBB</string>
+				<string>068FD4FFCE9EA300F2809B28087B95DD</string>
+				<string>5F1DFFB38750B68C587BE3D72B2B5C7A</string>
+				<string>2180005CF2D48F8F3D817EEE535E0DF1</string>
+				<string>1BEDD1E42C147452B912DD3EEAF60683</string>
+				<string>DD11B4E2F8D1FCD12C2E0C7C186B54AD</string>
+				<string>B7855777926D6C48F619BE6D564E75B4</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>MBTwitterScroll</string>
+			<string>Support Files</string>
 			<key>path</key>
-			<string>MBTwitterScroll</string>
+			<string>../Target Support Files/TAPageControl</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FFC0BD98B03131E559CE96D4B5F27268</key>
+		<key>FA188511654E8323D0631E2C05828682</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>TAPageControl</string>
+			<key>target</key>
+			<string>4E49CC95DAA76B52A381F908AD168B4D</string>
+			<key>targetProxy</key>
+			<string>4376174134165989892F77188C5BBF7F</string>
+		</dict>
+		<key>FC73B3DEBF52648453DDAEF4D439D26B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C4FD1B3C856EA43EAB705DDA06AC644C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FD9EEF59751D5EA4456B88B069D609BF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>079E915DD094AB4A8909E8F2A7420D9F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FF2D2B1A3946FFBF61A8CF53A1241157</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SlideMenuController.swift</string>
+			<string>POPDefines.h</string>
 			<key>path</key>
-			<string>Source/SlideMenuController.swift</string>
+			<string>pop/POPDefines.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>

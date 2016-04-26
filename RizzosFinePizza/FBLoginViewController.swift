@@ -14,6 +14,7 @@ protocol FBLoginViewControllerDelegate : class {
 class FBLoginViewController: UIViewController {
     weak var delegate : FBLoginViewControllerDelegate?
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +22,7 @@ class FBLoginViewController: UIViewController {
         loginButton.center = self.view.center
 //        loginButton.readPermissions =
 //        ["name","public_profile", "email", "user_friends","location"];
-        view.addSubview(loginButton)
+        imageView.addSubview(loginButton)
 
            
     }

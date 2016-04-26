@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import pop
+
 
 class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaViewControllerDelegate, LesViewControllerDelegate,FBLoginViewControllerDelegate {
       
@@ -24,6 +26,9 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+//        bgImageView.image = UIImage(named: "LocationsBGIT")
         setUpInterface()
                 
         if (FBSDKAccessToken.currentAccessToken() != nil){
@@ -33,7 +38,7 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
             
         } else {
            
-            loginAlert()
+         //   loginAlert()
 
             
             
@@ -54,7 +59,10 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
         super.viewWillAppear(animated)
         bgImageView.alpha = 0
         //
-        animate()
+              
+                  // here code perfomed with delay
+            self.animate()
+        
         
     }
     override func viewDidAppear(animated: Bool) {
@@ -99,6 +107,14 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
         
     }
     func animate(){
+   
+//        let basicAnimation = POPSpringAnimation(propertyNamed: kPOPViewFrame)
+//        basicAnimation.toValue = NSValue(CGRect: CGRectMake(0, 0, 90, 190))
+//        basicAnimation.name = "BigButtonPopAnimation"
+//        basicAnimation.delegate = self
+//        self.tableView.pop_addAnimation(basicAnimation["WhatEverNameYouWant"])
+        
+        
         
         //
         UIView.animateWithDuration(0.5, delay: 0.5, options: [], animations: {
@@ -222,5 +238,26 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
 
     @IBAction func signUpButtonAction(sender: UIButton) {
     }
-      
+    
+    func createCustomButtons(){
+        //uesButton = B
+        
+        
+        /*
+        BFPaperButton *circle2 = [[BFPaperButton alloc] initWithFrame:CGRectMake(116, 468, 86, 86) raised:YES];
+        [circle2 setTitle:@"Custom" forState:UIControlStateNormal];
+        [circle2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [circle2 setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+        [circle2 addTarget:self action:@selector(buttonWasPressed:) forControlEvents:UIControlEventTouchUpInside];
+        circle2.backgroundColor = [UIColor colorWithRed:0.3 green:0 blue:1 alpha:1];
+        circle2.tapCircleColor = [UIColor colorWithRed:1 green:0 blue:1 alpha:0.6];  // Setting this color overrides "Smart Color".
+        circle2.cornerRadius = circle2.frame.size.width / 2;
+        circle2.rippleFromTapLocation = NO;
+        circle2.rippleBeyondBounds = YES;
+        circle2.tapCircleDiameter = MAX(circle2.frame.size.width, circle2.frame.size.height) * 1.3;
+        [self.view addSubview:circle2];
+ */
+        
+        
+    }
 }

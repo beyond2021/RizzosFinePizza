@@ -17,7 +17,6 @@ protocol UESViewControllerDelegate : class{
 class UESViewController: UIViewController {
     
     weak var delegate : UESViewControllerDelegate?
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -101,4 +100,5 @@ class UESViewController: UIViewController {
         }
     }
     
+        
 }

@@ -7,6 +7,8 @@ target 'RizzosFinePizza' do
 pod 'TAPageControl'
 pod 'MBTwitterScroll'
 pod 'SlideMenuControllerSwift'
+pod 'pop', '~> 1.0'
+
 
 end
 
@@ -14,5 +16,7 @@ target 'RizzosFinePizzaTests' do
 pod 'TAPageControl'
 pod 'MBTwitterScroll'
 pod 'SlideMenuControllerSwift'
+pod 'pop', '~> 1.0'
+
 end
 

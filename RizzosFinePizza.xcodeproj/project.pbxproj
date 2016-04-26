@@ -35,12 +35,15 @@
 		22A1EBB61CCCB90100C51FE5 /* FBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBB51CCCB90100C51FE5 /* FBLoginViewController.swift */; };
 		22A1EBB81CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBB71CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework */; };
 		22A1EBBA1CCCC28200C51FE5 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBB91CCCC28200C51FE5 /* ShoppingCartViewController.swift */; };
+		22A1EBBC1CCDDC8400C51FE5 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBBB1CCDDC8400C51FE5 /* pop.framework */; };
+		22A1EBBE1CCDDC9400C51FE5 /* MBTwitterScroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBBD1CCDDC9400C51FE5 /* MBTwitterScroll.framework */; };
 		22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE71CC5C7AF002841D5 /* Topping.swift */; };
 		22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */; };
 		22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */; };
 		22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */; };
 		22CCFEF31CC69276002841D5 /* MenuListDataSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */; };
 		22CCFEF51CC69A34002841D5 /* MenuListDataSupplierTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */; };
+		22F07EB21CD015A5001E65F7 /* Trajan Pro Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */; };
 		22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */; };
 		22FBA2ED1CAFDE30009B2DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */; };
 		22FBA2EF1CAFDE30009B2DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */; };
@@ -60,6 +63,19 @@
 			remoteInfo = RizzosFinePizza;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22A1EBC31CCDE80300C51FE5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		169A08068CCBE670FF8865AA /* Pods_RizzosFinePizzaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RizzosFinePizzaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,12 +109,16 @@
 		22A1EBB51CCCB90100C51FE5 /* FBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
 		22A1EBB71CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		22A1EBB91CCCC28200C51FE5 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
+		22A1EBBB1CCDDC8400C51FE5 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphoneos/pop.framework"; sourceTree = "<group>"; };
+		22A1EBBD1CCDDC9400C51FE5 /* MBTwitterScroll.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBTwitterScroll.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphoneos/MBTwitterScroll.framework"; sourceTree = "<group>"; };
+		22A1EBBF1CCDE67A00C51FE5 /* BFPaperButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BFPaperButton.framework; path = "Pods/../build/Debug-iphoneos/BFPaperButton.framework"; sourceTree = "<group>"; };
 		22CCFEE71CC5C7AF002841D5 /* Topping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topping.swift; sourceTree = "<group>"; };
 		22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToppingsTest.swift; sourceTree = "<group>"; };
 		22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemsListViewControllerTest.swift; path = RizzosFinePizzaTests/MenuItemsListViewControllerTest.swift; sourceTree = SOURCE_ROOT; };
 		22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsListViewController.swift; sourceTree = "<group>"; };
 		22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListDataSupplier.swift; sourceTree = "<group>"; };
 		22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListDataSupplierTest.swift; sourceTree = "<group>"; };
+		22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trajan Pro Bold.ttf"; sourceTree = "<group>"; };
 		22FBA2E41CAFDE30009B2DE8 /* RizzosFinePizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzosFinePizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22FBA2EC1CAFDE30009B2DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,6 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A1EBBE1CCDDC9400C51FE5 /* MBTwitterScroll.framework in Frameworks */,
+				22A1EBBC1CCDDC8400C51FE5 /* pop.framework in Frameworks */,
 				22A1EBA41CCA845A00C51FE5 /* SlideMenuControllerSwift.framework in Frameworks */,
 				22A1EBB11CCCB53B00C51FE5 /* FBSDKCoreKit.framework in Frameworks */,
 				22A1EBB31CCCB53B00C51FE5 /* FBSDKShareKit.framework in Frameworks */,
@@ -144,6 +166,9 @@
 		12AEFC6420FF5200B6AAAD1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22A1EBBF1CCDE67A00C51FE5 /* BFPaperButton.framework */,
+				22A1EBBD1CCDDC9400C51FE5 /* MBTwitterScroll.framework */,
+				22A1EBBB1CCDDC8400C51FE5 /* pop.framework */,
 				22A1EBA31CCA845A00C51FE5 /* SlideMenuControllerSwift.framework */,
 				8885F59DE913B7EABD8749C9 /* Pods_RizzosFinePizza.framework */,
 				169A08068CCBE670FF8865AA /* Pods_RizzosFinePizzaTests.framework */,
@@ -234,6 +259,7 @@
 		22FBA2DB1CAFDE30009B2DE8 = {
 			isa = PBXGroup;
 			children = (
+				22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */,
 				22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */,
 				22FBA2FB1CAFDE30009B2DE8 /* RizzosFinePizzaTests */,
 				22FBA2E51CAFDE30009B2DE8 /* Products */,
@@ -259,9 +285,9 @@
 				22A1EB8F1CC816EE00C51FE5 /* Transitions */,
 				22CCFEF11CC691FF002841D5 /* Data Supplier */,
 				22CCFEF01CC68BC4002841D5 /* ViewController */,
-				22FBA3091CAFE5A7009B2DE8 /* Model */,
 				22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */,
 				22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */,
+				22FBA3091CAFE5A7009B2DE8 /* Model */,
 				22A1EBA71CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift */,
 				22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */,
 				22A1EB9F1CC9729500C51FE5 /* MenuViewController.swift */,
@@ -324,6 +350,7 @@
 				22FBA2E21CAFDE30009B2DE8 /* Resources */,
 				91BA990CC6160025A6FE8AE0 /* Embed Pods Frameworks */,
 				F760A22E4FAD72E7FF000CA2 /* Copy Pods Resources */,
+				22A1EBC31CCDE80300C51FE5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FBA2F21CAFDE30009B2DE8 /* LaunchScreen.storyboard in Resources */,
+				22F07EB21CD015A5001E65F7 /* Trajan Pro Bold.ttf in Resources */,
 				22FBA2EF1CAFDE30009B2DE8 /* Assets.xcassets in Resources */,
 				22FBA2ED1CAFDE30009B2DE8 /* Main.storyboard in Resources */,
 			);
@@ -675,6 +703,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RizzosFinePizza",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = RizzosFinePizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -694,6 +723,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RizzosFinePizza",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = RizzosFinePizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

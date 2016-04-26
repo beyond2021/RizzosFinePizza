@@ -1,18 +1,21 @@
 PODS:
   - MBTwitterScroll (0.1)
+  - pop (1.0.9)
   - SlideMenuControllerSwift (2.1.1)
   - TAPageControl (0.2.0)
 
 DEPENDENCIES:
   - MBTwitterScroll
+  - pop (~> 1.0)
   - SlideMenuControllerSwift
   - TAPageControl
 
 SPEC CHECKSUMS:
   MBTwitterScroll: 6c69bb2b864423db52b631f42311706b8d0440b6
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SlideMenuControllerSwift: 82ada9b04e03538c84d034cf1c09e5849c0113f7
   TAPageControl: fd11d779bbb5c2464ca2f55dde9e288213ea8a9b
 
-PODFILE CHECKSUM: 6e52a4e6f242128d757ad3c72be2614fa0670760
+PODFILE CHECKSUM: 334f4089f52d5a90d8eb2ddb728f8cf4b63cdd62
 
 COCOAPODS: 1.0.0.beta.3
