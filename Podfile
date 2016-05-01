@@ -8,6 +8,7 @@ pod 'TAPageControl'
 pod 'MBTwitterScroll'
 pod 'SlideMenuControllerSwift'
 pod 'pop', '~> 1.0'
+ pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 
 
 end
@@ -17,6 +18,7 @@ pod 'TAPageControl'
 pod 'MBTwitterScroll'
 pod 'SlideMenuControllerSwift'
 pod 'pop', '~> 1.0'
+ pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 
 end
 

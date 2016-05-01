@@ -162,7 +162,12 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
     func logOut(){
         let loginManager = FBSDKLoginManager()
         loginManager.logOut()
-        goBackToMain()
+        LoginService.sharedInstance.signOut()
+        
+        let controllerId = LoginService.sharedInstance.isLoggedIn() ? "Welcome" : "Login";
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initViewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier(controllerId) as UIViewController
+        self.presentViewController(initViewController, animated: true, completion: nil)
         
         
     }

@@ -232,6 +232,17 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
         
     }
     
+    @IBAction func LogoutAction(sender: UIButton) {
+        LoginService.sharedInstance.signOut()
+        
+        let controllerId = LoginService.sharedInstance.isLoggedIn() ? "Welcome" : "Login";
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initViewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier(controllerId) as UIViewController
+        self.presentViewController(initViewController, animated: true, completion: nil)
+    }
+        
+        
+   
 
     @IBAction func loginButtonActgion(sender: UIButton) {
     }
@@ -239,25 +250,4 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
     @IBAction func signUpButtonAction(sender: UIButton) {
     }
     
-    func createCustomButtons(){
-        //uesButton = B
-        
-        
-        /*
-        BFPaperButton *circle2 = [[BFPaperButton alloc] initWithFrame:CGRectMake(116, 468, 86, 86) raised:YES];
-        [circle2 setTitle:@"Custom" forState:UIControlStateNormal];
-        [circle2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [circle2 setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
-        [circle2 addTarget:self action:@selector(buttonWasPressed:) forControlEvents:UIControlEventTouchUpInside];
-        circle2.backgroundColor = [UIColor colorWithRed:0.3 green:0 blue:1 alpha:1];
-        circle2.tapCircleColor = [UIColor colorWithRed:1 green:0 blue:1 alpha:0.6];  // Setting this color overrides "Smart Color".
-        circle2.cornerRadius = circle2.frame.size.width / 2;
-        circle2.rippleFromTapLocation = NO;
-        circle2.rippleBeyondBounds = YES;
-        circle2.tapCircleDiameter = MAX(circle2.frame.size.width, circle2.frame.size.height) * 1.3;
-        [self.view addSubview:circle2];
- */
-        
-        
-    }
-}
+   }

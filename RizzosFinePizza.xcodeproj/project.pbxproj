@@ -44,6 +44,10 @@
 		22CCFEF31CC69276002841D5 /* MenuListDataSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */; };
 		22CCFEF51CC69A34002841D5 /* MenuListDataSupplierTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */; };
 		22F07EB21CD015A5001E65F7 /* Trajan Pro Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */; };
+		22F07ED21CD054E5001E65F7 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07ED11CD054E5001E65F7 /* LoginSignUpViewController.swift */; };
+		22F07ED51CD058C3001E65F7 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07ED41CD058C3001E65F7 /* LoginService.swift */; };
+		22F07ED71CD059A6001E65F7 /* ConnectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07ED61CD059A6001E65F7 /* ConnectionSettings.swift */; };
+		22F07EDD1CD17C97001E65F7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F07EDC1CD17C97001E65F7 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */; };
 		22FBA2ED1CAFDE30009B2DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */; };
 		22FBA2EF1CAFDE30009B2DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */; };
@@ -103,11 +107,11 @@
 		22A1EBA71CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
 		22A1EBA91CCC87D000C51FE5 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		22A1EBAB1CCC8D6100C51FE5 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
-		22A1EBAE1CCCB53B00C51FE5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		22A1EBAF1CCCB53B00C51FE5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		22A1EBB01CCCB53B00C51FE5 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		22A1EBAE1CCCB53B00C51FE5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = RizzosFinePizza/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		22A1EBAF1CCCB53B00C51FE5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = RizzosFinePizza/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		22A1EBB01CCCB53B00C51FE5 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = RizzosFinePizza/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		22A1EBB51CCCB90100C51FE5 /* FBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
-		22A1EBB71CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		22A1EBB71CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = RizzosFinePizza/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		22A1EBB91CCCC28200C51FE5 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		22A1EBBB1CCDDC8400C51FE5 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphoneos/pop.framework"; sourceTree = "<group>"; };
 		22A1EBBD1CCDDC9400C51FE5 /* MBTwitterScroll.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBTwitterScroll.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphoneos/MBTwitterScroll.framework"; sourceTree = "<group>"; };
@@ -119,6 +123,10 @@
 		22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListDataSupplier.swift; sourceTree = "<group>"; };
 		22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListDataSupplierTest.swift; sourceTree = "<group>"; };
 		22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trajan Pro Bold.ttf"; sourceTree = "<group>"; };
+		22F07ED11CD054E5001E65F7 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSignUpViewController.swift; path = RizzosFinePizza/LoginSignUpViewController.swift; sourceTree = "<group>"; };
+		22F07ED41CD058C3001E65F7 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		22F07ED61CD059A6001E65F7 /* ConnectionSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionSettings.swift; sourceTree = "<group>"; };
+		22F07EDC1CD17C97001E65F7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		22FBA2E41CAFDE30009B2DE8 /* RizzosFinePizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzosFinePizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22FBA2EC1CAFDE30009B2DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F07EDD1CD17C97001E65F7 /* SwiftyJSON.framework in Frameworks */,
 				22A1EBBE1CCDDC9400C51FE5 /* MBTwitterScroll.framework in Frameworks */,
 				22A1EBBC1CCDDC8400C51FE5 /* pop.framework in Frameworks */,
 				22A1EBA41CCA845A00C51FE5 /* SlideMenuControllerSwift.framework in Frameworks */,
@@ -166,6 +175,11 @@
 		12AEFC6420FF5200B6AAAD1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22A1EBB71CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework */,
+				22A1EBAE1CCCB53B00C51FE5 /* FBSDKCoreKit.framework */,
+				22A1EBAF1CCCB53B00C51FE5 /* FBSDKLoginKit.framework */,
+				22A1EBB01CCCB53B00C51FE5 /* FBSDKShareKit.framework */,
+				22F07EDC1CD17C97001E65F7 /* SwiftyJSON.framework */,
 				22A1EBBF1CCDE67A00C51FE5 /* BFPaperButton.framework */,
 				22A1EBBD1CCDDC9400C51FE5 /* MBTwitterScroll.framework */,
 				22A1EBBB1CCDDC8400C51FE5 /* pop.framework */,
@@ -205,11 +219,7 @@
 		22A1EBAD1CCCB4E300C51FE5 /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
-				22A1EBB71CCCBE2500C51FE5 /* FBSDKMessengerShareKit.framework */,
 				22A1EBB41CCCB8D900C51FE5 /* Login */,
-				22A1EBAE1CCCB53B00C51FE5 /* FBSDKCoreKit.framework */,
-				22A1EBAF1CCCB53B00C51FE5 /* FBSDKLoginKit.framework */,
-				22A1EBB01CCCB53B00C51FE5 /* FBSDKShareKit.framework */,
 			);
 			name = Facebook;
 			sourceTree = "<group>";
@@ -256,9 +266,20 @@
 			name = "Data Supplier";
 			sourceTree = "<group>";
 		};
+		22F07ED31CD05896001E65F7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				22F07ED11CD054E5001E65F7 /* LoginSignUpViewController.swift */,
+				22F07ED41CD058C3001E65F7 /* LoginService.swift */,
+				22F07ED61CD059A6001E65F7 /* ConnectionSettings.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		22FBA2DB1CAFDE30009B2DE8 = {
 			isa = PBXGroup;
 			children = (
+				22F07ED31CD05896001E65F7 /* Login */,
 				22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */,
 				22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */,
 				22FBA2FB1CAFDE30009B2DE8 /* RizzosFinePizzaTests */,
@@ -555,11 +576,14 @@
 				2233E05A1CBD472E00218DE3 /* Delivery.swift in Sources */,
 				22A1EBA21CC980C700C51FE5 /* MenuTableViewController.swift in Sources */,
 				22A1EBB61CCCB90100C51FE5 /* FBLoginViewController.swift in Sources */,
+				22F07ED71CD059A6001E65F7 /* ConnectionSettings.swift in Sources */,
+				22F07ED21CD054E5001E65F7 /* LoginSignUpViewController.swift in Sources */,
 				22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */,
 				2233E0581CBD449E00218DE3 /* FoodOrder.swift in Sources */,
 				22A1EBAC1CCC8D6100C51FE5 /* TrackViewController.swift in Sources */,
 				22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */,
 				22A1EB951CC817FB00C51FE5 /* UESViewController.swift in Sources */,
+				22F07ED51CD058C3001E65F7 /* LoginService.swift in Sources */,
 				22A1EBA61CCA890D00C51FE5 /* ContainerViewController.swift in Sources */,
 				22A1EB931CC8174700C51FE5 /* CHTumblrMenuView.m in Sources */,
 			);

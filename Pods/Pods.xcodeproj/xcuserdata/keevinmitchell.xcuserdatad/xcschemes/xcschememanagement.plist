@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TAPageControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4E49CC95DAA76B52A381F908AD168B4D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>58B5A533514477A076DA3DCA2DDA0C60</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>66E2EC5FBD568B605BB802A5A9FC1CED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DCAE5647CBB1E17CEEED4C88391B05DC</key>
+		<key>6D11C221624D03CA85F105CE1C731D11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE0539BAFAFEA03C1226F451F2530021</key>
+		<key>798720E0B1D844CC38D0910675C7574E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E8E4D74FEACF4EECFCB7649DE36C9A1D</key>
+		<key>AFAB744C97FE0EC4253806D7584FFD6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD4E0ED77B2E4B62F1C5DD208C2F798D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C1A62799CB4360C5074216269023D780</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFB6DBF09086CB9C85C431E03B631455</key>
 		<dict>
 			<key>primary</key>
 			<true/>
