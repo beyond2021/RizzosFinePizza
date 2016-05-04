@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 protocol FBLoginViewControllerDelegate : class {
     func dismissfb()
 }

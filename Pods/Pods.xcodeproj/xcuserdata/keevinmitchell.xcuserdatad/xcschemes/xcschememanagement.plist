@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBTwitterScroll.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +62,57 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0EB19C1377A747F81110D44E2D5FCF78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>15D71A533AE6A996C065E4BA863BCE0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52D82BFDD1E808D9CB257431922C1EE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5D69761C2CD2A1E5C013537B29CAB4CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E03ED9FB62A6CECC82B254E36A7A746</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>63A2C037BF20D0F8E687CAF9ABFDEBFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>66E2EC5FBD568B605BB802A5A9FC1CED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D11C221624D03CA85F105CE1C731D11</key>
+		<key>6A932845C7A5BE5374224A90EA874591</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>798720E0B1D844CC38D0910675C7574E</key>
+		<key>6BEC404A4892F02FAB152510501471A9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AFAB744C97FE0EC4253806D7584FFD6E</key>
+		<key>A1249F7D72E5BFB48286A11ECEE1097F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD4E0ED77B2E4B62F1C5DD208C2F798D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C1A62799CB4360C5074216269023D780</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FFB6DBF09086CB9C85C431E03B631455</key>
+		<key>B4BF8DA0CE2C2C56CC5FA70A53D6FAFC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

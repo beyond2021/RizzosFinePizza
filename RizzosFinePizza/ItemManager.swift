@@ -14,9 +14,13 @@ class ItemManager {
     var itemsAddedToCartCount : Int { return itemsInTheCart.count}
     var priceValue = 0.00
     var pricelistItemCount : Int { return pricslist.count}
+    // Pizza
+    
+    //
+    
+
     
     
-   
     private var pricslist = [Double]()
     private var itemsInTheCart = [FoodItem]()
     /*

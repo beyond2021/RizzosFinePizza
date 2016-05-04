@@ -8,6 +8,8 @@
 
 import UIKit
 import Social
+import FBSDKLoginKit
+
 
 class LeftMenuTableViewController: UITableViewController, TrackViewControllerDelegate {
 

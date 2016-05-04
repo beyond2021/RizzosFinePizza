@@ -4,10 +4,11 @@
 
 # import "CHTumblrMenuView.h"
 //#import "MBTwitterScroll.h"
-#import <FBSDKMessengerShareKit/FBSDKMessengerShareKit.h>
+
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-
+#import <FBSDKShareKit/FBSDKShareKit.h>
 #import <pop/POP.h>
+
 

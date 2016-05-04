@@ -166,6 +166,7 @@ class MenuListDataSupplierTest: XCTestCase {
         
     }
     
+    /*
     func testCellForRow_ReturnsItemCell() {
         
         
@@ -175,6 +176,9 @@ class MenuListDataSupplierTest: XCTestCase {
             inSection: 0))
         XCTAssertTrue(cell is MenuItemCell)
     }
+ */
+    
+    
     
     //Deque Cell Test
     func testCellForRow_DequeuesCell() {
@@ -205,6 +209,32 @@ class MenuListDataSupplierTest: XCTestCase {
             inSection: 0)) as! MockItemCell
        XCTAssertEqual(cell.foodItem, foodItem)
     }
+    
+    
+    func testCellInSectionTwo_GetsConfiguredWithDoneItem() {
+       // let mockTableView = MockTableView()
+        
+        let mockTableView = MockTableView(
+            frame: CGRect(x: 0, y: 0, width: 320, height: 480),
+            style: .Plain)
+        
+        
+        mockTableView.dataSource = sut
+        mockTableView.registerClass(MockItemCell.self,
+                                    forCellReuseIdentifier: "MenuItemCell")
+        let firstItem = FoodItem(title: "Aumma Aumma Pizza (Large)", itemDescription: "Sausage, meatball, ricotta, sauce, mozzarella.", originalPrice: 23.95)
+        sut.itemManager?.addItem(firstItem)
+        let secondItem = FoodItem(title: "Aumma Aumma Pizza (Large)", itemDescription: "Sausage, meatball, ricotta, sauce, mozzarella.", originalPrice: 23.95)
+        sut.itemManager?.addItem(secondItem)
+        sut.itemManager?.checkItemAtIndex(1)
+        mockTableView.reloadData()
+        let cell = mockTableView.cellForRowAtIndexPath(
+            NSIndexPath(forRow: 0, inSection: 1)) as! MockItemCell
+        XCTAssertEqual(cell.foodItem, secondItem)
+    }
+    
+    
+    
     
     }
 
