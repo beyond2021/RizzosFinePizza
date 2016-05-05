@@ -13,12 +13,14 @@ protocol AstoriaViewControllerDelegate : class{
 }
 
 
-class AstoriaViewController: UIViewController {
+class AstoriaViewController: UIViewController, PizzaViewControllerDelegate {
     weak var delegate : AstoriaViewControllerDelegate?
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let pizzaVC = PizzaViewController()
+        pizzaVC.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -87,17 +89,13 @@ class AstoriaViewController: UIViewController {
     
     @IBAction func callAstoriaAction(sender: UIButton) {
        UIApplication.sharedApplication().openURL(NSURL(string: "tel://7187219862")!)
-//        if let url = NSURL(string: "tel://\(7187219862)") {
-//            UIApplication.sharedApplication().openURL(url)
-//        }
     }
     
+    // MARK:delegate Methods
     
-    /*
-     /Users/keevinmitchell/Desktop/RFP/RizzosFinePizza/RizzosFinePizza/AstoriaViewController.swift:88:45: Integer literal '7187219862' overflows when stored into 'Int'
- 
- */
-
+    func dissmissPizza() {
+   self.dismissViewControllerAnimated(true, completion: nil)    }
+  
     
     
     

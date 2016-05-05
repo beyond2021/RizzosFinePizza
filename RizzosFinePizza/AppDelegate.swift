@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
       
         
-        UINavigationBar.appearance().tintColor = UIColor.greenColor()
+        UINavigationBar.appearance().tintColor = UIColor.brownColor()
         
         
         return true

@@ -537,13 +537,10 @@ get {
 import UIKit
 
 enum Section: Int {
-    case Pizza
-    case Calzones
-    case GarlicKnots
-    case Salads
-    case Drinks
-    case Dessert
-    
+    case Plain
+    case CreateYourOwn
+    case Speciality
+      
 }
 
 enum Rows : Int {
@@ -606,31 +603,13 @@ class MenuListDataSupplier: NSObject, UITableViewDataSource {
         
         
         
-        let numberOfRows: Int
-        switch itemSection {
-        case .Pizza:
-            numberOfRows = 8
-        case .Calzones:
-            numberOfRows = 4
-        
-        case .GarlicKnots:
-        numberOfRows = 4
-        case .Salads:
-        numberOfRows = 1
-        case .Drinks:
-            numberOfRows = 2
-        case .Dessert:
-            numberOfRows = 8
-            
-        
-        default:
-            numberOfRows = 0
-        }
         
         
         
         
-        return numberOfRows
+        
+        
+        return  1
         
         
         

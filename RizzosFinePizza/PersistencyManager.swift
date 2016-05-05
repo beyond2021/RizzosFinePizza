@@ -9,6 +9,7 @@
 import UIKit
 
 class PersistencyManager: NSObject {
+    private var allPlain = FoodItem(title: "", itemDescription: "", originalPrice: 0.00)
     
     private var pizzas   = [FoodItem]()
     private var calzones   = [FoodItem]()
@@ -16,13 +17,14 @@ class PersistencyManager: NSObject {
     private var salads   = [FoodItem]()
     private var beverages   = [FoodItem]()
     private var desserts   = [FoodItem]()
+   
     
     
     
     private var plainPizzas = [FoodItem]()
     private var createYourOwn = [FoodItem]()
-    private var speciality = [[(String,String,Double)]]()
-  //  private var speciality  = [[FoodItem]]()
+   // private var speciality = [[(String,String,Double)]]()
+    private var speciality  = [FoodItem]()
     
     
 //    private var pizzas : [Any]  = [[[(String,String,Double)]](),[FoodItem](),[FoodItem]()]
@@ -83,6 +85,8 @@ class PersistencyManager: NSObject {
         let LargeRound = FoodItem(title:"Plain Large Round",itemDescription: "Mozzarella, Grated Cheese and Sauce. Add toppings to your pie for $2.00 each.",originalPrice :19.00)
         let LargeSquare = FoodItem(title:"Plain Large Round",itemDescription: "Mozzarella, Grated Cheese and Sauce. Add toppings to your pie for $2.00 each.",originalPrice :19.00)
         plainPizzas = [PersonalRound,LargeRound,LargeSquare]
+       
+        
         
         
         let CYOPersonalRound = FoodItem(title:"CYO Personal Round",itemDescription: "Mozzarella, Grated Cheese and Sauce. Add toppings to your pie for $2.00 each.",originalPrice : 12.00)
@@ -253,11 +257,13 @@ class PersistencyManager: NSObject {
         verdura = [VerduraPersonalRound,VerduraLargeRound,VerduraLargeSquare]
        
         
-        speciality = [Americana,AummaAumma,Bandiera,Cafona,Capponata,Carnosa,Contadina,Cortese,Diavola,Ditta,Fantasia,Forzuta,Francesco,Giardino,Golosa,Greca,Gustosa,Mafiosa,Margherita,Marinara,Nessa,Parmigiana,Primavera,Puttanesca,QuattroFormaggi,Rustica,SottoSopra,Spagnola,Verdura]
+//        speciality = [Americana,AummaAumma,Bandiera,Cafona,Capponata,Carnosa,Contadina,Cortese,Diavola,Ditta,Fantasia,Forzuta,Francesco,Giardino,Golosa,Greca,Gustosa,Mafiosa,Margherita,Marinara,Nessa,Parmigiana,Primavera,Puttanesca,QuattroFormaggi,Rustica,SottoSopra,Spagnola,Verdura]
         
         
         
          pizzas = [PersonalRound,LargeRound,LargeSquare,CYOPersonalRound,CYOLargeRound,CYOLargeSquare,AmericanaPersonalRound,AmericanaLargeRound,AmericanaLargeSquare,AummaAummaPersonalRound,AummaAummaLargeRound,AummaAummaLargeSquare,BandieraPersonalRound,BandieraLargeRound,BandieraLargeSquare,CafonaPersonalRound,CafonaLargeRound,CafonaLargeSquare,CapponataPersonalRound,CapponataLargeRound,CapponataLargeSquare,CarnosaPersonalRound,CarnosaLargeRound,CarnosaLargeSquare,ContadinaPersonalRound,ContadinaLargeRound,ContadinaLargeSquare,CortesePersonalRound,CorteseLargeRound,CorteseLargeSquare,DiavolaPersonalRound,DiavolaLargeRound,DiavolaLargeSquare,DittaPersonalRound,DittaLargeRound,DittaLargeSquare,FantasiaPersonalRound,FantasiaLargeRound,FantasiaLargeSquare,ForzutaPersonalRound,ForzutaPersonalRound,ForzutaLargeRound,ForzutaLargeSquare,FrancescoPersonalRound,FrancescoLargeRound,FrancescoLargeSquare,GiardinoPersonalRound,GiardinoLargeRound,GiardinoLargeSquare,GolosaPersonalRound,GolosaLargeRound,GolosaLargeSquare,GrecaPersonalRound,GrecaLargeRound,GrecaLargeSquare,GustosaPersonalRound,GustosaLargeRound,GustosaLargeSquare,MafiosaPersonalRound,MafiosaLargeRound,MafiosaLargeSquare,MargheritaPersonalRound,MargheritaLargeRound,MargheritaLargeSquare,MarinaraPersonalRound,MargheritaLargeRound,MargheritaLargeSquare,MarinaraPersonalRound,MarinaraLargeRound,MarinaraLargeSquare,NessaPersonalRound,NessaLargeRound,NessaLargeSquare,ParmigianaPersonalRound,ParmigianaLargeRound,ParmigianaLargeSquare,PrimaveraPersonalRound,PrimaveraLargeRound,PrimaveraLargeSquare,PuttanescaPersonalRound,PuttanescaLargeRound,PuttanescaLargeSquare,QuattroFormaggiPersonalRound,QuattroFormaggiLargeRound,QuattroFormaggiLargeSquare,RusticaPersonalRound,RusticaLargeRound,RusticaLargeSquare,SottoSopraPersonalRound,SottoSopraLargeRound,SottoSopraLargeSquare,SpagnolaPersonalRound,SpagnolaLargeRound,SpagnolaLargeSquare,VerduraPersonalRound,VerduraLargeRound,VerduraLargeSquare]
+        
+        speciality = [AmericanaPersonalRound,AmericanaLargeRound,AmericanaLargeSquare,AummaAummaPersonalRound,AummaAummaLargeRound,AummaAummaLargeSquare,BandieraPersonalRound,BandieraLargeRound,BandieraLargeSquare,CafonaPersonalRound,CafonaLargeRound,CafonaLargeSquare,CapponataPersonalRound,CapponataLargeRound,CapponataLargeSquare,CarnosaPersonalRound,CarnosaLargeRound,CarnosaLargeSquare,ContadinaPersonalRound,ContadinaLargeRound,ContadinaLargeSquare,CortesePersonalRound,CorteseLargeRound,CorteseLargeSquare,DiavolaPersonalRound,DiavolaLargeRound,DiavolaLargeSquare,DittaPersonalRound,DittaLargeRound,DittaLargeSquare,FantasiaPersonalRound,FantasiaLargeRound,FantasiaLargeSquare,ForzutaPersonalRound,ForzutaPersonalRound,ForzutaLargeRound,ForzutaLargeSquare,FrancescoPersonalRound,FrancescoLargeRound,FrancescoLargeSquare,GiardinoPersonalRound,GiardinoLargeRound,GiardinoLargeSquare,GolosaPersonalRound,GolosaLargeRound,GolosaLargeSquare,GrecaPersonalRound,GrecaLargeRound,GrecaLargeSquare,GustosaPersonalRound,GustosaLargeRound,GustosaLargeSquare,MafiosaPersonalRound,MafiosaLargeRound,MafiosaLargeSquare,MargheritaPersonalRound,MargheritaLargeRound,MargheritaLargeSquare,MarinaraPersonalRound,MargheritaLargeRound,MargheritaLargeSquare,MarinaraPersonalRound,MarinaraLargeRound,MarinaraLargeSquare,NessaPersonalRound,NessaLargeRound,NessaLargeSquare,ParmigianaPersonalRound,ParmigianaLargeRound,ParmigianaLargeSquare,PrimaveraPersonalRound,PrimaveraLargeRound,PrimaveraLargeSquare,PuttanescaPersonalRound,PuttanescaLargeRound,PuttanescaLargeSquare,QuattroFormaggiPersonalRound,QuattroFormaggiLargeRound,QuattroFormaggiLargeSquare,RusticaPersonalRound,RusticaLargeRound,RusticaLargeSquare,SottoSopraPersonalRound,SottoSopraLargeRound,SottoSopraLargeSquare,SpagnolaPersonalRound,SpagnolaLargeRound,SpagnolaLargeSquare,VerduraPersonalRound,VerduraLargeRound,VerduraLargeSquare]
         
         
         let createYourOwnCalzone = FoodItem(title:"Create Your Own",itemDescription:"Create Your Own with any 3 items from our list of toppings.",originalPrice :9.00)
@@ -299,7 +305,43 @@ class PersistencyManager: NSObject {
 
     }
     
-   
+    func getPlainPizzasForSection() -> Int {
+        return plainPizzas.count ///3
+        
+    }
+    func plainPizzaItemAtIndex(index: Int) -> FoodItem {
+        
+        return plainPizzas[index]
+        
+    }
+    
+    
+    
+    func getCYOPizzasForSection() -> Int {
+        return createYourOwn.count///3
+        
+    }
+    func cyoPizzaItemAtIndex(index: Int) -> FoodItem {
+        
+        return createYourOwn[index]
+        
+    }
+
+    
+    
+    func getSpecialityPizzasForSection() -> Int {
+        return speciality.count///3
+        
+    }
+    func specialityPizzaItemAtIndex(index: Int) -> FoodItem {
+        
+        return speciality[index]
+        
+    }
+
+    
+    
+    
    
     
     func getPizza() -> [FoodItem]{

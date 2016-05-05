@@ -12,7 +12,7 @@ import SlideMenuControllerSwift
 class ContainerViewController: SlideMenuController, ShoppingCartViewControllerDelegate {
     
     override func awakeFromNib() {
-        if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MenuTableViewController") {
+        if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("PizzaViewController") {
             self.mainViewController = controller
         }
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("LeftMenuTableViewController") {
@@ -47,7 +47,10 @@ class ContainerViewController: SlideMenuController, ShoppingCartViewControllerDe
         self.navigationItem.title = "Simply Delicious"
         if let navigationBar = navigationController?.navigationBar {
             navigationBar.setBackgroundImage(UIImage(named: "codepath-logo"), forBarMetrics: .Default)
-            navigationBar.tintColor = UIColor(red: 1.0, green: 0.25, blue: 0.25, alpha: 0.8)
+          //  navigationBar.tintColor = UIColor(red: 1.0, green: 0.25, blue: 0.25, alpha: 0.8)
+            
+            
+            
             
             let shadow = NSShadow()
             shadow.shadowColor = UIColor.grayColor().colorWithAlphaComponent(0.5)

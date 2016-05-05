@@ -139,6 +139,48 @@ class ModelAPI: NSObject {
             httpClient.postRequest("/api/deleteDessert", body: "\(index)")
         }
     }
+    
+    //MARK :Data Sections
+    func getPlainPizzasForSection() -> Int {
+        return persistencyManager.getPlainPizzasForSection()
+        
+    }
+    func getCYOPizzasForSection() -> Int {
+        return persistencyManager.getCYOPizzasForSection()
+        
+    }
+    func getSpecialityPizzasForSection() -> Int {
+        return persistencyManager.getSpecialityPizzasForSection()
+        
+    }
+    
+    //MARK: Data Rows In Sections
+    func plainPizzaItemAtIndex(index: Int) -> FoodItem {
+        
+
+         return persistencyManager.plainPizzaItemAtIndex(index)
+        
+        
+    }
+    
+    
+    
+        func cyoPizzaItemAtIndex(index: Int) -> FoodItem {
+        
+        
+             return persistencyManager.cyoPizzaItemAtIndex(index)
+    }
+    
+    
+    
+       func specialityPizzaItemAtIndex(index: Int) -> FoodItem {
+        
+    //    return speciality[index]
+        
+        return persistencyManager.specialityPizzaItemAtIndex(index)
+        
+    }
+
 
 
     
