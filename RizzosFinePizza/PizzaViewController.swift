@@ -39,6 +39,9 @@ class PizzaViewController: UIViewController {
         super.viewDidLoad()
         twitterTableView.delegate = self
         itemManager = ModelAPI()
+        
+        twitterTableView.estimatedRowHeight = 87.0
+        twitterTableView.rowHeight = UITableViewAutomaticDimension
     
         /*
        
@@ -48,7 +51,11 @@ class PizzaViewController: UIViewController {
              view.addSubview(twitterScrollTableView)
  */
 
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         
+        twitterTableView.reloadData()
         
     }
     
@@ -130,7 +137,7 @@ extension PizzaViewController: MBTwitterScrollDelegate, UITableViewDelegate,UITa
 
         
         
-        cell!.foodNameLabel.text = "Large Round"
+     //   cell!.foodNameLabel.text = "Large Round"
         
 //        if let foodItem = itemManager?.checkItemAtIndex(indexPath.row) {
 //            cell.configCellWithItem(foodItem)
@@ -140,6 +147,7 @@ extension PizzaViewController: MBTwitterScrollDelegate, UITableViewDelegate,UITa
     }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
         /*
                 let myRect = tableView.rectForRowAtIndexPath(indexPath)
                 //
@@ -162,6 +170,7 @@ extension PizzaViewController: MBTwitterScrollDelegate, UITableViewDelegate,UITa
             })
         }
  */
+ 
         
     }
     
@@ -171,8 +180,8 @@ extension PizzaViewController: MBTwitterScrollDelegate, UITableViewDelegate,UITa
         returnedView.backgroundColor = UIColor.redColor()
         
         let label = UILabel(frame: CGRectMake(20, 20, 200, 30))
-        let fontSize = CGFloat(17)
-        label.font = UIFont(name: "Arial-BoldItalicMT", size: fontSize)
+        let fontSize = CGFloat(19)
+        label.font = UIFont(name: "Helvetica-Bold", size: fontSize)
         label.textColor = UIColor.whiteColor()
         label.text = sectionHeaderTitleArray[section]
         returnedView.addSubview(label)

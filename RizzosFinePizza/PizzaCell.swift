@@ -55,7 +55,7 @@ class PizzaCell: UITableViewCell {
     func configCellWithItem(item: FoodItem){
         foodNameLabel.text = item.title
         pizzaDescriptionLabel.text = item.itemDescription
-        largeSquarePriceLabel.text = "\(item.originalPrice)"
+        largeSquarePriceLabel.text = "$"+"\(item.originalPrice)"
         
         
         

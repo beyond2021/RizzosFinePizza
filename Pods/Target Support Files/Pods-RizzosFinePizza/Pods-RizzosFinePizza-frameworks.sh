@@ -84,22 +84,26 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-RizzosFinePizza/ACPButton.framework"
   install_framework "Pods-RizzosFinePizza/Bolts.framework"
   install_framework "Pods-RizzosFinePizza/FBSDKCoreKit.framework"
   install_framework "Pods-RizzosFinePizza/FBSDKLoginKit.framework"
   install_framework "Pods-RizzosFinePizza/FBSDKShareKit.framework"
   install_framework "Pods-RizzosFinePizza/MBTwitterScroll.framework"
+  install_framework "Pods-RizzosFinePizza/SKSplashView.framework"
   install_framework "Pods-RizzosFinePizza/SlideMenuControllerSwift.framework"
   install_framework "Pods-RizzosFinePizza/SwiftyJSON.framework"
   install_framework "Pods-RizzosFinePizza/TAPageControl.framework"
   install_framework "Pods-RizzosFinePizza/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-RizzosFinePizza/ACPButton.framework"
   install_framework "Pods-RizzosFinePizza/Bolts.framework"
   install_framework "Pods-RizzosFinePizza/FBSDKCoreKit.framework"
   install_framework "Pods-RizzosFinePizza/FBSDKLoginKit.framework"
   install_framework "Pods-RizzosFinePizza/FBSDKShareKit.framework"
   install_framework "Pods-RizzosFinePizza/MBTwitterScroll.framework"
+  install_framework "Pods-RizzosFinePizza/SKSplashView.framework"
   install_framework "Pods-RizzosFinePizza/SlideMenuControllerSwift.framework"
   install_framework "Pods-RizzosFinePizza/SwiftyJSON.framework"
   install_framework "Pods-RizzosFinePizza/TAPageControl.framework"

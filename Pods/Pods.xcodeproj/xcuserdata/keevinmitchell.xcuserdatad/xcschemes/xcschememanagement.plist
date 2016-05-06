@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ACPButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SKSplashView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SlideMenuControllerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,7 +77,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>15D71A533AE6A996C065E4BA863BCE0D</key>
+		<key>17EB8B97D2050A0C414A58B881671ACA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2BBF90759478F4947C1E5088BE4F4253</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2FFB352F3FE2CFA02229C28729EDBC2B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>436389BF878AF2F4AF68E046582EC120</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A1D0584845CAC86FCF898E2269480E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>529957324E31D6A25A1340DE150F6BF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,16 +117,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E03ED9FB62A6CECC82B254E36A7A746</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>63A2C037BF20D0F8E687CAF9ABFDEBFE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>66E2EC5FBD568B605BB802A5A9FC1CED</key>
 		<dict>
 			<key>primary</key>
@@ -102,17 +127,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6BEC404A4892F02FAB152510501471A9</key>
+		<key>BC9B8FED1536690672B809C574A2D5CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A1249F7D72E5BFB48286A11ECEE1097F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B4BF8DA0CE2C2C56CC5FA70A53D6FAFC</key>
+		<key>BF4EFF2C7BD726DB274D82B87850F14F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

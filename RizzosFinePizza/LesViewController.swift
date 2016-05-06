@@ -15,11 +15,23 @@ class LesViewController: UIViewController {
     
     weak var delegate : LesViewControllerDelegate?
     
+    @IBOutlet weak var homeButton: ACPButton!
+    @IBOutlet weak var telepnoneButton: ACPButton!
+    @IBOutlet weak var deliveryButton: ACPButton!
 
+    @IBOutlet weak var pickupButton: ACPButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+     //   deliveryButton.setFlatStyleType(style:ACPButtonBlue)
+        /*
+         - (void) setStyleType:(ACPButtonType)style;
+         - (void) setFlatStyleType:(ACPButtonType)style;
+         - (void) setFlatStyle:(UIColor*)normal andHighlightedColor:(UIColor*)highlight;
+         - (void) setStyle:(UIColor*)topColor andBottomColor:(UIColor*)bottomColor;
+         - (void) setStyleWithImage:(NSString*)image highlightedImage:(NSString*)hImage disableImage:(NSString *)dImage andInsets:(UIEdgeInsets)insets;
+         - (void) setGlowHighlightedState:(BOOL)glowOption;
+ 
+ */
     }
     override func viewDidAppear(animated: Bool) {
         

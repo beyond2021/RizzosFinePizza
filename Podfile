@@ -13,6 +13,8 @@ pod 'pop', '~> 1.0'
  pod 'FBSDKLoginKit'
  pod 'FBSDKShareKit'
 pod "MBTwitterScroll"
+pod 'ACPButton'
+pod 'SKSplashView'
 end
 
 target 'RizzosFinePizzaTests' do
@@ -24,6 +26,8 @@ pod 'pop', '~> 1.0'
  pod 'FBSDKCoreKit'
  pod 'FBSDKLoginKit'
  pod 'FBSDKShareKit'
-pod "MBTwitterScroll" 
+pod "MBTwitterScroll"
+pod 'ACPButton'
+pod 'SKSplashView'
 end
 

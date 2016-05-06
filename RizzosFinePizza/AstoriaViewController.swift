@@ -16,13 +16,30 @@ protocol AstoriaViewControllerDelegate : class{
 class AstoriaViewController: UIViewController, PizzaViewControllerDelegate {
     weak var delegate : AstoriaViewControllerDelegate?
     
+    @IBOutlet weak var telephoneButton: UIButton!
+    @IBOutlet weak var deliveryButton: UIButton!
+    @IBOutlet weak var homeButton: UIButton!
 
+    @IBOutlet weak var picupButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         let pizzaVC = PizzaViewController()
         pizzaVC.delegate = self
 
         // Do any additional setup after loading the view.
+        /*
+         - (void) setStyleType:(ACPButtonType)style;
+         - (void) setFlatStyleType:(ACPButtonType)style;
+         - (void) setFlatStyle:(UIColor*)normal andHighlightedColor:(UIColor*)highlight;
+         - (void) setStyle:(UIColor*)topColor andBottomColor:(UIColor*)bottomColor;
+         - (void) setStyleWithImage:(NSString*)image highlightedImage:(NSString*)hImage disableImage:(NSString *)dImage andInsets:(UIEdgeInsets)insets;
+         - (void) setGlowHighlightedState:(BOOL)glowOption;
+ */
+        
+        
+        
+        
+        
     }
     override func viewDidAppear(animated: Bool) {
         
