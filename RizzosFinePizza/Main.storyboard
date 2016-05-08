@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZLb-xo-YWu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Trajan Pro Bold.ttf">
+            <string>TrajanPro-Bold</string>
+            <string>TrajanPro-Bold</string>
+            <string>TrajanPro-Bold</string>
+            <string>TrajanPro-Bold</string>
+            <string>TrajanPro-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="88L-Ya-YOw">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="ZLb-xo-YWu" customClass="MainViewController" customModule="RizzosFinePizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MGU-lI-IUj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xar-RA-fcW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hCP-UK-oLd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="customBG" translatesAutoresizingMaskIntoConstraints="NO" id="hld-Jo-c5z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjE-JB-rZ7">
+                                <rect key="frame" x="132" y="149" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Dof-Ke-j2E"/>
+                                    <constraint firstAttribute="width" constant="150" id="kS9-tR-N24"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="AstoriaButton"/>
+                                <connections>
+                                    <segue destination="kp9-Dg-dsi" kind="presentation" identifier="Astoria" id="FJy-30-0Hr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ES-qZ-Geu">
+                                <rect key="frame" x="20" y="683" width="374" height="25"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="js0-zt-Q3n"/>
+                                    <constraint firstAttribute="height" constant="25" id="vDA-zG-uf9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrajanPro-Bold" family="Trajan Pro" pointSize="16"/>
+                                <state key="normal" title="Log - Out"/>
+                                <connections>
+                                    <action selector="LogoutAction:" destination="ZLb-xo-YWu" eventType="touchUpInside" id="idc-SS-veW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkh-Ca-DoK">
+                                <rect key="frame" x="132" y="364" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="4kW-0W-Wod"/>
+                                    <constraint firstAttribute="width" constant="150" id="uTp-2V-9bu"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ClintonButton"/>
+                                <connections>
+                                    <segue destination="y57-8n-C6W" kind="popoverPresentation" identifier="Clinton" popoverAnchorView="Nkh-Ca-DoK" id="V0V-BN-UpJ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.14117647059999999" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pjE-JB-rZ7" firstAttribute="top" secondItem="MGU-lI-IUj" secondAttribute="bottom" constant="129" id="3MZ-Rq-quu"/>
+                            <constraint firstAttribute="trailing" secondItem="0ES-qZ-Geu" secondAttribute="trailing" constant="20" id="3gw-HF-kbZ"/>
+                            <constraint firstItem="pjE-JB-rZ7" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="5Cu-xC-Hom"/>
+                            <constraint firstItem="Nkh-Ca-DoK" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="E8l-zC-85S"/>
+                            <constraint firstItem="0ES-qZ-Geu" firstAttribute="leading" secondItem="hCP-UK-oLd" secondAttribute="leading" constant="20" id="Ehf-AD-kgG"/>
+                            <constraint firstItem="0ES-qZ-Geu" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="FQO-0l-dKG"/>
+                            <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="hld-Jo-c5z" secondAttribute="bottom" id="IaN-V8-3yj"/>
+                            <constraint firstItem="Nkh-Ca-DoK" firstAttribute="top" secondItem="pjE-JB-rZ7" secondAttribute="bottom" constant="65" id="PE0-Jz-tCH"/>
+                            <constraint firstItem="hld-Jo-c5z" firstAttribute="leading" secondItem="hCP-UK-oLd" secondAttribute="leading" id="R4o-ro-UhX"/>
+                            <constraint firstItem="hld-Jo-c5z" firstAttribute="top" secondItem="hCP-UK-oLd" secondAttribute="top" id="edS-jS-esq"/>
+                            <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="0ES-qZ-Geu" secondAttribute="bottom" constant="28" id="s8D-ou-i3N"/>
+                            <constraint firstAttribute="trailing" secondItem="hld-Jo-c5z" secondAttribute="trailing" id="u23-8S-t26"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="bgImageView" destination="hld-Jo-c5z" id="Crg-Q3-Ul2"/>
+                        <outlet property="lesButton" destination="Nkh-Ca-DoK" id="kPx-pt-7Qz"/>
+                        <outlet property="loginButton" destination="0ES-qZ-Geu" id="kam-rD-b8X"/>
+                        <outlet property="steinwayButton" destination="pjE-JB-rZ7" id="FMd-us-jjW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmq-05-7NE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1427" y="19"/>
+        </scene>
+        <!--Astoria View Controller-->
+        <scene sceneID="q65-ep-X7D">
+            <objects>
+                <viewController id="kp9-Dg-dsi" customClass="AstoriaViewController" customModule="RizzosFinePizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1VA-Vh-n6p"/>
+                        <viewControllerLayoutGuide type="bottom" id="zsE-Nt-vmU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pET-au-asq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CustomLESBG" translatesAutoresizingMaskIntoConstraints="NO" id="Ekb-A8-CUm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gu9-Nd-2MD">
+                                <rect key="frame" x="334" y="449" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7v0-rA-dDw"/>
+                                    <constraint firstAttribute="height" constant="60" id="xjK-Yg-4tt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="18"/>
+                                <state key="normal" backgroundImage="phone"/>
+                                <connections>
+                                    <action selector="callAstoriaAction:" destination="kp9-Dg-dsi" eventType="touchUpInside" id="ce2-5V-wlY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIw-6w-o9o" customClass="ACPButton">
+                                <rect key="frame" x="20" y="526" width="374" height="58"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.14117647058823529" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="39R-Kc-WQz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrajanPro-Bold" family="Trajan Pro" pointSize="30"/>
+                                <state key="normal" title="DELIVERY">
+                                    <color key="titleColor" red="0.74509803921568629" green="0.49411764705882355" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deliveryAction:" destination="kp9-Dg-dsi" eventType="touchUpInside" id="ctF-IN-P50"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLR-61-8T1" customClass="ACPButton">
+                                <rect key="frame" x="20" y="592" width="374" height="58"/>
+                                <color key="backgroundColor" red="0.74509803921568629" green="0.49411764705882355" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Xcd-I4-Rkh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrajanPro-Bold" family="Trajan Pro" pointSize="30"/>
+                                <state key="normal" title="PICK-UP">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.14117647058823529" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickupAction:" destination="kp9-Dg-dsi" eventType="touchUpInside" id="ghA-Gn-i43"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsL-Ed-fJC">
+                                <rect key="frame" x="20" y="449" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="LqD-Sb-lrs"/>
+                                    <constraint firstAttribute="height" constant="60" id="gRG-5V-JPS"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="1461481824_home"/>
+                                <connections>
+                                    <action selector="backToMain:" destination="kp9-Dg-dsi" eventType="touchUpInside" id="DlZ-Em-wAc"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5u-hQ-Tt4">
+                                <rect key="frame" x="0.0" y="658" width="414" height="78"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="O01-sd-OKW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xb7-pq-prB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="448" id="5jA-xs-HlI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aIw-6w-o9o" firstAttribute="top" secondItem="Gu9-Nd-2MD" secondAttribute="bottom" constant="17" id="16D-r2-8T5"/>
+                            <constraint firstItem="Xb7-pq-prB" firstAttribute="leading" secondItem="pET-au-asq" secondAttribute="leading" id="Byk-Xn-drX"/>
+                            <constraint firstAttribute="trailing" secondItem="aIw-6w-o9o" secondAttribute="trailing" constant="20" id="IFd-8o-Ze5"/>
+                            <constraint firstAttribute="trailing" secondItem="Xb7-pq-prB" secondAttribute="trailing" id="J34-58-Lpb"/>
+                            <constraint firstItem="R5u-hQ-Tt4" firstAttribute="top" secondItem="OLR-61-8T1" secondAttribute="bottom" constant="8" id="KWT-SY-ewG"/>
+                            <constraint firstItem="aIw-6w-o9o" firstAttribute="top" secondItem="bsL-Ed-fJC" secondAttribute="bottom" constant="17" id="PpW-zK-lEP"/>
+                            <constraint firstAttribute="trailing" secondItem="OLR-61-8T1" secondAttribute="trailing" constant="20" id="RBO-Jt-WmH"/>
+                            <constraint firstItem="OLR-61-8T1" firstAttribute="leading" secondItem="pET-au-asq" secondAttribute="leading" constant="20" id="Ssg-S7-Yby"/>
+                            <constraint firstItem="aIw-6w-o9o" firstAttribute="leading" secondItem="pET-au-asq" secondAttribute="leading" constant="20" id="Tm4-xk-DwR"/>
+                            <constraint firstAttribute="trailing" secondItem="Gu9-Nd-2MD" secondAttribute="trailing" constant="20" id="UOg-Pb-KqY"/>
+                            <constraint firstItem="Gu9-Nd-2MD" firstAttribute="top" secondItem="Xb7-pq-prB" secondAttribute="bottom" constant="1" id="ZAt-Kq-gll"/>
+                            <constraint firstItem="bsL-Ed-fJC" firstAttribute="top" secondItem="Xb7-pq-prB" secondAttribute="bottom" constant="1" id="aCJ-cg-KAF"/>
+                            <constraint firstItem="zsE-Nt-vmU" firstAttribute="top" secondItem="Ekb-A8-CUm" secondAttribute="bottom" id="byA-fR-NHo"/>
+                            <constraint firstItem="Ekb-A8-CUm" firstAttribute="top" secondItem="pET-au-asq" secondAttribute="top" id="d53-aF-OQy"/>
+                            <constraint firstItem="R5u-hQ-Tt4" firstAttribute="leading" secondItem="pET-au-asq" secondAttribute="leading" id="dTv-UH-bM9"/>
+                            <constraint firstAttribute="trailing" secondItem="R5u-hQ-Tt4" secondAttribute="trailing" id="if2-Xm-Jkd"/>
+                            <constraint firstAttribute="trailing" secondItem="Ekb-A8-CUm" secondAttribute="trailing" id="p4r-dK-MBd"/>
+                            <constraint firstItem="bsL-Ed-fJC" firstAttribute="leading" secondItem="pET-au-asq" secondAttribute="leading" constant="20" id="pcd-hP-ePn"/>
+                            <constraint firstItem="Xb7-pq-prB" firstAttribute="top" secondItem="pET-au-asq" secondAttribute="top" id="sQG-af-vXV"/>
+                            <constraint firstItem="OLR-61-8T1" firstAttribute="top" secondItem="aIw-6w-o9o" secondAttribute="bottom" constant="8" id="t7L-7f-pui"/>
+                            <constraint firstItem="Ekb-A8-CUm" firstAttribute="leading" secondItem="pET-au-asq" secondAttribute="leading" id="tkz-Wz-Mtq"/>
+                            <constraint firstItem="zsE-Nt-vmU" firstAttribute="top" secondItem="R5u-hQ-Tt4" secondAttribute="bottom" id="ufO-oX-EeH"/>
+                            <constraint firstItem="bsL-Ed-fJC" firstAttribute="top" secondItem="Xb7-pq-prB" secondAttribute="bottom" constant="1" id="vHQ-8Q-h4v"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="16D-r2-8T5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="deliveryButton" destination="aIw-6w-o9o" id="CJ7-jA-98P"/>
+                        <outlet property="homeButton" destination="bsL-Ed-fJC" id="hkk-TK-yIR"/>
+                        <outlet property="pickupButton" destination="OLR-61-8T1" id="eGM-Zu-hNm"/>
+                        <outlet property="telephoneButton" destination="Gu9-Nd-2MD" id="eCg-9d-2Rb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEU-Rz-Ywi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-829" y="-131"/>
+        </scene>
+        <!--Les View Controller-->
+        <scene sceneID="gR9-Bu-Guo">
+            <objects>
+                <viewController id="y57-8n-C6W" customClass="LesViewController" customModule="RizzosFinePizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="omY-n0-gHJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ibE-8o-lTL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cMs-ac-Dao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CustomAstoriaBG" translatesAutoresizingMaskIntoConstraints="NO" id="7p0-eI-kFO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msd-Nh-Bq6" customClass="ACPButton">
+                                <rect key="frame" x="334" y="448" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1bn-wb-b6m"/>
+                                    <constraint firstAttribute="width" constant="60" id="8cN-eX-IaK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="16"/>
+                                <state key="normal" backgroundImage="phone"/>
+                                <connections>
+                                    <action selector="callClinton:" destination="y57-8n-C6W" eventType="touchUpInside" id="Pxs-hO-PGz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bne-iw-yJP" customClass="ACPButton">
+                                <rect key="frame" x="20" y="522" width="374" height="58"/>
+                                <color key="backgroundColor" red="0.47843137254901963" green="0.19607843137254902" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="WNp-XK-k2a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrajanPro-Bold" family="Trajan Pro" pointSize="30"/>
+                                <state key="normal" title="DELIVERY">
+                                    <color key="titleColor" red="0.74509803921568629" green="0.49411764705882355" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deliveryAction:" destination="y57-8n-C6W" eventType="touchUpInside" id="D1b-gk-3dL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrX-Md-kg6" customClass="ACPButton">
+                                <rect key="frame" x="20" y="588" width="374" height="58"/>
+                                <color key="backgroundColor" red="0.74509803921568629" green="0.49411764705882355" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="xT7-3M-QkT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrajanPro-Bold" family="Trajan Pro" pointSize="30"/>
+                                <state key="normal" title="PICK-UP">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.14117647058823529" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickupAction:" destination="y57-8n-C6W" eventType="touchUpInside" id="OQO-5e-JZX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5c-GL-bdC" customClass="ACPButton">
+                                <rect key="frame" x="20" y="448" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NYv-g2-Jes"/>
+                                    <constraint firstAttribute="width" constant="60" id="d88-jn-HZh"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="1461481824_home"/>
+                                <connections>
+                                    <action selector="backToMain:" destination="y57-8n-C6W" eventType="touchUpInside" id="GJ5-wA-obI"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjG-1i-JTi">
+                                <rect key="frame" x="0.0" y="648" width="414" height="88"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="LKC-Er-bRH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YN-6g-5r2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="446"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="446" id="DiR-to-3rs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jjG-1i-JTi" firstAttribute="top" secondItem="hrX-Md-kg6" secondAttribute="bottom" constant="2" id="03s-9g-OST"/>
+                            <constraint firstItem="g5c-GL-bdC" firstAttribute="top" secondItem="9YN-6g-5r2" secondAttribute="bottom" constant="2" id="0X6-LL-hSo"/>
+                            <constraint firstAttribute="trailing" secondItem="hrX-Md-kg6" secondAttribute="trailing" constant="20" id="1JN-bB-YIB"/>
+                            <constraint firstAttribute="trailing" secondItem="jjG-1i-JTi" secondAttribute="trailing" id="2Ra-Ry-ZQF"/>
+                            <constraint firstAttribute="trailing" secondItem="Msd-Nh-Bq6" secondAttribute="trailing" constant="20" id="4Q3-jr-xZ7"/>
+                            <constraint firstAttribute="trailing" secondItem="7p0-eI-kFO" secondAttribute="trailing" id="5E3-d6-GGh"/>
+                            <constraint firstItem="9YN-6g-5r2" firstAttribute="leading" secondItem="cMs-ac-Dao" secondAttribute="leading" id="7PM-ar-Onj"/>
+                            <constraint firstItem="Bne-iw-yJP" firstAttribute="top" secondItem="g5c-GL-bdC" secondAttribute="bottom" constant="14" id="88R-Iw-uGw"/>
+                            <constraint firstItem="Msd-Nh-Bq6" firstAttribute="top" secondItem="9YN-6g-5r2" secondAttribute="bottom" constant="2" id="8s4-Ur-eu3"/>
+                            <constraint firstItem="9YN-6g-5r2" firstAttribute="top" secondItem="cMs-ac-Dao" secondAttribute="top" id="9NO-Uy-CmU"/>
+                            <constraint firstAttribute="trailing" secondItem="Bne-iw-yJP" secondAttribute="trailing" constant="20" id="JYr-Ra-Kof"/>
+                            <constraint firstItem="g5c-GL-bdC" firstAttribute="leading" secondItem="cMs-ac-Dao" secondAttribute="leading" constant="20" id="LCs-x9-kRI"/>
+                            <constraint firstItem="hrX-Md-kg6" firstAttribute="leading" secondItem="cMs-ac-Dao" secondAttribute="leading" constant="20" id="R0B-SI-1vd"/>
+                            <constraint firstItem="7p0-eI-kFO" firstAttribute="top" secondItem="cMs-ac-Dao" secondAttribute="top" id="ScU-wL-sGQ"/>
+                            <constraint firstItem="7p0-eI-kFO" firstAttribute="leading" secondItem="cMs-ac-Dao" secondAttribute="leading" id="Vhl-Bu-ujh"/>
+                            <constraint firstItem="ibE-8o-lTL" firstAttribute="top" secondItem="jjG-1i-JTi" secondAttribute="bottom" id="XfK-en-Tf6"/>
+                            <constraint firstItem="jjG-1i-JTi" firstAttribute="leading" secondItem="cMs-ac-Dao" secondAttribute="leading" id="ZTA-QV-882"/>
+                            <constraint firstItem="ibE-8o-lTL" firstAttribute="top" secondItem="7p0-eI-kFO" secondAttribute="bottom" id="hT0-t6-XdU"/>
+                            <constraint firstItem="Bne-iw-yJP" firstAttribute="leading" secondItem="cMs-ac-Dao" secondAttribute="leading" constant="20" id="iq0-tL-mZi"/>
+                            <constraint firstItem="hrX-Md-kg6" firstAttribute="top" secondItem="Bne-iw-yJP" secondAttribute="bottom" constant="8" id="n8U-td-NVm"/>
+                            <constraint firstAttribute="trailing" secondItem="9YN-6g-5r2" secondAttribute="trailing" id="ybl-Uz-u9m"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="deliveryButton" destination="Bne-iw-yJP" id="ac0-W8-iyB"/>
+                        <outlet property="homeButton" destination="g5c-GL-bdC" id="8oM-q7-DBY"/>
+                        <outlet property="pickupButton" destination="hrX-Md-kg6" id="D3F-a0-gYu"/>
+                        <outlet property="telepnoneButton" destination="Msd-Nh-Bq6" id="G9u-ZV-QMY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJQ-in-Dvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-869" y="657"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1461481824_home" width="42" height="42"/>
+        <image name="AstoriaButton" width="256" height="256"/>
+        <image name="ClintonButton" width="393" height="392"/>
+        <image name="CustomAstoriaBG" width="1536" height="2730"/>
+        <image name="CustomLESBG" width="1536" height="2730"/>
+        <image name="customBG" width="1536" height="2730"/>
+        <image name="phone" width="42" height="42"/>
+    </resources>
+</document>

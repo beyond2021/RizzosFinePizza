@@ -10,11 +10,11 @@ import UIKit
 import pop
 
 
-class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaViewControllerDelegate, LesViewControllerDelegate,FBLoginViewControllerDelegate {
+class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesViewControllerDelegate,FBLoginViewControllerDelegate {
       
     @IBOutlet weak var bgImageView: UIImageView!
     
-    @IBOutlet weak var uesButton: UIButton!
+   
     @IBOutlet weak var steinwayButton: UIButton!
     
     @IBOutlet weak var lesButton: UIButton!
@@ -33,7 +33,7 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
                 
         if (FBSDKAccessToken.currentAccessToken() != nil){
             lesButton.enabled = true
-            uesButton.enabled = true
+           
             steinwayButton.enabled = true
             
         } else {
@@ -67,7 +67,7 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
     }
     override func viewDidAppear(animated: Bool) {
         lesButton.enabled = true
-        uesButton.enabled = true
+       
         steinwayButton.enabled = true
     }
 
@@ -78,10 +78,7 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
     
     //MARK: Button Actions
     
-    @IBAction func uesAction(sender: UIButton) {
-        uesButton.center.x += view.bounds.width
-    }
-
+   
     @IBAction func steinwayAction(sender: UIButton) {
         steinwayButton.center.x += view.bounds.width
         
@@ -94,10 +91,6 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
     func setUpInterface(){
         bgImageView.contentMode = UIViewContentMode.Center
         
-        // bgImageView.image = UIImage(assetIdentifier: .BlankBG)
-        // customImageView.layer.cornerRadius = customImageView.bounds.size.width / 2
-        uesButton.layer.cornerRadius = uesButton.bounds.size.width / 2
-        uesButton.layer.masksToBounds = true
         
         steinwayButton.layer.cornerRadius = steinwayButton.bounds.size.width / 2
         steinwayButton.layer.masksToBounds = true
@@ -122,16 +115,12 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
             }, completion: nil)
         
         //START OFF THE SCREEN
-        uesButton.center.x -= view.bounds.width
-        steinwayButton.center.x -= view.bounds.width
+               steinwayButton.center.x -= view.bounds.width
         lesButton.center.x -= view.bounds.width
         
         //Bring on screen
-        UIView.animateWithDuration(0.73, delay: 0.0, usingSpringWithDamping:
-            0.9, initialSpringVelocity: 0.0, options: [], animations: {
-                self.uesButton.center.x += self.view.bounds.width
-                
-            }, completion: nil)
+               
+        
         UIView.animateWithDuration(0.73, delay: 0.5, usingSpringWithDamping:
             0.6, initialSpringVelocity: 0.0, options: [], animations: {
                 self.steinwayButton.center.x += self.view.bounds.width
@@ -151,15 +140,7 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
         //TI GET CALLED IF U CAUSE A SEGUE TO TRIGGER
         // CHECK THE ID OF THE SEGUE. THIS IS A PROPERTY OF THE SEGUE
         // GET THE DESTINATION VC
-        if segue.identifier == "UES" {
-            // We are on the right one so lets now get the destinationVC
-            if let destVC = segue.destinationViewController as? UESViewController {
-                // if this was possible then we want to ourself its delegate
-                destVC.delegate = self
-                
-            }
-        }else
-            if segue.identifier == "Astoria" {
+                    if segue.identifier == "Astoria" {
                 // We are on the right one so lets now get the destinationVC
                 if let destVC = segue.destinationViewController as? AstoriaViewController {
                     // if this was possible then we want to ourself its delegate
@@ -195,12 +176,6 @@ class MainViewController: UIViewController, UESViewControllerDelegate, AstoriaVi
 
 
     //MARK : Delegate Actions
-    func dismissUES(){
-       self.dismissViewControllerAnimated(true) {
-        print("UES is dismissed")
-        }
-        
-    }
     
         func dismissAstoria(){
             self.dismissViewControllerAnimated(true) {

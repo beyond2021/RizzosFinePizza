@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2200785D1CDD550F00AED961 /* AddToCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200785C1CDD550E00AED961 /* AddToCartViewController.swift */; };
+		2200785E1CDD550F00AED961 /* AddToCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200785C1CDD550E00AED961 /* AddToCartViewController.swift */; };
+		220078601CDF119B00AED961 /* vermin_vibes.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2200785F1CDF119A00AED961 /* vermin_vibes.ttf */; };
+		220078621CDF387C00AED961 /* OtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220078611CDF387C00AED961 /* OtherCell.swift */; };
 		222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156331CC06243009A08C5 /* FoodItemTests.swift */; };
 		222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156351CC0634D009A08C5 /* FoodOrderTests.swift */; };
 		2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0431CBC720200218DE3 /* LocationTests.swift */; };
@@ -47,7 +51,6 @@
 		22A1EB8C1CC74FD900C51FE5 /* MainViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB8B1CC74FD900C51FE5 /* MainViewControllerTest.swift */; };
 		22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB8D1CC7504500C51FE5 /* MainViewController.swift */; };
 		22A1EB931CC8174700C51FE5 /* CHTumblrMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB921CC8174700C51FE5 /* CHTumblrMenuView.m */; };
-		22A1EB951CC817FB00C51FE5 /* UESViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB941CC817FB00C51FE5 /* UESViewController.swift */; };
 		22A1EB971CC8183C00C51FE5 /* AstoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */; };
 		22A1EB991CC8187600C51FE5 /* LesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB981CC8187600C51FE5 /* LesViewController.swift */; };
 		22A1EB9E1CC8B06C00C51FE5 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */; };
@@ -68,6 +71,14 @@
 		22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */; };
 		22CCFEF31CC69276002841D5 /* MenuListDataSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */; };
 		22CCFEF51CC69A34002841D5 /* MenuListDataSupplierTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */; };
+		22D6E9441CDC53CD0080603B /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6E9401CDC53CD0080603B /* AvatarImageView.swift */; };
+		22D6E9451CDC53CD0080603B /* TWTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6E9411CDC53CD0080603B /* TWTButton.swift */; };
+		22D6E9461CDC53CD0080603B /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D6E9431CDC53CD0080603B /* FXBlurView.m */; };
+		22D6E94C1CDC982F0080603B /* Startup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D6E94B1CDC982F0080603B /* Startup.storyboard */; };
+		22D6E94F1CDC98DB0080603B /* Container.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D6E94D1CDC98DB0080603B /* Container.storyboard */; };
+		22D6E9561CDC9A530080603B /* ShoppingCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D6E9551CDC9A530080603B /* ShoppingCart.storyboard */; };
+		22D6E9581CDC9E380080603B /* LoginAndSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D6E9571CDC9E380080603B /* LoginAndSignup.storyboard */; };
+		22D6E95A1CDCA2260080603B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D6E9591CDCA2260080603B /* Main.storyboard */; };
 		22F07EB21CD015A5001E65F7 /* Trajan Pro Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */; };
 		22F07ED21CD054E5001E65F7 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07ED11CD054E5001E65F7 /* LoginSignUpViewController.swift */; };
 		22F07ED51CD058C3001E65F7 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07ED41CD058C3001E65F7 /* LoginService.swift */; };
@@ -108,6 +119,9 @@
 
 /* Begin PBXFileReference section */
 		169A08068CCBE670FF8865AA /* Pods_RizzosFinePizzaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RizzosFinePizzaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2200785C1CDD550E00AED961 /* AddToCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToCartViewController.swift; sourceTree = "<group>"; };
+		2200785F1CDF119A00AED961 /* vermin_vibes.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vermin_vibes.ttf; sourceTree = "<group>"; };
+		220078611CDF387C00AED961 /* OtherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCell.swift; sourceTree = "<group>"; };
 		222156331CC06243009A08C5 /* FoodItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemTests.swift; sourceTree = "<group>"; };
 		222156351CC0634D009A08C5 /* FoodOrderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOrderTests.swift; sourceTree = "<group>"; };
 		2233E0431CBC720200218DE3 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
@@ -142,7 +156,6 @@
 		22A1EB901CC8174600C51FE5 /* RizzosFinePizza-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RizzosFinePizza-Bridging-Header.h"; sourceTree = "<group>"; };
 		22A1EB911CC8174700C51FE5 /* CHTumblrMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTumblrMenuView.h; sourceTree = "<group>"; };
 		22A1EB921CC8174700C51FE5 /* CHTumblrMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTumblrMenuView.m; sourceTree = "<group>"; };
-		22A1EB941CC817FB00C51FE5 /* UESViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UESViewController.swift; sourceTree = "<group>"; };
 		22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstoriaViewController.swift; sourceTree = "<group>"; };
 		22A1EB981CC8187600C51FE5 /* LesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LesViewController.swift; sourceTree = "<group>"; };
 		22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
@@ -164,6 +177,15 @@
 		22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsListViewController.swift; sourceTree = "<group>"; };
 		22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListDataSupplier.swift; sourceTree = "<group>"; };
 		22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListDataSupplierTest.swift; sourceTree = "<group>"; };
+		22D6E9401CDC53CD0080603B /* AvatarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
+		22D6E9411CDC53CD0080603B /* TWTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWTButton.swift; sourceTree = "<group>"; };
+		22D6E9421CDC53CD0080603B /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		22D6E9431CDC53CD0080603B /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		22D6E94B1CDC982F0080603B /* Startup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Startup.storyboard; sourceTree = "<group>"; };
+		22D6E94E1CDC98DB0080603B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Container.storyboard; sourceTree = "<group>"; };
+		22D6E9551CDC9A530080603B /* ShoppingCart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingCart.storyboard; sourceTree = "<group>"; };
+		22D6E9571CDC9E380080603B /* LoginAndSignup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndSignup.storyboard; sourceTree = "<group>"; };
+		22D6E9591CDCA2260080603B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trajan Pro Bold.ttf"; sourceTree = "<group>"; };
 		22F07ED11CD054E5001E65F7 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSignUpViewController.swift; path = RizzosFinePizza/LoginSignUpViewController.swift; sourceTree = "<group>"; };
 		22F07ED41CD058C3001E65F7 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -242,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				2255E2141CD9F3D1007DD06C /* HTTPClient.swift */,
+				22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */,
 				2255E2051CD6C0B5007DD06C /* RizzoData.swift */,
 				2255E2101CD96EA5007DD06C /* ModelAPI.swift */,
 				2255E2121CD96FD0007DD06C /* PersistencyManager.swift */,
@@ -274,6 +297,10 @@
 		2255E22A1CDA13A5007DD06C /* Pizza ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				22D6E9401CDC53CD0080603B /* AvatarImageView.swift */,
+				22D6E9411CDC53CD0080603B /* TWTButton.swift */,
+				22D6E9421CDC53CD0080603B /* FXBlurView.h */,
+				22D6E9431CDC53CD0080603B /* FXBlurView.m */,
 				2255E22B1CDA1404007DD06C /* PizzaViewController.swift */,
 			);
 			name = "Pizza ViewController";
@@ -342,8 +369,8 @@
 		22CCFEF01CC68BC4002841D5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2200785C1CDD550E00AED961 /* AddToCartViewController.swift */,
 				22A1EB8D1CC7504500C51FE5 /* MainViewController.swift */,
-				22A1EB941CC817FB00C51FE5 /* UESViewController.swift */,
 				22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */,
 				22A1EB981CC8187600C51FE5 /* LesViewController.swift */,
 				22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */,
@@ -358,6 +385,20 @@
 				22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */,
 			);
 			name = "Data Supplier";
+			sourceTree = "<group>";
+		};
+		22D6E9471CDC97020080603B /* Story Boards */ = {
+			isa = PBXGroup;
+			children = (
+				22D6E9571CDC9E380080603B /* LoginAndSignup.storyboard */,
+				22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */,
+				22D6E9551CDC9A530080603B /* ShoppingCart.storyboard */,
+				22D6E94D1CDC98DB0080603B /* Container.storyboard */,
+				220078611CDF387C00AED961 /* OtherCell.swift */,
+				22D6E94B1CDC982F0080603B /* Startup.storyboard */,
+				22D6E9591CDCA2260080603B /* Main.storyboard */,
+			);
+			name = "Story Boards";
 			sourceTree = "<group>";
 		};
 		22F07ED31CD05896001E65F7 /* Login */ = {
@@ -395,6 +436,7 @@
 		22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */ = {
 			isa = PBXGroup;
 			children = (
+				2200785F1CDF119A00AED961 /* vermin_vibes.ttf */,
 				2255E2311CDB4E45007DD06C /* ACPButton */,
 				2255E22A1CDA13A5007DD06C /* Pizza ViewController */,
 				2255E20B1CD96CC6007DD06C /* Model Api */,
@@ -406,7 +448,7 @@
 				22CCFEF11CC691FF002841D5 /* Data Supplier */,
 				22CCFEF01CC68BC4002841D5 /* ViewController */,
 				22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */,
-				22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */,
+				22D6E9471CDC97020080603B /* Story Boards */,
 				22FBA3091CAFE5A7009B2DE8 /* Model */,
 				22A1EBA71CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift */,
 				22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */,
@@ -436,7 +478,6 @@
 		22FBA3091CAFE5A7009B2DE8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */,
 				2233E0451CBC729E00218DE3 /* Location.swift */,
 				2233E0571CBD449E00218DE3 /* FoodOrder.swift */,
 				2233E0591CBD472E00218DE3 /* Delivery.swift */,
@@ -545,13 +586,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D6E9581CDC9E380080603B /* LoginAndSignup.storyboard in Resources */,
+				22D6E94C1CDC982F0080603B /* Startup.storyboard in Resources */,
 				2255E23D1CDC1935007DD06C /* CustomPizzaCell.xib in Resources */,
+				22D6E9561CDC9A530080603B /* ShoppingCart.storyboard in Resources */,
 				2255E2381CDB4E45007DD06C /* LICENSE in Resources */,
+				22D6E94F1CDC98DB0080603B /* Container.storyboard in Resources */,
+				22D6E95A1CDCA2260080603B /* Main.storyboard in Resources */,
 				22FBA2F21CAFDE30009B2DE8 /* LaunchScreen.storyboard in Resources */,
 				22F07EB21CD015A5001E65F7 /* Trajan Pro Bold.ttf in Resources */,
 				22FBA2EF1CAFDE30009B2DE8 /* Assets.xcassets in Resources */,
 				22FBA2ED1CAFDE30009B2DE8 /* Main.storyboard in Resources */,
 				2255E2221CDA1156007DD06C /* LICENSE in Resources */,
+				220078601CDF119B00AED961 /* vermin_vibes.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +713,7 @@
 			files = (
 				2255E2181CD9FB3C007DD06C /* FoodItemExtension.swift in Sources */,
 				22A1EBBA1CCCC28200C51FE5 /* ShoppingCartViewController.swift in Sources */,
+				22D6E9461CDC53CD0080603B /* FXBlurView.m in Sources */,
 				22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */,
 				22A1EBA81CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift in Sources */,
 				22A1EBAA1CCC87D000C51FE5 /* ShareViewController.swift in Sources */,
@@ -676,6 +724,7 @@
 				22A1EB9E1CC8B06C00C51FE5 /* MenuItemCell.swift in Sources */,
 				22FBA31F1CB9C6FC009B2DE8 /* FoodItem.swift in Sources */,
 				22CCFEF31CC69276002841D5 /* MenuListDataSupplier.swift in Sources */,
+				22D6E9441CDC53CD0080603B /* AvatarImageView.swift in Sources */,
 				2233E0461CBC729E00218DE3 /* Location.swift in Sources */,
 				22A1EBA01CC9729500C51FE5 /* MenuViewController.swift in Sources */,
 				2255E2061CD6C0B5007DD06C /* RizzoData.swift in Sources */,
@@ -692,7 +741,7 @@
 				22A1EBAC1CCC8D6100C51FE5 /* TrackViewController.swift in Sources */,
 				22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */,
 				2255E2131CD96FD0007DD06C /* PersistencyManager.swift in Sources */,
-				22A1EB951CC817FB00C51FE5 /* UESViewController.swift in Sources */,
+				220078621CDF387C00AED961 /* OtherCell.swift in Sources */,
 				2255E2261CDA1156007DD06C /* UIScrollView+TwitterCover.m in Sources */,
 				2255E2281CDA1156007DD06C /* README.md in Sources */,
 				2255E2361CDB4E45007DD06C /* ACPButton.m in Sources */,
@@ -700,6 +749,8 @@
 				2255E2151CD9F3D1007DD06C /* HTTPClient.swift in Sources */,
 				22F07ED51CD058C3001E65F7 /* LoginService.swift in Sources */,
 				2255E2241CDA1156007DD06C /* MBTwitterScroll.m in Sources */,
+				22D6E9451CDC53CD0080603B /* TWTButton.swift in Sources */,
+				2200785D1CDD550F00AED961 /* AddToCartViewController.swift in Sources */,
 				22A1EBA61CCA890D00C51FE5 /* ContainerViewController.swift in Sources */,
 				22A1EB931CC8174700C51FE5 /* CHTumblrMenuView.m in Sources */,
 			);
@@ -717,6 +768,7 @@
 				2255E22D1CDA1404007DD06C /* PizzaViewController.swift in Sources */,
 				2255E23B1CDB4E45007DD06C /* README.md in Sources */,
 				22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */,
+				2200785E1CDD550F00AED961 /* AddToCartViewController.swift in Sources */,
 				2255E2161CD9F3D4007DD06C /* HTTPClient.swift in Sources */,
 				2255E2301CDA3D5F007DD06C /* PizzaCell.swift in Sources */,
 				2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */,
@@ -741,6 +793,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		22D6E94D1CDC98DB0080603B /* Container.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D6E94E1CDC98DB0080603B /* Base */,
+			);
+			name = Container.storyboard;
+			sourceTree = "<group>";
+		};
 		22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

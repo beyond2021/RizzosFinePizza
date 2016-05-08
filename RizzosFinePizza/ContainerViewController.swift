@@ -79,10 +79,23 @@ class ContainerViewController: SlideMenuController, ShoppingCartViewControllerDe
         
        
         let imageView = UIImageView(image: UIImage(named: "120x120"))
+        let logoHomeButton = ACPButton(frame: CGRectMake(0.0, 0.0, 60.0, 60.0))
+        logoHomeButton.contentMode = UIViewContentMode.Center
+        logoHomeButton.layer.cornerRadius = logoHomeButton.bounds.size.width / 2
+        logoHomeButton.layer.masksToBounds = true
+        
+        logoHomeButton.setStyleWithImage("120x120", highlightedImage: "120x120", disableImage: "120x120", andInsets: UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0))
+        logoHomeButton.addTarget(self, action: #selector(ContainerViewController.homePressed), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
+        
+        
         imageView.contentMode = UIViewContentMode.Center
         imageView.layer.cornerRadius = imageView.bounds.size.width / 2
         imageView.layer.masksToBounds = true
         
+        logoHomeButton.center.x = titleView.center.x
+        logoHomeButton.center.y = titleView.center.y
         let titleLabel = UILabel()
         
         
@@ -93,10 +106,11 @@ class ContainerViewController: SlideMenuController, ShoppingCartViewControllerDe
         titleLabel.sizeToFit()
         
         
-        titleView.addSubview(imageView)
+     //   titleView.addSubview(imageView)
      //   titleView.addSubview(titleLabel)
+        titleView.addSubview(logoHomeButton)
         
-      //  self.navigationItem.titleView = titleView;
+        self.navigationItem.titleView = titleView;
         
         
         
@@ -117,6 +131,11 @@ class ContainerViewController: SlideMenuController, ShoppingCartViewControllerDe
         self.dismissViewControllerAnimated(true) {
             print("Shopping cart is dismissed")
         }
+    }
+    
+    func homePressed(){
+        
+        
     }
 
 

@@ -14,21 +14,24 @@ public protocol Equatable {
     public func ==(lhs: Self, rhs: Self) -> Bool
 }
  */
+let PizzaImage = "TVPizza"
 
 
 
 struct FoodItem : Equatable {
     let title:String
     let itemDescription : String
-    let originalPrice : Double
+    let originalPrice : [Double]
+    let foodImage : UIImage?
   //  let topping : Topping?
     
     
     //  Refractor 1 a short initializer
-    init(title:String, itemDescription : String, originalPrice: Double  ){
+    init(title:String, itemDescription : String, originalPrice: [Double], foodImage : UIImage? = nil ){
         self.title = title
         self.itemDescription = itemDescription
         self.originalPrice = originalPrice
+        self.foodImage = foodImage
        // self.topping = topping
         
     }
@@ -58,6 +61,10 @@ func ==(lhs: FoodItem, rhs: FoodItem) -> Bool {
     if  lhs.description != rhs.description {
         return false
     }
+    if  lhs.foodImage != rhs.foodImage {
+        return false
+    }
+    
     
     return true
     

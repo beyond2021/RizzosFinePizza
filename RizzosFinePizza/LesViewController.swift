@@ -22,6 +22,36 @@ class LesViewController: UIViewController {
     @IBOutlet weak var pickupButton: ACPButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        deliveryButton.setStyle(UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0), andBottomColor: UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0,alpha: 1.0))
+        
+        deliveryButton.setLabelTextColor( UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), highlightedColor: UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), disableColor: UIColor.lightGrayColor())
+//        telepnoneButton.setImage(UIImage(named: "phone"), forState: UIControlState.Normal)
+        deliveryButton.setLabelFont(UIFont(name: "Trajan Pro Bold", size: 30))
+        deliveryButton.titleLabel?.text = "Delivery"
+       
+        
+        
+
+        telepnoneButton.setStyle(UIColor.clearColor(), andBottomColor: UIColor.clearColor())
+        homeButton.setStyle(UIColor.clearColor(), andBottomColor: UIColor.clearColor())
+        
+        pickupButton.setStyle(UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0,alpha: 1.0), andBottomColor: UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0))
+        
+        pickupButton.setLabelTextColor( UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), highlightedColor: UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), disableColor: UIColor.lightGrayColor())
+        pickupButton.setLabelFont(UIFont(name: "vermin_vibes", size: 30))
+        //Trajan Pro Bold 30.0
+        
+
+        
+        
+        
+        
+      //  pickupButton.setStyle(UIColor(red:102.0/255.0, green: 36.0/255.0, blue: 35.0/255.0, alpha: 1.0), andBottomColor: UIColor(red: 190.0/255.0, green: 96.0/255.0, blue: 96.0/255.0, alpha: 1.0))
+       // pickupButton.setFlatStyle(UIColor.clearColor(), andHighlightedColor: UIColor.clearColor())
+   //     pickupButton.
+        
+        
      //   deliveryButton.setFlatStyleType(style:ACPButtonBlue)
         /*
          - (void) setStyleType:(ACPButtonType)style;
@@ -75,7 +105,7 @@ class LesViewController: UIViewController {
     }
     
     func pizzaAction(){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Container", bundle: nil)
         let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
         let nav = UINavigationController(rootViewController: menuVC)
         self.presentViewController(nav, animated: true, completion: nil)

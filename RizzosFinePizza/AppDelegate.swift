@@ -33,9 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
       
         
-        UINavigationBar.appearance().tintColor = UIColor.brownColor()
-        
-        
+        UINavigationBar.appearance().tintColor = UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0, alpha: 1.0)
+        //navigationController.navigationBar.titleTextAttributes = [UITextAttributeTextColor: UIColor.orangeColor()]
         return true
     }
 

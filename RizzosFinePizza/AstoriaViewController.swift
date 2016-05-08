@@ -16,11 +16,11 @@ protocol AstoriaViewControllerDelegate : class{
 class AstoriaViewController: UIViewController, PizzaViewControllerDelegate {
     weak var delegate : AstoriaViewControllerDelegate?
     
-    @IBOutlet weak var telephoneButton: UIButton!
-    @IBOutlet weak var deliveryButton: UIButton!
-    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var telephoneButton: ACPButton!
+    @IBOutlet weak var deliveryButton: ACPButton!
+    @IBOutlet weak var homeButton: ACPButton!
 
-    @IBOutlet weak var picupButton: UIButton!
+    @IBOutlet weak var pickupButton: ACPButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         let pizzaVC = PizzaViewController()
@@ -35,8 +35,24 @@ class AstoriaViewController: UIViewController, PizzaViewControllerDelegate {
          - (void) setStyleWithImage:(NSString*)image highlightedImage:(NSString*)hImage disableImage:(NSString *)dImage andInsets:(UIEdgeInsets)insets;
          - (void) setGlowHighlightedState:(BOOL)glowOption;
  */
+        deliveryButton.setStyle(UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0), andBottomColor: UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0,alpha: 1.0))
+        
+        deliveryButton.setLabelTextColor( UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), highlightedColor: UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), disableColor: UIColor.lightGrayColor())
+        //        telepnoneButton.setImage(UIImage(named: "phone"), forState: UIControlState.Normal)
+        deliveryButton.setLabelFont(UIFont(name: "Trajan Pro Bold", size: 30))
+        deliveryButton.titleLabel?.text = "Delivery"
         
         
+        
+        
+//        telepnoneButton.setStyle(UIColor.clearColor(), andBottomColor: UIColor.clearColor())
+//        homeButton.setStyle(UIColor.clearColor(), andBottomColor: UIColor.clearColor())
+        
+        pickupButton.setStyle(UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0,alpha: 1.0), andBottomColor: UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0))
+        
+        pickupButton.setLabelTextColor( UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), highlightedColor: UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), disableColor: UIColor.lightGrayColor())
+        pickupButton.setLabelFont(UIFont(name: "vermin_vibes", size: 30))
+        //Trajan Pro Bold 30.0
         
         
         
@@ -84,7 +100,7 @@ class AstoriaViewController: UIViewController, PizzaViewControllerDelegate {
     }
     
     func pizzaAction(){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Container", bundle: nil)
         let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
         let nav = UINavigationController(rootViewController: menuVC)
         self.presentViewController(nav, animated: true, completion: nil)
@@ -97,11 +113,23 @@ class AstoriaViewController: UIViewController, PizzaViewControllerDelegate {
     }
     
     @IBAction func deliveryAction(sender: UIButton) {
-        showMenu()
+       // showMenu()
+        let storyboard = UIStoryboard(name: "Container", bundle: nil)
+        let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
+        let nav = UINavigationController(rootViewController: menuVC)
+        self.presentViewController(nav, animated: true, completion: nil)
+        
+        
+        
     }
     
     @IBAction func pickupAction(sender: UIButton) {
-        showMenu()
+       // showMenu()
+        let storyboard = UIStoryboard(name: "Container", bundle: nil)
+        let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
+        let nav = UINavigationController(rootViewController: menuVC)
+        self.presentViewController(nav, animated: true, completion: nil)
+        
     }
     
     @IBAction func callAstoriaAction(sender: UIButton) {

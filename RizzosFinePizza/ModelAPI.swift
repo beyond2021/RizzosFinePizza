@@ -181,6 +181,57 @@ class ModelAPI: NSObject {
         
     }
 
+    //
+    func getCalzoneForSection() -> Int {
+        return persistencyManager.getCalzoneForSection()
+        
+    }
+    func calzonesItemAtIndex(index: Int) -> FoodItem {
+        
+        return persistencyManager.calzonesItemAtIndex(index)
+        
+    }
+    
+    func getKnotsForSection() -> Int {
+        return persistencyManager.getKnotsForSection()
+        
+    }
+    func knotsItemAtIndex(index: Int) -> FoodItem {
+        
+        return persistencyManager.knotsItemAtIndex(index)
+        
+    }
+    
+    func getSaladForSection() -> Int {
+        return persistencyManager.getSaladForSection()
+        
+    }
+    func saladItemAtIndex(index: Int) -> FoodItem {
+        
+        return persistencyManager.saladItemAtIndex(index)
+        
+    }
+    
+    func getDrinksForSection() -> Int {
+        return persistencyManager.getDrinksForSection()
+        
+    }
+    func drinkItemAtIndex(index: Int) -> FoodItem {
+        
+        return persistencyManager.drinkItemAtIndex(index)
+        
+    }
+    func getDessertForSection() -> Int {
+        return persistencyManager.getDessertForSection()
+        
+    }
+    func dessertItemAtIndex(index: Int) -> FoodItem {
+        
+        return persistencyManager.dessertItemAtIndex(index)
+        
+    }
+    
+
 
 
     
