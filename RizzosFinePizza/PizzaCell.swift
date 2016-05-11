@@ -44,8 +44,10 @@ class PizzaCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-        foodItemImageView.layer.cornerRadius = foodItemImageView.bounds.size.width / 2
-        foodItemImageView.clipsToBounds = true
+        
+      
+//        foodItemImageView.layer.cornerRadius = foodItemImageView.bounds.size.width / 2
+//        foodItemImageView.clipsToBounds = true
         
         largeRoundButton.layer.cornerRadius = largeRoundButton.bounds.size.width / 2
         largeRoundButton.clipsToBounds = true
@@ -73,6 +75,7 @@ class PizzaCell: UITableViewCell {
         
 
 //UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0)
+ 
         
         
        /*
@@ -91,6 +94,13 @@ class PizzaCell: UITableViewCell {
         foodNameLabel.text = item.title
         pizzaDescriptionLabel.text = item.itemDescription
        // largeSquarePriceLabel.text = "$"+"\(item.originalPrice[0])"
+        
+        let pr = item.originalPrice[0]
+        personalRoundButton.setTitle("Personal RD \(pr)", forState: UIControlState.Normal)
+        let lr = item.originalPrice[1]
+        personalRoundButton.setTitle("Personal RD \(lr)", forState: UIControlState.Normal)
+        let ls = item.originalPrice[2]
+        personalRoundButton.setTitle("Personal RD \(ls)", forState: UIControlState.Normal)
         
         
         

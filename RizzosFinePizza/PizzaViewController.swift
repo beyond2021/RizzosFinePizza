@@ -52,7 +52,7 @@ class PizzaViewController: UIViewController {
         twitterTableView.delegate = self
         itemManager = ModelAPI()
         
-        twitterTableView.estimatedRowHeight = 151.0
+      //  twitterTableView.estimatedRowHeight = 151.0
         twitterTableView.rowHeight = UITableViewAutomaticDimension
        // twitterTableView.sectionIndexBackgroundColor = UIColor.clearColor()
     
@@ -71,37 +71,7 @@ class PizzaViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {
-            switch identifier {
-            case "addToCart":
-                let cell = sender as! PizzaCell
-                if let indexPath = twitterTableView.indexPathForCell(cell){
-                let segueToMVC = segue.destinationViewController as! AddToCartViewController
-                  
-               //     foodItem = FoodItem(title: , itemDescription: <#T##String#>, originalPrice: )
-                /*
-                  segueToMVC.priceLabel.text = "$23.00"
-                    segueToMVC.descriptionLabel.text = ""
-                    segueToMVC.quantityNumberLabel.text = "1"
-                     
-                     func configCellWithItem(item: FoodItem){
-                     foodNameLabel.text = item.title
-                     pizzaDescriptionLabel.text = item.itemDescription
-                     largeSquarePriceLabel.text = "$"+"\(item.originalPrice)"
-                     
-                     
-                     
-                     }
-                     
-                 */
-                    
-                    
-                    
-                }
-            default:
-                break
-            }
-            
-            
+                       
         }
                 
     }
@@ -331,7 +301,9 @@ extension PizzaViewController: MBTwitterScrollDelegate, UITableViewDelegate,UITa
     }
  */
     
-    
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 151
+    }
     
     
     
@@ -349,8 +321,33 @@ extension PizzaViewController: MBTwitterScrollDelegate, UITableViewDelegate,UITa
       //  performSegueWithIdentifier("addToCart", sender: self)
     }
     
+//    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        let height = heightAt
+//        if(height) {
+//            return height.floatValue;
+//        } else {
+//            return UITableViewAutomaticDimension;
+//        }
 
+//    }
     
+
+    /*
+     - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+     NSNumber *height = [self.heightAtIndexPath objectForKey:indexPath];
+     if(height) {
+     return height.floatValue;
+     } else {
+     return UITableViewAutomaticDimension;
+     }
+     }
+     
+     - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+     NSNumber *height = @(cell.frame.size.height);
+     [self.heightAtIndexPath setObject:height forKey:indexPath];
+     }
+ 
+ */
     
     
     

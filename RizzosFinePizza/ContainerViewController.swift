@@ -12,7 +12,7 @@ import SlideMenuControllerSwift
 class ContainerViewController: SlideMenuController, ShoppingCartViewControllerDelegate {
     
     override func awakeFromNib() {
-        if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("PizzaViewController") {
+        if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("FoodItemListTableViewController") {
             self.mainViewController = controller
         }
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("LeftMenuTableViewController") {

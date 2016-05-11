@@ -11,6 +11,10 @@
 		2200785E1CDD550F00AED961 /* AddToCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200785C1CDD550E00AED961 /* AddToCartViewController.swift */; };
 		220078601CDF119B00AED961 /* vermin_vibes.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2200785F1CDF119A00AED961 /* vermin_vibes.ttf */; };
 		220078621CDF387C00AED961 /* OtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220078611CDF387C00AED961 /* OtherCell.swift */; };
+		2209E12A1CE2D1A300F52E48 /* FoodItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E1291CE2D1A300F52E48 /* FoodItemListTableViewController.swift */; };
+		2209E12C1CE2D2D000F52E48 /* PizzaCellSlim.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2209E12B1CE2D2D000F52E48 /* PizzaCellSlim.xib */; };
+		2209E12E1CE2D53000F52E48 /* PizzaCellSlim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E12D1CE2D53000F52E48 /* PizzaCellSlim.swift */; };
+		2209E1501CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E14F1CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift */; };
 		222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156331CC06243009A08C5 /* FoodItemTests.swift */; };
 		222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156351CC0634D009A08C5 /* FoodOrderTests.swift */; };
 		2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0431CBC720200218DE3 /* LocationTests.swift */; };
@@ -122,6 +126,10 @@
 		2200785C1CDD550E00AED961 /* AddToCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToCartViewController.swift; sourceTree = "<group>"; };
 		2200785F1CDF119A00AED961 /* vermin_vibes.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vermin_vibes.ttf; sourceTree = "<group>"; };
 		220078611CDF387C00AED961 /* OtherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCell.swift; sourceTree = "<group>"; };
+		2209E1291CE2D1A300F52E48 /* FoodItemListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemListTableViewController.swift; sourceTree = "<group>"; };
+		2209E12B1CE2D2D000F52E48 /* PizzaCellSlim.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PizzaCellSlim.xib; sourceTree = "<group>"; };
+		2209E12D1CE2D53000F52E48 /* PizzaCellSlim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaCellSlim.swift; sourceTree = "<group>"; };
+		2209E14F1CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareForCartTableViewController.swift; sourceTree = "<group>"; };
 		222156331CC06243009A08C5 /* FoodItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemTests.swift; sourceTree = "<group>"; };
 		222156351CC0634D009A08C5 /* FoodOrderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOrderTests.swift; sourceTree = "<group>"; };
 		2233E0431CBC720200218DE3 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
@@ -302,6 +310,7 @@
 				22D6E9421CDC53CD0080603B /* FXBlurView.h */,
 				22D6E9431CDC53CD0080603B /* FXBlurView.m */,
 				2255E22B1CDA1404007DD06C /* PizzaViewController.swift */,
+				2209E1291CE2D1A300F52E48 /* FoodItemListTableViewController.swift */,
 			);
 			name = "Pizza ViewController";
 			sourceTree = "<group>";
@@ -333,6 +342,8 @@
 				2255E23C1CDC1935007DD06C /* CustomPizzaCell.xib */,
 				2255E22E1CDA3D5F007DD06C /* PizzaCell.swift */,
 				22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */,
+				2209E12B1CE2D2D000F52E48 /* PizzaCellSlim.xib */,
+				2209E12D1CE2D53000F52E48 /* PizzaCellSlim.swift */,
 			);
 			name = CustomCell;
 			sourceTree = "<group>";
@@ -375,6 +386,7 @@
 				22A1EB981CC8187600C51FE5 /* LesViewController.swift */,
 				22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */,
 				22A1EBA51CCA890D00C51FE5 /* ContainerViewController.swift */,
+				2209E14F1CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -597,6 +609,7 @@
 				22F07EB21CD015A5001E65F7 /* Trajan Pro Bold.ttf in Resources */,
 				22FBA2EF1CAFDE30009B2DE8 /* Assets.xcassets in Resources */,
 				22FBA2ED1CAFDE30009B2DE8 /* Main.storyboard in Resources */,
+				2209E12C1CE2D2D000F52E48 /* PizzaCellSlim.xib in Resources */,
 				2255E2221CDA1156007DD06C /* LICENSE in Resources */,
 				220078601CDF119B00AED961 /* vermin_vibes.ttf in Resources */,
 			);
@@ -716,6 +729,7 @@
 				22D6E9461CDC53CD0080603B /* FXBlurView.m in Sources */,
 				22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */,
 				22A1EBA81CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift in Sources */,
+				2209E12E1CE2D53000F52E48 /* PizzaCellSlim.swift in Sources */,
 				22A1EBAA1CCC87D000C51FE5 /* ShareViewController.swift in Sources */,
 				2255E2111CD96EA5007DD06C /* ModelAPI.swift in Sources */,
 				22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */,
@@ -733,6 +747,7 @@
 				22A1EB991CC8187600C51FE5 /* LesViewController.swift in Sources */,
 				2233E05A1CBD472E00218DE3 /* Delivery.swift in Sources */,
 				22A1EBA21CC980C700C51FE5 /* MenuTableViewController.swift in Sources */,
+				2209E12A1CE2D1A300F52E48 /* FoodItemListTableViewController.swift in Sources */,
 				22A1EBB61CCCB90100C51FE5 /* FBLoginViewController.swift in Sources */,
 				22F07ED71CD059A6001E65F7 /* ConnectionSettings.swift in Sources */,
 				22F07ED21CD054E5001E65F7 /* LoginSignUpViewController.swift in Sources */,
@@ -749,6 +764,7 @@
 				2255E2151CD9F3D1007DD06C /* HTTPClient.swift in Sources */,
 				22F07ED51CD058C3001E65F7 /* LoginService.swift in Sources */,
 				2255E2241CDA1156007DD06C /* MBTwitterScroll.m in Sources */,
+				2209E1501CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift in Sources */,
 				22D6E9451CDC53CD0080603B /* TWTButton.swift in Sources */,
 				2200785D1CDD550F00AED961 /* AddToCartViewController.swift in Sources */,
 				22A1EBA61CCA890D00C51FE5 /* ContainerViewController.swift in Sources */,
