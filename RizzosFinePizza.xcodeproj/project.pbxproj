@@ -7,21 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2200785D1CDD550F00AED961 /* AddToCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200785C1CDD550E00AED961 /* AddToCartViewController.swift */; };
-		2200785E1CDD550F00AED961 /* AddToCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200785C1CDD550E00AED961 /* AddToCartViewController.swift */; };
 		220078601CDF119B00AED961 /* vermin_vibes.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2200785F1CDF119A00AED961 /* vermin_vibes.ttf */; };
 		2209E12A1CE2D1A300F52E48 /* FoodItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E1291CE2D1A300F52E48 /* FoodItemListTableViewController.swift */; };
 		2209E12C1CE2D2D000F52E48 /* PizzaCellSlim.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2209E12B1CE2D2D000F52E48 /* PizzaCellSlim.xib */; };
 		2209E12E1CE2D53000F52E48 /* PizzaCellSlim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E12D1CE2D53000F52E48 /* PizzaCellSlim.swift */; };
 		2209E1501CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E14F1CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift */; };
-		2209E1521CE40E1800F52E48 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E1511CE40E1800F52E48 /* DataStructure.swift */; };
 		2209E1561CE4B63D00F52E48 /* DataArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E1551CE4B63D00F52E48 /* DataArray.swift */; };
-		2209E1781CE5A8C400F52E48 /* OtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2209E1771CE5A8C300F52E48 /* OtherCell.xib */; };
-		2209E1791CE5A8C600F52E48 /* OtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2209E1771CE5A8C300F52E48 /* OtherCell.xib */; };
 		2209E17B1CE6912400F52E48 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E17A1CE6912400F52E48 /* CartTableViewController.swift */; };
 		2209E17C1CE6912400F52E48 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E17A1CE6912400F52E48 /* CartTableViewController.swift */; };
-		2209E17E1CE69D1D00F52E48 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E17D1CE69D1D00F52E48 /* CartViewController.swift */; };
-		2209E17F1CE69D1D00F52E48 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E17D1CE69D1D00F52E48 /* CartViewController.swift */; };
 		222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156331CC06243009A08C5 /* FoodItemTests.swift */; };
 		222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156351CC0634D009A08C5 /* FoodOrderTests.swift */; };
 		2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0431CBC720200218DE3 /* LocationTests.swift */; };
@@ -33,9 +26,6 @@
 		2255E2021CD5E969007DD06C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2255E1FF1CD5E969007DD06C /* FBSDKCoreKit.framework */; };
 		2255E2031CD5E969007DD06C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2255E2001CD5E969007DD06C /* FBSDKLoginKit.framework */; };
 		2255E2041CD5E969007DD06C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2255E2011CD5E969007DD06C /* FBSDKShareKit.framework */; };
-		2255E2061CD6C0B5007DD06C /* RizzoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2051CD6C0B5007DD06C /* RizzoData.swift */; };
-		2255E2111CD96EA5007DD06C /* ModelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2101CD96EA5007DD06C /* ModelAPI.swift */; };
-		2255E2131CD96FD0007DD06C /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2121CD96FD0007DD06C /* PersistencyManager.swift */; };
 		2255E2151CD9F3D1007DD06C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2141CD9F3D1007DD06C /* HTTPClient.swift */; };
 		2255E2161CD9F3D4007DD06C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2141CD9F3D1007DD06C /* HTTPClient.swift */; };
 		2255E2181CD9FB3C007DD06C /* FoodItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2171CD9FB3C007DD06C /* FoodItemExtension.swift */; };
@@ -48,25 +38,20 @@
 		2255E2271CDA1156007DD06C /* UIScrollView+TwitterCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2201CDA1156007DD06C /* UIScrollView+TwitterCover.m */; };
 		2255E2281CDA1156007DD06C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2211CDA1156007DD06C /* README.md */; };
 		2255E2291CDA1156007DD06C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2211CDA1156007DD06C /* README.md */; };
-		2255E22C1CDA1404007DD06C /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255E22B1CDA1404007DD06C /* PizzaViewController.swift */; };
-		2255E22D1CDA1404007DD06C /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255E22B1CDA1404007DD06C /* PizzaViewController.swift */; };
-		2255E22F1CDA3D5F007DD06C /* PizzaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255E22E1CDA3D5F007DD06C /* PizzaCell.swift */; };
-		2255E2301CDA3D5F007DD06C /* PizzaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255E22E1CDA3D5F007DD06C /* PizzaCell.swift */; };
 		2255E2361CDB4E45007DD06C /* ACPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2331CDB4E45007DD06C /* ACPButton.m */; };
 		2255E2371CDB4E45007DD06C /* ACPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2331CDB4E45007DD06C /* ACPButton.m */; };
 		2255E2381CDB4E45007DD06C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2255E2341CDB4E45007DD06C /* LICENSE */; };
 		2255E2391CDB4E45007DD06C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2255E2341CDB4E45007DD06C /* LICENSE */; };
 		2255E23A1CDB4E45007DD06C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2351CDB4E45007DD06C /* README.md */; };
 		2255E23B1CDB4E45007DD06C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2351CDB4E45007DD06C /* README.md */; };
-		2255E23D1CDC1935007DD06C /* CustomPizzaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2255E23C1CDC1935007DD06C /* CustomPizzaCell.xib */; };
+		226EC9C91CE72BC800EC616D /* UberRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226EC9C81CE72BC800EC616D /* UberRides.framework */; };
+		227BE3031CE7821500676A61 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BE3021CE7821500676A61 /* LocationManager.swift */; };
+		229AFE171CE71FBE005669BE /* UberConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229AFE161CE71FBE005669BE /* UberConstants.swift */; };
 		22A1EB8C1CC74FD900C51FE5 /* MainViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB8B1CC74FD900C51FE5 /* MainViewControllerTest.swift */; };
 		22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB8D1CC7504500C51FE5 /* MainViewController.swift */; };
 		22A1EB931CC8174700C51FE5 /* CHTumblrMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB921CC8174700C51FE5 /* CHTumblrMenuView.m */; };
 		22A1EB971CC8183C00C51FE5 /* AstoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */; };
 		22A1EB991CC8187600C51FE5 /* LesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB981CC8187600C51FE5 /* LesViewController.swift */; };
-		22A1EB9E1CC8B06C00C51FE5 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */; };
-		22A1EBA01CC9729500C51FE5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB9F1CC9729500C51FE5 /* MenuViewController.swift */; };
-		22A1EBA21CC980C700C51FE5 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */; };
 		22A1EBA41CCA845A00C51FE5 /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBA31CCA845A00C51FE5 /* SlideMenuControllerSwift.framework */; };
 		22A1EBA61CCA890D00C51FE5 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBA51CCA890D00C51FE5 /* ContainerViewController.swift */; };
 		22A1EBA81CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBA71CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift */; };
@@ -79,8 +64,6 @@
 		22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE71CC5C7AF002841D5 /* Topping.swift */; };
 		22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */; };
 		22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */; };
-		22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */; };
-		22CCFEF31CC69276002841D5 /* MenuListDataSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */; };
 		22CCFEF51CC69A34002841D5 /* MenuListDataSupplierTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */; };
 		22D6E9441CDC53CD0080603B /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6E9401CDC53CD0080603B /* AvatarImageView.swift */; };
 		22D6E9451CDC53CD0080603B /* TWTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6E9411CDC53CD0080603B /* TWTButton.swift */; };
@@ -129,17 +112,13 @@
 
 /* Begin PBXFileReference section */
 		169A08068CCBE670FF8865AA /* Pods_RizzosFinePizzaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RizzosFinePizzaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2200785C1CDD550E00AED961 /* AddToCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToCartViewController.swift; sourceTree = "<group>"; };
 		2200785F1CDF119A00AED961 /* vermin_vibes.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vermin_vibes.ttf; sourceTree = "<group>"; };
 		2209E1291CE2D1A300F52E48 /* FoodItemListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemListTableViewController.swift; sourceTree = "<group>"; };
 		2209E12B1CE2D2D000F52E48 /* PizzaCellSlim.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PizzaCellSlim.xib; sourceTree = "<group>"; };
 		2209E12D1CE2D53000F52E48 /* PizzaCellSlim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaCellSlim.swift; sourceTree = "<group>"; };
 		2209E14F1CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareForCartTableViewController.swift; sourceTree = "<group>"; };
-		2209E1511CE40E1800F52E48 /* DataStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
 		2209E1551CE4B63D00F52E48 /* DataArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataArray.swift; sourceTree = "<group>"; };
-		2209E1771CE5A8C300F52E48 /* OtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherCell.xib; sourceTree = "<group>"; };
 		2209E17A1CE6912400F52E48 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
-		2209E17D1CE69D1D00F52E48 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		222156331CC06243009A08C5 /* FoodItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemTests.swift; sourceTree = "<group>"; };
 		222156351CC0634D009A08C5 /* FoodOrderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOrderTests.swift; sourceTree = "<group>"; };
 		2233E0431CBC720200218DE3 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
@@ -151,9 +130,6 @@
 		2255E1FF1CD5E969007DD06C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphonesimulator/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		2255E2001CD5E969007DD06C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphonesimulator/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		2255E2011CD5E969007DD06C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphonesimulator/FBSDKShareKit.framework"; sourceTree = "<group>"; };
-		2255E2051CD6C0B5007DD06C /* RizzoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RizzoData.swift; sourceTree = "<group>"; };
-		2255E2101CD96EA5007DD06C /* ModelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelAPI.swift; sourceTree = "<group>"; };
-		2255E2121CD96FD0007DD06C /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 		2255E2141CD9F3D1007DD06C /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		2255E2171CD9FB3C007DD06C /* FoodItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemExtension.swift; sourceTree = "<group>"; };
 		2255E21B1CDA1156007DD06C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -162,13 +138,13 @@
 		2255E21F1CDA1156007DD06C /* UIScrollView+TwitterCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TwitterCover.h"; sourceTree = "<group>"; };
 		2255E2201CDA1156007DD06C /* UIScrollView+TwitterCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TwitterCover.m"; sourceTree = "<group>"; };
 		2255E2211CDA1156007DD06C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2255E22B1CDA1404007DD06C /* PizzaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaViewController.swift; sourceTree = "<group>"; };
-		2255E22E1CDA3D5F007DD06C /* PizzaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaCell.swift; sourceTree = "<group>"; };
 		2255E2321CDB4E45007DD06C /* ACPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPButton.h; sourceTree = "<group>"; };
 		2255E2331CDB4E45007DD06C /* ACPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPButton.m; sourceTree = "<group>"; };
 		2255E2341CDB4E45007DD06C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2255E2351CDB4E45007DD06C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2255E23C1CDC1935007DD06C /* CustomPizzaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPizzaCell.xib; sourceTree = "<group>"; };
+		226EC9C81CE72BC800EC616D /* UberRides.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UberRides.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphonesimulator/UberRides.framework"; sourceTree = "<group>"; };
+		227BE3021CE7821500676A61 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		229AFE161CE71FBE005669BE /* UberConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberConstants.swift; sourceTree = "<group>"; };
 		22A1EB8B1CC74FD900C51FE5 /* MainViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerTest.swift; sourceTree = "<group>"; };
 		22A1EB8D1CC7504500C51FE5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		22A1EB901CC8174600C51FE5 /* RizzosFinePizza-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RizzosFinePizza-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -176,9 +152,6 @@
 		22A1EB921CC8174700C51FE5 /* CHTumblrMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTumblrMenuView.m; sourceTree = "<group>"; };
 		22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstoriaViewController.swift; sourceTree = "<group>"; };
 		22A1EB981CC8187600C51FE5 /* LesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LesViewController.swift; sourceTree = "<group>"; };
-		22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
-		22A1EB9F1CC9729500C51FE5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		22A1EBA31CCA845A00C51FE5 /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Debug-iphoneos/SlideMenuControllerSwift.framework"; sourceTree = "<group>"; };
 		22A1EBA51CCA890D00C51FE5 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		22A1EBA71CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
@@ -192,8 +165,6 @@
 		22CCFEE71CC5C7AF002841D5 /* Topping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topping.swift; sourceTree = "<group>"; };
 		22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToppingsTest.swift; sourceTree = "<group>"; };
 		22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemsListViewControllerTest.swift; path = RizzosFinePizzaTests/MenuItemsListViewControllerTest.swift; sourceTree = SOURCE_ROOT; };
-		22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsListViewController.swift; sourceTree = "<group>"; };
-		22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListDataSupplier.swift; sourceTree = "<group>"; };
 		22CCFEF41CC69A34002841D5 /* MenuListDataSupplierTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListDataSupplierTest.swift; sourceTree = "<group>"; };
 		22D6E9401CDC53CD0080603B /* AvatarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		22D6E9411CDC53CD0080603B /* TWTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWTButton.swift; sourceTree = "<group>"; };
@@ -230,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226EC9C91CE72BC800EC616D /* UberRides.framework in Frameworks */,
 				2255E2021CD5E969007DD06C /* FBSDKCoreKit.framework in Frameworks */,
 				2255E2031CD5E969007DD06C /* FBSDKLoginKit.framework in Frameworks */,
 				2255E2041CD5E969007DD06C /* FBSDKShareKit.framework in Frameworks */,
@@ -255,6 +227,7 @@
 		12AEFC6420FF5200B6AAAD1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				226EC9C81CE72BC800EC616D /* UberRides.framework */,
 				2255E1FF1CD5E969007DD06C /* FBSDKCoreKit.framework */,
 				2255E2001CD5E969007DD06C /* FBSDKLoginKit.framework */,
 				2255E2011CD5E969007DD06C /* FBSDKShareKit.framework */,
@@ -267,6 +240,17 @@
 				169A08068CCBE670FF8865AA /* Pods_RizzosFinePizzaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		222733121CE7AB100086BF22 /* APP NECESSITIES */ = {
+			isa = PBXGroup;
+			children = (
+				22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */,
+				22FBA2F01CAFDE30009B2DE8 /* LaunchScreen.storyboard */,
+				22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */,
+				22FBA2F31CAFDE30009B2DE8 /* Info.plist */,
+			);
+			name = "APP NECESSITIES";
 			sourceTree = "<group>";
 		};
 		2233E0541CBD3ECA00218DE3 /* Item Manager */ = {
@@ -282,10 +266,6 @@
 			children = (
 				2255E2141CD9F3D1007DD06C /* HTTPClient.swift */,
 				22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */,
-				2255E2051CD6C0B5007DD06C /* RizzoData.swift */,
-				2255E2101CD96EA5007DD06C /* ModelAPI.swift */,
-				2255E2121CD96FD0007DD06C /* PersistencyManager.swift */,
-				2209E1511CE40E1800F52E48 /* DataStructure.swift */,
 				2255E2171CD9FB3C007DD06C /* FoodItemExtension.swift */,
 			);
 			name = "Model Api";
@@ -319,7 +299,6 @@
 				22D6E9411CDC53CD0080603B /* TWTButton.swift */,
 				22D6E9421CDC53CD0080603B /* FXBlurView.h */,
 				22D6E9431CDC53CD0080603B /* FXBlurView.m */,
-				2255E22B1CDA1404007DD06C /* PizzaViewController.swift */,
 				2209E1551CE4B63D00F52E48 /* DataArray.swift */,
 			);
 			name = "Pizza ViewController";
@@ -336,6 +315,21 @@
 			path = ACPButton;
 			sourceTree = "<group>";
 		};
+		227BE3011CE781DE00676A61 /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				227BE3021CE7821500676A61 /* LocationManager.swift */,
+			);
+			name = "Location Manager";
+			sourceTree = "<group>";
+		};
+		229AFE181CE7296D005669BE /* UBER */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UBER;
+			sourceTree = "<group>";
+		};
 		22A1EB8F1CC816EE00C51FE5 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,9 +343,6 @@
 		22A1EB9C1CC8B02900C51FE5 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				2255E23C1CDC1935007DD06C /* CustomPizzaCell.xib */,
-				2255E22E1CDA3D5F007DD06C /* PizzaCell.swift */,
-				22A1EB9D1CC8B06C00C51FE5 /* MenuItemCell.swift */,
 				2209E12B1CE2D2D000F52E48 /* PizzaCellSlim.xib */,
 				2209E12D1CE2D53000F52E48 /* PizzaCellSlim.swift */,
 			);
@@ -390,26 +381,19 @@
 		22CCFEF01CC68BC4002841D5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2200785C1CDD550E00AED961 /* AddToCartViewController.swift */,
+				22A1EBA91CCC87D000C51FE5 /* ShareViewController.swift */,
+				22A1EBB91CCCC28200C51FE5 /* ShoppingCartViewController.swift */,
+				22A1EBAB1CCC8D6100C51FE5 /* TrackViewController.swift */,
+				22A1EBA71CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift */,
 				22A1EB8D1CC7504500C51FE5 /* MainViewController.swift */,
 				22A1EB961CC8183C00C51FE5 /* AstoriaViewController.swift */,
 				22A1EB981CC8187600C51FE5 /* LesViewController.swift */,
-				22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */,
 				22A1EBA51CCA890D00C51FE5 /* ContainerViewController.swift */,
 				2209E1291CE2D1A300F52E48 /* FoodItemListTableViewController.swift */,
 				2209E14F1CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift */,
 				2209E17A1CE6912400F52E48 /* CartTableViewController.swift */,
-				2209E17D1CE69D1D00F52E48 /* CartViewController.swift */,
 			);
 			name = ViewController;
-			sourceTree = "<group>";
-		};
-		22CCFEF11CC691FF002841D5 /* Data Supplier */ = {
-			isa = PBXGroup;
-			children = (
-				22CCFEF21CC69276002841D5 /* MenuListDataSupplier.swift */,
-			);
-			name = "Data Supplier";
 			sourceTree = "<group>";
 		};
 		22D6E9471CDC97020080603B /* Story Boards */ = {
@@ -418,7 +402,6 @@
 				22D6E9571CDC9E380080603B /* LoginAndSignup.storyboard */,
 				22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */,
 				22D6E94D1CDC98DB0080603B /* Container.storyboard */,
-				2209E1771CE5A8C300F52E48 /* OtherCell.xib */,
 				22D6E94B1CDC982F0080603B /* Startup.storyboard */,
 				22D6E9591CDCA2260080603B /* Main.storyboard */,
 			);
@@ -431,6 +414,7 @@
 				22F07ED11CD054E5001E65F7 /* LoginSignUpViewController.swift */,
 				22F07ED41CD058C3001E65F7 /* LoginService.swift */,
 				22F07ED61CD059A6001E65F7 /* ConnectionSettings.swift */,
+				229AFE161CE71FBE005669BE /* UberConstants.swift */,
 			);
 			name = Login;
 			path = ..;
@@ -439,6 +423,7 @@
 		22FBA2DB1CAFDE30009B2DE8 = {
 			isa = PBXGroup;
 			children = (
+				229AFE181CE7296D005669BE /* UBER */,
 				22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */,
 				22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */,
 				22FBA2FB1CAFDE30009B2DE8 /* RizzosFinePizzaTests */,
@@ -460,6 +445,7 @@
 		22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */ = {
 			isa = PBXGroup;
 			children = (
+				227BE3011CE781DE00676A61 /* Location Manager */,
 				2200785F1CDF119A00AED961 /* vermin_vibes.ttf */,
 				2255E2311CDB4E45007DD06C /* ACPButton */,
 				2255E22A1CDA13A5007DD06C /* Pizza ViewController */,
@@ -469,20 +455,10 @@
 				22A1EBAD1CCCB4E300C51FE5 /* Facebook */,
 				22A1EB9C1CC8B02900C51FE5 /* CustomCell */,
 				22A1EB8F1CC816EE00C51FE5 /* Transitions */,
-				22CCFEF11CC691FF002841D5 /* Data Supplier */,
 				22CCFEF01CC68BC4002841D5 /* ViewController */,
-				22FBA2E71CAFDE30009B2DE8 /* AppDelegate.swift */,
 				22D6E9471CDC97020080603B /* Story Boards */,
 				22FBA3091CAFE5A7009B2DE8 /* Model */,
-				22A1EBA71CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift */,
-				22A1EBA11CC980C700C51FE5 /* MenuTableViewController.swift */,
-				22A1EB9F1CC9729500C51FE5 /* MenuViewController.swift */,
-				22FBA2EE1CAFDE30009B2DE8 /* Assets.xcassets */,
-				22FBA2F01CAFDE30009B2DE8 /* LaunchScreen.storyboard */,
-				22FBA2F31CAFDE30009B2DE8 /* Info.plist */,
-				22A1EBA91CCC87D000C51FE5 /* ShareViewController.swift */,
-				22A1EBAB1CCC8D6100C51FE5 /* TrackViewController.swift */,
-				22A1EBB91CCCC28200C51FE5 /* ShoppingCartViewController.swift */,
+				222733121CE7AB100086BF22 /* APP NECESSITIES */,
 			);
 			path = RizzosFinePizza;
 			sourceTree = "<group>";
@@ -612,11 +588,9 @@
 			files = (
 				22D6E9581CDC9E380080603B /* LoginAndSignup.storyboard in Resources */,
 				22D6E94C1CDC982F0080603B /* Startup.storyboard in Resources */,
-				2255E23D1CDC1935007DD06C /* CustomPizzaCell.xib in Resources */,
 				2255E2381CDB4E45007DD06C /* LICENSE in Resources */,
 				22D6E94F1CDC98DB0080603B /* Container.storyboard in Resources */,
 				22D6E95A1CDCA2260080603B /* Main.storyboard in Resources */,
-				2209E1781CE5A8C400F52E48 /* OtherCell.xib in Resources */,
 				22FBA2F21CAFDE30009B2DE8 /* LaunchScreen.storyboard in Resources */,
 				22F07EB21CD015A5001E65F7 /* Trajan Pro Bold.ttf in Resources */,
 				22FBA2EF1CAFDE30009B2DE8 /* Assets.xcassets in Resources */,
@@ -632,7 +606,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2255E2391CDB4E45007DD06C /* LICENSE in Resources */,
-				2209E1791CE5A8C600F52E48 /* OtherCell.xib in Resources */,
 				2255E2231CDA1156007DD06C /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -739,42 +712,32 @@
 			files = (
 				2255E2181CD9FB3C007DD06C /* FoodItemExtension.swift in Sources */,
 				22A1EBBA1CCCC28200C51FE5 /* ShoppingCartViewController.swift in Sources */,
-				2209E17E1CE69D1D00F52E48 /* CartViewController.swift in Sources */,
+				227BE3031CE7821500676A61 /* LocationManager.swift in Sources */,
 				22D6E9461CDC53CD0080603B /* FXBlurView.m in Sources */,
 				2209E1561CE4B63D00F52E48 /* DataArray.swift in Sources */,
-				22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */,
 				22A1EBA81CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift in Sources */,
 				2209E12E1CE2D53000F52E48 /* PizzaCellSlim.swift in Sources */,
 				22A1EBAA1CCC87D000C51FE5 /* ShareViewController.swift in Sources */,
-				2255E2111CD96EA5007DD06C /* ModelAPI.swift in Sources */,
 				22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */,
 				22A1EB971CC8183C00C51FE5 /* AstoriaViewController.swift in Sources */,
-				2255E22F1CDA3D5F007DD06C /* PizzaCell.swift in Sources */,
-				22A1EB9E1CC8B06C00C51FE5 /* MenuItemCell.swift in Sources */,
 				22FBA31F1CB9C6FC009B2DE8 /* FoodItem.swift in Sources */,
-				22CCFEF31CC69276002841D5 /* MenuListDataSupplier.swift in Sources */,
 				22D6E9441CDC53CD0080603B /* AvatarImageView.swift in Sources */,
 				2233E0461CBC729E00218DE3 /* Location.swift in Sources */,
-				22A1EBA01CC9729500C51FE5 /* MenuViewController.swift in Sources */,
-				2255E2061CD6C0B5007DD06C /* RizzoData.swift in Sources */,
 				2233E0561CBD3EF300218DE3 /* ItemManager.swift in Sources */,
-				2255E22C1CDA1404007DD06C /* PizzaViewController.swift in Sources */,
 				22A1EB991CC8187600C51FE5 /* LesViewController.swift in Sources */,
 				2233E05A1CBD472E00218DE3 /* Delivery.swift in Sources */,
-				22A1EBA21CC980C700C51FE5 /* MenuTableViewController.swift in Sources */,
 				2209E12A1CE2D1A300F52E48 /* FoodItemListTableViewController.swift in Sources */,
 				2209E17B1CE6912400F52E48 /* CartTableViewController.swift in Sources */,
 				22A1EBB61CCCB90100C51FE5 /* FBLoginViewController.swift in Sources */,
 				22F07ED71CD059A6001E65F7 /* ConnectionSettings.swift in Sources */,
 				22F07ED21CD054E5001E65F7 /* LoginSignUpViewController.swift in Sources */,
-				2209E1521CE40E1800F52E48 /* DataStructure.swift in Sources */,
 				22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */,
 				2233E0581CBD449E00218DE3 /* FoodOrder.swift in Sources */,
 				22A1EBAC1CCC8D6100C51FE5 /* TrackViewController.swift in Sources */,
 				22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */,
-				2255E2131CD96FD0007DD06C /* PersistencyManager.swift in Sources */,
 				2255E2261CDA1156007DD06C /* UIScrollView+TwitterCover.m in Sources */,
 				2255E2281CDA1156007DD06C /* README.md in Sources */,
+				229AFE171CE71FBE005669BE /* UberConstants.swift in Sources */,
 				2255E2361CDB4E45007DD06C /* ACPButton.m in Sources */,
 				2255E23A1CDB4E45007DD06C /* README.md in Sources */,
 				2255E2151CD9F3D1007DD06C /* HTTPClient.swift in Sources */,
@@ -782,7 +745,6 @@
 				2255E2241CDA1156007DD06C /* MBTwitterScroll.m in Sources */,
 				2209E1501CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift in Sources */,
 				22D6E9451CDC53CD0080603B /* TWTButton.swift in Sources */,
-				2200785D1CDD550F00AED961 /* AddToCartViewController.swift in Sources */,
 				22A1EBA61CCA890D00C51FE5 /* ContainerViewController.swift in Sources */,
 				22A1EB931CC8174700C51FE5 /* CHTumblrMenuView.m in Sources */,
 			);
@@ -797,18 +759,14 @@
 				22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */,
 				222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */,
 				2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */,
-				2255E22D1CDA1404007DD06C /* PizzaViewController.swift in Sources */,
 				2255E23B1CDB4E45007DD06C /* README.md in Sources */,
 				22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */,
-				2200785E1CDD550F00AED961 /* AddToCartViewController.swift in Sources */,
 				2255E2161CD9F3D4007DD06C /* HTTPClient.swift in Sources */,
-				2255E2301CDA3D5F007DD06C /* PizzaCell.swift in Sources */,
 				2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */,
 				222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */,
 				2209E17C1CE6912400F52E48 /* CartTableViewController.swift in Sources */,
 				2255E2251CDA1156007DD06C /* MBTwitterScroll.m in Sources */,
 				2255E2291CDA1156007DD06C /* README.md in Sources */,
-				2209E17F1CE69D1D00F52E48 /* CartViewController.swift in Sources */,
 				2255E2371CDB4E45007DD06C /* ACPButton.m in Sources */,
 				22FBA2FD1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift in Sources */,
 				2255E2191CD9FB3C007DD06C /* FoodItemExtension.swift in Sources */,

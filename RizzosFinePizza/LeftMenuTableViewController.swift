@@ -9,12 +9,36 @@
 import UIKit
 import Social
 import FBSDKLoginKit
+import CoreLocation
+import UberRides
 
 
-class LeftMenuTableViewController: UITableViewController, TrackViewControllerDelegate {
+class LeftMenuTableViewController: UITableViewController, TrackViewControllerDelegate, CLLocationManagerDelegate {
+    
+    //Create a location Manager
+    lazy var locationManager : CLLocationManager = {
+        let loc = CLLocationManager()
+        // Set up location manager with defaults
+        loc.desiredAccuracy = kCLLocationAccuracyBest
+        loc.distanceFilter = kCLDistanceFilterNone
+        loc.delegate = self // Set ourself up for call backs(Delegate)
+        
+        //Optimization of battery
+        loc.pausesLocationUpdatesAutomatically = true
+        loc.activityType = CLActivityType.Fitness
+        loc.allowsBackgroundLocationUpdates = false
+        // All set up so we can now ask for permission
+        
+        return loc
+        
+    }()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -46,54 +70,7 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
-    
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+   
     /*
     // MARK: - Navigation
 
@@ -115,8 +92,22 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
         case 3:
             performSegueWithIdentifier("track", sender: self)
         case 4:
+           // uber()
+            // If no pickup location is specified, the default is to use current location
+            let parameters = RideParametersBuilder().build()
+            // You can also explicitly the parameters to use current location
+            let builder = RideParametersBuilder()
+            builder.setPickupToCurrentLocation()
+            // Use your_class as the delegate
+            let behavior = RideRequestViewRequestingBehavior(presentingViewController: self)
+            let delegate = MainViewController()
+            behavior.modalRideRequestViewController.rideRequestViewController.delegate = delegate
+            let button = RideRequestButton(rideParameters: parameters, requestingBehavior: behavior)
+            self.view.addSubview(button)
+            
+            
+                   case 5:
             logOut()
-        
             
         default : break
             
@@ -173,4 +164,89 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
         
         
     }
+    func uber(){
+        
+        let behavior = RideRequestViewRequestingBehavior(presentingViewController: self)
+        let location = CLLocation(latitude: 37.787654, longitude: -122.402760)
+        let parameters = RideParametersBuilder().setPickupLocation(location).build()
+        let button = RideRequestButton(rideParameters: parameters, requestingBehavior: behavior)
+        self.view.addSubview(button)
+ 
+        
+    }
+    
+    
+    @IBAction func uberAction(sender: UIButton) {
+        
+        // If no pickup location is specified, the default is to use current location
+        let parameters = RideParametersBuilder().build()
+        // You can also explicitly the parameters to use current location
+        let builder = RideParametersBuilder()
+        builder.setPickupToCurrentLocation()
+        // Use your_class as the delegate
+        let behavior = RideRequestViewRequestingBehavior(presentingViewController: self)
+        let delegate = MainViewController()
+        behavior.modalRideRequestViewController.rideRequestViewController.delegate = delegate
+        let button = RideRequestButton(rideParameters: parameters, requestingBehavior: behavior)
+        //self.view.center.x = button.center.x
+        
+
+
+        
+        
+    }
+    
 }
+extension LeftMenuTableViewController : RideRequestViewControllerDelegate {
+    func rideRequestViewController(rideRequestViewController: RideRequestViewController, didReceiveError error: NSError) {
+        let errorType = RideRequestViewErrorType(rawValue: error.code) ?? .Unknown
+        // Handle error here
+        switch errorType {
+        case .AccessTokenMissing:
+            let alert = UIAlertController(title: "Error! AccessTokenMissing", message: "Fix This Shit!!", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(OKAction)
+            presentViewController(alert, animated: true, completion: nil)
+            
+            
+            
+        // No AccessToken saved
+        case .AccessTokenExpired:
+            // AccessToken expired / invalid
+            let alert = UIAlertController(title: "AccessToken expired / invalid", message: "Fix This Shit!!", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(OKAction)
+            presentViewController(alert, animated: true, completion: nil)
+            
+            
+            
+        case .NetworkError:
+            // A network connectivity error
+            let alert = UIAlertController(title: "Not Connected To The Network", message: "Log on to Wifi or some shit", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(OKAction)
+            presentViewController(alert, animated: true, completion: nil)
+            
+        case .NotSupported:
+            // The attempted operation is not supported on the current device
+            let alert = UIAlertController(title: "Operation Not Supported on this devbice", message: "Get An Iphone 6Plus fool!", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(OKAction)
+            presentViewController(alert, animated: true, completion: nil)
+            
+            
+            
+            
+        case .Unknown:
+            // Other error
+            let alert = UIAlertController(title: "Weird unknown error occured", message: "Try not to blow up ur phone", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(OKAction)
+            presentViewController(alert, animated: true, completion: nil)
+            
+            
+            
+        }
+    }
+}
+

@@ -14,16 +14,22 @@ protocol TrackViewControllerDelegate : class {
     func dismissTrack()
 }
 
-class TrackViewController: UIViewController {
+class TrackViewController: UIViewController,CLLocationManagerDelegate {
     weak var delegate : TrackViewControllerDelegate?
     
     @IBOutlet weak var mapView: MKMapView!
-
+    //Create a location Manager
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        let loc = LManager()
+        loc.delegate = self
+        // Show Users Location
+        mapView.showsUserLocation = true
+        // To make it follow me
+        mapView.userTrackingMode = MKUserTrackingMode.Follow
+           }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

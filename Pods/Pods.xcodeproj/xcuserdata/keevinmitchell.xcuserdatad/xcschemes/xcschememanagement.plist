@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RizzosFinePizza.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -64,6 +69,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UberRides.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,7 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>17EB8B97D2050A0C414A58B881671ACA</key>
+		<key>2A97BB5C8F2603F1C77AF5D301C45FE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,27 +97,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2FFB352F3FE2CFA02229C28729EDBC2B</key>
+		<key>2E4ECB50AF150CAB41F3FCE4ECDD99C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>436389BF878AF2F4AF68E046582EC120</key>
+		<key>393075CB2756739E907504AA57525C90</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4A1D0584845CAC86FCF898E2269480E8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>529957324E31D6A25A1340DE150F6BF0</key>
+		<key>40CDCCB4FBD11FDC7E0E419E2322F69B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>52D82BFDD1E808D9CB257431922C1EE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BB08BBDCC1515C06DCD69AF54E5122C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -127,12 +137,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC9B8FED1536690672B809C574A2D5CB</key>
+		<key>7282331A9DF6F4FCC52FF152FCA5D595</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BF4EFF2C7BD726DB274D82B87850F14F</key>
+		<key>7802745F752CBB0BA030E6EAC01E6AD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8F54543305BD95F34FAB796C9CAAFCA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF20CA127B6CA0902B8B11A710F7B08C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

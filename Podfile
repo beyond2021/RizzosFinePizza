@@ -15,6 +15,7 @@ pod 'pop', '~> 1.0'
 pod "MBTwitterScroll"
 pod 'ACPButton'
 pod 'SKSplashView'
+pod 'UberRides'
 end
 
 target 'RizzosFinePizzaTests' do
@@ -29,5 +30,6 @@ pod 'pop', '~> 1.0'
 pod "MBTwitterScroll"
 pod 'ACPButton'
 pod 'SKSplashView'
+pod 'UberRides'
 end
 

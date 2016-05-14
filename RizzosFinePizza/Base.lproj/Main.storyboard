@@ -1283,13 +1283,5 @@ Please note any personal pie can be made with gluten free crust for no extra cha
             </objects>
             <point key="canvasLocation" x="-2093" y="-1261"/>
         </scene>
-        <!--ShoppingCartViewController-->
-        <scene sceneID="pvJ-nZ-qaC">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ShoppingCartViewController" storyboardName="ShoppingCart" referencedIdentifier="ShoppingCartViewController" id="OmI-JZ-KEY" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WUS-Td-1Dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1790" y="-1408"/>
-        </scene>
     </scenes>
 </document>

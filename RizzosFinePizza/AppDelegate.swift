@@ -8,9 +8,11 @@
 
 import UIKit
 import SlideMenuControllerSwift
+import UberRides
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,CLLocationManagerDelegate {
     
     
 
@@ -19,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        
+              
         /*
         let controllerId = "Login";
         
@@ -27,6 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let initViewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier(controllerId) as UIViewController
         self.window?.rootViewController = initViewController
  */
+        // China based apps should specify the region
+        Configuration.setRegion(.Default)
+        // If true, all requests will hit the sandbox, useful for testing
+        Configuration.setSandboxEnabled(true)
+        // Complete other setup
+        
         
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)

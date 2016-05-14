@@ -11,7 +11,7 @@ import UIKit
 class FoodItemListTableViewController: UITableViewController {
     
     var cart : FoodItem?
-    var itemManager: ModelAPI?
+   
     
     //MARK: - Data Source
     lazy var allFoodItems : [[FoodItem]]  = {
@@ -23,7 +23,7 @@ class FoodItemListTableViewController: UITableViewController {
         super.viewDidLoad()
         let nib = UINib(nibName: "PizzaCellSlim", bundle: nil)
         tableView.registerNib(nib, forCellReuseIdentifier: "PizzaCellSlim")
-        itemManager = ModelAPI()
+      
         tableView.estimatedRowHeight = 66.0
         tableView.rowHeight = UITableViewAutomaticDimension
     }

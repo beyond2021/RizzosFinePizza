@@ -13,7 +13,7 @@ protocol AstoriaViewControllerDelegate : class{
 }
 
 
-class AstoriaViewController: UIViewController, PizzaViewControllerDelegate {
+class AstoriaViewController: UIViewController {
     weak var delegate : AstoriaViewControllerDelegate?
     
     @IBOutlet weak var telephoneButton: ACPButton!
@@ -23,9 +23,7 @@ class AstoriaViewController: UIViewController, PizzaViewControllerDelegate {
     @IBOutlet weak var pickupButton: ACPButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let pizzaVC = PizzaViewController()
-        pizzaVC.delegate = self
-
+       
         // Do any additional setup after loading the view.
         /*
          - (void) setStyleType:(ACPButtonType)style;

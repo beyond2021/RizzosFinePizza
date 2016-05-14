@@ -4,7 +4,13 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleExecutable</key>
+    <key>UberClientID</key>
+    <string>[h59ZyuCH_wA9WeCIcgBoDfalRLYmOIsK]</string>
+    <key>UberCallbackURI</key>
+    <string>[http://beyond2021.blogspot.com]</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>We're watching, always watching.... :)</string>
+    <key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
@@ -53,6 +59,7 @@
         <string>fb-messenger-api</string>
         <string>fbauth2</string>
         <string>fbshareextension</string>
+        <string>uber</string>
     </array>
     <key>NSAppTransportSecurity</key>
     <dict>
