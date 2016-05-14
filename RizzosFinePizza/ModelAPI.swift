@@ -5,13 +5,17 @@
 //  Created by KEEVIN MITCHELL on 5/3/16.
 //  Copyright © 2016 beyond2021. All rights reserved.
 //  Entry Point a Singleton object as the entry point to manage the Food items
-
+//  The class first updates the data locally, and then if there’s an internet connection, it updates the remote server
 import UIKit
 
 class ModelAPI: NSObject {
     private let persistencyManager: PersistencyManager
     private let httpClient: HTTPClient
     private let isOnline: Bool
+    
+     var allItems = [FoodItem]()
+//MARK:- Singleton Action
+//Singleton------------------------------------------------------------------------------------------------------
     //1
     class var sharedInstance: ModelAPI {
         //2
@@ -22,29 +26,47 @@ class ModelAPI: NSObject {
         //4
         return Singleton.instance
     }
+//MARK:- Initializer
+//Initializer--------------------------------------------------------------------------------------------------
     override init() {
         persistencyManager = PersistencyManager()
         httpClient = HTTPClient()
         isOnline = false
-        
+        self.allItems = persistencyManager.getAllFoodItems()
         super.init()
     }
-    
-    /*
-     The class first updates the data locally, and then if there’s an internet connection, it updates the remote server
- 
- */
-    
-    //
+ //MARK:- All Items
+     func allFoodItems() -> [FoodItem]{
+        return persistencyManager.getAllFoodItems()
+     }
+    func getTheNumberOfAllItems() -> Int {
+        return persistencyManager.getAllFoodItemsCount()
+       }
+ //MARK:- All Pizzas
     func getPizzas() -> [FoodItem] {
-        return persistencyManager.getPizza()    }
-    
-    func addAlbum(pizza: FoodItem, index: Int) {
+        return persistencyManager.getPizza()
+    }
+        func getPlainPizzas() -> [FoodItem]{
+        return persistencyManager.getPlainPizzas()
+    }
+    func addPizza(pizza: FoodItem, index: Int) {
         persistencyManager.addPizza(pizza, index: index)
         if isOnline {
             httpClient.postRequest("/api/addPizza", body: pizza.description)
         }
     }
+    
+    
+    //
+       func getCreateYourOwnPizzas() -> [FoodItem]{
+        return persistencyManager.getCreateYourOwnPizzas()
+    }
+    func getSpecialityPizza() -> [FoodItem]{
+        return persistencyManager.getSpecialityPizza()
+    }
+    
+    
+    
     
     func deleteAlbum(index: Int) {
         persistencyManager.deletePizzaAtIndex(index)
@@ -156,28 +178,19 @@ class ModelAPI: NSObject {
     
     //MARK: Data Rows In Sections
     func plainPizzaItemAtIndex(index: Int) -> FoodItem {
-        
-
-         return persistencyManager.plainPizzaItemAtIndex(index)
-        
-        
-    }
+          return persistencyManager.plainPizzaItemAtIndex(index)
+     }
     
     
     
         func cyoPizzaItemAtIndex(index: Int) -> FoodItem {
-        
-        
              return persistencyManager.cyoPizzaItemAtIndex(index)
     }
     
     
     
        func specialityPizzaItemAtIndex(index: Int) -> FoodItem {
-        
-    //    return speciality[index]
-        
-        return persistencyManager.specialityPizzaItemAtIndex(index)
+          return persistencyManager.specialityPizzaItemAtIndex(index)
         
     }
 
@@ -191,6 +204,11 @@ class ModelAPI: NSObject {
         return persistencyManager.calzonesItemAtIndex(index)
         
     }
+    func getCalzone() -> [FoodItem]{
+        return persistencyManager.getCalzone()
+        
+    }
+
     
     func getKnotsForSection() -> Int {
         return persistencyManager.getKnotsForSection()
@@ -231,10 +249,8 @@ class ModelAPI: NSObject {
         
     }
     
-
-
-
-    
+  
+  
     
 
 }

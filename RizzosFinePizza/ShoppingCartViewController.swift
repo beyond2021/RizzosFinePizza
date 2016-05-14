@@ -7,12 +7,12 @@
 //
 
 import UIKit
-protocol ShoppingCartViewControllerDelegate : class{
+protocol CheckOutViewControllerDelegate : class{
     func dismissShoppingCart()
 }
 
-class ShoppingCartViewController: UIViewController {
-    weak var delegate : ShoppingCartViewControllerDelegate?
+class CheckOutViewController: UIViewController {
+    weak var delegate : CheckOutViewControllerDelegate?
     @IBOutlet weak var nameLabel: UILabel!
 
     @IBOutlet weak var emailLabel: UILabel!

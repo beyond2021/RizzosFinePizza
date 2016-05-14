@@ -9,7 +9,7 @@
 import UIKit
 import SlideMenuControllerSwift
 
-class ContainerViewController: SlideMenuController, ShoppingCartViewControllerDelegate {
+class ContainerViewController: SlideMenuController {
     
     override func awakeFromNib() {
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("FoodItemListTableViewController") {
@@ -24,6 +24,7 @@ class ContainerViewController: SlideMenuController, ShoppingCartViewControllerDe
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        /*
         //TI GET CALLED IF U CAUSE A SEGUE TO TRIGGER
         // CHECK THE ID OF THE SEGUE. THIS IS A PROPERTY OF THE SEGUE
         // GET THE DESTINATION VC
@@ -35,6 +36,7 @@ class ContainerViewController: SlideMenuController, ShoppingCartViewControllerDe
                 
             }
         }
+ */
     }
     
 

@@ -10,11 +10,18 @@
 		2200785D1CDD550F00AED961 /* AddToCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200785C1CDD550E00AED961 /* AddToCartViewController.swift */; };
 		2200785E1CDD550F00AED961 /* AddToCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200785C1CDD550E00AED961 /* AddToCartViewController.swift */; };
 		220078601CDF119B00AED961 /* vermin_vibes.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2200785F1CDF119A00AED961 /* vermin_vibes.ttf */; };
-		220078621CDF387C00AED961 /* OtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220078611CDF387C00AED961 /* OtherCell.swift */; };
 		2209E12A1CE2D1A300F52E48 /* FoodItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E1291CE2D1A300F52E48 /* FoodItemListTableViewController.swift */; };
 		2209E12C1CE2D2D000F52E48 /* PizzaCellSlim.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2209E12B1CE2D2D000F52E48 /* PizzaCellSlim.xib */; };
 		2209E12E1CE2D53000F52E48 /* PizzaCellSlim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E12D1CE2D53000F52E48 /* PizzaCellSlim.swift */; };
 		2209E1501CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E14F1CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift */; };
+		2209E1521CE40E1800F52E48 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E1511CE40E1800F52E48 /* DataStructure.swift */; };
+		2209E1561CE4B63D00F52E48 /* DataArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E1551CE4B63D00F52E48 /* DataArray.swift */; };
+		2209E1781CE5A8C400F52E48 /* OtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2209E1771CE5A8C300F52E48 /* OtherCell.xib */; };
+		2209E1791CE5A8C600F52E48 /* OtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2209E1771CE5A8C300F52E48 /* OtherCell.xib */; };
+		2209E17B1CE6912400F52E48 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E17A1CE6912400F52E48 /* CartTableViewController.swift */; };
+		2209E17C1CE6912400F52E48 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E17A1CE6912400F52E48 /* CartTableViewController.swift */; };
+		2209E17E1CE69D1D00F52E48 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E17D1CE69D1D00F52E48 /* CartViewController.swift */; };
+		2209E17F1CE69D1D00F52E48 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E17D1CE69D1D00F52E48 /* CartViewController.swift */; };
 		222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156331CC06243009A08C5 /* FoodItemTests.swift */; };
 		222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156351CC0634D009A08C5 /* FoodOrderTests.swift */; };
 		2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0431CBC720200218DE3 /* LocationTests.swift */; };
@@ -80,7 +87,6 @@
 		22D6E9461CDC53CD0080603B /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D6E9431CDC53CD0080603B /* FXBlurView.m */; };
 		22D6E94C1CDC982F0080603B /* Startup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D6E94B1CDC982F0080603B /* Startup.storyboard */; };
 		22D6E94F1CDC98DB0080603B /* Container.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D6E94D1CDC98DB0080603B /* Container.storyboard */; };
-		22D6E9561CDC9A530080603B /* ShoppingCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D6E9551CDC9A530080603B /* ShoppingCart.storyboard */; };
 		22D6E9581CDC9E380080603B /* LoginAndSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D6E9571CDC9E380080603B /* LoginAndSignup.storyboard */; };
 		22D6E95A1CDCA2260080603B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D6E9591CDCA2260080603B /* Main.storyboard */; };
 		22F07EB21CD015A5001E65F7 /* Trajan Pro Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */; };
@@ -125,11 +131,15 @@
 		169A08068CCBE670FF8865AA /* Pods_RizzosFinePizzaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RizzosFinePizzaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2200785C1CDD550E00AED961 /* AddToCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToCartViewController.swift; sourceTree = "<group>"; };
 		2200785F1CDF119A00AED961 /* vermin_vibes.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vermin_vibes.ttf; sourceTree = "<group>"; };
-		220078611CDF387C00AED961 /* OtherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCell.swift; sourceTree = "<group>"; };
 		2209E1291CE2D1A300F52E48 /* FoodItemListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemListTableViewController.swift; sourceTree = "<group>"; };
 		2209E12B1CE2D2D000F52E48 /* PizzaCellSlim.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PizzaCellSlim.xib; sourceTree = "<group>"; };
 		2209E12D1CE2D53000F52E48 /* PizzaCellSlim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaCellSlim.swift; sourceTree = "<group>"; };
 		2209E14F1CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareForCartTableViewController.swift; sourceTree = "<group>"; };
+		2209E1511CE40E1800F52E48 /* DataStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
+		2209E1551CE4B63D00F52E48 /* DataArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataArray.swift; sourceTree = "<group>"; };
+		2209E1771CE5A8C300F52E48 /* OtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherCell.xib; sourceTree = "<group>"; };
+		2209E17A1CE6912400F52E48 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		2209E17D1CE69D1D00F52E48 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		222156331CC06243009A08C5 /* FoodItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemTests.swift; sourceTree = "<group>"; };
 		222156351CC0634D009A08C5 /* FoodOrderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOrderTests.swift; sourceTree = "<group>"; };
 		2233E0431CBC720200218DE3 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
@@ -191,7 +201,6 @@
 		22D6E9431CDC53CD0080603B /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		22D6E94B1CDC982F0080603B /* Startup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Startup.storyboard; sourceTree = "<group>"; };
 		22D6E94E1CDC98DB0080603B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Container.storyboard; sourceTree = "<group>"; };
-		22D6E9551CDC9A530080603B /* ShoppingCart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingCart.storyboard; sourceTree = "<group>"; };
 		22D6E9571CDC9E380080603B /* LoginAndSignup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndSignup.storyboard; sourceTree = "<group>"; };
 		22D6E9591CDCA2260080603B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trajan Pro Bold.ttf"; sourceTree = "<group>"; };
@@ -276,6 +285,7 @@
 				2255E2051CD6C0B5007DD06C /* RizzoData.swift */,
 				2255E2101CD96EA5007DD06C /* ModelAPI.swift */,
 				2255E2121CD96FD0007DD06C /* PersistencyManager.swift */,
+				2209E1511CE40E1800F52E48 /* DataStructure.swift */,
 				2255E2171CD9FB3C007DD06C /* FoodItemExtension.swift */,
 			);
 			name = "Model Api";
@@ -310,7 +320,7 @@
 				22D6E9421CDC53CD0080603B /* FXBlurView.h */,
 				22D6E9431CDC53CD0080603B /* FXBlurView.m */,
 				2255E22B1CDA1404007DD06C /* PizzaViewController.swift */,
-				2209E1291CE2D1A300F52E48 /* FoodItemListTableViewController.swift */,
+				2209E1551CE4B63D00F52E48 /* DataArray.swift */,
 			);
 			name = "Pizza ViewController";
 			sourceTree = "<group>";
@@ -386,7 +396,10 @@
 				22A1EB981CC8187600C51FE5 /* LesViewController.swift */,
 				22CCFEEE1CC5E28E002841D5 /* MenuItemsListViewController.swift */,
 				22A1EBA51CCA890D00C51FE5 /* ContainerViewController.swift */,
+				2209E1291CE2D1A300F52E48 /* FoodItemListTableViewController.swift */,
 				2209E14F1CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift */,
+				2209E17A1CE6912400F52E48 /* CartTableViewController.swift */,
+				2209E17D1CE69D1D00F52E48 /* CartViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -404,9 +417,8 @@
 			children = (
 				22D6E9571CDC9E380080603B /* LoginAndSignup.storyboard */,
 				22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */,
-				22D6E9551CDC9A530080603B /* ShoppingCart.storyboard */,
 				22D6E94D1CDC98DB0080603B /* Container.storyboard */,
-				220078611CDF387C00AED961 /* OtherCell.swift */,
+				2209E1771CE5A8C300F52E48 /* OtherCell.xib */,
 				22D6E94B1CDC982F0080603B /* Startup.storyboard */,
 				22D6E9591CDCA2260080603B /* Main.storyboard */,
 			);
@@ -601,10 +613,10 @@
 				22D6E9581CDC9E380080603B /* LoginAndSignup.storyboard in Resources */,
 				22D6E94C1CDC982F0080603B /* Startup.storyboard in Resources */,
 				2255E23D1CDC1935007DD06C /* CustomPizzaCell.xib in Resources */,
-				22D6E9561CDC9A530080603B /* ShoppingCart.storyboard in Resources */,
 				2255E2381CDB4E45007DD06C /* LICENSE in Resources */,
 				22D6E94F1CDC98DB0080603B /* Container.storyboard in Resources */,
 				22D6E95A1CDCA2260080603B /* Main.storyboard in Resources */,
+				2209E1781CE5A8C400F52E48 /* OtherCell.xib in Resources */,
 				22FBA2F21CAFDE30009B2DE8 /* LaunchScreen.storyboard in Resources */,
 				22F07EB21CD015A5001E65F7 /* Trajan Pro Bold.ttf in Resources */,
 				22FBA2EF1CAFDE30009B2DE8 /* Assets.xcassets in Resources */,
@@ -620,6 +632,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2255E2391CDB4E45007DD06C /* LICENSE in Resources */,
+				2209E1791CE5A8C600F52E48 /* OtherCell.xib in Resources */,
 				2255E2231CDA1156007DD06C /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -726,7 +739,9 @@
 			files = (
 				2255E2181CD9FB3C007DD06C /* FoodItemExtension.swift in Sources */,
 				22A1EBBA1CCCC28200C51FE5 /* ShoppingCartViewController.swift in Sources */,
+				2209E17E1CE69D1D00F52E48 /* CartViewController.swift in Sources */,
 				22D6E9461CDC53CD0080603B /* FXBlurView.m in Sources */,
+				2209E1561CE4B63D00F52E48 /* DataArray.swift in Sources */,
 				22CCFEEF1CC5E28E002841D5 /* MenuItemsListViewController.swift in Sources */,
 				22A1EBA81CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift in Sources */,
 				2209E12E1CE2D53000F52E48 /* PizzaCellSlim.swift in Sources */,
@@ -748,15 +763,16 @@
 				2233E05A1CBD472E00218DE3 /* Delivery.swift in Sources */,
 				22A1EBA21CC980C700C51FE5 /* MenuTableViewController.swift in Sources */,
 				2209E12A1CE2D1A300F52E48 /* FoodItemListTableViewController.swift in Sources */,
+				2209E17B1CE6912400F52E48 /* CartTableViewController.swift in Sources */,
 				22A1EBB61CCCB90100C51FE5 /* FBLoginViewController.swift in Sources */,
 				22F07ED71CD059A6001E65F7 /* ConnectionSettings.swift in Sources */,
 				22F07ED21CD054E5001E65F7 /* LoginSignUpViewController.swift in Sources */,
+				2209E1521CE40E1800F52E48 /* DataStructure.swift in Sources */,
 				22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */,
 				2233E0581CBD449E00218DE3 /* FoodOrder.swift in Sources */,
 				22A1EBAC1CCC8D6100C51FE5 /* TrackViewController.swift in Sources */,
 				22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */,
 				2255E2131CD96FD0007DD06C /* PersistencyManager.swift in Sources */,
-				220078621CDF387C00AED961 /* OtherCell.swift in Sources */,
 				2255E2261CDA1156007DD06C /* UIScrollView+TwitterCover.m in Sources */,
 				2255E2281CDA1156007DD06C /* README.md in Sources */,
 				2255E2361CDB4E45007DD06C /* ACPButton.m in Sources */,
@@ -789,8 +805,10 @@
 				2255E2301CDA3D5F007DD06C /* PizzaCell.swift in Sources */,
 				2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */,
 				222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */,
+				2209E17C1CE6912400F52E48 /* CartTableViewController.swift in Sources */,
 				2255E2251CDA1156007DD06C /* MBTwitterScroll.m in Sources */,
 				2255E2291CDA1156007DD06C /* README.md in Sources */,
+				2209E17F1CE69D1D00F52E48 /* CartViewController.swift in Sources */,
 				2255E2371CDB4E45007DD06C /* ACPButton.m in Sources */,
 				22FBA2FD1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift in Sources */,
 				2255E2191CD9FB3C007DD06C /* FoodItemExtension.swift in Sources */,

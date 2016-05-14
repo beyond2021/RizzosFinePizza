@@ -23,7 +23,10 @@ struct FoodItem : Equatable {
     let itemDescription : String
     let originalPrice : [Double]
     let foodImage : UIImage?
-  //  let topping : Topping?
+    var topping = false
+    var cheese = false
+    var extraSauce = false
+    var priceSelected = false
     
     
     //  Refractor 1 a short initializer
