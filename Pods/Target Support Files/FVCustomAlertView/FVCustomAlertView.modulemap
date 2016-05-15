@@ -1,0 +1,6 @@
+framework module FVCustomAlertView {
+  umbrella header "FVCustomAlertView-umbrella.h"
+
+  export *
+  module * { export * }
+}

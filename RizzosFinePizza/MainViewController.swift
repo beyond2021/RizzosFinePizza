@@ -28,6 +28,7 @@ class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesV
     
     @IBOutlet weak var signUpButton: UIButton!
     
+    @IBOutlet weak var beyondLabel: UILabel!
     
    
     //Create a location Manager
@@ -103,6 +104,7 @@ setupUber()
         lesButton.enabled = true
        
         steinwayButton.enabled = true
+        beyondLabel.alpha = 0
         
         
         /*
@@ -146,12 +148,12 @@ setupUber()
     }
     func animate(){
    
-//        let basicAnimation = POPSpringAnimation(propertyNamed: kPOPViewFrame)
-//        basicAnimation.toValue = NSValue(CGRect: CGRectMake(0, 0, 90, 190))
-//        basicAnimation.name = "BigButtonPopAnimation"
-//        basicAnimation.delegate = self
-//        self.tableView.pop_addAnimation(basicAnimation["WhatEverNameYouWant"])
-        
+        UIView.animateWithDuration(0.9, delay: 1.5, options: [], animations: {
+            self.beyondLabel.alpha = 1.0
+            }, completion: nil)
+        UIView.animateWithDuration(0.9, delay: 20.5, options: [], animations: {
+            self.beyondLabel.alpha = 0.0
+            }, completion: nil)
         
         
         //
@@ -354,6 +356,12 @@ extension MainViewController : RideRequestViewControllerDelegate {
             
             
         }
+    }
+    
+    
+    func labelAction(){
+        
+        
     }
 }
 

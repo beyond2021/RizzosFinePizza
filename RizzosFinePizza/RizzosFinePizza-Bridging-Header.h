@@ -10,3 +10,4 @@
 #import <FBSDKShareKit/FBSDKShareKit.h>
 #import <pop/POP.h>
 #import "FXBlurView.h"
+#import "FVCustomAlertView.h"

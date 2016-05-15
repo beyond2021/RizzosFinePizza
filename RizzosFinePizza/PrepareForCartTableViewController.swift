@@ -13,7 +13,7 @@ protocol PrepareForCartTableViewControllerDelegate : class{
 }
 
 
-class PrepareForCartTableViewController: UITableViewController {
+class PrepareForCartTableViewController: UITableViewController, UIPopoverPresentationControllerDelegate {
     //----------------------------------------------------------------------------------------------------------
     weak var delegate : PrepareForCartTableViewControllerDelegate?
     //----------------------------------------------------------------------------------------------------------
@@ -29,7 +29,27 @@ class PrepareForCartTableViewController: UITableViewController {
     
     @IBOutlet weak var largeSquarePriceChoiceLabel: UILabel!
     
-    @IBAction func sauceAction(sender: UIButton) {
+    @IBAction func sauceAction(sender: AnyObject) {
+        var popoverContent = self.storyboard?.instantiateViewControllerWithIdentifier("SauceVC") as! SauceViewController
+        
+        popoverContent.modalPresentationStyle = .Popover
+        var popover = popoverContent.popoverPresentationController
+        
+        if let popover = popoverContent.popoverPresentationController {
+            
+            let viewForSource = sender as! UIView
+            popover.sourceView = viewForSource
+            
+            // the position of the popover where it's showed
+            popover.sourceRect = viewForSource.bounds
+            
+            // the size you want to display
+            popoverContent.preferredContentSize = CGSizeMake(200,500)
+            popover.delegate = self
+        }            
+        
+        self.presentViewController(popoverContent, animated: true, completion: nil)
+        
     }
     
     @IBAction func toppingsAction(sender: AnyObject) {
@@ -289,5 +309,12 @@ class PrepareForCartTableViewController: UITableViewController {
    readyForCart = nil
         
     }
+    //MARK: Popover delegate method
     
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .None
+    }
+    
+    
+     
 }

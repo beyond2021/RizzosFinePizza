@@ -4,13 +4,7 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-    <key>UberClientID</key>
-    <string>[h59ZyuCH_wA9WeCIcgBoDfalRLYmOIsK]</string>
-    <key>UberCallbackURI</key>
-    <string>[http://beyond2021.blogspot.com]</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>We're watching, always watching.... :)</string>
-    <key>CFBundleExecutable</key>
+	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
@@ -21,13 +15,63 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.01</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb991468597626702</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>991468597626702</string>
+	<key>FacebookDisplayName</key>
+	<string>RizzosFinePizza</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>uber</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>akamaihd.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>facebook.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>fbcdn.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We're watching, always watching.... :)</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -40,47 +84,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb991468597626702</string>
-            </array>
-        </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>991468597626702</string>
-    <key>FacebookDisplayName</key>
-    <string>RizzosFinePizza</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>fbapi</string>
-        <string>fb-messenger-api</string>
-        <string>fbauth2</string>
-        <string>fbshareextension</string>
-        <string>uber</string>
-    </array>
-    <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSExceptionDomains</key>
-        <dict>
-            <key>facebook.com</key>
-            <dict>
-                <key>NSIncludesSubdomains</key> <true/>
-                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key> <false/>
-            </dict>
-            <key>fbcdn.net</key>
-            <dict>
-                <key>NSIncludesSubdomains</key> <true/>
-                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>  <false/>
-            </dict>
-            <key>akamaihd.net</key>
-            <dict>
-                <key>NSIncludesSubdomains</key> <true/>
-                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key> <false/>
-            </dict>
-        </dict>
-    </dict>
+	<key>UberCallbackURI</key>
+	<string>[http://beyond2021.blogspot.com]</string>
+	<key>UberClientID</key>
+	<string>[h59ZyuCH_wA9WeCIcgBoDfalRLYmOIsK]</string>
 </dict>
 </plist>

@@ -17,6 +17,13 @@
 		2209E17C1CE6912400F52E48 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209E17A1CE6912400F52E48 /* CartTableViewController.swift */; };
 		222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156331CC06243009A08C5 /* FoodItemTests.swift */; };
 		222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222156351CC0634D009A08C5 /* FoodOrderTests.swift */; };
+		222733201CE7CE670086BF22 /* FVCustomAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2227331F1CE7CE670086BF22 /* FVCustomAlertView.framework */; };
+		222733231CE83C570086BF22 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733221CE83C570086BF22 /* CartItem.swift */; };
+		222733241CE83C570086BF22 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733221CE83C570086BF22 /* CartItem.swift */; };
+		222733261CE84E080086BF22 /* Sauce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733251CE84E080086BF22 /* Sauce.swift */; };
+		222733271CE84E080086BF22 /* Sauce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733251CE84E080086BF22 /* Sauce.swift */; };
+		222733291CE8709D0086BF22 /* SauceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733281CE8709D0086BF22 /* SauceViewController.swift */; };
+		2227332A1CE8709D0086BF22 /* SauceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733281CE8709D0086BF22 /* SauceViewController.swift */; };
 		2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0431CBC720200218DE3 /* LocationTests.swift */; };
 		2233E0461CBC729E00218DE3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0451CBC729E00218DE3 /* Location.swift */; };
 		2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */; };
@@ -121,6 +128,11 @@
 		2209E17A1CE6912400F52E48 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 		222156331CC06243009A08C5 /* FoodItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemTests.swift; sourceTree = "<group>"; };
 		222156351CC0634D009A08C5 /* FoodOrderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOrderTests.swift; sourceTree = "<group>"; };
+		2227331F1CE7CE670086BF22 /* FVCustomAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FVCustomAlertView.framework; path = "Pods/../build/Debug-iphoneos/FVCustomAlertView.framework"; sourceTree = "<group>"; };
+		222733211CE7D0F30086BF22 /* FVCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVCustomAlertView.h; sourceTree = "<group>"; };
+		222733221CE83C570086BF22 /* CartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		222733251CE84E080086BF22 /* Sauce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sauce.swift; sourceTree = "<group>"; };
+		222733281CE8709D0086BF22 /* SauceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SauceViewController.swift; sourceTree = "<group>"; };
 		2233E0431CBC720200218DE3 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		2233E0451CBC729E00218DE3 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
@@ -201,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222733201CE7CE670086BF22 /* FVCustomAlertView.framework in Frameworks */,
 				226EC9C91CE72BC800EC616D /* UberRides.framework in Frameworks */,
 				2255E2021CD5E969007DD06C /* FBSDKCoreKit.framework in Frameworks */,
 				2255E2031CD5E969007DD06C /* FBSDKLoginKit.framework in Frameworks */,
@@ -227,6 +240,7 @@
 		12AEFC6420FF5200B6AAAD1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2227331F1CE7CE670086BF22 /* FVCustomAlertView.framework */,
 				226EC9C81CE72BC800EC616D /* UberRides.framework */,
 				2255E1FF1CD5E969007DD06C /* FBSDKCoreKit.framework */,
 				2255E2001CD5E969007DD06C /* FBSDKLoginKit.framework */,
@@ -267,6 +281,8 @@
 				2255E2141CD9F3D1007DD06C /* HTTPClient.swift */,
 				22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */,
 				2255E2171CD9FB3C007DD06C /* FoodItemExtension.swift */,
+				222733221CE83C570086BF22 /* CartItem.swift */,
+				222733251CE84E080086BF22 /* Sauce.swift */,
 			);
 			name = "Model Api";
 			sourceTree = "<group>";
@@ -402,6 +418,7 @@
 				22D6E9571CDC9E380080603B /* LoginAndSignup.storyboard */,
 				22FBA2EB1CAFDE30009B2DE8 /* Main.storyboard */,
 				22D6E94D1CDC98DB0080603B /* Container.storyboard */,
+				222733281CE8709D0086BF22 /* SauceViewController.swift */,
 				22D6E94B1CDC982F0080603B /* Startup.storyboard */,
 				22D6E9591CDCA2260080603B /* Main.storyboard */,
 			);
@@ -445,6 +462,7 @@
 		22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */ = {
 			isa = PBXGroup;
 			children = (
+				222733211CE7D0F30086BF22 /* FVCustomAlertView.h */,
 				227BE3011CE781DE00676A61 /* Location Manager */,
 				2200785F1CDF119A00AED961 /* vermin_vibes.ttf */,
 				2255E2311CDB4E45007DD06C /* ACPButton */,
@@ -716,6 +734,7 @@
 				22D6E9461CDC53CD0080603B /* FXBlurView.m in Sources */,
 				2209E1561CE4B63D00F52E48 /* DataArray.swift in Sources */,
 				22A1EBA81CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift in Sources */,
+				222733261CE84E080086BF22 /* Sauce.swift in Sources */,
 				2209E12E1CE2D53000F52E48 /* PizzaCellSlim.swift in Sources */,
 				22A1EBAA1CCC87D000C51FE5 /* ShareViewController.swift in Sources */,
 				22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */,
@@ -744,6 +763,8 @@
 				22F07ED51CD058C3001E65F7 /* LoginService.swift in Sources */,
 				2255E2241CDA1156007DD06C /* MBTwitterScroll.m in Sources */,
 				2209E1501CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift in Sources */,
+				222733231CE83C570086BF22 /* CartItem.swift in Sources */,
+				222733291CE8709D0086BF22 /* SauceViewController.swift in Sources */,
 				22D6E9451CDC53CD0080603B /* TWTButton.swift in Sources */,
 				22A1EBA61CCA890D00C51FE5 /* ContainerViewController.swift in Sources */,
 				22A1EB931CC8174700C51FE5 /* CHTumblrMenuView.m in Sources */,
@@ -758,7 +779,9 @@
 				22CCFEF51CC69A34002841D5 /* MenuListDataSupplierTest.swift in Sources */,
 				22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */,
 				222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */,
+				222733241CE83C570086BF22 /* CartItem.swift in Sources */,
 				2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */,
+				222733271CE84E080086BF22 /* Sauce.swift in Sources */,
 				2255E23B1CDB4E45007DD06C /* README.md in Sources */,
 				22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */,
 				2255E2161CD9F3D4007DD06C /* HTTPClient.swift in Sources */,
@@ -768,6 +791,7 @@
 				2255E2251CDA1156007DD06C /* MBTwitterScroll.m in Sources */,
 				2255E2291CDA1156007DD06C /* README.md in Sources */,
 				2255E2371CDB4E45007DD06C /* ACPButton.m in Sources */,
+				2227332A1CE8709D0086BF22 /* SauceViewController.swift in Sources */,
 				22FBA2FD1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift in Sources */,
 				2255E2191CD9FB3C007DD06C /* FoodItemExtension.swift in Sources */,
 				2255E2271CDA1156007DD06C /* UIScrollView+TwitterCover.m in Sources */,

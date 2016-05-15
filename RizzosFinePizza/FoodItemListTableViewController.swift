@@ -10,6 +10,8 @@ import UIKit
 
 class FoodItemListTableViewController: UITableViewController {
     
+    var cartItem : CartItem?
+    
     var cart : FoodItem?
    
     
@@ -67,7 +69,11 @@ class FoodItemListTableViewController: UITableViewController {
         print("Row \(indexPath.row) selected")
         //tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! PizzaCellSlim
-        selectedCell.contentView.backgroundColor = UIColor(red:217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0)
+        
+//        selectedCell.contentView.backgroundColor = UIColor(red:217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0)
+         selectedCell.contentView.backgroundColor = UIColor(red:102.0/255.0, green: 36.0/255.0, blue: 35.0/255.0, alpha: 1.0)
+        
+        
         //  print("cell items: \(selectedCell.foodItem)")
         performSegueWithIdentifier("PreCart", sender: PizzaCellSlim())
     }
@@ -112,7 +118,17 @@ class FoodItemListTableViewController: UITableViewController {
     }
     
     // MARK: - Unwind Segue
-    @IBAction func unwindToMenu(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToMenu(segue: UIStoryboardSegue) {
+//        FVCustomAlertView.showDefaultDoneAlertOnView(self.view, withTitle: "Done", withBlur: true, allowTap: true)
+
+    
+    }
+    
+    @IBAction func backFromCart(segue: UIStoryboardSegue) {
+//        FVCustomAlertView.showDefaultDoneAlertOnView(self.view, withTitle: "Dont Hurt Yourself :)", withBlur: true, allowTap: true)
+        
+        
+    }
     
 
 }

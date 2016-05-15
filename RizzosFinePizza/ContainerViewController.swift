@@ -24,19 +24,19 @@ class ContainerViewController: SlideMenuController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        /*
+        
         //TI GET CALLED IF U CAUSE A SEGUE TO TRIGGER
         // CHECK THE ID OF THE SEGUE. THIS IS A PROPERTY OF THE SEGUE
         // GET THE DESTINATION VC
         if segue.identifier == "cart" {
             // We are on the right one so lets now get the destinationVC
-            if let destVC = segue.destinationViewController as? ShoppingCartViewController {
+            if let destVC = segue.destinationViewController as? CartTableViewController {
                 // if this was possible then we want to ourself its delegate
-                destVC.delegate = self
+               // destVC.delegate = self
                 
             }
         }
- */
+ 
     }
     
 

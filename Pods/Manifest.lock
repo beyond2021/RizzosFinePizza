@@ -12,6 +12,7 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.11.0):
     - FBSDKCoreKit
+  - FVCustomAlertView (0.3.3)
   - MBTwitterScroll (0.1)
   - ObjectMapper (1.1.5)
   - pop (1.0.9)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
+  - FVCustomAlertView
   - MBTwitterScroll
   - pop (~> 1.0)
   - SKSplashView
@@ -50,6 +52,7 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 686ac982723a14ec9ddb85e2f81235d7706c891b
   FBSDKLoginKit: bade9fc78277764149ccc5bfaadbf13c83175c6a
   FBSDKShareKit: 2d1746144cfc8a9dbbd24997c34ee0471be51b6a
+  FVCustomAlertView: 9db3baa8b6b37cbac1d4914539d30a98148de3d5
   MBTwitterScroll: 6c69bb2b864423db52b631f42311706b8d0440b6
   ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
@@ -59,6 +62,6 @@ SPEC CHECKSUMS:
   TAPageControl: fd11d779bbb5c2464ca2f55dde9e288213ea8a9b
   UberRides: fa21246486f1c20b88392036501481f86e81a022
 
-PODFILE CHECKSUM: e25ec8cbf368439f755b18a6eaa5705a1b1ee202
+PODFILE CHECKSUM: fb4345be9916ff79273da0752c1d2164f8a0f91d
 
 COCOAPODS: 1.0.0.beta.3

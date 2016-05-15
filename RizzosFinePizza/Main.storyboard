@@ -10,7 +10,6 @@
             <string>TrajanPro-Bold</string>
             <string>TrajanPro-Bold</string>
             <string>TrajanPro-Bold</string>
-            <string>TrajanPro-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -40,19 +39,6 @@
                                     <segue destination="kp9-Dg-dsi" kind="presentation" identifier="Astoria" id="FJy-30-0Hr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ES-qZ-Geu">
-                                <rect key="frame" x="20" y="683" width="374" height="25"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="js0-zt-Q3n"/>
-                                    <constraint firstAttribute="height" constant="25" id="vDA-zG-uf9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="TrajanPro-Bold" family="Trajan Pro" pointSize="16"/>
-                                <state key="normal" title="Log - Out"/>
-                                <connections>
-                                    <action selector="LogoutAction:" destination="ZLb-xo-YWu" eventType="touchUpInside" id="idc-SS-veW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkh-Ca-DoK">
                                 <rect key="frame" x="132" y="364" width="150" height="150"/>
                                 <constraints>
@@ -66,28 +52,37 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLO-bw-CXL">
+                                <rect key="frame" x="94" y="581" width="226" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="Igb-Ao-mi1"/>
+                                    <constraint firstAttribute="height" constant="115" id="RNg-3M-4Su"/>
+                                </constraints>
+                                <string key="text">This App is under development at Beyond2021 studios. Contact Keevin Mitchell at 9173495126 for more details. All Rights Reserved.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000000000002" green="0.14117647059999999" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pjE-JB-rZ7" firstAttribute="top" secondItem="MGU-lI-IUj" secondAttribute="bottom" constant="129" id="3MZ-Rq-quu"/>
-                            <constraint firstAttribute="trailing" secondItem="0ES-qZ-Geu" secondAttribute="trailing" constant="20" id="3gw-HF-kbZ"/>
                             <constraint firstItem="pjE-JB-rZ7" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="5Cu-xC-Hom"/>
                             <constraint firstItem="Nkh-Ca-DoK" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="E8l-zC-85S"/>
-                            <constraint firstItem="0ES-qZ-Geu" firstAttribute="leading" secondItem="hCP-UK-oLd" secondAttribute="leading" constant="20" id="Ehf-AD-kgG"/>
-                            <constraint firstItem="0ES-qZ-Geu" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="FQO-0l-dKG"/>
                             <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="hld-Jo-c5z" secondAttribute="bottom" id="IaN-V8-3yj"/>
                             <constraint firstItem="Nkh-Ca-DoK" firstAttribute="top" secondItem="pjE-JB-rZ7" secondAttribute="bottom" constant="65" id="PE0-Jz-tCH"/>
                             <constraint firstItem="hld-Jo-c5z" firstAttribute="leading" secondItem="hCP-UK-oLd" secondAttribute="leading" id="R4o-ro-UhX"/>
                             <constraint firstItem="hld-Jo-c5z" firstAttribute="top" secondItem="hCP-UK-oLd" secondAttribute="top" id="edS-jS-esq"/>
-                            <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="0ES-qZ-Geu" secondAttribute="bottom" constant="28" id="s8D-ou-i3N"/>
+                            <constraint firstItem="yLO-bw-CXL" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="ehC-qf-4Dw"/>
                             <constraint firstAttribute="trailing" secondItem="hld-Jo-c5z" secondAttribute="trailing" id="u23-8S-t26"/>
+                            <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="yLO-bw-CXL" secondAttribute="bottom" constant="40" id="wVe-yq-VkS"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="beyondLabel" destination="yLO-bw-CXL" id="Ro8-KA-m4p"/>
                         <outlet property="bgImageView" destination="hld-Jo-c5z" id="Crg-Q3-Ul2"/>
                         <outlet property="lesButton" destination="Nkh-Ca-DoK" id="kPx-pt-7Qz"/>
-                        <outlet property="loginButton" destination="0ES-qZ-Geu" id="kam-rD-b8X"/>
                         <outlet property="steinwayButton" destination="pjE-JB-rZ7" id="FMd-us-jjW"/>
                     </connections>
                 </viewController>

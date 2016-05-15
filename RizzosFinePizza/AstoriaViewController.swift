@@ -24,31 +24,23 @@ class AstoriaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        // Do any additional setup after loading the view.
-        /*
-         - (void) setStyleType:(ACPButtonType)style;
-         - (void) setFlatStyleType:(ACPButtonType)style;
-         - (void) setFlatStyle:(UIColor*)normal andHighlightedColor:(UIColor*)highlight;
-         - (void) setStyle:(UIColor*)topColor andBottomColor:(UIColor*)bottomColor;
-         - (void) setStyleWithImage:(NSString*)image highlightedImage:(NSString*)hImage disableImage:(NSString *)dImage andInsets:(UIEdgeInsets)insets;
-         - (void) setGlowHighlightedState:(BOOL)glowOption;
- */
-        deliveryButton.setStyle(UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0), andBottomColor: UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0,alpha: 1.0))
+                deliveryButton.setStyle(UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0), andBottomColor: UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0,alpha: 1.0))
+        pickupButton.setStyle(UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0,alpha: 1.0), andBottomColor: UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0))
         
-        deliveryButton.setLabelTextColor( UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), highlightedColor: UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), disableColor: UIColor.lightGrayColor())
-        //        telepnoneButton.setImage(UIImage(named: "phone"), forState: UIControlState.Normal)
+        
+        
+        
+        deliveryButton.setLabelTextColor(UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), highlightedColor: UIColor.whiteColor(), disableColor: UIColor.lightGrayColor())
+        pickupButton.setLabelTextColor( UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), highlightedColor: UIColor.whiteColor(), disableColor: UIColor.lightGrayColor())
+        
+        
+        
         deliveryButton.setLabelFont(UIFont(name: "Trajan Pro Bold", size: 30))
         deliveryButton.titleLabel?.text = "Delivery"
         
+              
         
         
-        
-//        telepnoneButton.setStyle(UIColor.clearColor(), andBottomColor: UIColor.clearColor())
-//        homeButton.setStyle(UIColor.clearColor(), andBottomColor: UIColor.clearColor())
-        
-        pickupButton.setStyle(UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0,alpha: 1.0), andBottomColor: UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0))
-        
-        pickupButton.setLabelTextColor( UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), highlightedColor: UIColor(red: 217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0), disableColor: UIColor.lightGrayColor())
         pickupButton.setLabelFont(UIFont(name: "vermin_vibes", size: 30))
         //Trajan Pro Bold 30.0
         
@@ -111,22 +103,26 @@ class AstoriaViewController: UIViewController {
     }
     
     @IBAction func deliveryAction(sender: UIButton) {
-       // showMenu()
+        showMenu()
+        /**
         let storyboard = UIStoryboard(name: "Container", bundle: nil)
         let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
         let nav = UINavigationController(rootViewController: menuVC)
         self.presentViewController(nav, animated: true, completion: nil)
+ */
         
         
         
     }
     
     @IBAction func pickupAction(sender: UIButton) {
-       // showMenu()
+        showMenu()
+        /**
         let storyboard = UIStoryboard(name: "Container", bundle: nil)
         let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
         let nav = UINavigationController(rootViewController: menuVC)
         self.presentViewController(nav, animated: true, completion: nil)
+ */
         
     }
     
