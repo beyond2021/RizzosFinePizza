@@ -61,26 +61,26 @@ class AstoriaViewController: UIViewController {
     func showMenu(){
         let menuView = CHTumblrMenuView()
         
-        menuView.addMenuItemWithTitle("Pizza", andIcon: UIImage(named:"Calzones")) {
+        menuView.addMenuItemWithTitle("Pizza", andIcon: UIImage(named:"pizza")) {
             self.pizzaAction()
+        }
+        menuView.addMenuItemWithTitle("Calzones", andIcon: UIImage(named:"calzone")) {
+            self.calzoneAction()
         }
         
-        menuView.addMenuItemWithTitle("Calzones", andIcon: UIImage(named:"Calzones")) {
-            self.pizzaAction()
+        menuView.addMenuItemWithTitle("Knots", andIcon: UIImage(named:"knots")) {
+            self.knotsAction()
         }
         
-        menuView.addMenuItemWithTitle("Knots", andIcon: UIImage(named:"Calzones")) {
-            self.pizzaAction()
+        menuView.addMenuItemWithTitle("Salads", andIcon: UIImage(named:"salad")) {
+            self.saladAction()
         }
-        menuView.addMenuItemWithTitle("Salads", andIcon: UIImage(named:"Calzones")) {
-            self.pizzaAction()
-        }
-        menuView.addMenuItemWithTitle("Drinks", andIcon: UIImage(named:"Calzones")) {
-            self.pizzaAction()
+        menuView.addMenuItemWithTitle("Drinks", andIcon: UIImage(named:"coke")) {
+            self.drinkAction()
         }
         
-        menuView.addMenuItemWithTitle("Dessert", andIcon: UIImage(named:"Calzones")) {
-            self.pizzaAction()
+        menuView.addMenuItemWithTitle("Dessert", andIcon: UIImage(named:"dessert")) {
+            self.dessertAction()
         }
         
         
@@ -96,6 +96,59 @@ class AstoriaViewController: UIViewController {
         self.presentViewController(nav, animated: true, completion: nil)
         
     }
+    func calzoneAction(){
+        
+        let storyboard = UIStoryboard(name: "Container", bundle: nil)
+        let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
+        pointVariable = 3
+        
+        let nav = UINavigationController(rootViewController: menuVC)
+        
+        self.presentViewController(nav, animated: true, completion: nil)
+        
+        
+    }
+    func knotsAction(){
+        pointVariable = 4
+        
+        let storyboard = UIStoryboard(name: "Container", bundle: nil)
+        let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
+        let nav = UINavigationController(rootViewController: menuVC)
+        self.presentViewController(nav, animated: true, completion: nil)
+        
+    }
+    func saladAction(){
+        pointVariable = 5
+        
+        let storyboard = UIStoryboard(name: "Container", bundle: nil)
+        let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
+        let nav = UINavigationController(rootViewController: menuVC)
+        self.presentViewController(nav, animated: true, completion: nil)
+        
+        
+    }
+    func drinkAction(){
+        pointVariable = 6
+        
+        let storyboard = UIStoryboard(name: "Container", bundle: nil)
+        let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
+        let nav = UINavigationController(rootViewController: menuVC)
+        self.presentViewController(nav, animated: true, completion: nil)
+        
+    }
+    func dessertAction(){
+        pointVariable = 7
+        
+        let storyboard = UIStoryboard(name: "Container", bundle: nil)
+        let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
+        let nav = UINavigationController(rootViewController: menuVC)
+        self.presentViewController(nav, animated: true, completion: nil)
+        
+        
+    }
+
+
+    
     
     //MARK : Actions
     @IBAction func backToMain(sender: UIButton) {

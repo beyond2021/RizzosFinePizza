@@ -11,10 +11,12 @@ import SlideMenuControllerSwift
 
 class ContainerViewController: SlideMenuController {
     
+    var scrollPoint : Int?
+    
     override func awakeFromNib() {
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("FoodItemListTableViewController") {
             self.mainViewController = controller
-        }
+                    }
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("LeftMenuTableViewController") {
             self.leftViewController = controller
         }
@@ -30,7 +32,7 @@ class ContainerViewController: SlideMenuController {
         // GET THE DESTINATION VC
         if segue.identifier == "cart" {
             // We are on the right one so lets now get the destinationVC
-            if let destVC = segue.destinationViewController as? CartTableViewController {
+            if segue.destinationViewController is CartTableViewController {
                 // if this was possible then we want to ourself its delegate
                // destVC.delegate = self
                 
@@ -43,18 +45,13 @@ class ContainerViewController: SlideMenuController {
     override func viewDidLoad() {
         navView()
         super.viewDidLoad()
-       // title = "Simply Delicious"
+       
         
         self.addLeftBarButtonWithImage(UIImage(named: "menuIconSmall")!)
         self.navigationItem.title = "Simply Delicious"
         if let navigationBar = navigationController?.navigationBar {
             navigationBar.setBackgroundImage(UIImage(named: "codepath-logo"), forBarMetrics: .Default)
-          //  navigationBar.tintColor = UIColor(red: 1.0, green: 0.25, blue: 0.25, alpha: 0.8)
-            
-            
-            
-            
-            let shadow = NSShadow()
+                     let shadow = NSShadow()
             shadow.shadowColor = UIColor.grayColor().colorWithAlphaComponent(0.5)
             shadow.shadowOffset = CGSizeMake(2, 2);
             shadow.shadowBlurRadius = 4;
@@ -64,8 +61,6 @@ class ContainerViewController: SlideMenuController {
                 NSShadowAttributeName : shadow
             ]
         }
-//        let loginManager = FBSDKLoginManager()
-//        loginManager.logOut()
     
     }
 
@@ -80,21 +75,21 @@ class ContainerViewController: SlideMenuController {
         titleView.backgroundColor = UIColor.clearColor()
         
        
-        let imageView = UIImageView(image: UIImage(named: "120x120"))
+        let imageView = UIImageView(image: UIImage(named: "pc"))
         let logoHomeButton = ACPButton(frame: CGRectMake(0.0, 0.0, 60.0, 60.0))
         logoHomeButton.contentMode = UIViewContentMode.Center
-        logoHomeButton.layer.cornerRadius = logoHomeButton.bounds.size.width / 2
-        logoHomeButton.layer.masksToBounds = true
+//        logoHomeButton.layer.cornerRadius = logoHomeButton.bounds.size.width / 2
+//        logoHomeButton.layer.masksToBounds = true
         
-        logoHomeButton.setStyleWithImage("120x120", highlightedImage: "120x120", disableImage: "120x120", andInsets: UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0))
+        logoHomeButton.setStyleWithImage("pc", highlightedImage: "pc", disableImage: "pc", andInsets: UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0))
         logoHomeButton.addTarget(self, action: #selector(ContainerViewController.homePressed), forControlEvents: UIControlEvents.TouchUpInside)
         
         
         
         
         imageView.contentMode = UIViewContentMode.Center
-        imageView.layer.cornerRadius = imageView.bounds.size.width / 2
-        imageView.layer.masksToBounds = true
+//        imageView.layer.cornerRadius = imageView.bounds.size.width / 2
+//        imageView.layer.masksToBounds = true
         
         logoHomeButton.center.x = titleView.center.x
         logoHomeButton.center.y = titleView.center.y

@@ -10,16 +10,23 @@ import UIKit
 import pop
 import UberRides
 import CoreLocation
+import AWSMobileHubHelper
 
 
 class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesViewControllerDelegate,FBLoginViewControllerDelegate,CLLocationManagerDelegate {
+    //MARK: - AWS
+    var demoFeatures: [DemoFeature] = []
+    var signInObserver: AnyObject!
+    var signOutObserver: AnyObject!
+    var willEnterForegroundObserver: AnyObject!
+    
     // User Location
     var latitude : Double?
     var longitude : Double?
-      
-    @IBOutlet weak var bgImageView: UIImageView!
     
-   
+    
+    @IBOutlet weak var stackView: UIStackView!
+    
     @IBOutlet weak var steinwayButton: UIButton!
     
     @IBOutlet weak var lesButton: UIButton!
@@ -30,7 +37,7 @@ class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesV
     
     @IBOutlet weak var beyondLabel: UILabel!
     
-   
+    
     //Create a location Manager
     lazy var locationManager : CLLocationManager = {
         let loc = CLLocationManager()
@@ -48,84 +55,176 @@ class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesV
         return loc
         
     }()
-
-
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         locationManager.requestAlwaysAuthorization()
-        locationManager.delegate = self
-setupUber() 
-        
-        // locationManager.requestAlwaysAuthorization()
-        
-       
-        
-        
-//        bgImageView.image = UIImage(named: "LocationsBGIT")
-        setUpInterface()
-                
-        if (FBSDKAccessToken.currentAccessToken() != nil){
-            lesButton.enabled = true
-           
-            steinwayButton.enabled = true
-            
-        } else {
-           
-         //   loginAlert()
+//        if bgImageView.image == nil{
+//            bgImageView.image = UIImage(named: "customBG")
+//            
+//        }
 
-            
-            
-            
-        }
         
-//        if ([FBSDKAccessToken currentAccessToken]) {
-//            // User is logged in
-//            [self performSelector:@selector(accessGrantedNavigation)
-//            withObject:nil afterDelay:0.0];
-//        }
-//        
-//        -(void)accessGrantedNavigation{
-//            [self performSegueWithIdentifier: @"segueLoginFB" sender: self];
-//        }
+        
+       // setUpInterface()
+//        self.navigationController!.navigationBar.translucent = true
+//        self.navigationController!.view.backgroundColor = UIColor.clearColor()
+
+        //AWS
+         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: nil, action: nil)
+        
+        // You need to call `- updateTheme` here in case the sign-in happens before `- viewWillAppear:` is called.
+         updateTheme()
+        
+                willEnterForegroundObserver = NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationWillEnterForegroundNotification, object: nil, queue: NSOperationQueue.currentQueue()) { _ in
+                    self.updateTheme()
+                }
+      
+         
+         var demoFeature = DemoFeature.init(
+         name: NSLocalizedString("User Sign-in",
+         comment: "Label for demo menu option."),
+         detail: NSLocalizedString("Enable user login with popular 3rd party providers.",
+         comment: "Description for demo menu option."),
+         icon: "UserIdentityIcon", storyboard: "UserIdentity")
+         
+         demoFeatures.append(demoFeature)
+         
+         demoFeature = DemoFeature.init(
+         name: NSLocalizedString("User Data Storage",
+         comment: "Label for demo menu option."),
+         detail: NSLocalizedString("Save user files in the cloud and sync user data in key/value pairs.",
+         comment: "Description for demo menu option."),
+         icon: "UserFilesIcon", storyboard: "UserDataStorage")
+         
+         demoFeatures.append(demoFeature)
+         
+         demoFeature = DemoFeature.init(
+         name: NSLocalizedString("App Analytics",
+         comment: "Label for demo menu option."),
+         detail: NSLocalizedString("Collect, visualize and export app usage metrics.",
+         comment: "Description for demo menu option."),
+         icon: "AppAnalyticsIcon", storyboard: "AppAnalytics")
+         
+         demoFeatures.append(demoFeature)
+         
+         demoFeature = DemoFeature.init(
+         name: NSLocalizedString("NoSQL",
+         comment: "Label for demo menu option."),
+         detail: NSLocalizedString("Store data in the cloud.",
+         comment: "Description for demo menu option."),
+         icon: "NoSQLIcon", storyboard: "NoSQLDatabase")
+         
+         demoFeatures.append(demoFeature)
+        
+        
+        signInObserver = NSNotificationCenter.defaultCenter().addObserverForName(AWSIdentityManagerDidSignInNotification, object: AWSIdentityManager.defaultIdentityManager(), queue: NSOperationQueue.mainQueue(), usingBlock: {[weak self] (note: NSNotification) -> Void in
+            guard let strongSelf = self else { return }
+            print("Sign In Observer observed sign in.")
+            strongSelf.setupRightBarButtonItem()
+            // You need to call `updateTheme` here in case the sign-in happens after `- viewWillAppear:` is called.
+            strongSelf.updateTheme()
+            })
+        
+        signOutObserver = NSNotificationCenter.defaultCenter().addObserverForName(AWSIdentityManagerDidSignOutNotification, object: AWSIdentityManager.defaultIdentityManager(), queue: NSOperationQueue.mainQueue(), usingBlock: {[weak self](note: NSNotification) -> Void in
+            guard let strongSelf = self else { return }
+            print("Sign Out Observer observed sign out.")
+            strongSelf.setupRightBarButtonItem()
+            strongSelf.updateTheme()
+            })
+        
+         setupRightBarButtonItem()
+        //setUpSignIn()
+        //
+        locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self
+        setupUber()
     }
+    
+    func updateTheme() {
+        let settings = ColorThemeSettings.sharedInstance
+        settings.loadSettings { (themeSettings: ColorThemeSettings?, error: NSError?) -> Void in
+            guard let themeSettings = themeSettings else {
+                print("Failed to load color: \(error)")
+                return
+            }
+            dispatch_async(dispatch_get_main_queue(), {
+                let titleTextColor: UIColor = themeSettings.theme.titleTextColor.UIColorFromARGB()
+//                self.navigationController!.navigationBar.barTintColor = themeSettings.theme.titleBarColor.UIColorFromARGB()
+                self.navigationController!.navigationBar.barTintColor = UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0, alpha: 1.0)
+                
+                
+                self.view.backgroundColor = themeSettings.theme.backgroundColor.UIColorFromARGB()
+//                self.view.backgroundColor = UIColor.clearColor()
+                
+                
+                self.navigationController!.navigationBar.tintColor = titleTextColor
+                self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: titleTextColor]
+            })
+        }
+    }
+    
+    
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        bgImageView.alpha = 0
-        //
-              
-                  // here code perfomed with delay
-            self.animate()
-        
-        
+       // bgImageView.alpha = 0
+       // self.animate()
+       
     }
     override func viewDidAppear(animated: Bool) {
-        lesButton.enabled = true
-       
-        steinwayButton.enabled = true
+       // lesButton.enabled = true
+      //  steinwayButton.enabled = true
         beyondLabel.alpha = 0
-        
-        
-        /*
-        let loginManager = LoginManager()
-        loginManager.login(requestedScopes:[.RideWidgets], presentingViewController: self, completion: { accessToken, error in
-            // Completion block. If accessToken is non-nil, you’re good to go
-            // Otherwise, error.code corresponds to the RidesAuthenticationErrorType that occured
-        })
- */
-        
+//        if bgImageView.image == nil{
+//           bgImageView.image = UIImage(named: "customBG")
+//            
+//        }
+    }
+    
+    
+    
+    func goToLogin() {
+        print("Handling optional sign-in.")
+        let loginStoryboard = UIStoryboard(name: "SignIn", bundle: nil)
+        let loginController = loginStoryboard.instantiateViewControllerWithIdentifier("SignIn")
+        navigationController!.pushViewController(loginController, animated: true)
+
         
     }
-
+    
+    func handleLogout() {
+        if (AWSIdentityManager.defaultIdentityManager().loggedIn) {
+            ColorThemeSettings.sharedInstance.wipe()
+            AWSIdentityManager.defaultIdentityManager().logoutWithCompletionHandler({(result: AnyObject?, error: NSError?) -> Void in
+                self.navigationController!.popToRootViewControllerAnimated(false)
+                self.setupRightBarButtonItem()
+            })
+            // print("Logout Successful: \(signInProvider.getDisplayName)");
+        } else {
+            assert(false)
+        }
+    }
+   
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     //MARK: Button Actions
+    /*
+     UIView.animateWithDuration(0.9, delay: 20.5, options: [], animations: {
+     self.beyondLabel.alpha = 0.0
+     }, completion: nil)
+
+ 
+ */
     
-   
+    
     @IBAction func steinwayAction(sender: UIButton) {
         steinwayButton.center.x += view.bounds.width
         
@@ -133,104 +232,50 @@ setupUber()
     @IBAction func lesButton(sender: UIButton) {
         lesButton.center.x += view.bounds.width
     }
-    
-    //MARK: - Interface
-    func setUpInterface(){
-        bgImageView.contentMode = UIViewContentMode.Center
-        
-        
-        steinwayButton.layer.cornerRadius = steinwayButton.bounds.size.width / 2
-        steinwayButton.layer.masksToBounds = true
-        
-        lesButton.layer.cornerRadius = lesButton.bounds.size.width / 2
-        lesButton.layer.masksToBounds = true
-        
-    }
-    func animate(){
-   
-        UIView.animateWithDuration(0.9, delay: 1.5, options: [], animations: {
-            self.beyondLabel.alpha = 1.0
-            }, completion: nil)
-        UIView.animateWithDuration(0.9, delay: 20.5, options: [], animations: {
-            self.beyondLabel.alpha = 0.0
-            }, completion: nil)
-        
-        
-        //
-        UIView.animateWithDuration(0.5, delay: 0.5, options: [], animations: {
-            self.bgImageView.alpha = 1.0
-            }, completion: nil)
-        
-        //START OFF THE SCREEN
-               steinwayButton.center.x -= view.bounds.width
-        lesButton.center.x -= view.bounds.width
-        
-        //Bring on screen
-               
-        
-        UIView.animateWithDuration(0.73, delay: 0.5, usingSpringWithDamping:
-            0.6, initialSpringVelocity: 0.0, options: [], animations: {
-                self.steinwayButton.center.x += self.view.bounds.width
-                
-            }, completion: nil)
-        UIView.animateWithDuration(0.73, delay: 0.7, usingSpringWithDamping:
-            0.3, initialSpringVelocity: 0.0, options: [], animations: {
-                self.lesButton.center.x += self.view.bounds.width
-                
-            }, completion: nil)
-        
-        
-    }
-    
-    //MARK: - NAVIGATION
+        //MARK: - NAVIGATION
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //TI GET CALLED IF U CAUSE A SEGUE TO TRIGGER
         // CHECK THE ID OF THE SEGUE. THIS IS A PROPERTY OF THE SEGUE
         // GET THE DESTINATION VC
-                    if segue.identifier == "Astoria" {
+        if segue.identifier == "Astoria" {
+            // We are on the right one so lets now get the destinationVC
+            if let destVC = segue.destinationViewController as? AstoriaViewController {
+                // if this was possible then we want to ourself its delegate
+                destVC.delegate = self
+                        }
+        }else
+            if segue.identifier == "Clinton" {
                 // We are on the right one so lets now get the destinationVC
-                if let destVC = segue.destinationViewController as? AstoriaViewController {
+                if let destVC = segue.destinationViewController as? LesViewController {
                     // if this was possible then we want to ourself its delegate
                     destVC.delegate = self
-                    
-                }
-            }else
-                if segue.identifier == "Clinton" {
+                             }
+            }
+            else
+                if segue.identifier == "login" {
                     // We are on the right one so lets now get the destinationVC
-                    if let destVC = segue.destinationViewController as? LesViewController {
+                    if let destVC = segue.destinationViewController as? FBLoginViewController {
                         // if this was possible then we want to ourself its delegate
                         destVC.delegate = self
                         
                     }
-                }
-    else
-    if segue.identifier == "login" {
-    // We are on the right one so lets now get the destinationVC
-    if let destVC = segue.destinationViewController as? FBLoginViewController {
-    // if this was possible then we want to ourself its delegate
-    destVC.delegate = self
-    
+        }
     }
+    @IBAction func backToMain(segue:UIStoryboardSegue){
+        
+        
     }
-
     
-           }
-
-
-
-
-
-
-
+    
     //MARK : Delegate Actions
     
-        func dismissAstoria(){
-            self.dismissViewControllerAnimated(true) {
-                print("Astoria is dismissed")
-            }
-            
-            
+    func dismissAstoria(){
+        self.dismissViewControllerAnimated(true) {
+            print("Astoria is dismissed")
         }
+        
+        
+    }
     func dismissClinton(){
         self.dismissViewControllerAnimated(true) {
             print("Clinton is dismissed")
@@ -239,18 +284,16 @@ setupUber()
         
     }
     func dismissfb(){
-      self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
         
     }
     
-    func getLoginStatus(){
-           }
     
     func loginAlert(){
         let alert = UIAlertController(title: "Please Log In Or Sign-Up", message: "We can serve you quicker if you are logged in.", preferredStyle: .Alert)
         let dismiss = UIAlertAction(title: "Thank You!", style: UIAlertActionStyle.Default, handler: nil)
         alert.addAction(dismiss)
-       presentViewController(alert, animated: true, completion: nil)
+        presentViewController(alert, animated: true, completion: nil)
         
     }
     
@@ -262,15 +305,7 @@ setupUber()
         let initViewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier(controllerId) as UIViewController
         self.presentViewController(initViewController, animated: true, completion: nil)
     }
-        
-        
-   
-
-    @IBAction func loginButtonActgion(sender: UIButton) {
-    }
-
-    @IBAction func signUpButtonAction(sender: UIButton) {
-    }
+    
     
     func setupUber(){
         
@@ -286,25 +321,28 @@ setupUber()
         let button = RideRequestButton(rideParameters: parameters, requestingBehavior: behavior)
         //self.view.center.x = button.center.x
         button.center.x = view.center.x
-        button.center.y = button.center.y + 60
+       // button.center.y = button.center.y + 430
+        button.center.y = self.view.bounds.height - 120
         self.view.addSubview(button)
-          }
+    }
     // MARK: - CLLocation Manager Delegate
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         
     }
     
-    /*
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-        latitude = locValue.latitude
-        longitude = locValue.longitude
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(signInObserver)
+        NSNotificationCenter.defaultCenter().removeObserver(signOutObserver)
+        NSNotificationCenter.defaultCenter().removeObserver(willEnterForegroundObserver)
     }
- */
-    
-    
-    
-   }
+    class FeatureDescriptionViewController: UIViewController {
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Back", style: .Plain, target: nil, action: nil)
+        }
+    }
+}
+
 // Swift
 extension MainViewController : RideRequestViewControllerDelegate {
     func rideRequestViewController(rideRequestViewController: RideRequestViewController, didReceiveError error: NSError) {
@@ -316,52 +354,60 @@ extension MainViewController : RideRequestViewControllerDelegate {
             let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alert.addAction(OKAction)
             presentViewController(alert, animated: true, completion: nil)
-
-            
-            
         // No AccessToken saved
         case .AccessTokenExpired:
-        // AccessToken expired / invalid
+            // AccessToken expired / invalid
             let alert = UIAlertController(title: "AccessToken expired / invalid", message: "Fix This Shit!!", preferredStyle: .Alert)
             let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alert.addAction(OKAction)
             presentViewController(alert, animated: true, completion: nil)
-
-            
-            
         case .NetworkError:
-        // A network connectivity error
+            // A network connectivity error
             let alert = UIAlertController(title: "Not Connected To The Network", message: "Log on to Wifi or some shit", preferredStyle: .Alert)
             let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alert.addAction(OKAction)
             presentViewController(alert, animated: true, completion: nil)
             
         case .NotSupported:
-        // The attempted operation is not supported on the current device
+            // The attempted operation is not supported on the current device
             let alert = UIAlertController(title: "Operation Not Supported on this devbice", message: "Get An Iphone 6Plus fool!", preferredStyle: .Alert)
             let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alert.addAction(OKAction)
             presentViewController(alert, animated: true, completion: nil)
- 
-            
-            
-            
         case .Unknown:
             // Other error
-                       let alert = UIAlertController(title: "Weird unknown error occured", message: "Try not to blow up ur phone", preferredStyle: .Alert)
+            let alert = UIAlertController(title: "Weird unknown error occured", message: "Try not to blow up ur phone", preferredStyle: .Alert)
             let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alert.addAction(OKAction)
             presentViewController(alert, animated: true, completion: nil)
-
-            
-            
+                }
+    }
+    
+    
+    
+    
+    func setupRightBarButtonItem() {
+        struct Static {
+            static var onceToken: dispatch_once_t = 0
+        }
+        
+        dispatch_once(&Static.onceToken, {
+            let loginButton: UIBarButtonItem = UIBarButtonItem(title: nil, style: .Done, target: self, action: nil)
+            self.navigationItem.rightBarButtonItem = loginButton
+        })
+        
+        if (AWSIdentityManager.defaultIdentityManager().loggedIn) {
+            navigationItem.rightBarButtonItem!.title = NSLocalizedString("Sign-Out", comment: "Label for the logout button.")
+            navigationItem.rightBarButtonItem!.action = #selector(MainViewController.handleLogout)
+        }
+        if !(AWSIdentityManager.defaultIdentityManager().loggedIn) {
+            navigationItem.rightBarButtonItem!.title = NSLocalizedString("Sign-In", comment: "Label for the login button.")
+            navigationItem.rightBarButtonItem!.action = #selector(MainViewController.goToLogin)
+            loginAlert()
         }
     }
     
     
-    func labelAction(){
-        
-        
-    }
+    
 }
 

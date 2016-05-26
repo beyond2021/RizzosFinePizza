@@ -52,7 +52,6 @@
 		2255E23A1CDB4E45007DD06C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2351CDB4E45007DD06C /* README.md */; };
 		2255E23B1CDB4E45007DD06C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2351CDB4E45007DD06C /* README.md */; };
 		226EC9C91CE72BC800EC616D /* UberRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226EC9C81CE72BC800EC616D /* UberRides.framework */; };
-		227BE3031CE7821500676A61 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BE3021CE7821500676A61 /* LocationManager.swift */; };
 		229AFE171CE71FBE005669BE /* UberConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229AFE161CE71FBE005669BE /* UberConstants.swift */; };
 		22A1EB8C1CC74FD900C51FE5 /* MainViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB8B1CC74FD900C51FE5 /* MainViewControllerTest.swift */; };
 		22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB8D1CC7504500C51FE5 /* MainViewController.swift */; };
@@ -68,6 +67,60 @@
 		22A1EBBA1CCCC28200C51FE5 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EBB91CCCC28200C51FE5 /* ShoppingCartViewController.swift */; };
 		22A1EBBC1CCDDC8400C51FE5 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBBB1CCDDC8400C51FE5 /* pop.framework */; };
 		22A1EBBE1CCDDC9400C51FE5 /* MBTwitterScroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1EBBD1CCDDC9400C51FE5 /* MBTwitterScroll.framework */; };
+		22B4D6921CF1DA6B00E08E8E /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6911CF1DA6B00E08E8E /* AWSMobileClient.swift */; };
+		22B4D6941CF1DC7500E08E8E /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B4D6931CF1DC7500E08E8E /* AWSMobileHubHelper.framework */; };
+		22B4D6981CF1DDE500E08E8E /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6961CF1DDE500E08E8E /* SignIn.storyboard */; };
+		22B4D6991CF1DDE500E08E8E /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6961CF1DDE500E08E8E /* SignIn.storyboard */; };
+		22B4D69A1CF1DDE500E08E8E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6971CF1DDE500E08E8E /* SignInViewController.swift */; };
+		22B4D69B1CF1DDE500E08E8E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6971CF1DDE500E08E8E /* SignInViewController.swift */; };
+		22B4D69E1CF1DE5500E08E8E /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D69D1CF1DE5500E08E8E /* UtilityFunctions.swift */; };
+		22B4D69F1CF1DE5500E08E8E /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D69D1CF1DE5500E08E8E /* UtilityFunctions.swift */; };
+		22B4D6A41CF1DEDE00E08E8E /* AppAnalytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6A21CF1DEDE00E08E8E /* AppAnalytics.storyboard */; };
+		22B4D6A51CF1DEDE00E08E8E /* AppAnalytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6A21CF1DEDE00E08E8E /* AppAnalytics.storyboard */; };
+		22B4D6A61CF1DEDE00E08E8E /* AppAnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6A31CF1DEDE00E08E8E /* AppAnalyticsViewController.swift */; };
+		22B4D6A71CF1DEDE00E08E8E /* AppAnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6A31CF1DEDE00E08E8E /* AppAnalyticsViewController.swift */; };
+		22B4D6AA1CF1DF5C00E08E8E /* ContentDelivery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6A91CF1DF5C00E08E8E /* ContentDelivery.storyboard */; };
+		22B4D6AB1CF1DF5C00E08E8E /* ContentDelivery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6A91CF1DF5C00E08E8E /* ContentDelivery.storyboard */; };
+		22B4D6AD1CF1DF8D00E08E8E /* DemoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6AC1CF1DF8D00E08E8E /* DemoFeature.swift */; };
+		22B4D6AE1CF1DF8D00E08E8E /* DemoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6AC1CF1DF8D00E08E8E /* DemoFeature.swift */; };
+		22B4D6B91CF1DFED00E08E8E /* FoodItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B01CF1DFED00E08E8E /* FoodItems.swift */; };
+		22B4D6BA1CF1DFED00E08E8E /* FoodItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B01CF1DFED00E08E8E /* FoodItems.swift */; };
+		22B4D6BB1CF1DFED00E08E8E /* FoodItemsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B11CF1DFED00E08E8E /* FoodItemsTable.swift */; };
+		22B4D6BC1CF1DFED00E08E8E /* FoodItemsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B11CF1DFED00E08E8E /* FoodItemsTable.swift */; };
+		22B4D6BD1CF1DFED00E08E8E /* NoSQLDatabase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6B21CF1DFED00E08E8E /* NoSQLDatabase.storyboard */; };
+		22B4D6BE1CF1DFED00E08E8E /* NoSQLDatabase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6B21CF1DFED00E08E8E /* NoSQLDatabase.storyboard */; };
+		22B4D6BF1CF1DFED00E08E8E /* NoSQLModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B31CF1DFED00E08E8E /* NoSQLModelHelpers.swift */; };
+		22B4D6C01CF1DFED00E08E8E /* NoSQLModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B31CF1DFED00E08E8E /* NoSQLModelHelpers.swift */; };
+		22B4D6C11CF1DFED00E08E8E /* NoSQLQueryResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B41CF1DFED00E08E8E /* NoSQLQueryResultViewController.swift */; };
+		22B4D6C21CF1DFED00E08E8E /* NoSQLQueryResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B41CF1DFED00E08E8E /* NoSQLQueryResultViewController.swift */; };
+		22B4D6C31CF1DFED00E08E8E /* NoSQLSampleDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B51CF1DFED00E08E8E /* NoSQLSampleDataGenerator.swift */; };
+		22B4D6C41CF1DFED00E08E8E /* NoSQLSampleDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B51CF1DFED00E08E8E /* NoSQLSampleDataGenerator.swift */; };
+		22B4D6C51CF1DFED00E08E8E /* NoSQLTableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B61CF1DFED00E08E8E /* NoSQLTableFactory.swift */; };
+		22B4D6C61CF1DFED00E08E8E /* NoSQLTableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B61CF1DFED00E08E8E /* NoSQLTableFactory.swift */; };
+		22B4D6C71CF1DFED00E08E8E /* NoSQLTableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B71CF1DFED00E08E8E /* NoSQLTableListViewController.swift */; };
+		22B4D6C81CF1DFED00E08E8E /* NoSQLTableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B71CF1DFED00E08E8E /* NoSQLTableListViewController.swift */; };
+		22B4D6C91CF1DFED00E08E8E /* NoSQLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B81CF1DFED00E08E8E /* NoSQLTableViewController.swift */; };
+		22B4D6CA1CF1DFED00E08E8E /* NoSQLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6B81CF1DFED00E08E8E /* NoSQLTableViewController.swift */; };
+		22B4D6CE1CF1E05A00E08E8E /* UserDataStorage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6CC1CF1E05A00E08E8E /* UserDataStorage.storyboard */; };
+		22B4D6CF1CF1E05A00E08E8E /* UserDataStorage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6CC1CF1E05A00E08E8E /* UserDataStorage.storyboard */; };
+		22B4D6D01CF1E05A00E08E8E /* UserDataStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6CD1CF1E05A00E08E8E /* UserDataStorageViewController.swift */; };
+		22B4D6D11CF1E05A00E08E8E /* UserDataStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6CD1CF1E05A00E08E8E /* UserDataStorageViewController.swift */; };
+		22B4D6D51CF1E0C400E08E8E /* UserFiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6D31CF1E0C400E08E8E /* UserFiles.storyboard */; };
+		22B4D6D61CF1E0C400E08E8E /* UserFiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6D31CF1E0C400E08E8E /* UserFiles.storyboard */; };
+		22B4D6D71CF1E0C400E08E8E /* UserFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6D41CF1E0C400E08E8E /* UserFilesViewController.swift */; };
+		22B4D6D81CF1E0C400E08E8E /* UserFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6D41CF1E0C400E08E8E /* UserFilesViewController.swift */; };
+		22B4D6DC1CF1E11F00E08E8E /* UserIdentity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6DA1CF1E11F00E08E8E /* UserIdentity.storyboard */; };
+		22B4D6DD1CF1E11F00E08E8E /* UserIdentity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6DA1CF1E11F00E08E8E /* UserIdentity.storyboard */; };
+		22B4D6DE1CF1E11F00E08E8E /* UserIdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6DB1CF1E11F00E08E8E /* UserIdentityViewController.swift */; };
+		22B4D6DF1CF1E11F00E08E8E /* UserIdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6DB1CF1E11F00E08E8E /* UserIdentityViewController.swift */; };
+		22B4D6E51CF1E18A00E08E8E /* ColorThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6E21CF1E18A00E08E8E /* ColorThemeSettings.swift */; };
+		22B4D6E61CF1E18A00E08E8E /* ColorThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6E21CF1E18A00E08E8E /* ColorThemeSettings.swift */; };
+		22B4D6E71CF1E18A00E08E8E /* UserSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6E31CF1E18A00E08E8E /* UserSettings.storyboard */; };
+		22B4D6E81CF1E18A00E08E8E /* UserSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4D6E31CF1E18A00E08E8E /* UserSettings.storyboard */; };
+		22B4D6E91CF1E18A00E08E8E /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6E41CF1E18A00E08E8E /* UserSettingsViewController.swift */; };
+		22B4D6EA1CF1E18A00E08E8E /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6E41CF1E18A00E08E8E /* UserSettingsViewController.swift */; };
+		22B4D6EC1CF1EC8800E08E8E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6EB1CF1EC8800E08E8E /* LocationManager.swift */; };
+		22B4D6ED1CF1EC8800E08E8E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6EB1CF1EC8800E08E8E /* LocationManager.swift */; };
 		22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE71CC5C7AF002841D5 /* Topping.swift */; };
 		22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */; };
 		22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */; };
@@ -155,7 +208,6 @@
 		2255E2341CDB4E45007DD06C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2255E2351CDB4E45007DD06C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		226EC9C81CE72BC800EC616D /* UberRides.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UberRides.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphonesimulator/UberRides.framework"; sourceTree = "<group>"; };
-		227BE3021CE7821500676A61 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		229AFE161CE71FBE005669BE /* UberConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberConstants.swift; sourceTree = "<group>"; };
 		22A1EB8B1CC74FD900C51FE5 /* MainViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerTest.swift; sourceTree = "<group>"; };
 		22A1EB8D1CC7504500C51FE5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +226,34 @@
 		22A1EBBB1CCDDC8400C51FE5 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphoneos/pop.framework"; sourceTree = "<group>"; };
 		22A1EBBD1CCDDC9400C51FE5 /* MBTwitterScroll.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBTwitterScroll.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphoneos/MBTwitterScroll.framework"; sourceTree = "<group>"; };
 		22A1EBBF1CCDE67A00C51FE5 /* BFPaperButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BFPaperButton.framework; path = "Pods/../build/Debug-iphoneos/BFPaperButton.framework"; sourceTree = "<group>"; };
+		22B4D6911CF1DA6B00E08E8E /* AWSMobileClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSMobileClient.swift; sourceTree = "<group>"; };
+		22B4D6931CF1DC7500E08E8E /* AWSMobileHubHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMobileHubHelper.framework; sourceTree = "<group>"; };
+		22B4D6961CF1DDE500E08E8E /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		22B4D6971CF1DDE500E08E8E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		22B4D69D1CF1DE5500E08E8E /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		22B4D6A21CF1DEDE00E08E8E /* AppAnalytics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppAnalytics.storyboard; sourceTree = "<group>"; };
+		22B4D6A31CF1DEDE00E08E8E /* AppAnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAnalyticsViewController.swift; sourceTree = "<group>"; };
+		22B4D6A91CF1DF5C00E08E8E /* ContentDelivery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContentDelivery.storyboard; sourceTree = "<group>"; };
+		22B4D6AC1CF1DF8D00E08E8E /* DemoFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoFeature.swift; sourceTree = "<group>"; };
+		22B4D6B01CF1DFED00E08E8E /* FoodItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItems.swift; sourceTree = "<group>"; };
+		22B4D6B11CF1DFED00E08E8E /* FoodItemsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemsTable.swift; sourceTree = "<group>"; };
+		22B4D6B21CF1DFED00E08E8E /* NoSQLDatabase.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NoSQLDatabase.storyboard; sourceTree = "<group>"; };
+		22B4D6B31CF1DFED00E08E8E /* NoSQLModelHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLModelHelpers.swift; sourceTree = "<group>"; };
+		22B4D6B41CF1DFED00E08E8E /* NoSQLQueryResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLQueryResultViewController.swift; sourceTree = "<group>"; };
+		22B4D6B51CF1DFED00E08E8E /* NoSQLSampleDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLSampleDataGenerator.swift; sourceTree = "<group>"; };
+		22B4D6B61CF1DFED00E08E8E /* NoSQLTableFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLTableFactory.swift; sourceTree = "<group>"; };
+		22B4D6B71CF1DFED00E08E8E /* NoSQLTableListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLTableListViewController.swift; sourceTree = "<group>"; };
+		22B4D6B81CF1DFED00E08E8E /* NoSQLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSQLTableViewController.swift; sourceTree = "<group>"; };
+		22B4D6CC1CF1E05A00E08E8E /* UserDataStorage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserDataStorage.storyboard; sourceTree = "<group>"; };
+		22B4D6CD1CF1E05A00E08E8E /* UserDataStorageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataStorageViewController.swift; sourceTree = "<group>"; };
+		22B4D6D31CF1E0C400E08E8E /* UserFiles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserFiles.storyboard; sourceTree = "<group>"; };
+		22B4D6D41CF1E0C400E08E8E /* UserFilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFilesViewController.swift; sourceTree = "<group>"; };
+		22B4D6DA1CF1E11F00E08E8E /* UserIdentity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserIdentity.storyboard; sourceTree = "<group>"; };
+		22B4D6DB1CF1E11F00E08E8E /* UserIdentityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdentityViewController.swift; sourceTree = "<group>"; };
+		22B4D6E21CF1E18A00E08E8E /* ColorThemeSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorThemeSettings.swift; sourceTree = "<group>"; };
+		22B4D6E31CF1E18A00E08E8E /* UserSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserSettings.storyboard; sourceTree = "<group>"; };
+		22B4D6E41CF1E18A00E08E8E /* UserSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
+		22B4D6EB1CF1EC8800E08E8E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		22CCFEE71CC5C7AF002841D5 /* Topping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topping.swift; sourceTree = "<group>"; };
 		22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToppingsTest.swift; sourceTree = "<group>"; };
 		22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemsListViewControllerTest.swift; path = RizzosFinePizzaTests/MenuItemsListViewControllerTest.swift; sourceTree = SOURCE_ROOT; };
@@ -186,7 +266,7 @@
 		22D6E94E1CDC98DB0080603B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Container.storyboard; sourceTree = "<group>"; };
 		22D6E9571CDC9E380080603B /* LoginAndSignup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndSignup.storyboard; sourceTree = "<group>"; };
 		22D6E9591CDCA2260080603B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trajan Pro Bold.ttf"; sourceTree = "<group>"; };
+		22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Trajan Pro Bold.ttf"; path = "../Trajan Pro Bold.ttf"; sourceTree = "<group>"; };
 		22F07ED11CD054E5001E65F7 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSignUpViewController.swift; path = RizzosFinePizza/LoginSignUpViewController.swift; sourceTree = "<group>"; };
 		22F07ED41CD058C3001E65F7 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		22F07ED61CD059A6001E65F7 /* ConnectionSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionSettings.swift; sourceTree = "<group>"; };
@@ -221,6 +301,7 @@
 				22F07EDD1CD17C97001E65F7 /* SwiftyJSON.framework in Frameworks */,
 				22A1EBBE1CCDDC9400C51FE5 /* MBTwitterScroll.framework in Frameworks */,
 				22A1EBBC1CCDDC8400C51FE5 /* pop.framework in Frameworks */,
+				22B4D6941CF1DC7500E08E8E /* AWSMobileHubHelper.framework in Frameworks */,
 				22A1EBA41CCA845A00C51FE5 /* SlideMenuControllerSwift.framework in Frameworks */,
 				ED55E953B48578B7BF0EE513 /* Pods_RizzosFinePizza.framework in Frameworks */,
 			);
@@ -331,19 +412,12 @@
 			path = ACPButton;
 			sourceTree = "<group>";
 		};
-		227BE3011CE781DE00676A61 /* Location Manager */ = {
-			isa = PBXGroup;
-			children = (
-				227BE3021CE7821500676A61 /* LocationManager.swift */,
-			);
-			name = "Location Manager";
-			sourceTree = "<group>";
-		};
 		229AFE181CE7296D005669BE /* UBER */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = UBER;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		22A1EB8F1CC816EE00C51FE5 /* Transitions */ = {
@@ -379,6 +453,135 @@
 				22A1EBB51CCCB90100C51FE5 /* FBLoginViewController.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		22B4D68C1CF1D7C000E08E8E /* Amazon */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6A01CF1DE9500E08E8E /* Demo */,
+				22B4D69C1CF1DE3B00E08E8E /* Utility */,
+				22B4D6951CF1DDC500E08E8E /* Sign in */,
+				22B4D68D1CF1D7F500E08E8E /* AmazonAWS */,
+			);
+			name = Amazon;
+			sourceTree = "<group>";
+		};
+		22B4D68D1CF1D7F500E08E8E /* AmazonAWS */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6911CF1DA6B00E08E8E /* AWSMobileClient.swift */,
+			);
+			name = AmazonAWS;
+			sourceTree = "<group>";
+		};
+		22B4D6951CF1DDC500E08E8E /* Sign in */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6961CF1DDE500E08E8E /* SignIn.storyboard */,
+				22B4D6971CF1DDE500E08E8E /* SignInViewController.swift */,
+			);
+			name = "Sign in";
+			sourceTree = "<group>";
+		};
+		22B4D69C1CF1DE3B00E08E8E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D69D1CF1DE5500E08E8E /* UtilityFunctions.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		22B4D6A01CF1DE9500E08E8E /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6E11CF1E16600E08E8E /* User Settings */,
+				22B4D6E01CF1E12A00E08E8E /* Usewr Settings */,
+				22B4D6D91CF1E10400E08E8E /* User Identity */,
+				22B4D6D21CF1E0AC00E08E8E /* User Files */,
+				22B4D6CB1CF1E03B00E08E8E /* User Data Storage */,
+				22B4D6AF1CF1DFB700E08E8E /* NoSQL */,
+				22B4D6AC1CF1DF8D00E08E8E /* DemoFeature.swift */,
+				22B4D6A81CF1DF2E00E08E8E /* Content Delivery */,
+				22B4D6A11CF1DEC300E08E8E /* App Analysis */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		22B4D6A11CF1DEC300E08E8E /* App Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6A21CF1DEDE00E08E8E /* AppAnalytics.storyboard */,
+				22B4D6A31CF1DEDE00E08E8E /* AppAnalyticsViewController.swift */,
+			);
+			name = "App Analysis";
+			sourceTree = "<group>";
+		};
+		22B4D6A81CF1DF2E00E08E8E /* Content Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6A91CF1DF5C00E08E8E /* ContentDelivery.storyboard */,
+			);
+			name = "Content Delivery";
+			sourceTree = "<group>";
+		};
+		22B4D6AF1CF1DFB700E08E8E /* NoSQL */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6B01CF1DFED00E08E8E /* FoodItems.swift */,
+				22B4D6B11CF1DFED00E08E8E /* FoodItemsTable.swift */,
+				22B4D6B21CF1DFED00E08E8E /* NoSQLDatabase.storyboard */,
+				22B4D6B31CF1DFED00E08E8E /* NoSQLModelHelpers.swift */,
+				22B4D6B41CF1DFED00E08E8E /* NoSQLQueryResultViewController.swift */,
+				22B4D6B51CF1DFED00E08E8E /* NoSQLSampleDataGenerator.swift */,
+				22B4D6B61CF1DFED00E08E8E /* NoSQLTableFactory.swift */,
+				22B4D6B71CF1DFED00E08E8E /* NoSQLTableListViewController.swift */,
+				22B4D6B81CF1DFED00E08E8E /* NoSQLTableViewController.swift */,
+			);
+			name = NoSQL;
+			sourceTree = "<group>";
+		};
+		22B4D6CB1CF1E03B00E08E8E /* User Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6CC1CF1E05A00E08E8E /* UserDataStorage.storyboard */,
+				22B4D6CD1CF1E05A00E08E8E /* UserDataStorageViewController.swift */,
+			);
+			name = "User Data Storage";
+			sourceTree = "<group>";
+		};
+		22B4D6D21CF1E0AC00E08E8E /* User Files */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6D31CF1E0C400E08E8E /* UserFiles.storyboard */,
+				22B4D6D41CF1E0C400E08E8E /* UserFilesViewController.swift */,
+			);
+			name = "User Files";
+			sourceTree = "<group>";
+		};
+		22B4D6D91CF1E10400E08E8E /* User Identity */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6DA1CF1E11F00E08E8E /* UserIdentity.storyboard */,
+				22B4D6DB1CF1E11F00E08E8E /* UserIdentityViewController.swift */,
+			);
+			name = "User Identity";
+			sourceTree = "<group>";
+		};
+		22B4D6E01CF1E12A00E08E8E /* Usewr Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Usewr Settings";
+			sourceTree = "<group>";
+		};
+		22B4D6E11CF1E16600E08E8E /* User Settings */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D6E21CF1E18A00E08E8E /* ColorThemeSettings.swift */,
+				22B4D6E31CF1E18A00E08E8E /* UserSettings.storyboard */,
+				22B4D6E41CF1E18A00E08E8E /* UserSettingsViewController.swift */,
+			);
+			name = "User Settings";
 			sourceTree = "<group>";
 		};
 		22CCFEEB1CC5DE95002841D5 /* Model Tests */ = {
@@ -440,8 +643,6 @@
 		22FBA2DB1CAFDE30009B2DE8 = {
 			isa = PBXGroup;
 			children = (
-				229AFE181CE7296D005669BE /* UBER */,
-				22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */,
 				22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */,
 				22FBA2FB1CAFDE30009B2DE8 /* RizzosFinePizzaTests */,
 				22FBA2E51CAFDE30009B2DE8 /* Products */,
@@ -462,8 +663,12 @@
 		22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */ = {
 			isa = PBXGroup;
 			children = (
+				22B4D6EB1CF1EC8800E08E8E /* LocationManager.swift */,
+				22B4D6931CF1DC7500E08E8E /* AWSMobileHubHelper.framework */,
+				22B4D68C1CF1D7C000E08E8E /* Amazon */,
+				22F07EB11CD015A4001E65F7 /* Trajan Pro Bold.ttf */,
+				229AFE181CE7296D005669BE /* UBER */,
 				222733211CE7D0F30086BF22 /* FVCustomAlertView.h */,
-				227BE3011CE781DE00676A61 /* Location Manager */,
 				2200785F1CDF119A00AED961 /* vermin_vibes.ttf */,
 				2255E2311CDB4E45007DD06C /* ACPButton */,
 				2255E22A1CDA13A5007DD06C /* Pizza ViewController */,
@@ -573,6 +778,7 @@
 				TargetAttributes = {
 					22FBA2E31CAFDE30009B2DE8 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SC6R6MV2N8;
 					};
 					22FBA2F71CAFDE30009B2DE8 = {
 						CreatedOnToolsVersion = 7.3;
@@ -605,17 +811,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D6E9581CDC9E380080603B /* LoginAndSignup.storyboard in Resources */,
+				22B4D6BD1CF1DFED00E08E8E /* NoSQLDatabase.storyboard in Resources */,
 				22D6E94C1CDC982F0080603B /* Startup.storyboard in Resources */,
 				2255E2381CDB4E45007DD06C /* LICENSE in Resources */,
 				22D6E94F1CDC98DB0080603B /* Container.storyboard in Resources */,
 				22D6E95A1CDCA2260080603B /* Main.storyboard in Resources */,
 				22FBA2F21CAFDE30009B2DE8 /* LaunchScreen.storyboard in Resources */,
 				22F07EB21CD015A5001E65F7 /* Trajan Pro Bold.ttf in Resources */,
+				22B4D6CE1CF1E05A00E08E8E /* UserDataStorage.storyboard in Resources */,
+				22B4D6DC1CF1E11F00E08E8E /* UserIdentity.storyboard in Resources */,
+				22B4D6E71CF1E18A00E08E8E /* UserSettings.storyboard in Resources */,
 				22FBA2EF1CAFDE30009B2DE8 /* Assets.xcassets in Resources */,
 				22FBA2ED1CAFDE30009B2DE8 /* Main.storyboard in Resources */,
+				22B4D6981CF1DDE500E08E8E /* SignIn.storyboard in Resources */,
 				2209E12C1CE2D2D000F52E48 /* PizzaCellSlim.xib in Resources */,
 				2255E2221CDA1156007DD06C /* LICENSE in Resources */,
+				22B4D6AA1CF1DF5C00E08E8E /* ContentDelivery.storyboard in Resources */,
+				22B4D6D51CF1E0C400E08E8E /* UserFiles.storyboard in Resources */,
 				220078601CDF119B00AED961 /* vermin_vibes.ttf in Resources */,
+				22B4D6A41CF1DEDE00E08E8E /* AppAnalytics.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,8 +837,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B4D6E81CF1E18A00E08E8E /* UserSettings.storyboard in Resources */,
+				22B4D6DD1CF1E11F00E08E8E /* UserIdentity.storyboard in Resources */,
 				2255E2391CDB4E45007DD06C /* LICENSE in Resources */,
+				22B4D6CF1CF1E05A00E08E8E /* UserDataStorage.storyboard in Resources */,
+				22B4D6BE1CF1DFED00E08E8E /* NoSQLDatabase.storyboard in Resources */,
+				22B4D6991CF1DDE500E08E8E /* SignIn.storyboard in Resources */,
+				22B4D6AB1CF1DF5C00E08E8E /* ContentDelivery.storyboard in Resources */,
+				22B4D6D61CF1E0C400E08E8E /* UserFiles.storyboard in Resources */,
 				2255E2231CDA1156007DD06C /* LICENSE in Resources */,
+				22B4D6A51CF1DEDE00E08E8E /* AppAnalytics.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,43 +952,61 @@
 			files = (
 				2255E2181CD9FB3C007DD06C /* FoodItemExtension.swift in Sources */,
 				22A1EBBA1CCCC28200C51FE5 /* ShoppingCartViewController.swift in Sources */,
-				227BE3031CE7821500676A61 /* LocationManager.swift in Sources */,
+				22B4D6E51CF1E18A00E08E8E /* ColorThemeSettings.swift in Sources */,
+				22B4D6C91CF1DFED00E08E8E /* NoSQLTableViewController.swift in Sources */,
+				22B4D6A61CF1DEDE00E08E8E /* AppAnalyticsViewController.swift in Sources */,
 				22D6E9461CDC53CD0080603B /* FXBlurView.m in Sources */,
+				22B4D6EC1CF1EC8800E08E8E /* LocationManager.swift in Sources */,
 				2209E1561CE4B63D00F52E48 /* DataArray.swift in Sources */,
 				22A1EBA81CCA8A5B00C51FE5 /* LeftMenuTableViewController.swift in Sources */,
+				22B4D6C11CF1DFED00E08E8E /* NoSQLQueryResultViewController.swift in Sources */,
+				22B4D6AD1CF1DF8D00E08E8E /* DemoFeature.swift in Sources */,
+				22B4D6C71CF1DFED00E08E8E /* NoSQLTableListViewController.swift in Sources */,
 				222733261CE84E080086BF22 /* Sauce.swift in Sources */,
 				2209E12E1CE2D53000F52E48 /* PizzaCellSlim.swift in Sources */,
 				22A1EBAA1CCC87D000C51FE5 /* ShareViewController.swift in Sources */,
+				22B4D6921CF1DA6B00E08E8E /* AWSMobileClient.swift in Sources */,
+				22B4D6C51CF1DFED00E08E8E /* NoSQLTableFactory.swift in Sources */,
 				22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */,
 				22A1EB971CC8183C00C51FE5 /* AstoriaViewController.swift in Sources */,
+				22B4D6C31CF1DFED00E08E8E /* NoSQLSampleDataGenerator.swift in Sources */,
 				22FBA31F1CB9C6FC009B2DE8 /* FoodItem.swift in Sources */,
 				22D6E9441CDC53CD0080603B /* AvatarImageView.swift in Sources */,
+				22B4D69A1CF1DDE500E08E8E /* SignInViewController.swift in Sources */,
 				2233E0461CBC729E00218DE3 /* Location.swift in Sources */,
 				2233E0561CBD3EF300218DE3 /* ItemManager.swift in Sources */,
+				22B4D6BB1CF1DFED00E08E8E /* FoodItemsTable.swift in Sources */,
 				22A1EB991CC8187600C51FE5 /* LesViewController.swift in Sources */,
 				2233E05A1CBD472E00218DE3 /* Delivery.swift in Sources */,
 				2209E12A1CE2D1A300F52E48 /* FoodItemListTableViewController.swift in Sources */,
 				2209E17B1CE6912400F52E48 /* CartTableViewController.swift in Sources */,
+				22B4D6E91CF1E18A00E08E8E /* UserSettingsViewController.swift in Sources */,
 				22A1EBB61CCCB90100C51FE5 /* FBLoginViewController.swift in Sources */,
 				22F07ED71CD059A6001E65F7 /* ConnectionSettings.swift in Sources */,
 				22F07ED21CD054E5001E65F7 /* LoginSignUpViewController.swift in Sources */,
 				22FBA2E81CAFDE30009B2DE8 /* AppDelegate.swift in Sources */,
 				2233E0581CBD449E00218DE3 /* FoodOrder.swift in Sources */,
 				22A1EBAC1CCC8D6100C51FE5 /* TrackViewController.swift in Sources */,
+				22B4D69E1CF1DE5500E08E8E /* UtilityFunctions.swift in Sources */,
 				22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */,
 				2255E2261CDA1156007DD06C /* UIScrollView+TwitterCover.m in Sources */,
+				22B4D6DE1CF1E11F00E08E8E /* UserIdentityViewController.swift in Sources */,
 				2255E2281CDA1156007DD06C /* README.md in Sources */,
 				229AFE171CE71FBE005669BE /* UberConstants.swift in Sources */,
+				22B4D6BF1CF1DFED00E08E8E /* NoSQLModelHelpers.swift in Sources */,
 				2255E2361CDB4E45007DD06C /* ACPButton.m in Sources */,
 				2255E23A1CDB4E45007DD06C /* README.md in Sources */,
 				2255E2151CD9F3D1007DD06C /* HTTPClient.swift in Sources */,
 				22F07ED51CD058C3001E65F7 /* LoginService.swift in Sources */,
 				2255E2241CDA1156007DD06C /* MBTwitterScroll.m in Sources */,
+				22B4D6D71CF1E0C400E08E8E /* UserFilesViewController.swift in Sources */,
 				2209E1501CE2EAFD00F52E48 /* PrepareForCartTableViewController.swift in Sources */,
 				222733231CE83C570086BF22 /* CartItem.swift in Sources */,
 				222733291CE8709D0086BF22 /* SauceViewController.swift in Sources */,
+				22B4D6D01CF1E05A00E08E8E /* UserDataStorageViewController.swift in Sources */,
 				22D6E9451CDC53CD0080603B /* TWTButton.swift in Sources */,
 				22A1EBA61CCA890D00C51FE5 /* ContainerViewController.swift in Sources */,
+				22B4D6B91CF1DFED00E08E8E /* FoodItems.swift in Sources */,
 				22A1EB931CC8174700C51FE5 /* CHTumblrMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -775,25 +1015,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B4D6C21CF1DFED00E08E8E /* NoSQLQueryResultViewController.swift in Sources */,
 				22A1EB8C1CC74FD900C51FE5 /* MainViewControllerTest.swift in Sources */,
+				22B4D6A71CF1DEDE00E08E8E /* AppAnalyticsViewController.swift in Sources */,
+				22B4D6DF1CF1E11F00E08E8E /* UserIdentityViewController.swift in Sources */,
+				22B4D6C01CF1DFED00E08E8E /* NoSQLModelHelpers.swift in Sources */,
 				22CCFEF51CC69A34002841D5 /* MenuListDataSupplierTest.swift in Sources */,
+				22B4D6BC1CF1DFED00E08E8E /* FoodItemsTable.swift in Sources */,
 				22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */,
 				222156361CC0634D009A08C5 /* FoodOrderTests.swift in Sources */,
 				222733241CE83C570086BF22 /* CartItem.swift in Sources */,
 				2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */,
 				222733271CE84E080086BF22 /* Sauce.swift in Sources */,
+				22B4D6D81CF1E0C400E08E8E /* UserFilesViewController.swift in Sources */,
 				2255E23B1CDB4E45007DD06C /* README.md in Sources */,
+				22B4D6E61CF1E18A00E08E8E /* ColorThemeSettings.swift in Sources */,
+				22B4D6BA1CF1DFED00E08E8E /* FoodItems.swift in Sources */,
+				22B4D6EA1CF1E18A00E08E8E /* UserSettingsViewController.swift in Sources */,
+				22B4D6CA1CF1DFED00E08E8E /* NoSQLTableViewController.swift in Sources */,
+				22B4D6C61CF1DFED00E08E8E /* NoSQLTableFactory.swift in Sources */,
 				22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */,
+				22B4D6C41CF1DFED00E08E8E /* NoSQLSampleDataGenerator.swift in Sources */,
 				2255E2161CD9F3D4007DD06C /* HTTPClient.swift in Sources */,
 				2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */,
 				222156341CC06243009A08C5 /* FoodItemTests.swift in Sources */,
+				22B4D6AE1CF1DF8D00E08E8E /* DemoFeature.swift in Sources */,
+				22B4D69F1CF1DE5500E08E8E /* UtilityFunctions.swift in Sources */,
+				22B4D6D11CF1E05A00E08E8E /* UserDataStorageViewController.swift in Sources */,
 				2209E17C1CE6912400F52E48 /* CartTableViewController.swift in Sources */,
+				22B4D6C81CF1DFED00E08E8E /* NoSQLTableListViewController.swift in Sources */,
 				2255E2251CDA1156007DD06C /* MBTwitterScroll.m in Sources */,
+				22B4D69B1CF1DDE500E08E8E /* SignInViewController.swift in Sources */,
 				2255E2291CDA1156007DD06C /* README.md in Sources */,
 				2255E2371CDB4E45007DD06C /* ACPButton.m in Sources */,
 				2227332A1CE8709D0086BF22 /* SauceViewController.swift in Sources */,
 				22FBA2FD1CAFDE30009B2DE8 /* RizzosFinePizzaTests.swift in Sources */,
 				2255E2191CD9FB3C007DD06C /* FoodItemExtension.swift in Sources */,
+				22B4D6ED1CF1EC8800E08E8E /* LocationManager.swift in Sources */,
 				2255E2271CDA1156007DD06C /* UIScrollView+TwitterCover.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -924,7 +1182,10 @@
 			baseConfigurationReference = 6352E89B3757D44BA3935A3F /* Pods-RizzosFinePizza.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RizzosFinePizza",
@@ -934,6 +1195,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.RizzosFinePizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RizzosFinePizza/RizzosFinePizza-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -944,7 +1206,10 @@
 			baseConfigurationReference = 353F9FFEE559F47D8FAAE7CF /* Pods-RizzosFinePizza.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RizzosFinePizza",
@@ -954,6 +1219,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.RizzosFinePizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RizzosFinePizza/RizzosFinePizza-Bridging-Header.h";
 			};
 			name = Release;

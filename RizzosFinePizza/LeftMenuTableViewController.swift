@@ -11,7 +11,7 @@ import Social
 import FBSDKLoginKit
 import CoreLocation
 import UberRides
-
+import AWSMobileHubHelper
 
 class LeftMenuTableViewController: UITableViewController, TrackViewControllerDelegate, CLLocationManagerDelegate {
     
@@ -115,9 +115,10 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
     }
     
     func goBackToMain(){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC =  storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! MainViewController
-              self.presentViewController(mainVC, animated: true, completion: nil)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let mainVC =  storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! MainViewController
+//              self.presentViewController(mainVC, animated: true, completion: nil)
+        self.performSegueWithIdentifier("main", sender: self)
 
     }
     func facebook(){
@@ -153,6 +154,22 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
         }
     }
     func logOut(){
+        
+        if (AWSIdentityManager.defaultIdentityManager().loggedIn) {
+            ColorThemeSettings.sharedInstance.wipe()
+            AWSIdentityManager.defaultIdentityManager().logoutWithCompletionHandler({(result: AnyObject?, error: NSError?) -> Void in
+                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let initViewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as UIViewController
+                self.presentViewController(initViewController, animated: true, completion: nil)
+            })
+            // print("Logout Successful: \(signInProvider.getDisplayName)");
+        } else {
+            assert(false)
+        }
+
+        
+        
+        /*
         let loginManager = FBSDKLoginManager()
         loginManager.logOut()
         LoginService.sharedInstance.signOut()
@@ -161,6 +178,7 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let initViewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier(controllerId) as UIViewController
         self.presentViewController(initViewController, animated: true, completion: nil)
+ */
         
         
     }
@@ -187,11 +205,8 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
         let behavior = RideRequestViewRequestingBehavior(presentingViewController: self)
         let delegate = MainViewController()
         behavior.modalRideRequestViewController.rideRequestViewController.delegate = delegate
-        let button = RideRequestButton(rideParameters: parameters, requestingBehavior: behavior)
+        _ = RideRequestButton(rideParameters: parameters, requestingBehavior: behavior)
         //self.view.center.x = button.center.x
-        
-
-
         
         
     }

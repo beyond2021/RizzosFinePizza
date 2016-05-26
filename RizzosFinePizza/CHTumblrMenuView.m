@@ -34,7 +34,9 @@
 #define CHTumblrMenuViewAnimationTime 0.36
 #define CHTumblrMenuViewAnimationInterval (CHTumblrMenuViewAnimationTime / 5)
 
+
 #define TumblrBlue [UIColor colorWithRed:45/255.0f green:68/255.0f blue:94/255.0f alpha:1.0]
+#define RizzoTheme [UIColor colorWithRed:102/255.0f green:36/255.0f blue:35/255.0f alpha:1.0]
 
 @interface CHTumblrMenuItemButton : UIButton
 + (id)TumblrMenuItemButtonWithTitle:(NSString*)title andIcon:(UIImage*)icon andSelectedBlock:(CHTumblrMenuViewSelectedBlock)block;
@@ -85,7 +87,7 @@
         self.backgroundColor = [UIColor clearColor];
         backgroundView_ = [[UIImageView alloc] initWithFrame:self.bounds];
        // backgroundView_.backgroundColor = TumblrBlue;
-        backgroundView_.backgroundColor = [UIColor clearColor];
+        backgroundView_.backgroundColor = RizzoTheme;
         backgroundView_.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         [self addSubview:backgroundView_];
         buttons_ = [[NSMutableArray alloc] initWithCapacity:6];

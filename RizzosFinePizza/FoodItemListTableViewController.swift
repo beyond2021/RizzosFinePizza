@@ -7,12 +7,15 @@
 //
 
 import UIKit
-
+var pointVariable = 0
 class FoodItemListTableViewController: UITableViewController {
     
     var cartItem : CartItem?
     
     var cart : FoodItem?
+    var point : Int?
+    
+    
    
     
     //MARK: - Data Source
@@ -28,10 +31,16 @@ class FoodItemListTableViewController: UITableViewController {
       
         tableView.estimatedRowHeight = 66.0
         tableView.rowHeight = UITableViewAutomaticDimension
+        
+               
+
+        
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
+        
+      scrollToPoint(pointVariable)
         tableView.reloadData()
     }
     
@@ -66,16 +75,18 @@ class FoodItemListTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("Row \(indexPath.row) selected")
-        //tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! PizzaCellSlim
+        if let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as? PizzaCellSlim {
+            selectedCell.contentView.backgroundColor = UIColor(red:102.0/255.0, green: 36.0/255.0, blue: 35.0/255.0, alpha: 1.0)
+            pointVariable = indexPath.section
+            performSegueWithIdentifier("PreCart", sender: PizzaCellSlim())
+        }
         
-//        selectedCell.contentView.backgroundColor = UIColor(red:217.0/255.0, green: 207.0/255.0, blue: 120.0/255.0, alpha: 1.0)
-         selectedCell.contentView.backgroundColor = UIColor(red:102.0/255.0, green: 36.0/255.0, blue: 35.0/255.0, alpha: 1.0)
         
-        
-        //  print("cell items: \(selectedCell.foodItem)")
-        performSegueWithIdentifier("PreCart", sender: PizzaCellSlim())
+         print("\(indexPath.section)")
+//        pointVariable = indexPath.section
+//        let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! PizzaCellSlim
+//        selectedCell.contentView.backgroundColor = UIColor(red:102.0/255.0, green: 36.0/255.0, blue: 35.0/255.0, alpha: 1.0)
+//        performSegueWithIdentifier("PreCart", sender: PizzaCellSlim())
     }
     
     
@@ -126,9 +137,24 @@ class FoodItemListTableViewController: UITableViewController {
     
     @IBAction func backFromCart(segue: UIStoryboardSegue) {
 //        FVCustomAlertView.showDefaultDoneAlertOnView(self.view, withTitle: "Dont Hurt Yourself :)", withBlur: true, allowTap: true)
+        pointVariable = 0
         
         
     }
+    // MARK: - Unwind Segue
+    func scrollToPoint(point: Int){
+        let indexPath = NSIndexPath(forRow: 0, inSection: point)
+        self.tableView.scrollToRowAtIndexPath(indexPath,
+                                              atScrollPosition: UITableViewScrollPosition.Middle, animated: true)
+        
+        
+    }
+    deinit{
+        
+        pointVariable = 0
+    }
+    
+    
     
 
 }

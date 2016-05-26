@@ -29,11 +29,20 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
     
     @IBOutlet weak var largeSquarePriceChoiceLabel: UILabel!
     
+    @IBOutlet weak var dtImageView: UIImageView!
+    
+    
+    @IBOutlet weak var proundLabel: UILabel!
+    
+    @IBOutlet weak var lroundLabel: UILabel!
+    
+    @IBOutlet weak var lsquareLabel: UILabel!
+    
     @IBAction func sauceAction(sender: AnyObject) {
-        var popoverContent = self.storyboard?.instantiateViewControllerWithIdentifier("SauceVC") as! SauceViewController
+        let popoverContent = self.storyboard?.instantiateViewControllerWithIdentifier("SauceVC") as! SauceViewController
         
         popoverContent.modalPresentationStyle = .Popover
-        var popover = popoverContent.popoverPresentationController
+        _ = popoverContent.popoverPresentationController
         
         if let popover = popoverContent.popoverPresentationController {
             
@@ -80,6 +89,7 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         })
         
         alert.addAction(OKAction)
+        pointVariable = 0
         self.presentViewController(alert, animated: true, completion: nil)
         
         
@@ -118,6 +128,8 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         }
     }
       func configureView() {
+        
+        
      //   totalPriceForCart.text = "\(0)"
         // Update the user interface for the detail item.
         if let detail = self.foodItem {
@@ -127,31 +139,92 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
             if let label = self.foodDescriptionLabel{
                 label.text = detail.itemDescription
             }
+            
+            /*
+            let personalRDoriginalPriceText = "\(foodItem?.originalPrice[0])"
+            let pPrice = decimalWithString(personalRDoriginalPriceText)
+            self.personalRoundPriceLabel.text =  "$"+"\(pPrice)"
+            //
+            let largeRDoriginalPriceText = "\(foodItem?.originalPrice[1])"
+            let lrPrice = decimalWithString(largeRDoriginalPriceText)
+            self.personalRoundPriceLabel.text =  "$"+"\(lrPrice)"
+            //
+            let largeSQOriginalPriceText = "\(foodItem?.originalPrice[2])"
+            let lsPrice = decimalWithString(largeSQOriginalPriceText)
+            self.personalRoundPriceLabel.text =  "$"+"\(lsPrice)"
+             //
+             String(format: "%.2f", (Zahl / 95) * 100)
+             
+ */
+            
+            
+           
+            
             if let price = (foodItem?.originalPrice){
                 if let label = self.personalRoundPriceLabel{
-                    label.text = "$"+"\(price[0])"
+                    //let s = "\(price[0])"
+                    
+                    let s = String(format: "%.2f", price[0])
+                    
+                    let d = self.decimalWithString(s)
+                    label.text = "$"+"\(d)"
+                    
                 }
                 if let label = self.largeRoundPriceLabel{
-                    label.text = "$"+"\(price[1])"
+                   // label.text = "$"+"\(price[1])"
+                    let s = "\(price[1])"
+                    let d = self.decimalWithString(s)
+                    label.text = "$"+"\(d)"
+                    
+                    
+                    
                 }
                 if let label = self.largeSquarePriceChoiceLabel{
-                    label.text = "$"+"\(price[2])"
+                   // label.text = "$"+"\(price[2])"
+                    let s = "\(price[2])"
+                    let d = self.decimalWithString(s)
+                    label.text = "$"+"\(d)"
+                    
+                    
                 }
-            }
-        }
+           
+ }        }
+
     }
     
 //MARK: View LifeCycle
            override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
+            if pointVariable >= 3{
+                disableButtons()
+            }
+            if pointVariable >= 6{
+                drinksDessertAction()
+            }
+            
+            
           }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
+        
+        if pointVariable < 3 {
+            resetLabels()
+        }
+          }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(true)
+//        readyForCart = nil
+        resetLabels()
+     //   pointVariable = 0
     }
+    
+    
     override func viewWillAppear(animated: Bool) {
+        updateImage()
         reset()
     }
 
@@ -307,6 +380,7 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
     }
     deinit{
    readyForCart = nil
+        resetLabels()
         
     }
     //MARK: Popover delegate method
@@ -315,6 +389,67 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         return .None
     }
     
+    func disableButtons(){
+       lroundLabel.alpha = 0.0
+        lsquareLabel.alpha = 0.0
+        largeRoundPriceLabel.alpha = 0.0
+        largeSquarePriceChoiceLabel.alpha = 0.0
+        
+        if let detail = self.foodItem {
+           
+                proundLabel.text  = detail.title
+        }
+    }
+    func resetLabels(){
+        lroundLabel.alpha = 1.0
+        lsquareLabel.alpha = 1.0
+        largeRoundPriceLabel.alpha = 1.0
+        largeSquarePriceChoiceLabel.alpha = 1.0
+        proundLabel.text  = "Personal RD"
+        
+    }
+    func drinksDessertAction(){
+        cheeseButton.enabled = false
+        cheeseButton.alpha = 0.0
+        toppingsButton.enabled = false
+        toppingsButton.alpha = 0.0
+        sauceButton.enabled = false
+        sauceButton.alpha = 0.0
+
+        
+    }
+    func decimalWithString(string: String) -> NSDecimalNumber {
+        let formatter = NSNumberFormatter()
+        formatter.generatesDecimalNumbers = true
+        formatter.minimumFractionDigits = 2        
+        return formatter.numberFromString(string) as? NSDecimalNumber ?? 0
+    }
     
-     
+    func updateImage(){
+        switch pointVariable{
+        case 0:
+            self.dtImageView.image = UIImage(named: "dtPizza")
+        case 1:
+            self.dtImageView.image = UIImage(named: "dtPizza")
+        case 2:
+            self.dtImageView.image = UIImage(named: "dtPizza")
+        case 3:
+            self.dtImageView.image = UIImage(named: "dtCalzones")
+        case 4:
+            self.dtImageView.image = UIImage(named: "dtKnots")
+        case 5:
+            self.dtImageView.image = UIImage(named: "dtSalad")
+        case 6:
+            self.dtImageView.image = UIImage(named: "dtDrinks")
+            drinksDessertAction()
+        case 7:
+            self.dtImageView.image = UIImage(named: "dtDessert")
+            drinksDessertAction()            
+        default:
+            self.dtImageView.image = UIImage(named: "TwitterScrollBG")
+            
+        }
+        
+        
+    }
 }

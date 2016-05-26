@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZLb-xo-YWu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qje-E3-2hc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,70 +25,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="customBG" translatesAutoresizingMaskIntoConstraints="NO" id="hld-Jo-c5z">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="customBG" translatesAutoresizingMaskIntoConstraints="NO" id="79p-TM-tbc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjE-JB-rZ7">
-                                <rect key="frame" x="132" y="149" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Dof-Ke-j2E"/>
-                                    <constraint firstAttribute="width" constant="150" id="kS9-tR-N24"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="AstoriaButton"/>
-                                <connections>
-                                    <segue destination="kp9-Dg-dsi" kind="presentation" identifier="Astoria" id="FJy-30-0Hr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkh-Ca-DoK">
-                                <rect key="frame" x="132" y="364" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="4kW-0W-Wod"/>
-                                    <constraint firstAttribute="width" constant="150" id="uTp-2V-9bu"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="ClintonButton"/>
-                                <connections>
-                                    <segue destination="y57-8n-C6W" kind="popoverPresentation" identifier="Clinton" popoverAnchorView="Nkh-Ca-DoK" id="V0V-BN-UpJ">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLO-bw-CXL">
-                                <rect key="frame" x="94" y="581" width="226" height="115"/>
+                                <rect key="frame" x="94" y="310" width="226" height="115"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="226" id="Igb-Ao-mi1"/>
-                                    <constraint firstAttribute="height" constant="115" id="RNg-3M-4Su"/>
+                                    <constraint firstAttribute="width" constant="226" id="ALV-v8-w9m"/>
+                                    <constraint firstAttribute="height" constant="115" id="tCK-vc-Li7"/>
                                 </constraints>
                                 <string key="text">This App is under development at Beyond2021 studios. Contact Keevin Mitchell at 9173495126 for more details. All Rights Reserved.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-LM-RuE">
+                                <rect key="frame" x="32" y="649" width="350" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PN-ay-wbc">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="AZq-Q2-r1n"/>
+                                            <constraint firstAttribute="width" constant="138" id="h4c-sm-f3o"/>
+                                        </constraints>
+                                        <state key="normal" image="LASButton"/>
+                                        <connections>
+                                            <segue destination="y57-8n-C6W" kind="presentation" identifier="Clinton" id="j2A-xF-ZJM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0h-Sl-Ewv">
+                                        <rect key="frame" x="212" y="0.0" width="138" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="138" id="5p0-aa-lix"/>
+                                            <constraint firstAttribute="height" constant="60" id="E4T-gR-jND"/>
+                                        </constraints>
+                                        <state key="normal" image="AstoriaBtn"/>
+                                        <connections>
+                                            <segue destination="kp9-Dg-dsi" kind="presentation" identifier="Astoria" id="Ob5-GV-8vC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fyf-uQ-NBj"/>
+                                    <constraint firstAttribute="width" constant="350" id="kB9-Wi-PY2"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000000000002" green="0.14117647059999999" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="pjE-JB-rZ7" firstAttribute="top" secondItem="MGU-lI-IUj" secondAttribute="bottom" constant="129" id="3MZ-Rq-quu"/>
-                            <constraint firstItem="pjE-JB-rZ7" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="5Cu-xC-Hom"/>
-                            <constraint firstItem="Nkh-Ca-DoK" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="E8l-zC-85S"/>
-                            <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="hld-Jo-c5z" secondAttribute="bottom" id="IaN-V8-3yj"/>
-                            <constraint firstItem="Nkh-Ca-DoK" firstAttribute="top" secondItem="pjE-JB-rZ7" secondAttribute="bottom" constant="65" id="PE0-Jz-tCH"/>
-                            <constraint firstItem="hld-Jo-c5z" firstAttribute="leading" secondItem="hCP-UK-oLd" secondAttribute="leading" id="R4o-ro-UhX"/>
-                            <constraint firstItem="hld-Jo-c5z" firstAttribute="top" secondItem="hCP-UK-oLd" secondAttribute="top" id="edS-jS-esq"/>
-                            <constraint firstItem="yLO-bw-CXL" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="ehC-qf-4Dw"/>
-                            <constraint firstAttribute="trailing" secondItem="hld-Jo-c5z" secondAttribute="trailing" id="u23-8S-t26"/>
-                            <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="yLO-bw-CXL" secondAttribute="bottom" constant="40" id="wVe-yq-VkS"/>
+                            <constraint firstItem="yLO-bw-CXL" firstAttribute="centerY" secondItem="hCP-UK-oLd" secondAttribute="centerY" id="6pd-28-Q2o"/>
+                            <constraint firstItem="79p-TM-tbc" firstAttribute="centerX" secondItem="yLO-bw-CXL" secondAttribute="centerX" id="7QB-zD-pOx"/>
+                            <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="2fv-LM-RuE" secondAttribute="bottom" constant="27" id="9wF-g7-at7"/>
+                            <constraint firstItem="yLO-bw-CXL" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="IXy-6z-LwK"/>
+                            <constraint firstItem="2fv-LM-RuE" firstAttribute="centerX" secondItem="hCP-UK-oLd" secondAttribute="centerX" id="gYl-rj-wYq"/>
+                            <constraint firstItem="79p-TM-tbc" firstAttribute="bottom" secondItem="Xar-RA-fcW" secondAttribute="top" id="nNL-60-icP"/>
+                            <constraint firstItem="Xar-RA-fcW" firstAttribute="top" secondItem="yLO-bw-CXL" secondAttribute="bottom" constant="70" id="wVe-yq-VkS"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wVe-yq-VkS"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="RVm-15-keq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="beyondLabel" destination="yLO-bw-CXL" id="Ro8-KA-m4p"/>
-                        <outlet property="bgImageView" destination="hld-Jo-c5z" id="Crg-Q3-Ul2"/>
-                        <outlet property="lesButton" destination="Nkh-Ca-DoK" id="kPx-pt-7Qz"/>
-                        <outlet property="steinwayButton" destination="pjE-JB-rZ7" id="FMd-us-jjW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmq-05-7NE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1427" y="19"/>
+            <point key="canvasLocation" x="931" y="12"/>
         </scene>
         <!--Astoria View Controller-->
         <scene sceneID="q65-ep-X7D">
@@ -213,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEU-Rz-Ywi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-829" y="-131"/>
+            <point key="canvasLocation" x="1607" y="-131"/>
         </scene>
         <!--Les View Controller-->
         <scene sceneID="gR9-Bu-Guo">
@@ -331,16 +338,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EJQ-in-Dvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-869" y="657"/>
+            <point key="canvasLocation" x="1567" y="657"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pgs-Ij-XmD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qje-E3-2hc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PHM-RG-hzj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZLb-xo-YWu" kind="relationship" relationship="rootViewController" id="36P-B2-6Bx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dng-KG-D8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="12"/>
         </scene>
     </scenes>
     <resources>
         <image name="1461481824_home" width="42" height="42"/>
-        <image name="AstoriaButton" width="256" height="256"/>
-        <image name="ClintonButton" width="393" height="392"/>
+        <image name="AstoriaBtn" width="125" height="60"/>
         <image name="CustomAstoriaBG" width="1536" height="2730"/>
         <image name="CustomLESBG" width="1536" height="2730"/>
-        <image name="customBG" width="1536" height="2730"/>
+        <image name="LASButton" width="125" height="60"/>
+        <image name="customBG" width="414" height="736"/>
         <image name="phone" width="42" height="42"/>
     </resources>
 </document>
