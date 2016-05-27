@@ -61,7 +61,13 @@ class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if bgImageView.image == nil{
+        // Reset Delivery Status
+        dt = DeliveryStatus.None.rawValue
+        sl = StoreLocation.None.rawValue
+        
+        //
+        
+        //if bgImageView.image == nil{
 //            bgImageView.image = UIImage(named: "customBG")
 //            
 //        }

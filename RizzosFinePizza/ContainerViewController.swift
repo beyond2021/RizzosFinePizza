@@ -45,10 +45,10 @@ class ContainerViewController: SlideMenuController {
     override func viewDidLoad() {
         navView()
         super.viewDidLoad()
-       
+       setupRightBarButtonItem()
         
         self.addLeftBarButtonWithImage(UIImage(named: "menuIconSmall")!)
-        self.navigationItem.title = "Simply Delicious"
+       // self.navigationItem.title = "Simply Delicious"
         if let navigationBar = navigationController?.navigationBar {
             navigationBar.setBackgroundImage(UIImage(named: "codepath-logo"), forBarMetrics: .Default)
                      let shadow = NSShadow()
@@ -134,6 +134,53 @@ class ContainerViewController: SlideMenuController {
         
         
     }
+    
+    //MARK: - Right BarButton Item
+    func setupRightBarButtonItem() {
+        struct Static {
+            static var onceToken: dispatch_once_t = 0
+        }
+        
+        dispatch_once(&Static.onceToken, {
+            let loginButton: UIBarButtonItem = UIBarButtonItem(title: nil, style: .Done, target: self, action: nil)
+            self.navigationItem.rightBarButtonItem = loginButton
+        })
+        if ( sl == StoreLocation.Les.rawValue ) {
+            
+            if ( navigationItem.rightBarButtonItem) != nil {
+                navigationItem.rightBarButtonItem!.title = NSLocalizedString("L.E.S", comment: "Label for the les button.")
+                navigationItem.rightBarButtonItem!.action = #selector(ContainerViewController.UpdatelesBarButton)
+                
+            }
+            
+            
+        }
+        if ( sl == StoreLocation.Astoria.rawValue ) {
+            if ( navigationItem.rightBarButtonItem) != nil {
+                navigationItem.rightBarButtonItem!.title = NSLocalizedString("Astoria", comment: "Label for the Astoria button.")
+                navigationItem.rightBarButtonItem!.action = #selector(ContainerViewController.UpdateAstoriaBarButton)
+            }
+            
+        }
+        
+        
+    }
+    
+    func UpdatelesBarButton()  {
+        if ( sl == StoreLocation.Les.rawValue ){
+            sl = StoreLocation.Astoria.rawValue
+            self.setupRightBarButtonItem()
+        }
+        
+    }
+    func UpdateAstoriaBarButton()  {
+        if ( sl == StoreLocation.Astoria.rawValue ){
+            sl = StoreLocation.Les.rawValue
+            self.setupRightBarButtonItem()
+        }
+        
+    }
+
 
 
     

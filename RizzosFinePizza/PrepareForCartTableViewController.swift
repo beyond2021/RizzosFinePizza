@@ -7,6 +7,20 @@
 //
 
 import UIKit
+enum DeliveryStatus : String {
+    case Deliver = "Delivery"
+    case PickUp = "Pick-Up"
+    case None = ""
+}
+var dt = DeliveryStatus.None.rawValue
+
+enum StoreLocation : String {
+    case Les
+    case Astoria
+    case None = ""
+}
+var sl = StoreLocation.None.rawValue
+
 protocol PrepareForCartTableViewControllerDelegate : class{
     // ALL CLASS THAT CONFORM TO THIS PROTOCOL MUST IMPLEMENT
     func dissmissWithUpdatedOptions(updatedFoodItems:FoodItem?)
@@ -70,8 +84,9 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
     
     @IBAction func stepperAction(sender: UIStepper) {
         numberOfOrdersLabel.text = Int(sender.value).description
-//        totalPrice = totalPrice * Double(sender.value)
-//        updatePrice(totalPrice)
+        numberOfOrders = Int(sender.value)
+        totalPrice = totalPrice * Double(sender.value)
+        updatePrice(totalPrice)
     }
     
     
@@ -80,20 +95,32 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
     @IBOutlet weak var addToCartButtonLabel: UIButton!
     
     @IBAction func addToCartAction(sender: UIButton) {
-        readyForCart = FoodItem(title: foodItem!.title, itemDescription: foodItem!.itemDescription, originalPrice: [totalPrice])
+        if let detail = self.foodItem {
+            let alert = UIAlertController(title: "\(numberOfOrders) \(detail.title). \nTotal: $\(totalPrice).\nOrder Placed!", message: "Thank you for your order.\nWe'll delivery it to you soon!", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
+                (_)in
+                self.performSegueWithIdentifier("unwindToMenu", sender: self)
+            })
+            alert.addAction(OKAction)
+            pointVariable = 0
+            self.presentViewController(alert, animated: true, completion: nil)
         
-        let alert = UIAlertController(title: "Order Placed!", message: "Thank you for your order.\nWe'll delivery it to you soon!", preferredStyle: .Alert)
-        let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
-            (_)in
-            self.performSegueWithIdentifier("unwindToMenu", sender: self)
-        })
+        }
         
-        alert.addAction(OKAction)
-        pointVariable = 0
-        self.presentViewController(alert, animated: true, completion: nil)
+            readyForCart = FoodItem(title: foodItem!.title, itemDescription: foodItem!.itemDescription, originalPrice: [totalPrice])
+        
+//        let alert = UIAlertController(title: "\(numberOfOrders) Order Placed!", message: "Thank you for your order.\nWe'll delivery it to you soon!", preferredStyle: .Alert)
+//        let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
+//            (_)in
+//           self.performSegueWithIdentifier("unwindToMenu", sender: self)
+//        })
+        
+       // alert.addAction(OKAction)
+        //pointVariable = 0
+      //  self.presentViewController(alert, animated: true, completion: nil)
         
         
-        self.delegate?.dissmissWithUpdatedOptions(readyForCart)
+        //self.delegate?.dissmissWithUpdatedOptions(readyForCart)
     }
     
     @IBOutlet weak var firstLabel: UILabel!
@@ -119,6 +146,7 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
     
     @IBOutlet weak var cheeseButton: UIButton!
     
+    
     var readyForCart : FoodItem?
     
     var foodItem : FoodItem? {
@@ -127,10 +155,11 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
             self.configureView()
         }
     }
-      func configureView() {
-        
-        
-     //   totalPriceForCart.text = "\(0)"
+    
+    //MARK: Our View
+    func configureView() {
+      //  setupRightBarButtonItem()
+        //   totalPriceForCart.text = "\(0)"
         // Update the user interface for the detail item.
         if let detail = self.foodItem {
             if let label = self.foodTitleLable {
@@ -141,85 +170,76 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
             }
             
             /*
-            let personalRDoriginalPriceText = "\(foodItem?.originalPrice[0])"
-            let pPrice = decimalWithString(personalRDoriginalPriceText)
-            self.personalRoundPriceLabel.text =  "$"+"\(pPrice)"
-            //
-            let largeRDoriginalPriceText = "\(foodItem?.originalPrice[1])"
-            let lrPrice = decimalWithString(largeRDoriginalPriceText)
-            self.personalRoundPriceLabel.text =  "$"+"\(lrPrice)"
-            //
-            let largeSQOriginalPriceText = "\(foodItem?.originalPrice[2])"
-            let lsPrice = decimalWithString(largeSQOriginalPriceText)
-            self.personalRoundPriceLabel.text =  "$"+"\(lsPrice)"
+             let personalRDoriginalPriceText = "\(foodItem?.originalPrice[0])"
+             let pPrice = decimalWithString(personalRDoriginalPriceText)
+             self.personalRoundPriceLabel.text =  "$"+"\(pPrice)"
+             //
+             let largeRDoriginalPriceText = "\(foodItem?.originalPrice[1])"
+             let lrPrice = decimalWithString(largeRDoriginalPriceText)
+             self.personalRoundPriceLabel.text =  "$"+"\(lrPrice)"
+             //
+             let largeSQOriginalPriceText = "\(foodItem?.originalPrice[2])"
+             let lsPrice = decimalWithString(largeSQOriginalPriceText)
+             self.personalRoundPriceLabel.text =  "$"+"\(lsPrice)"
              //
              String(format: "%.2f", (Zahl / 95) * 100)
              
- */
-            
-            
-           
-            
+             */
             if let price = (foodItem?.originalPrice){
                 if let label = self.personalRoundPriceLabel{
                     //let s = "\(price[0])"
-                    
                     let s = String(format: "%.2f", price[0])
-                    
                     let d = self.decimalWithString(s)
                     label.text = "$"+"\(d)"
-                    
                 }
                 if let label = self.largeRoundPriceLabel{
-                   // label.text = "$"+"\(price[1])"
+                    // label.text = "$"+"\(price[1])"
                     let s = "\(price[1])"
                     let d = self.decimalWithString(s)
                     label.text = "$"+"\(d)"
-                    
-                    
-                    
                 }
                 if let label = self.largeSquarePriceChoiceLabel{
-                   // label.text = "$"+"\(price[2])"
+                    // label.text = "$"+"\(price[2])"
                     let s = "\(price[2])"
                     let d = self.decimalWithString(s)
                     label.text = "$"+"\(d)"
-                    
-                    
                 }
-           
- }        }
-
+            }        }
     }
     
 //MARK: View LifeCycle
-           override func viewDidLoad() {
+    override func awakeFromNib() {
+      //  setupRightBarButtonItem()
+    }
+    override func viewDidLoad() {
         super.viewDidLoad()
+       //setupRightBarButtonItem()
+        title = dt
+        
         self.configureView()
-            if pointVariable >= 3{
-                disableButtons()
-            }
-            if pointVariable >= 6{
-                drinksDessertAction()
-            }
-            
-            
-          }
+        if pointVariable >= 3{
+            disableButtons()
+        }
+        if pointVariable >= 6{
+            drinksDessertAction()
+        }
+        
+    }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
-        
-        
         if pointVariable < 3 {
             resetLabels()
         }
-          }
+        //setupRightBarButtonItem()
+    }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(true)
-//        readyForCart = nil
+        //        readyForCart = nil
         resetLabels()
-     //   pointVariable = 0
+        //   pointVariable = 0
+      //  setupRightBarButtonItem()
     }
     
     
@@ -227,18 +247,29 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         updateImage()
         reset()
     }
-
+    
+    
+    
+    //MARK:  Item Selection
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
              /// print("cell selected at row \(indexPath.row)")
         
         if indexPath.row == 2 {
+            
             // if this row is picked first item price is sent
             let cell = tableView.cellForRowAtIndexPath(indexPath)
             cell?.accessoryType = .Checkmark
             
             totalPrice = totalPrice + (foodItem?.originalPrice[0])!
-            updatePrice(totalPrice)                    }
+            updatePrice(totalPrice)
+            if pointVariable >= 6{
+                self.drinksDessertAction()
+            }
+        
+        
+        
+        }
         if indexPath.row == 3 {
             
             
@@ -256,39 +287,33 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         }
         }
     
+    //MARK:  Item Deselection
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        
+        //
         if indexPath.row == 2 {
             let cell = tableView.cellForRowAtIndexPath(indexPath)
             cell?.accessoryType = .None
-            
             if totalPrice != 0{
                 totalPrice = totalPrice - (foodItem?.originalPrice[0])!
                 updatePrice(totalPrice)
                 updateCount()
-                
             } else {
-               
-                    reset()
-                
+                reset()
             }
-            
         }
+        //
         if indexPath.row == 3 {
             let cell = tableView.cellForRowAtIndexPath(indexPath)
             cell?.accessoryType = .None
-            
             if totalPrice != 0{
                 totalPrice = totalPrice - (foodItem?.originalPrice[1])!
                 updatePrice(totalPrice)
                 updateCount()
-                
             } else {
-               
-                    reset()
-                          }
+                reset()
+            }
         }
+        //
         if indexPath.row == 4 {
             let cell = tableView.cellForRowAtIndexPath(indexPath)
             cell?.accessoryType = .None
@@ -296,15 +321,15 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
                 totalPrice = totalPrice - (foodItem?.originalPrice[2])!
                 updatePrice(totalPrice)
                 updateCount()
-                
             } else {
-                                    reset()
-                           }
+                reset()
+            }
         }
-  
-
     }
     
+    
+    
+    //MARK:  Price
     func updatePrice(finalPrice : Double){
         
         if finalPrice == 0.00{
@@ -313,28 +338,25 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         totalPriceForCart.text = "$"+"\(finalPrice)"
         
     }
-    //MARK: When the view loads Total Price for Cart = 0.00
+    //MARK: Total Price
     var totalPrice = 0.00{
         didSet{
             if totalPrice != 0.00 {
                 stateOne()
-                
             } else {
-               
             }
-           
         }
     }
-    var numberOfOrders = 1
-    // user then makes a selection
-    //Item is then selected. total price is then updated
     
+     //MARK: Number Of Orders
+    var numberOfOrders = 1
+    
+    //MARK: - Reset State
     
     func reset(){
         readyForCart = nil
-        
-    totalPrice = 0.00 // Scene opens with total price = 0
-    numberOfOrders = 1
+        totalPrice = 0.00 // Scene opens with total price = 0
+        numberOfOrders = 1
         cheeseButton.enabled = false
         cheeseButton.alpha = 0.3
         toppingsButton.enabled = false
@@ -344,10 +366,10 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         stepperButton.enabled = false
         stepperButton.alpha = 0.3
         addToCartButtonLabel.enabled = false
-         addToCartButtonLabel.alpha = 0.3
-        
+        addToCartButtonLabel.alpha = 0.3
     }
     
+    //MARK: - Selected State
     func stateOne(){
         // Update the label with the total price
         cheeseButton.enabled = true
@@ -360,17 +382,13 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         stepperButton.alpha = 1
         addToCartButtonLabel.enabled = true
         addToCartButtonLabel.alpha = 1
-        
         if tableView.indexPathsForSelectedRows!.count != 1 {
             stepperButton.enabled = false
             stepperButton.alpha = 0.3
-            
-            
         } else if tableView.indexPathsForSelectedRows!.count == 0
         {
             reset()
-       }
-        
+        }
     }
     
     func updateCount(){
@@ -378,6 +396,7 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
             print(list.count)
         }
     }
+    
     deinit{
    readyForCart = nil
         resetLabels()
@@ -389,17 +408,18 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         return .None
     }
     
+    //MARK: - Not Pizza State
     func disableButtons(){
-       lroundLabel.alpha = 0.0
+        lroundLabel.alpha = 0.0
         lsquareLabel.alpha = 0.0
         largeRoundPriceLabel.alpha = 0.0
         largeSquarePriceChoiceLabel.alpha = 0.0
-        
         if let detail = self.foodItem {
-           
-                proundLabel.text  = detail.title
+            proundLabel.text  = detail.title
         }
     }
+    
+    //MARK: - Pizza State
     func resetLabels(){
         lroundLabel.alpha = 1.0
         lsquareLabel.alpha = 1.0
@@ -408,6 +428,8 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         proundLabel.text  = "Personal RD"
         
     }
+    //MARK: - Drinks State
+    
     func drinksDessertAction(){
         cheeseButton.enabled = false
         cheeseButton.alpha = 0.0
@@ -416,8 +438,10 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         sauceButton.enabled = false
         sauceButton.alpha = 0.0
 
-        
     }
+    
+    //MARK: - NSDecimal Number Converter
+    
     func decimalWithString(string: String) -> NSDecimalNumber {
         let formatter = NSNumberFormatter()
         formatter.generatesDecimalNumbers = true
@@ -441,15 +465,28 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
             self.dtImageView.image = UIImage(named: "dtSalad")
         case 6:
             self.dtImageView.image = UIImage(named: "dtDrinks")
-            drinksDessertAction()
         case 7:
             self.dtImageView.image = UIImage(named: "dtDessert")
-            drinksDessertAction()            
+            drinksDessertAction()
         default:
             self.dtImageView.image = UIImage(named: "TwitterScrollBG")
             
         }
-        
-        
+          }
+    //MARK: Stepper
+    
+    func turnOnStepper(){
+        stepperButton.enabled = true
+        stepperButton.alpha = 1.0
+       }
+    func turnOffStepper(){
+        stepperButton.enabled = false
+        stepperButton.alpha = 0.3
     }
+    
+    
+    
+    
+    
+    
 }

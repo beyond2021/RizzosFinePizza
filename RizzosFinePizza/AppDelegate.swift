@@ -42,7 +42,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate,CLLocationManagerDelegate 
         
         UINavigationBar.appearance().tintColor = UIColor(red:190.0/255.0, green: 126.0/255.0, blue: 96.0/255.0, alpha: 1.0)
         UINavigationBar.appearance().barTintColor = UIColor(red:37.0/255.0, green: 7.0/255.0, blue: 30.0/255.0, alpha: 1.0)
-        //navigationController.navigationBar.titleTextAttributes = [UITextAttributeTextColor: UIColor.orangeColor()]
+        
+        let navbarFont = UIFont(name: "Ubuntu", size: 17) ?? UIFont.systemFontOfSize(17)
+        let barbuttonFont = UIFont(name: "Ubuntu-Light", size: 15) ?? UIFont.systemFontOfSize(15)
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.whiteColor()]
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: barbuttonFont, NSForegroundColorAttributeName:UIColor.whiteColor()], forState: UIControlState.Normal)
+       
+        
         return AWSMobileClient.sharedInstance.didFinishLaunching(application, withOptions: launchOptions)
 
     }

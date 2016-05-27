@@ -159,11 +159,14 @@ class LesViewController: UIViewController {
     
     @IBAction func deliveryAction(sender: UIButton) {
         showMenu()
+        dt = DeliveryStatus.Deliver.rawValue
+        sl = StoreLocation.Les.rawValue
     }
     
     @IBAction func pickupAction(sender: UIButton) {
         showMenu()
-    }
+        dt = DeliveryStatus.PickUp.rawValue
+        sl = StoreLocation.Les.rawValue    }
     
     @IBAction func callClinton(sender: UIButton) {
       UIApplication.sharedApplication().openURL(NSURL(string: "tel://6464541262")!)

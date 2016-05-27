@@ -157,26 +157,17 @@ class AstoriaViewController: UIViewController {
     
     @IBAction func deliveryAction(sender: UIButton) {
         showMenu()
-        /**
-        let storyboard = UIStoryboard(name: "Container", bundle: nil)
-        let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
-        let nav = UINavigationController(rootViewController: menuVC)
-        self.presentViewController(nav, animated: true, completion: nil)
- */
-        
+  
+        dt = DeliveryStatus.Deliver.rawValue
+        sl = StoreLocation.Astoria.rawValue
         
         
     }
     
     @IBAction func pickupAction(sender: UIButton) {
         showMenu()
-        /**
-        let storyboard = UIStoryboard(name: "Container", bundle: nil)
-        let menuVC =  storyboard.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
-        let nav = UINavigationController(rootViewController: menuVC)
-        self.presentViewController(nav, animated: true, completion: nil)
- */
-        
+   dt = DeliveryStatus.PickUp.rawValue
+   sl = StoreLocation.Astoria.rawValue
     }
     
     @IBAction func callAstoriaAction(sender: UIButton) {

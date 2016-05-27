@@ -8,7 +8,7 @@
 
 import UIKit
 var pointVariable = 0
-class FoodItemListTableViewController: UITableViewController {
+class FoodItemListTableViewController: UITableViewController, PrepareForCartTableViewControllerDelegate {
     
     var cartItem : CartItem?
     
@@ -31,28 +31,22 @@ class FoodItemListTableViewController: UITableViewController {
       
         tableView.estimatedRowHeight = 66.0
         tableView.rowHeight = UITableViewAutomaticDimension
-        
-               
-
-        
-    }
+            }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
-        
-      scrollToPoint(pointVariable)
+          scrollToPoint(pointVariable)
         tableView.reloadData()
     }
     
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        
-        if segue.identifier == "PreCart" {
+                if segue.identifier == "PreCart" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let foodItemToPass = allFoodItems[indexPath.section][indexPath.row]
                 let controller = segue.destinationViewController as! PrepareForCartTableViewController
+                controller.delegate = self
                 controller.foodItem = foodItemToPass
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
@@ -149,12 +143,18 @@ class FoodItemListTableViewController: UITableViewController {
         
         
     }
+    
+    
+    
     deinit{
         
         pointVariable = 0
     }
     
-    
+    func dissmissWithUpdatedOptions(updatedFoodItems:FoodItem?){
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     
 
 }
