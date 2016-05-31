@@ -63,6 +63,10 @@ class ContainerViewController: SlideMenuController {
         }
     
     }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        setupRightBarButtonItem()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -75,19 +79,27 @@ class ContainerViewController: SlideMenuController {
         titleView.backgroundColor = UIColor.clearColor()
         
        
-        let imageView = UIImageView(image: UIImage(named: "pc"))
-        let logoHomeButton = ACPButton(frame: CGRectMake(0.0, 0.0, 60.0, 60.0))
+   //     let imageView = UIImageView(image: UIImage(named: "pc"))
+        
+        
+        
+        let logoHomeButton = UIButton(frame: CGRectMake(0.0, 0.0, 100.0, 100.0))
+        
         logoHomeButton.contentMode = UIViewContentMode.Center
+        logoHomeButton.setImage(UIImage(named: "pc"), forState: UIControlState.Normal)
 //        logoHomeButton.layer.cornerRadius = logoHomeButton.bounds.size.width / 2
 //        logoHomeButton.layer.masksToBounds = true
         
-        logoHomeButton.setStyleWithImage("pc", highlightedImage: "pc", disableImage: "pc", andInsets: UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0))
+//        logoHomeButton.setStyleWithImage("pc", highlightedImage: "pc", disableImage: "pc", andInsets: UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0))
+        
+        
+        
         logoHomeButton.addTarget(self, action: #selector(ContainerViewController.homePressed), forControlEvents: UIControlEvents.TouchUpInside)
         
         
         
         
-        imageView.contentMode = UIViewContentMode.Center
+ //       imageView.contentMode = UIViewContentMode.Center
 //        imageView.layer.cornerRadius = imageView.bounds.size.width / 2
 //        imageView.layer.masksToBounds = true
         
@@ -131,7 +143,7 @@ class ContainerViewController: SlideMenuController {
     }
     
     func homePressed(){
-        
+      self.performSegueWithIdentifier("ContainerBacktomain", sender: self)  
         
     }
     
@@ -141,9 +153,11 @@ class ContainerViewController: SlideMenuController {
             static var onceToken: dispatch_once_t = 0
         }
         
+               
         dispatch_once(&Static.onceToken, {
-            let loginButton: UIBarButtonItem = UIBarButtonItem(title: nil, style: .Done, target: self, action: nil)
-            self.navigationItem.rightBarButtonItem = loginButton
+            let loginButton: UIBarButtonItem? = UIBarButtonItem(title: nil, style: .Done, target: self, action: nil)
+             self.navigationItem.setRightBarButtonItem(loginButton, animated: true)
+            
         })
         if ( sl == StoreLocation.Les.rawValue ) {
             
@@ -152,17 +166,16 @@ class ContainerViewController: SlideMenuController {
                 navigationItem.rightBarButtonItem!.action = #selector(ContainerViewController.UpdatelesBarButton)
                 
             }
-            
-            
-        }
+                   }
         if ( sl == StoreLocation.Astoria.rawValue ) {
+            
+            
             if ( navigationItem.rightBarButtonItem) != nil {
                 navigationItem.rightBarButtonItem!.title = NSLocalizedString("Astoria", comment: "Label for the Astoria button.")
                 navigationItem.rightBarButtonItem!.action = #selector(ContainerViewController.UpdateAstoriaBarButton)
             }
             
         }
-        
         
     }
     

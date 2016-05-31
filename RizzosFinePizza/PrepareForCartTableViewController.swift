@@ -53,6 +53,8 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
     @IBOutlet weak var lsquareLabel: UILabel!
     
     @IBAction func sauceAction(sender: AnyObject) {
+        showExtraSauce()
+        /*
         let popoverContent = self.storyboard?.instantiateViewControllerWithIdentifier("SauceVC") as! SauceViewController
         
         popoverContent.modalPresentationStyle = .Popover
@@ -72,20 +74,25 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         }            
         
         self.presentViewController(popoverContent, animated: true, completion: nil)
+ */
         
     }
     
     @IBAction func toppingsAction(sender: AnyObject) {
+        showToppings()
     }
     
     @IBAction func cheeseAction(sender: UIButton) {
+        showCheezeToppings()
     }
     
     
     @IBAction func stepperAction(sender: UIStepper) {
         numberOfOrdersLabel.text = Int(sender.value).description
         numberOfOrders = Int(sender.value)
-        totalPrice = totalPrice * Double(sender.value)
+       // totalPrice = originalPrice * Double(sender.value)
+        
+       // totalPrice = totalPrice * Double(sender.value)
         updatePrice(totalPrice)
     }
     
@@ -156,6 +163,8 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         }
     }
     
+    
+    
     //MARK: Our View
     func configureView() {
       //  setupRightBarButtonItem()
@@ -169,7 +178,7 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
                 label.text = detail.itemDescription
             }
             
-            /*
+           /*
              let personalRDoriginalPriceText = "\(foodItem?.originalPrice[0])"
              let pPrice = decimalWithString(personalRDoriginalPriceText)
              self.personalRoundPriceLabel.text =  "$"+"\(pPrice)"
@@ -182,9 +191,11 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
              let lsPrice = decimalWithString(largeSQOriginalPriceText)
              self.personalRoundPriceLabel.text =  "$"+"\(lsPrice)"
              //
-             String(format: "%.2f", (Zahl / 95) * 100)
+            // String(format: "%.2f", (Zahl / 95) * 100)
+ */
              
-             */
+            
+           
             if let price = (foodItem?.originalPrice){
                 if let label = self.personalRoundPriceLabel{
                     //let s = "\(price[0])"
@@ -204,7 +215,8 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
                     let d = self.decimalWithString(s)
                     label.text = "$"+"\(d)"
                 }
-            }        }
+            } 
+ }
     }
     
 //MARK: View LifeCycle
@@ -213,7 +225,11 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-       //setupRightBarButtonItem()
+        let rightBB : UIBarButtonItem = UIBarButtonItem(title: nil, style: .Done, target: self, action: nil)
+        rightBB.setBackgroundImage(UIImage(named: "shoppingCart"), forState: UIControlState.Normal, style: UIBarButtonItemStyle.Done, barMetrics: UIBarMetrics.Default)
+        self.navigationItem.rightBarButtonItem = rightBB
+        
+       self.configureView()
         title = dt
         
         self.configureView()
@@ -231,7 +247,8 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         if pointVariable < 3 {
             resetLabels()
         }
-        //setupRightBarButtonItem()
+        setUpSiri()
+       
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -330,12 +347,15 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
     
     
     //MARK:  Price
+    var originalPrice : Double?
+    
     func updatePrice(finalPrice : Double){
-        
-        if finalPrice == 0.00{
+                if finalPrice == 0.00{
             reset()
         }
-        totalPriceForCart.text = "$"+"\(finalPrice)"
+        let sp  = "\(finalPrice)"
+        let dp =  decimalWithString(sp)
+                totalPriceForCart.text = "$"+"\(dp)"
         
     }
     //MARK: Total Price
@@ -483,9 +503,175 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
         stepperButton.enabled = false
         stepperButton.alpha = 0.3
     }
+    //MARK: - Toppings
+    func showToppings(){
+        let menuView = CHTumblrMenuView()
+        
+        menuView.addMenuItemWithTitle("Pepperon", andIcon: UIImage(named:"pizza")) {
+           // self.pizzaAction()
+        }
+        menuView.addMenuItemWithTitle("Eggplant Cutlet", andIcon: UIImage(named:"calzone")) {
+           // self.calzoneAction()
+        }
+        
+        menuView.addMenuItemWithTitle("Fresh Pepper", andIcon: UIImage(named:"knots")) {
+          ///  self.knotsAction()
+        }
+        
+        menuView.addMenuItemWithTitle("Fresh Pepper", andIcon: UIImage(named:"salad")) {
+           // self.saladAction()
+        }
+        menuView.addMenuItemWithTitle("Onion", andIcon: UIImage(named:"coke")) {
+           // self.drinkAction()
+        }
+        
+        menuView.addMenuItemWithTitle("Tomato", andIcon: UIImage(named:"dessert")) {
+           // self.dessertAction()
+        }
+        
+        //
+        menuView.addMenuItemWithTitle("Pepperon", andIcon: UIImage(named:"pizza")) {
+            // self.pizzaAction()
+        }
+        menuView.addMenuItemWithTitle("Eggplant Cutlet", andIcon: UIImage(named:"calzone")) {
+            // self.calzoneAction()
+        }
+        
+        menuView.addMenuItemWithTitle("Fresh Pepper", andIcon: UIImage(named:"knots")) {
+            ///  self.knotsAction()
+        }
+        
+        menuView.addMenuItemWithTitle("Fresh Pepper", andIcon: UIImage(named:"salad")) {
+            // self.saladAction()
+        }
+        menuView.addMenuItemWithTitle("Onion", andIcon: UIImage(named:"coke")) {
+            // self.drinkAction()
+        }
+        
+        menuView.addMenuItemWithTitle("Tomato", andIcon: UIImage(named:"dessert")) {
+            // self.dessertAction()
+        }
+        
+        
+        
+        
+        
+        menuView.show()
+        
+        
+    }
+    func showCheezeToppings(){
+        let menuView = CHTumblrMenuView()
+        
+        menuView.addMenuItemWithTitle("Ricotta", andIcon: UIImage(named:"pizza")) {
+            // self.pizzaAction()
+        }
+        menuView.addMenuItemWithTitle("Parmigiano", andIcon: UIImage(named:"calzone")) {
+            // self.calzoneAction()
+        }
+        
+        menuView.addMenuItemWithTitle("Mozzarella", andIcon: UIImage(named:"knots")) {
+            ///  self.knotsAction()
+        }
+        
+        menuView.addMenuItemWithTitle("Parmigiano", andIcon: UIImage(named:"salad")) {
+            // self.saladAction()
+        }
+        menuView.addMenuItemWithTitle("Romano", andIcon: UIImage(named:"coke")) {
+            // self.drinkAction()
+        }
+        
+        menuView.addMenuItemWithTitle("Cheese", andIcon: UIImage(named:"dessert")) {
+            // self.dessertAction()
+        }
+        
+        
+        menuView.show()
+
+        
+        
+    }
+    func showExtraSauce(){
+        let menuView = CHTumblrMenuView()
+        
+        menuView.addMenuItemWithTitle("Extra Sauce", andIcon: UIImage(named:"pizza")) {
+            // self.pizzaAction()
+        }
+        menuView.addMenuItemWithTitle("Side of Hot Sauce", andIcon: UIImage(named:"calzone")) {
+            // self.calzoneAction()
+        }
+        
+        menuView.addMenuItemWithTitle("BBQ", andIcon: UIImage(named:"knots")) {
+            ///  self.knotsAction()
+        }
+        
+        menuView.addMenuItemWithTitle("Side of Basil Pesto", andIcon: UIImage(named:"salad")) {
+            // self.saladAction()
+        }
+        
+        
+        menuView.show()
+        
+    }
+    func showSaladDressing(){
+        let menuView = CHTumblrMenuView()
+        
+        menuView.addMenuItemWithTitle("Herbed Vinaigrette", andIcon: UIImage(named:"pizza")) {
+            // self.pizzaAction()
+        }
+        menuView.addMenuItemWithTitle("Herbed Vinaigrette", andIcon: UIImage(named:"calzone")) {
+            // self.calzoneAction()
+        }
+        
+        
+        menuView.show()
+        
+    }
+    //MARK:- Floating Buttons
+    func setUpSiri(){
+        let floatingSiriButton = UIButton()
+        floatingSiriButton.contentMode = UIViewContentMode.Center
+        
+        floatingSiriButton.layer.cornerRadius = floatingSiriButton.bounds.size.width / 2
+        floatingSiriButton.layer.masksToBounds = true
+        
+        
+        // floatingSiriButton = UIButton(type: UIButtonType.Custom)
+        
+        
+        //set image for button
+        floatingSiriButton.setImage(UIImage(named: "mike"), forState: UIControlState.Normal)
+        //add function for button
+        floatingSiriButton.addTarget(self, action:#selector(PrepareForCartTableViewController.siriPressed), forControlEvents: UIControlEvents.TouchUpInside)
+        //set frame
+        floatingSiriButton.frame = CGRectMake(0, 60, 80, 80)
+        
+       // tableView.addSubview(floatingSiriButton)
+        
+        dtImageView.addSubview(floatingSiriButton)
+       
+        self.view.insertSubview(floatingSiriButton, aboveSubview: dtImageView)
+            }
     
+    func siriPressed(){
+        
+       let alert = UIAlertController(title: "Siri Pressed", message: nil, preferredStyle: .Alert)
+        let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+         alert.addAction(OKAction)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     
-    
+    @IBAction func cartAction(sender: UIButton) {
+       
+            let alert = UIAlertController(title: "Your Cart is empty!!", message: "Please fill it up.\nThank You!", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(OKAction)
+            pointVariable = 0
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+      
+
+    }
     
     
     

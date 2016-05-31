@@ -24,6 +24,7 @@ class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesV
     var latitude : Double?
     var longitude : Double?
     
+    @IBOutlet weak var bgImageView: UIImageView!
     
     @IBOutlet weak var stackView: UIStackView!
     
@@ -64,21 +65,7 @@ class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesV
         // Reset Delivery Status
         dt = DeliveryStatus.None.rawValue
         sl = StoreLocation.None.rawValue
-        
-        //
-        
-        //if bgImageView.image == nil{
-//            bgImageView.image = UIImage(named: "customBG")
-//            
-//        }
-
-        
-        
-       // setUpInterface()
-//        self.navigationController!.navigationBar.translucent = true
-//        self.navigationController!.view.backgroundColor = UIColor.clearColor()
-
-        //AWS
+            //AWS
          navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: nil, action: nil)
         
         // You need to call `- updateTheme` here in case the sign-in happens before `- viewWillAppear:` is called.
@@ -141,7 +128,7 @@ class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesV
             strongSelf.updateTheme()
             })
         
-         setupRightBarButtonItem()
+        // setupRightBarButtonItem()
         //setUpSignIn()
         //
         locationManager.requestAlwaysAuthorization()
@@ -181,6 +168,8 @@ class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesV
        
     }
     override func viewDidAppear(animated: Bool) {
+     //   setupRightBarButtonItem()
+        setUpSiri()
        // lesButton.enabled = true
       //  steinwayButton.enabled = true
         beyondLabel.alpha = 0
@@ -412,6 +401,39 @@ extension MainViewController : RideRequestViewControllerDelegate {
             loginAlert()
         }
     }
+    
+    
+    //MARK:- Floating Buttons
+    func setUpSiri(){
+        let floatingSiriButton = UIButton()
+        floatingSiriButton.contentMode = UIViewContentMode.Center
+        
+        floatingSiriButton.layer.cornerRadius = floatingSiriButton.bounds.size.width / 2
+        floatingSiriButton.layer.masksToBounds = true
+        
+        
+        // floatingSiriButton = UIButton(type: UIButtonType.Custom)
+        
+        
+        //set image for button
+        floatingSiriButton.setImage(UIImage(named: "mike"), forState: UIControlState.Normal)
+        //add function for button
+        floatingSiriButton.addTarget(self, action:#selector(PrepareForCartTableViewController.siriPressed), forControlEvents: UIControlEvents.TouchUpInside)
+        //set frame
+        floatingSiriButton.frame = CGRectMake(0, 60, 80, 80)
+        
+        // tableView.addSubview(floatingSiriButton)
+        
+        bgImageView.addSubview(floatingSiriButton)
+        
+        self.view.insertSubview(floatingSiriButton, aboveSubview: bgImageView)
+    }
+    
+    func siriPressed(){
+        
+        
+    }
+
     
     
     

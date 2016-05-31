@@ -91,6 +91,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="beyondLabel" destination="yLO-bw-CXL" id="Ro8-KA-m4p"/>
+                        <outlet property="bgImageView" destination="79p-TM-tbc" id="PLj-A5-4Sa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmq-05-7NE" userLabel="First Responder" sceneMemberID="firstResponder"/>

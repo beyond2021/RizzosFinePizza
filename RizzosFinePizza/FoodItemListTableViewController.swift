@@ -31,20 +31,33 @@ class FoodItemListTableViewController: UITableViewController, PrepareForCartTabl
       
         tableView.estimatedRowHeight = 66.0
         tableView.rowHeight = UITableViewAutomaticDimension
+        scrollToPoint(pointVariable)
             }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
           scrollToPoint(pointVariable)
         tableView.reloadData()
+        setUpSiri()
     }
     
     // MARK: - Navigation
+    /*
+     if let indexPath = self.tableView.indexPathForSelectedRow {
+     let object = objects[indexPath.row] as! NSDate
+     let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+     controller.detailItem = object
+     controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+     controller.navigationItem.leftItemsSupplementBackButton = true
+ 
+ */
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
                 if segue.identifier == "PreCart" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let foodItemToPass = allFoodItems[indexPath.section][indexPath.row]
+                let foodItemToPass = allFoodItems[indexPath.section][indexPath.row] as FoodItem
+                
+                                
                 let controller = segue.destinationViewController as! PrepareForCartTableViewController
                 controller.delegate = self
                 controller.foodItem = foodItemToPass
@@ -141,6 +154,23 @@ class FoodItemListTableViewController: UITableViewController, PrepareForCartTabl
         self.tableView.scrollToRowAtIndexPath(indexPath,
                                               atScrollPosition: UITableViewScrollPosition.Middle, animated: true)
         
+        /*
+        let delay = 0.1 * Double(NSEC_PER_SEC)
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        
+        dispatch_after(time, dispatch_get_main_queue(), {
+            
+            let numberOfSections = self.tableView.numberOfSections
+            let numberOfRows = self.tableView.numberOfRowsInSection(numberOfSections-1)
+            
+            if numberOfRows > 0 {
+                let indexPath = NSIndexPath(forRow: numberOfRows-1, inSection: point - 1)
+                self.tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: UITableViewScrollPosition.Middle, animated: true)
+            }
+            
+        })
+ */
+        
         
     }
     
@@ -154,6 +184,28 @@ class FoodItemListTableViewController: UITableViewController, PrepareForCartTabl
     func dissmissWithUpdatedOptions(updatedFoodItems:FoodItem?){
         self.dismissViewControllerAnimated(true, completion: nil)
         
+    }
+    //MARK :- Siri
+    func setUpSiri(){
+        let floatingSiriButton = UIButton()
+        floatingSiriButton.contentMode = UIViewContentMode.Center
+        
+        floatingSiriButton.layer.cornerRadius = floatingSiriButton.bounds.size.width / 2
+        floatingSiriButton.layer.masksToBounds = true
+        
+        
+        // floatingSiriButton = UIButton(type: UIButtonType.Custom)
+        
+        
+        //set image for button
+        floatingSiriButton.setImage(UIImage(named: "mike"), forState: UIControlState.Normal)
+        //add function for button
+        floatingSiriButton.addTarget(self, action:#selector(PrepareForCartTableViewController.siriPressed), forControlEvents: UIControlEvents.TouchUpInside)
+        //set frame
+        floatingSiriButton.frame = CGRectMake(0, view.bounds.height - 40, 80, 80)
+        
+         view.addSubview(floatingSiriButton)
+                self.view.insertSubview(floatingSiriButton, aboveSubview: tableView)
     }
     
 
