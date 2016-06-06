@@ -11,6 +11,7 @@ import pop
 import UberRides
 import CoreLocation
 import AWSMobileHubHelper
+import ActionButton
 
 
 class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesViewControllerDelegate,FBLoginViewControllerDelegate,CLLocationManagerDelegate {
@@ -62,7 +63,7 @@ class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Reset Delivery Status
+                // Reset Delivery Status
         dt = DeliveryStatus.None.rawValue
         sl = StoreLocation.None.rawValue
             //AWS
@@ -128,7 +129,7 @@ class MainViewController: UIViewController,  AstoriaViewControllerDelegate, LesV
             strongSelf.updateTheme()
             })
         
-        // setupRightBarButtonItem()
+         setupRightBarButtonItem()
         //setUpSignIn()
         //
         locationManager.requestAlwaysAuthorization()
@@ -433,9 +434,6 @@ extension MainViewController : RideRequestViewControllerDelegate {
         
         
     }
-
-    
-    
-    
+       
 }
 

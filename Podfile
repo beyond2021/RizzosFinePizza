@@ -34,6 +34,7 @@ pod 'AWSSES'
 pod 'AWSSimpleDB'
 pod 'AWSSNS'
 pod 'AWSSQS'
+pod 'ActionButton'
 end
 
 target 'RizzosFinePizzaTests' do
@@ -68,5 +69,6 @@ pod 'AWSSES'
 pod 'AWSSimpleDB'
 pod 'AWSSNS'
 pod 'AWSSQS'
+pod 'ActionButton'
 end
 

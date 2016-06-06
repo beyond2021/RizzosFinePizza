@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ActionButton
 enum DeliveryStatus : String {
     case Deliver = "Delivery"
     case PickUp = "Pick-Up"
@@ -54,6 +55,8 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
     
     @IBAction func sauceAction(sender: AnyObject) {
         showExtraSauce()
+        
+        
         /*
         let popoverContent = self.storyboard?.instantiateViewControllerWithIdentifier("SauceVC") as! SauceViewController
         
@@ -669,9 +672,31 @@ class PrepareForCartTableViewController: UITableViewController, UIPopoverPresent
             pointVariable = 0
             self.presentViewController(alert, animated: true, completion: nil)
             
-      
-
+          }
+    //MARK :- Siri
+    var actionButton: ActionButton!  
+    
+    func setUpFloatingButtons(){
+        let siriImage = UIImage(named: "mike")!
+        let cartImage = UIImage(named: "shoppingCart")!
+        
+        let siri = ActionButtonItem(title: "Siri", image: siriImage)
+        siri.action = { item in print("Siri...") }
+        
+        let cart = ActionButtonItem(title: "Shopping Cart", image: cartImage)
+        cart.action = { item in print("Shopping Cart...") }
+        
+        
+        actionButton = ActionButton(attachedToView: self.tableView, items: [siri, cart])
+        actionButton.action = { button in button.toggleMenu() }
+        actionButton.setTitle("+", forState: .Normal)
+        
+        actionButton.backgroundColor = UIColor(red: 238.0/255.0, green: 130.0/255.0, blue: 34.0/255.0, alpha:1.0)
+        
+        
     }
+    
+
     
     
     

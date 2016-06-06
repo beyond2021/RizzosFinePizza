@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ActionButton
 var pointVariable = 0
 class FoodItemListTableViewController: UITableViewController, PrepareForCartTableViewControllerDelegate {
     
@@ -14,7 +15,7 @@ class FoodItemListTableViewController: UITableViewController, PrepareForCartTabl
     
     var cart : FoodItem?
     var point : Int?
-    
+    var actionButton: ActionButton!
     
    
     
@@ -38,7 +39,8 @@ class FoodItemListTableViewController: UITableViewController, PrepareForCartTabl
         super.viewDidAppear(true)
           scrollToPoint(pointVariable)
         tableView.reloadData()
-        setUpSiri()
+        setUpFloatingButtons()
+       
     }
     
     // MARK: - Navigation
@@ -186,26 +188,24 @@ class FoodItemListTableViewController: UITableViewController, PrepareForCartTabl
         
     }
     //MARK :- Siri
-    func setUpSiri(){
-        let floatingSiriButton = UIButton()
-        floatingSiriButton.contentMode = UIViewContentMode.Center
+    func setUpFloatingButtons(){
+        let siriImage = UIImage(named: "mike")!
+        let cartImage = UIImage(named: "shoppingCart")!
         
-        floatingSiriButton.layer.cornerRadius = floatingSiriButton.bounds.size.width / 2
-        floatingSiriButton.layer.masksToBounds = true
+        let siri = ActionButtonItem(title: "Siri", image: siriImage)
+        siri.action = { item in print("Siri...") }
+        
+        let cart = ActionButtonItem(title: "Shopping Cart", image: cartImage)
+        cart.action = { item in print("Shopping Cart...") }
         
         
-        // floatingSiriButton = UIButton(type: UIButtonType.Custom)
+        actionButton = ActionButton(attachedToView: self.tableView, items: [siri, cart])
+        actionButton.action = { button in button.toggleMenu() }
+        actionButton.setTitle("+", forState: .Normal)
         
+        actionButton.backgroundColor = UIColor(red: 238.0/255.0, green: 130.0/255.0, blue: 34.0/255.0, alpha:1.0)
+
         
-        //set image for button
-        floatingSiriButton.setImage(UIImage(named: "mike"), forState: UIControlState.Normal)
-        //add function for button
-        floatingSiriButton.addTarget(self, action:#selector(PrepareForCartTableViewController.siriPressed), forControlEvents: UIControlEvents.TouchUpInside)
-        //set frame
-        floatingSiriButton.frame = CGRectMake(0, view.bounds.height - 40, 80, 80)
-        
-         view.addSubview(floatingSiriButton)
-                self.view.insertSubview(floatingSiriButton, aboveSubview: tableView)
     }
     
 

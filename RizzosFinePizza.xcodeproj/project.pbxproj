@@ -24,6 +24,7 @@
 		222733271CE84E080086BF22 /* Sauce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733251CE84E080086BF22 /* Sauce.swift */; };
 		222733291CE8709D0086BF22 /* SauceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733281CE8709D0086BF22 /* SauceViewController.swift */; };
 		2227332A1CE8709D0086BF22 /* SauceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733281CE8709D0086BF22 /* SauceViewController.swift */; };
+		222C2A101CFE177600762DE2 /* ActionButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C2A0F1CFE177500762DE2 /* ActionButton.framework */; };
 		2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0431CBC720200218DE3 /* LocationTests.swift */; };
 		2233E0461CBC729E00218DE3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0451CBC729E00218DE3 /* Location.swift */; };
 		2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */; };
@@ -52,6 +53,9 @@
 		2255E23A1CDB4E45007DD06C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2351CDB4E45007DD06C /* README.md */; };
 		2255E23B1CDB4E45007DD06C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2255E2351CDB4E45007DD06C /* README.md */; };
 		226EC9C91CE72BC800EC616D /* UberRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226EC9C81CE72BC800EC616D /* UberRides.framework */; };
+		227E46641D011E5500A005F8 /* FoodItemGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227E46631D011E5500A005F8 /* FoodItemGlobals.swift */; };
+		227E46661D011E7600A005F8 /* FoodItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227E46651D011E7600A005F8 /* FoodItemModel.swift */; };
+		227E46691D038DC500A005F8 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227E46681D038DC500A005F8 /* Cart.swift */; };
 		229AFE171CE71FBE005669BE /* UberConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229AFE161CE71FBE005669BE /* UberConstants.swift */; };
 		22A1EB8C1CC74FD900C51FE5 /* MainViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB8B1CC74FD900C51FE5 /* MainViewControllerTest.swift */; };
 		22A1EB8E1CC7504500C51FE5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1EB8D1CC7504500C51FE5 /* MainViewController.swift */; };
@@ -186,6 +190,7 @@
 		222733221CE83C570086BF22 /* CartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		222733251CE84E080086BF22 /* Sauce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sauce.swift; sourceTree = "<group>"; };
 		222733281CE8709D0086BF22 /* SauceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SauceViewController.swift; sourceTree = "<group>"; };
+		222C2A0F1CFE177500762DE2 /* ActionButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActionButton.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphonesimulator/ActionButton.framework"; sourceTree = "<group>"; };
 		2233E0431CBC720200218DE3 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		2233E0451CBC729E00218DE3 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
@@ -208,6 +213,9 @@
 		2255E2341CDB4E45007DD06C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2255E2351CDB4E45007DD06C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		226EC9C81CE72BC800EC616D /* UberRides.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UberRides.framework; path = "../../../Library/Developer/Xcode/DerivedData/RizzosFinePizza-dgaetmrimyzqhugwhhiqamshlswl/Build/Products/Release-iphonesimulator/UberRides.framework"; sourceTree = "<group>"; };
+		227E46631D011E5500A005F8 /* FoodItemGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemGlobals.swift; sourceTree = "<group>"; };
+		227E46651D011E7600A005F8 /* FoodItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemModel.swift; sourceTree = "<group>"; };
+		227E46681D038DC500A005F8 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		229AFE161CE71FBE005669BE /* UberConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberConstants.swift; sourceTree = "<group>"; };
 		22A1EB8B1CC74FD900C51FE5 /* MainViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerTest.swift; sourceTree = "<group>"; };
 		22A1EB8D1CC7504500C51FE5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -293,6 +301,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222C2A101CFE177600762DE2 /* ActionButton.framework in Frameworks */,
 				222733201CE7CE670086BF22 /* FVCustomAlertView.framework in Frameworks */,
 				226EC9C91CE72BC800EC616D /* UberRides.framework in Frameworks */,
 				2255E2021CD5E969007DD06C /* FBSDKCoreKit.framework in Frameworks */,
@@ -321,6 +330,7 @@
 		12AEFC6420FF5200B6AAAD1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				222C2A0F1CFE177500762DE2 /* ActionButton.framework */,
 				2227331F1CE7CE670086BF22 /* FVCustomAlertView.framework */,
 				226EC9C81CE72BC800EC616D /* UberRides.framework */,
 				2255E1FF1CD5E969007DD06C /* FBSDKCoreKit.framework */,
@@ -360,7 +370,6 @@
 			isa = PBXGroup;
 			children = (
 				2255E2141CD9F3D1007DD06C /* HTTPClient.swift */,
-				22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */,
 				2255E2171CD9FB3C007DD06C /* FoodItemExtension.swift */,
 				222733221CE83C570086BF22 /* CartItem.swift */,
 				222733251CE84E080086BF22 /* Sauce.swift */,
@@ -410,6 +419,17 @@
 				2255E2351CDB4E45007DD06C /* README.md */,
 			);
 			path = ACPButton;
+			sourceTree = "<group>";
+		};
+		227E46671D011F0500A005F8 /* Control Group */ = {
+			isa = PBXGroup;
+			children = (
+				22FBA31E1CB9C6FC009B2DE8 /* FoodItem.swift */,
+				227E46651D011E7600A005F8 /* FoodItemModel.swift */,
+				227E46631D011E5500A005F8 /* FoodItemGlobals.swift */,
+				227E46681D038DC500A005F8 /* Cart.swift */,
+			);
+			name = "Control Group";
 			sourceTree = "<group>";
 		};
 		229AFE181CE7296D005669BE /* UBER */ = {
@@ -663,6 +683,7 @@
 		22FBA2E61CAFDE30009B2DE8 /* RizzosFinePizza */ = {
 			isa = PBXGroup;
 			children = (
+				227E46671D011F0500A005F8 /* Control Group */,
 				22B4D6EB1CF1EC8800E08E8E /* LocationManager.swift */,
 				22B4D6931CF1DC7500E08E8E /* AWSMobileHubHelper.framework */,
 				22B4D68C1CF1D7C000E08E8E /* Amazon */,
@@ -964,8 +985,10 @@
 				22B4D6C71CF1DFED00E08E8E /* NoSQLTableListViewController.swift in Sources */,
 				222733261CE84E080086BF22 /* Sauce.swift in Sources */,
 				2209E12E1CE2D53000F52E48 /* PizzaCellSlim.swift in Sources */,
+				227E46641D011E5500A005F8 /* FoodItemGlobals.swift in Sources */,
 				22A1EBAA1CCC87D000C51FE5 /* ShareViewController.swift in Sources */,
 				22B4D6921CF1DA6B00E08E8E /* AWSMobileClient.swift in Sources */,
+				227E46691D038DC500A005F8 /* Cart.swift in Sources */,
 				22B4D6C51CF1DFED00E08E8E /* NoSQLTableFactory.swift in Sources */,
 				22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */,
 				22A1EB971CC8183C00C51FE5 /* AstoriaViewController.swift in Sources */,
@@ -995,6 +1018,7 @@
 				229AFE171CE71FBE005669BE /* UberConstants.swift in Sources */,
 				22B4D6BF1CF1DFED00E08E8E /* NoSQLModelHelpers.swift in Sources */,
 				2255E2361CDB4E45007DD06C /* ACPButton.m in Sources */,
+				227E46661D011E7600A005F8 /* FoodItemModel.swift in Sources */,
 				2255E23A1CDB4E45007DD06C /* README.md in Sources */,
 				2255E2151CD9F3D1007DD06C /* HTTPClient.swift in Sources */,
 				22F07ED51CD058C3001E65F7 /* LoginService.swift in Sources */,

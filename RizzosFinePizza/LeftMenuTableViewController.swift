@@ -36,16 +36,12 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
     }
+    
+    //MARK:- Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //TI GET CALLED IF U CAUSE A SEGUE TO TRIGGER
@@ -56,10 +52,8 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
             if let destVC = segue.destinationViewController as? TrackViewController {
                 // if this was possible then we want to ourself its delegate
                 destVC.delegate = self
-                
             }
         }
-        
     }
  
     
@@ -69,17 +63,8 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+     //MARK:- Delegate Methods
    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         switch indexPath.row{
@@ -92,7 +77,7 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
         case 3:
             performSegueWithIdentifier("track", sender: self)
         case 4:
-           // uber()
+            // uber()
             // If no pickup location is specified, the default is to use current location
             let parameters = RideParametersBuilder().build()
             // You can also explicitly the parameters to use current location
@@ -104,56 +89,49 @@ class LeftMenuTableViewController: UITableViewController, TrackViewControllerDel
             behavior.modalRideRequestViewController.rideRequestViewController.delegate = delegate
             let button = RideRequestButton(rideParameters: parameters, requestingBehavior: behavior)
             self.view.addSubview(button)
-            
-            
-                   case 5:
+        case 5:
             logOut()
-            
         default : break
-            
         }
     }
-    
-    func goBackToMain(){
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let mainVC =  storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! MainViewController
-//              self.presentViewController(mainVC, animated: true, completion: nil)
-        self.performSegueWithIdentifier("main", sender: self)
-
-    }
-    func facebook(){
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
-            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            
-            self.presentViewController(fbShare, animated: true, completion: nil)
-            
-        } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
-    }
-    
-    func twitter(){
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
-            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            
-            self.presentViewController(fbShare, animated: true, completion: nil)
-            
-        } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a Twitter account to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
-    }
+    //MARK:- TrackViewController Delegate
     func dismissTrack(){
         self.dismissViewControllerAnimated(true) {
             print("Clinton is dismissed")
         }
     }
-    func logOut(){
+
+    
+    func goBackToMain(){
+        self.performSegueWithIdentifier("main", sender: self)
+    }
+    
+    //MARK:- FaceBook
+    func facebook(){
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
+            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            self.presentViewController(fbShare, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
+    //MARK:- Twitter
+    func twitter(){
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
+            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            self.presentViewController(fbShare, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Twitter account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
+    //MARK:- Amazon Web Services Log-Out
+       func logOut(){
         
         if (AWSIdentityManager.defaultIdentityManager().loggedIn) {
             ColorThemeSettings.sharedInstance.wipe()

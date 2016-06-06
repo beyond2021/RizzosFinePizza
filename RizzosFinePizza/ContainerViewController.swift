@@ -8,6 +8,7 @@
 
 import UIKit
 import SlideMenuControllerSwift
+import ActionButton
 
 class ContainerViewController: SlideMenuController {
     
@@ -16,6 +17,7 @@ class ContainerViewController: SlideMenuController {
     override func awakeFromNib() {
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("FoodItemListTableViewController") {
             self.mainViewController = controller
+                        
                     }
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("LeftMenuTableViewController") {
             self.leftViewController = controller
@@ -46,6 +48,7 @@ class ContainerViewController: SlideMenuController {
         navView()
         super.viewDidLoad()
        setupRightBarButtonItem()
+       // setUpFloatingButtons()
         
         self.addLeftBarButtonWithImage(UIImage(named: "menuIconSmall")!)
        // self.navigationItem.title = "Simply Delicious"
@@ -66,6 +69,7 @@ class ContainerViewController: SlideMenuController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         setupRightBarButtonItem()
+       // setUpFloatingButtons()
     }
 
     override func didReceiveMemoryWarning() {
@@ -193,8 +197,23 @@ class ContainerViewController: SlideMenuController {
         }
         
     }
-
-
-
+    
+    func setUpFloatingButtons(){
+        let siriImage = UIImage(named: "mike")!
+        let cartImage = UIImage(named: "shoppingCart")!
+        
+        let siri = ActionButtonItem(title: "Siri", image: siriImage)
+        siri.action = { item in print("Siri...") }
+        
+        let cart = ActionButtonItem(title: "Shopping Cart", image: cartImage)
+        cart.action = { item in print("Shopping Cart...") }
+        
+        let actionButton = ActionButton(attachedToView: self.view, items: [siri, cart])
+        actionButton.action = {
+            button in button.toggleMenu()
+            print("button Pressed...")
+        }
+        
+    }
     
 }

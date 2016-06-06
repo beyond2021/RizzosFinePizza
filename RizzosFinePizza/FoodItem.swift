@@ -18,7 +18,7 @@ let PizzaImage = "TVPizza"
 
 
 
-struct FoodItem : Equatable {
+class FoodItem : Equatable {
     let title:String
     let itemDescription : String
     let originalPrice : [Double]
