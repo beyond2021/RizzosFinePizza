@@ -39,7 +39,7 @@ class FoodItemListTableViewController: UITableViewController, PrepareForCartTabl
         super.viewDidAppear(true)
           scrollToPoint(pointVariable)
         tableView.reloadData()
-        setUpFloatingButtons()
+      //  setUpFloatingButtons()
        
     }
     
@@ -187,6 +187,7 @@ class FoodItemListTableViewController: UITableViewController, PrepareForCartTabl
         self.dismissViewControllerAnimated(true, completion: nil)
         
     }
+   
     //MARK :- Siri
     func setUpFloatingButtons(){
         let siriImage = UIImage(named: "mike")!
@@ -207,6 +208,7 @@ class FoodItemListTableViewController: UITableViewController, PrepareForCartTabl
 
         
     }
+ 
     
 
 }

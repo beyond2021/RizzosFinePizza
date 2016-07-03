@@ -48,7 +48,7 @@ class ContainerViewController: SlideMenuController {
         navView()
         super.viewDidLoad()
        setupRightBarButtonItem()
-       // setUpFloatingButtons()
+       setUpFloatingButtons()
         
         self.addLeftBarButtonWithImage(UIImage(named: "menuIconSmall")!)
        // self.navigationItem.title = "Simply Delicious"
@@ -198,6 +198,8 @@ class ContainerViewController: SlideMenuController {
         
     }
     
+    
+  
     func setUpFloatingButtons(){
         let siriImage = UIImage(named: "mike")!
         let cartImage = UIImage(named: "shoppingCart")!
@@ -215,5 +217,6 @@ class ContainerViewController: SlideMenuController {
         }
         
     }
+ 
     
 }

@@ -24,7 +24,6 @@
 		222733271CE84E080086BF22 /* Sauce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733251CE84E080086BF22 /* Sauce.swift */; };
 		222733291CE8709D0086BF22 /* SauceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733281CE8709D0086BF22 /* SauceViewController.swift */; };
 		2227332A1CE8709D0086BF22 /* SauceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222733281CE8709D0086BF22 /* SauceViewController.swift */; };
-		222C2A101CFE177600762DE2 /* ActionButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C2A0F1CFE177500762DE2 /* ActionButton.framework */; };
 		2233E0441CBC720200218DE3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0431CBC720200218DE3 /* LocationTests.swift */; };
 		2233E0461CBC729E00218DE3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0451CBC729E00218DE3 /* Location.swift */; };
 		2233E0481CBC76D700218DE3 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E0471CBC76D700218DE3 /* ItemManagerTests.swift */; };
@@ -125,6 +124,7 @@
 		22B4D6EA1CF1E18A00E08E8E /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6E41CF1E18A00E08E8E /* UserSettingsViewController.swift */; };
 		22B4D6EC1CF1EC8800E08E8E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6EB1CF1EC8800E08E8E /* LocationManager.swift */; };
 		22B4D6ED1CF1EC8800E08E8E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4D6EB1CF1EC8800E08E8E /* LocationManager.swift */; };
+		22C6A9A01D29404F0028AA61 /* ActionButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C2A0F1CFE177500762DE2 /* ActionButton.framework */; };
 		22CCFEE81CC5C7AF002841D5 /* Topping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE71CC5C7AF002841D5 /* Topping.swift */; };
 		22CCFEEA1CC5C890002841D5 /* ToppingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEE91CC5C890002841D5 /* ToppingsTest.swift */; };
 		22CCFEED1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCFEEC1CC5E1D3002841D5 /* MenuItemsListViewControllerTest.swift */; };
@@ -301,7 +301,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222C2A101CFE177600762DE2 /* ActionButton.framework in Frameworks */,
+				22C6A9A01D29404F0028AA61 /* ActionButton.framework in Frameworks */,
 				222733201CE7CE670086BF22 /* FVCustomAlertView.framework in Frameworks */,
 				226EC9C91CE72BC800EC616D /* UberRides.framework in Frameworks */,
 				2255E2021CD5E969007DD06C /* FBSDKCoreKit.framework in Frameworks */,
